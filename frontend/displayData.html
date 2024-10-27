@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage Lists</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
+</head>
+
+<body>
+
+    <h1 id="greeting">Hello, <span id="username"></span></h1>
+
+    <div id="displayData">
+        <table id="listsTable">
+            <thead>
+                <tr>
+                    <th>Title</th>
+                    <th>Description</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+
+    <script>
+        const SERVER = 'http://127.0.0.1:8000/listitem/';
+
+        // Load username from localStorage and set in greeting
+        const username = localStorage.getItem('username') || 'Guest';
+        document.getElementById('username').innerText = username;
+
+
+        const displayData = () => {
+            axios.get(SERVER)
+                .then(res => {
+                    // Get the displayData div element
+                    const displayElement = document.getElementById('displayData');
+
+                    // Set the text or HTML content of the div to the response data
+                    displayElement.innerText = JSON.stringify(res.data, null, 2); // Format the JSON response for readability
+                })
+                .catch(error => {
+                    console.error('There was an error fetching the data!', error);
+                });
+        }
+
+
+        const addData = () => {
+            axios.post(SERVER)
+
+        }
+
+
+
+
+        const updData = () => {
+            axios.put()
+        }
+
+
+
+
+        // Do not delete from the data, only reverse is_active: false
+        const deleteData = (listId) => {
+            axios.patch(`${SERVER}${listId}/`, {
+            is_active: false
+        })
+            .then(response => {
+                console.log(response.data);
+            })
+            .catch(error => {
+                console.error('Error updating user:', error);
+            });
+
+        }
+
+
+        // Load lists when the page opens
+        window.onload = displayData;
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
+    <title>Login</title>
+</head>
+
+<body>
+    <div class="container">
+        <h2>Login</h2>
+        <form id="loginForm">
+            <div class="form-group">
+                <label for="username">Username:</label>
+                <input type="text" class="form-control" id="username" name="username" autocomplete="username" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" class="form-control" id="password" name="password"
+                    autocomplete="current-password" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Login</button>
+        </form>
+    </div>
+
+    <script>
+        const SERVER = 'http://127.0.0.1:8000/login';
+
+        // הוספת מאזין לאירוע של שליחת הטופס
+        document.getElementById('loginForm').addEventListener('submit', function (e) {
+            e.preventDefault(); // מונע את שליחת הטופס הרגילה
+
+            const username = document.getElementById('username').value;
+            const password = document.getElementById('password').value;
+
+            // ביצוע קריאת POST לשרת להתחברות
+            axios.post(SERVER, {
+                username: username,
+                password: password
+            })
+                .then(function (response) {
+                    // שמירת הטוקן והמשתמש ב-localStorage
+                    localStorage.setItem('access_token', response.data.access);
+
+                    // דה-קודינג של הטוקן (אם יש צורך)
+                    const base64Url = response.data.access.split('.')[1];
+                    const base64 = base64Url.replace(/-/g, '+').replace(/_/g, '/');
+                    const jsonPayload = decodeURIComponent(atob(base64).split('').map(function (c) {
+                        return '%' + ('00' + c.charCodeAt(0).toString(16)).slice(-2);
+                    }).join(''));
+
+                    const decodedToken = JSON.parse(jsonPayload);
+                    localStorage.setItem('username', decodedToken.username);
+                    localStorage.setItem('user_id', decodedToken.user_id); // הוספת ה-user_id שנמצא בטוקן
+
+                    alert('Login successful!');
+                    console.log(`Redirecting to lists.html`);
+                    window.location.href = './lists.html';// הפניה לדף lists.html
+                })
+                .catch(function (error) {
+                    // טיפול בשגיאות
+                    if (error.response && error.response.data) {
+                        alert('Error: ' + JSON.stringify(error.response.data));
+                    } else {
+                        alert('An unknown error occurred.');
+                    }
+                });
+        });
+
+
+    </script>
+</body>
+
+</html>

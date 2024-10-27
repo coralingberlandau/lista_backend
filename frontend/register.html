@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
+    <title>Register</title>
+</head>
+
+<body>
+    <div class="container">
+        <h2>Register</h2>
+        <form id="registerForm">
+            <div class="form-group">
+                <label for="username">Username:</label>
+                <input type="text" class="form-control" id="username" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" class="form-control" id="email" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" class="form-control" id="password" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Register</button>
+        </form>
+    </div>
+
+    <script>
+        const SERVER = 'http://127.0.0.1:8000/register';
+
+        document.getElementById('registerForm').addEventListener('submit', function (e) {
+            e.preventDefault();
+            const username = document.getElementById('username').value;
+            const email = document.getElementById('email').value;
+            const password = document.getElementById('password').value;
+
+            axios.post(SERVER + 'register', {
+                username: username,
+                email: email,
+                password: password
+            })
+                .then(function (response) {
+                    // שמירת ה-token והשם של המשתמש ב-localStorage
+                    localStorage.setItem('access_token', response.data.access);
+
+                    // פענוח ה-JWT Token כדי לשלוף את ה-username שהתווסף בתור claim
+                    const base64Url = response.data.access.split('.')[1];
+                    const base64 = base64Url.replace(/-/g, '+').replace(/_/g, '/');
+                    const jsonPayload = decodeURIComponent(atob(base64).split('').map(function (c) {
+                        return '%' + ('00' + c.charCodeAt(0).toString(16)).slice(-2);
+                    }).join(''));
+
+                    const decodedToken = JSON.parse(jsonPayload);
+                    localStorage.setItem('username', decodedToken.username);  // שמירת ה-username מה-token
+                    alert('Registration successful!');
+                    console.log('wooorrrrrkkkk');
+                    
+                    window.location.href = SERVER + 'login';  // הפניה לדף הבית
+                })
+                .catch(function (error) {
+                    alert('Error: ' + JSON.stringify(error.response.data));
+                });
+        });
+    </script>
+</body>
+
+</html>
