@@ -6,7 +6,8 @@ class ListItem(models.Model):
     # description = models.TextField(default="No description", null=False)
     description = models.JSONField(default=list)  # Store an array of strings
     date_created = models.DateField(auto_now_add=True)  # Automatically adds creation date
-    image = models.ImageField(null=True,blank=True,default='/placeholder.png')
+    # image = models.ImageField(null=True,blank=True,default='/placeholder.png')
+    image = models.JSONField(default=list)  # רשימת כתובות התמונות
     user_id = models.ForeignKey(User, on_delete=models.CASCADE, related_name='owned_lists')  # The owner of the list
     is_active = models.BooleanField(default=True)  # Indicates if the list is active
 

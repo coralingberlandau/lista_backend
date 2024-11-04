@@ -11,6 +11,11 @@ from django.contrib.auth.models import User
 
 from rest_framework.decorators import action  # ייבוא של action
 
+# from rest_framework.authtoken.models import Token
+from rest_framework import status
+
+
+
 
 # GET http://127.0.0.1:8000/listitem/by-user/1/
 
@@ -24,8 +29,9 @@ class ListItemViewSet(viewsets.ModelViewSet):
 
     @action(detail=False, methods=['get'], url_path='by-user/(?P<user_id>\d+)')
     def get_by_user(self, request, user_id=None):
-        user_items = self.get_queryset()  # תקבל את הפריטים לפי user_id
-        serializer = self.get_serializer(user_items, many=True)
+        # Filter the queryset based on user_id
+        user_items = ListItem.objects.filter(user_id=user_id)  # Change `user_id` to the actual field name if different
+        serializer = ListItemSerializer(user_items, many=True)
         return Response(serializer.data)
 
     def perform_create(self, serializer):
@@ -54,15 +60,41 @@ class MyTokenObtainPairView(TokenObtainPairView):
 # register --- http://127.0.0.1:8000/register
 @api_view(['POST'])
 def register(request):
+    # בדוק אם השם משתמש כבר קיים
+    if User.objects.filter(username=request.data['username']).exists():
+        return Response({'error': 'Username already exists.'})
+
     user = User.objects.create_user(
                 username=request.data['username'],
                 email=request.data['email'],
-                password=request.data['password']
+                password=request.data['password'],
+                first_name = request.data.get('first_name', ''),  # תיקון כאן
+                last_name = request.data.get('last_name', '')
             )
     user.is_active = True
     user.is_staff = True
     user.save()
-    return Response({'Success': 'new user born'})
+
+    refresh = MyTokenObtainPairSerializer.get_token(user)
+    access = str(refresh.access_token)
+
+          # כאן אפשר ליצור טוקן ולהחזיר אותו
+    # token, _ = Token.objects.get_or_create(user=user)
+
+    return Response({
+        'Success': 'New user created',
+        'username': user.username,
+        'user_id': user.id,
+        'access': access  # מחזיר את הטוקן
+        # 'token': token.key  # החזרת הטוקן שנוצר
+    }, status=status.HTTP_201_CREATED)
+    
+        
+        
+        
+        # {'Success': 'new user born', 'username': user.username, 'user_id': user.id,  'access': token.key) status=status.HTTP_201_CREATED})
+
+    # return Response({'Success': 'new user born', 'username': user.username, 'user_id': user.id, 'access': str(user.access_token)})
 
 
 @api_view(['GET'])
