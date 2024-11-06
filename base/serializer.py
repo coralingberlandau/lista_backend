@@ -15,17 +15,31 @@ class ListItemSerializer(serializers.ModelSerializer):
             'user': {'required': True},  # שדה חובה
             'images': {'required': False},  # הפוך את השדה images לא חובה
         }
-
+    
 class GroupListSerializer(serializers.ModelSerializer):
-    user = serializers.PrimaryKeyRelatedField(queryset=User.objects.all())  # מוודא שה-user הוא מפתח זר (FK) עם ה-ID של המשתמש
-    list_item = serializers.PrimaryKeyRelatedField(queryset=ListItem.objects.all())  # אם יש לך מודל ListItem, שים לב להגדיר אותו כראוי
+    # שדה של המשתמש שמחובר לרשימה
+    user = serializers.PrimaryKeyRelatedField(queryset=User.objects.all())  
+    # שדה של המסמך ששייך לרשימה
+    list_item = serializers.PrimaryKeyRelatedField(queryset=ListItem.objects.all())  
+    # שדה שמתאר את ה-ID של המשתמש ששיתף את הרשימה
+    shared_by_user_id = serializers.SerializerMethodField()
 
     class Meta:
         model = GroupList
         fields = '__all__'
 
+    def get_shared_by_user_id(self, obj):
+        """
+        מקבל את השדה `obj` שהוא אובייקט של GroupList, ומחזיר את ה-ID של המשתמש ששיתף את הרשימה.
+        אם הרשימה שייכת למשתמש אז מחזיר את ה-ID של המשתמש ששיתף.
+        """
+        shared_with = obj.list_item.shared_with.filter(user=obj.user).first()
+        if shared_with:
+            return shared_with.user.id
+        return None
+
     def validate(self, attrs):
-        # כאן תוכל להוסיף לוגיקה לוודא שהשדות נדרשים או לא
+        # לוודא ש-fields הנדרשים קיימים, לדוג' 'user' לא חסר
         if 'user' not in attrs:
             raise serializers.ValidationError({"user": "This field is required."})
         return attrs

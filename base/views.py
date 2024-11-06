@@ -1,22 +1,19 @@
 from rest_framework.response import Response
 from rest_framework import viewsets, status
-# from django.core.exceptions import ValidationError
 
+from django.db import models
 from .models import ListItem, GroupList
 from base.serializer import ListItemSerializer, GroupListSerializer
-
 from rest_framework.decorators import api_view, permission_classes
 from rest_framework.permissions import IsAuthenticated
 from rest_framework_simplejwt.serializers import TokenObtainPairSerializer
 from rest_framework_simplejwt.views import TokenObtainPairView
 from django.contrib.auth.models import User 
 
-from rest_framework.decorators import action  # ייבוא של action
-from django.utils import timezone  # הוספת ייבוא כדי להשתמש בזמנים
+from rest_framework.decorators import action  
+from django.utils import timezone 
 
-# from rest_framework.authtoken.models import Token
-
-
+from django.db.models import Q
 
 # GET http://127.0.0.1:8000/listitem/by-user/1/
 
@@ -30,70 +27,27 @@ class ListItemViewSet(viewsets.ModelViewSet):
 
     @action(detail=False, methods=['get'], url_path='by-user/(?P<user_id>\d+)')
     def get_by_user(self, request, user_id=None):
-        # Filter the queryset based on user_id
-        user_items = ListItem.objects.filter(user_id=user_id)  # Change `user_id` to the actual field name if different
+        user = request.user  # המשתמש המחובר מזוהה על ידי הטוקן
+        user_items = ListItem.objects.filter(user=user)  # חיפוש הרשומות של המשתמש המחובר בלבד
         serializer = ListItemSerializer(user_items, many=True)
         return Response(serializer.data)
     
     def perform_create(self, serializer):
-        serializer.save(user=self.request.user)  # ודא שאתה שומר את המשתמש הנוכחי
-
-
-    # def perform_create(self, serializer):
-    #     serializer.save(user_id=self.request.user)  # שמירת user_id של המשתמש המחובר
-
-    # def perform_create(self, serializer):
-    #     images_data = self.request.data.get('images', [])
-    #     if not isinstance(images_data, list):
-    #         raise serializer.ValidationError({"images": "Must be a list."})
-    #     serializer.save(user_id=self.request.user)
+        serializer.save(user=self.request.user)  
 
 
 # ViewSet for GroupList
-# class GroupListViewSet(viewsets.ModelViewSet):
-#     queryset = GroupList.objects.all()
-#     serializer_class = GroupListSerializer
-
-#     def create(self, request, *args, **kwargs):
-#         serializer = self.get_serializer(data=request.data)
-#         serializer.is_valid(raise_exception=True)
-        
-#         # ביצוע השמירה בבסיס הנתונים
-#         self.perform_create(serializer)
-        
-#         # החזרת הנתונים של הרשומה החדשה
-#         return Response(
-#             {'message': 'GroupList created successfully', 'data': serializer.data},
-#             status=status.HTTP_201_CREATED
-#         )
-    
-
-# class GroupListViewSet(viewsets.ModelViewSet):
-#     queryset = GroupList.objects.all()
-#     serializer_class = GroupListSerializer
-#     permission_classes = [IsAuthenticated]
-
-#     def create(self, request, *args, **kwargs):
-#         # הוספת המשתמש המחובר כמשתמש ברשומה החדשה
-#         data = request.data.copy()
-#         data['user'] = request.user.id
-        
-#         serializer = self.get_serializer(data=data)
-#         serializer.is_valid(raise_exception=True)
-        
-#         # שמירת הרשומה בבסיס הנתונים
-#         self.perform_create(serializer)
-        
-#         # החזרת נתוני הרשומה החדשה
-#         return Response(
-#             {'message': 'GroupList created successfully', 'data': serializer.data},
-#             status=status.HTTP_201_CREATED
-#         )
-
 class GroupListViewSet(viewsets.ModelViewSet):
     queryset = GroupList.objects.all()
     serializer_class = GroupListSerializer
     permission_classes = [IsAuthenticated]
+
+    def get_queryset(self):
+        user_id = self.request.query_params.get('user_id', None)
+
+        groupList = GroupList.objects.filter(models.Q(user__id=user_id) | models.Q(shared_with__id=user_id))
+        list_item_ids = groupList.values_list('id', flat=True)
+        return ListItem.objects.filter(id__in=list_item_ids)                                           
 
     def create(self, request, *args, **kwargs):
         # הוספת המשתמש המחובר כמשתמש ברשומה החדשה
@@ -111,7 +65,6 @@ class GroupListViewSet(viewsets.ModelViewSet):
             {'message': 'GroupList created successfully', 'data': serializer.data},
             status=status.HTTP_201_CREATED
         )
-
 
     def update(self, request, *args, **kwargs):
         # קבלת הרשומה לפי ה-PK
@@ -139,9 +92,15 @@ class GroupListViewSet(viewsets.ModelViewSet):
             {'message': 'GroupList updated successfully', 'data': serializer.data},
             status=status.HTTP_200_OK
         )
-
-
     
+    @action(detail=False, methods=['get'], url_path='by-user/(?P<user_id>\d+)')
+    def list_by_user(self, request, user_id=None):
+        user_id = request.user.id
+        groupList = GroupList.objects.filter(models.Q(user_id=user_id))
+        list_item_ids = groupList.values_list('id', flat=True)
+        items = ListItem.objects.filter(id__in=list_item_ids)     
+        serializer = ListItemSerializer(items, many=True)
+        return Response(serializer.data)   
 
     
 # login -- http://127.0.0.1:8000/login
