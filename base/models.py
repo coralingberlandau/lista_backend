@@ -14,6 +14,32 @@ class ListItem(models.Model):
     
         # description = models.TextField(default="No description", null=False)
 
+class GroupList(models.Model):
+    ROLE_CHOICES = [
+        ('member', 'Member'),
+        ('admin', 'Admin'),
+    ]
+
+    PERMISSION_CHOICES = [
+        ('read_only', 'Read-Only'),
+        ('full_access', 'Full Access'),
+    ]
+
+    user = models.ForeignKey(User, on_delete=models.CASCADE, related_name="group_lists")  # קשר עם משתמשים
+    list_item = models.ForeignKey(ListItem, on_delete=models.CASCADE, related_name="shared_with")  # קשר עם מסמכים
+    date_joined = models.DateField(auto_now_add=True)
+    role = models.CharField(max_length=10, choices=ROLE_CHOICES, default='member')
+    permission_type = models.CharField(max_length=20, choices=PERMISSION_CHOICES, default='read_only')
+
+    def __str__(self):
+        return f"{self.user.username} - {self.list_item.title} - {self.role} - {self.permission_type}"
+
+
+
+
+
+
+
 # Model for GroupList - Relationship table between Customer and Lists
 # class GroupList(models.Model):
 #     ROLE_CHOICES = [
@@ -36,27 +62,34 @@ class ListItem(models.Model):
 #         return f"{self.user.username} - {self.list_item.title}"  # גישה למאפיין title
 
 
-class GroupList(models.Model):
-    ROLE_CHOICES = [
-        ('member', 'Member'),
-        ('admin', 'Admin'),
-    ]
 
-    PERMISSION_CHOICES = [
-        ('read_only', 'Read-Only'),
-        ('full_access', 'Full Access'),
-    ]
 
-    user_id = models.ForeignKey(User, on_delete=models.CASCADE)  # שדה ForeignKey למודל User
-    user_id_string = models.CharField(max_length=150, blank=True)  # שדה סטרינג נוסף
-    list_item = models.ForeignKey(ListItem, on_delete=models.CASCADE)  # שדה ForeignKey למודל ListItem
-    date_joined = models.DateField(auto_now_add=True) 
-    role = models.CharField(max_length=10, choices=ROLE_CHOICES, default='member')
-    permission_type = models.CharField(max_length=20, choices=PERMISSION_CHOICES, default='read_only')
 
-    def save(self, *args, **kwargs):
-        self.user_id_string = self.user_id.username if self.user_id else ''  # עדכון המידע לשם המשתמש
-        super().save(*args, **kwargs)
 
-    def __str__(self):
-        return f"{self.user_id_string} - {self.list_item.title}"
+
+
+# class GroupList(models.Model):
+#     ROLE_CHOICES = [
+#         ('member', 'Member'),
+#         ('admin', 'Admin'),
+#     ]
+
+#     PERMISSION_CHOICES = [
+#         ('read_only', 'Read-Only'),
+#         ('full_access', 'Full Access'),
+#     ]
+
+#     user = models.ForeignKey(User, on_delete=models.CASCADE)  # שדה ForeignKey למודל User
+#     list_item = models.ForeignKey(ListItem, on_delete=models.CASCADE)  # שדה ForeignKey למודל ListItem
+#     date_joined = models.DateField(auto_now_add=True) 
+#     role = models.CharField(max_length=10, choices=ROLE_CHOICES, default='member')
+#     permission_type = models.CharField(max_length=20, choices=PERMISSION_CHOICES, default='read_only')
+
+#     def save(self, *args, **kwargs):
+#         self.user_id_string = self.user_id.username if self.user_id else ''  # עדכון המידע לשם המשתמש
+#         super().save(*args, **kwargs)
+
+#     def __str__(self):
+#         return f"{self.user_id_string} - {self.list_item.title}"
+
+    # user_id_string = models.CharField(max_length=150, blank=True)  # שדה סטרינג נוסף

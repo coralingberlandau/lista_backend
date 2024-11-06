@@ -17,8 +17,8 @@ class ListItemSerializer(serializers.ModelSerializer):
         }
 
 class GroupListSerializer(serializers.ModelSerializer):
-    user = UserSerializer()
-    list = ListItemSerializer()
+    user = serializers.PrimaryKeyRelatedField(queryset=User.objects.all())  # מוודא שה-user הוא מפתח זר (FK) עם ה-ID של המשתמש
+    list_item = serializers.PrimaryKeyRelatedField(queryset=ListItem.objects.all())  # אם יש לך מודל ListItem, שים לב להגדיר אותו כראוי
 
     class Meta:
         model = GroupList

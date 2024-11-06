@@ -50,22 +50,99 @@ class ListItemViewSet(viewsets.ModelViewSet):
 
 
 # ViewSet for GroupList
+# class GroupListViewSet(viewsets.ModelViewSet):
+#     queryset = GroupList.objects.all()
+#     serializer_class = GroupListSerializer
+
+#     def create(self, request, *args, **kwargs):
+#         serializer = self.get_serializer(data=request.data)
+#         serializer.is_valid(raise_exception=True)
+        
+#         # ביצוע השמירה בבסיס הנתונים
+#         self.perform_create(serializer)
+        
+#         # החזרת הנתונים של הרשומה החדשה
+#         return Response(
+#             {'message': 'GroupList created successfully', 'data': serializer.data},
+#             status=status.HTTP_201_CREATED
+#         )
+    
+
+# class GroupListViewSet(viewsets.ModelViewSet):
+#     queryset = GroupList.objects.all()
+#     serializer_class = GroupListSerializer
+#     permission_classes = [IsAuthenticated]
+
+#     def create(self, request, *args, **kwargs):
+#         # הוספת המשתמש המחובר כמשתמש ברשומה החדשה
+#         data = request.data.copy()
+#         data['user'] = request.user.id
+        
+#         serializer = self.get_serializer(data=data)
+#         serializer.is_valid(raise_exception=True)
+        
+#         # שמירת הרשומה בבסיס הנתונים
+#         self.perform_create(serializer)
+        
+#         # החזרת נתוני הרשומה החדשה
+#         return Response(
+#             {'message': 'GroupList created successfully', 'data': serializer.data},
+#             status=status.HTTP_201_CREATED
+#         )
+
 class GroupListViewSet(viewsets.ModelViewSet):
     queryset = GroupList.objects.all()
     serializer_class = GroupListSerializer
+    permission_classes = [IsAuthenticated]
 
     def create(self, request, *args, **kwargs):
-        serializer = self.get_serializer(data=request.data)
+        # הוספת המשתמש המחובר כמשתמש ברשומה החדשה
+        data = request.data.copy()
+        data['user'] = request.user.id  # אנחנו שולחים את ה-ID ולא את האובייקט
+
+        serializer = self.get_serializer(data=data)
         serializer.is_valid(raise_exception=True)
         
-        # ביצוע השמירה בבסיס הנתונים
+        # שמירת הרשומה בבסיס הנתונים
         self.perform_create(serializer)
         
-        # החזרת הנתונים של הרשומה החדשה
+        # החזרת נתוני הרשומה החדשה
         return Response(
             {'message': 'GroupList created successfully', 'data': serializer.data},
             status=status.HTTP_201_CREATED
         )
+
+
+    def update(self, request, *args, **kwargs):
+        # קבלת הרשומה לפי ה-PK
+        instance = self.get_object()
+
+        # בדיקה אם היוזר המחובר הוא הבעלים של הרשומה או נמצא ברשימת המשתמשים המורשים
+        if instance.user.id != request.user.id and request.user not in instance.shared_with.all():
+            return Response(
+                {'message': 'You are not authorized to update this group list.'},
+                status=status.HTTP_403_FORBIDDEN
+            )
+        
+        # אם יש לי הרשאה לעדכן, אני עובר לעדכון
+        data = request.data.copy()
+        data['user'] = request.user.id  # לוודא שהיוזר לא משתנה
+
+        serializer = self.get_serializer(instance, data=data)
+        serializer.is_valid(raise_exception=True)
+        
+        # שמירת העדכון
+        self.perform_update(serializer)
+        
+        # החזרת הנתונים לאחר העדכון
+        return Response(
+            {'message': 'GroupList updated successfully', 'data': serializer.data},
+            status=status.HTTP_200_OK
+        )
+
+
+    
+
     
 # login -- http://127.0.0.1:8000/login
 
