@@ -2,8 +2,8 @@ from rest_framework.response import Response
 from rest_framework import viewsets, status
 
 from django.db import models
-from .models import ListItem, GroupList
-from base.serializer import ListItemSerializer, GroupListSerializer
+from .models import ListItem, GroupList, ListItemImage
+from base.serializer import ListItemImageSerializer, ListItemSerializer, GroupListSerializer
 from rest_framework.decorators import api_view, permission_classes
 from rest_framework.permissions import IsAuthenticated
 from rest_framework_simplejwt.serializers import TokenObtainPairSerializer
@@ -68,6 +68,11 @@ class ListItemViewSet(viewsets.ModelViewSet):
             # הוספת התמונות לרשימה הקיימת
                 list_item.images.extend(new_images)
                 list_item.save()
+
+
+class ListItemImageViewSet(viewsets.ModelViewSet):
+    queryset = ListItemImage.objects.all()
+    serializer_class = ListItemImageSerializer
 
 # ViewSet for GroupList
 class GroupListViewSet(viewsets.ModelViewSet):

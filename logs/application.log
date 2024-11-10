@@ -73,3 +73,24 @@
 2024-11-08 11:01:12,112 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
 2024-11-10 08:20:22,252 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/models.py changed, reloading.
 2024-11-10 08:20:22,811 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-10 08:32:26,448 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-10 08:34:01,090 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/models.py changed, reloading.
+2024-11-10 08:34:01,500 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-10 08:34:02,649 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/models.py changed, reloading.
+2024-11-10 08:34:02,882 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-10 08:34:06,038 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/models.py changed, reloading.
+2024-11-10 08:34:06,214 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-10 08:34:07,355 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/models.py changed, reloading.
+2024-11-10 08:34:07,608 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-10 08:35:28,894 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/models.py changed, reloading.
+2024-11-10 08:35:29,214 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-10 08:35:33,377 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/models.py changed, reloading.
+2024-11-10 08:35:33,599 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-10 08:36:17,863 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/models.py changed, reloading.
+2024-11-10 08:36:18,254 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-10 08:36:20,405 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/models.py changed, reloading.
+2024-11-10 08:36:20,658 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-10 08:36:25,959 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/models.py changed, reloading.
+2024-11-10 08:36:26,203 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-10 08:36:31,464 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/models.py changed, reloading.
+2024-11-10 08:36:31,706 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
