@@ -17,8 +17,49 @@ from django.db.models import Q
 
 from .logging_utils import log  # ייבוא הדקורטור
 
+from django.core.exceptions import PermissionDenied
+
+
 
 # GET http://127.0.0.1:8000/listitem/by-user/1/
+
+# class ListItemViewSet(viewsets.ModelViewSet):
+#     queryset = ListItem.objects.all()
+#     serializer_class = ListItemSerializer
+
+#     @log(user_id=123, object_id=456)
+#     def get_queryset(self):
+#         user_id = self.request.query_params.get('user_id')
+#         return ListItem.objects.filter(user_id=user_id) if user_id else ListItem.objects.all()
+
+#     @log(user_id=123, object_id=456)
+#     @action(detail=False, methods=['get'], url_path='by-user/(?P<user_id>\d+)')
+#     def get_by_user(self, request, user_id=None):
+#         user = request.user  # המשתמש המחובר מזוהה על ידי הטוקן
+#         user_items = ListItem.objects.filter(user=user)  # חיפוש הרשומות של המשתמש המחובר בלבד
+#         serializer = ListItemSerializer(user_items, many=True)
+#         return Response(serializer.data)
+    
+#     @log(user_id=123, object_id=456)
+#     def perform_update(self, serializer):
+#         serializer.save(user_id=self.request.user)  # שמירת user_id של המשתמש המחובר
+
+#     @log(user_id=123, object_id=456)
+#     def perform_create(self, serializer):
+#         list_item = serializer.save(user=self.request.user)  # יצירת פריט חדש
+
+#     # אם יש תמונות נוספות, הוספתן לרשימה
+#         if 'images' in self.request.data:
+#             new_images = self.request.data['images']
+#             if new_images:
+#                 list_item.images = new_images  # שמירת התמונות החדשות בפריט
+#                 list_item.save()
+
+#             # הוספת התמונות לרשימה הקיימת
+#                 list_item.images.extend(new_images)
+#                 list_item.save()
+
+
 
 class ListItemViewSet(viewsets.ModelViewSet):
     queryset = ListItem.objects.all()
@@ -33,41 +74,44 @@ class ListItemViewSet(viewsets.ModelViewSet):
     @action(detail=False, methods=['get'], url_path='by-user/(?P<user_id>\d+)')
     def get_by_user(self, request, user_id=None):
         user = request.user  # המשתמש המחובר מזוהה על ידי הטוקן
+        if user.is_anonymous:
+            raise PermissionDenied("User not logged in.")
         user_items = ListItem.objects.filter(user=user)  # חיפוש הרשומות של המשתמש המחובר בלבד
         serializer = ListItemSerializer(user_items, many=True)
         return Response(serializer.data)
-    
+
+    @log(user_id=123, object_id=456)
     def perform_update(self, serializer):
+        user = self.request.user
+        if user.is_anonymous:
+            raise PermissionDenied("User not logged in.")
+        serializer.save(user=user)  # שמירה של המשתמש המחובר
 
-        serializer.save(user_id=self.request.user)  # שמירת user_id של המשתמש המחובר
-
-    #     list_item = serializer.save()  # שמירה של הפריט אחרי עדכון
-
-    # # הוספת התמונות החדשות אם יש
-    #     if 'images' in self.request.data:
-    #         new_images = self.request.data['images']
-
-    #     # אם יש תמונות נוספות, הוספתן לרשימה הקיימת
-    #         if new_images:
-    #         # נוודא שהתמונות לא חוזרות על עצמן
-    #             existing_images = list_item.images or []
-    #             list_item.images = list(set(existing_images + new_images))  # הוספת תמונות חדשות (אם יש)
-
-    #             list_item.save()
     @log(user_id=123, object_id=456)
     def perform_create(self, serializer):
-        list_item = serializer.save(user=self.request.user)  # יצירת פריט חדש
+        user = self.request.user
+        if user.is_anonymous:
+            raise PermissionDenied("User not logged in.")
+        serializer.save(user=user)
 
-    # אם יש תמונות נוספות, הוספתן לרשימה
-        if 'images' in self.request.data:
-            new_images = self.request.data['images']
-            if new_images:
-                list_item.images = new_images  # שמירת התמונות החדשות בפריט
-                list_item.save()
-
-            # הוספת התמונות לרשימה הקיימת
-                list_item.images.extend(new_images)
-                list_item.save()
+    @log(user_id=123, object_id=456)
+    @action(detail=True, methods=['patch'])
+    def delete_item(self, request, pk=None):
+        """
+        פעולה למחיקת פריט (soft delete) - סימון כלא פעיל
+        """
+        user = request.user
+        if user.is_anonymous:
+            raise PermissionDenied("User not logged in.")
+        try:
+            list_item = self.get_object()
+            list_item.is_active = False  # מניח ששדה 'is_active' קיים במודל שלך
+            list_item.save()
+            return Response({"message": "Item successfully deleted!"}, status=200)
+        
+        except ListItem.DoesNotExist:
+            return Response({"error": "Item not found!"}, status=404)
+        
 
 
 class ListItemImageViewSet(viewsets.ModelViewSet):
