@@ -18,4 +18,6 @@ urlpatterns = [
    path('login', views.MyTokenObtainPairView.as_view()),
    path('priverty', views.priverty),
    path('register', views.register),
+   path('get_user_info/<str:email>/', views.get_user_info_by_email, name='get_user_info_by_email'),
+
 ]
