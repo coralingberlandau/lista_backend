@@ -15,16 +15,21 @@ from django.utils import timezone
 
 from django.db.models import Q
 
+from .logging_utils import log  # ייבוא הדקורטור
+
+
 # GET http://127.0.0.1:8000/listitem/by-user/1/
 
 class ListItemViewSet(viewsets.ModelViewSet):
     queryset = ListItem.objects.all()
     serializer_class = ListItemSerializer
 
+    @log(user_id=123, object_id=456)
     def get_queryset(self):
         user_id = self.request.query_params.get('user_id')
         return ListItem.objects.filter(user_id=user_id) if user_id else ListItem.objects.all()
 
+    @log(user_id=123, object_id=456)
     @action(detail=False, methods=['get'], url_path='by-user/(?P<user_id>\d+)')
     def get_by_user(self, request, user_id=None):
         user = request.user  # המשתמש המחובר מזוהה על ידי הטוקן
@@ -32,9 +37,37 @@ class ListItemViewSet(viewsets.ModelViewSet):
         serializer = ListItemSerializer(user_items, many=True)
         return Response(serializer.data)
     
-    def perform_create(self, serializer):
-        serializer.save(user=self.request.user)  
+    def perform_update(self, serializer):
 
+        serializer.save(user_id=self.request.user)  # שמירת user_id של המשתמש המחובר
+
+    #     list_item = serializer.save()  # שמירה של הפריט אחרי עדכון
+
+    # # הוספת התמונות החדשות אם יש
+    #     if 'images' in self.request.data:
+    #         new_images = self.request.data['images']
+
+    #     # אם יש תמונות נוספות, הוספתן לרשימה הקיימת
+    #         if new_images:
+    #         # נוודא שהתמונות לא חוזרות על עצמן
+    #             existing_images = list_item.images or []
+    #             list_item.images = list(set(existing_images + new_images))  # הוספת תמונות חדשות (אם יש)
+
+    #             list_item.save()
+    @log(user_id=123, object_id=456)
+    def perform_create(self, serializer):
+        list_item = serializer.save(user=self.request.user)  # יצירת פריט חדש
+
+    # אם יש תמונות נוספות, הוספתן לרשימה
+        if 'images' in self.request.data:
+            new_images = self.request.data['images']
+            if new_images:
+                list_item.images = new_images  # שמירת התמונות החדשות בפריט
+                list_item.save()
+
+            # הוספת התמונות לרשימה הקיימת
+                list_item.images.extend(new_images)
+                list_item.save()
 
 # ViewSet for GroupList
 class GroupListViewSet(viewsets.ModelViewSet):
@@ -42,13 +75,15 @@ class GroupListViewSet(viewsets.ModelViewSet):
     serializer_class = GroupListSerializer
     permission_classes = [IsAuthenticated]
 
+    @log(user_id=123, object_id=456)
     def get_queryset(self):
         user_id = self.request.query_params.get('user_id', None)
 
         groupList = GroupList.objects.filter(models.Q(user__id=user_id) | models.Q(shared_with__id=user_id))
         list_item_ids = groupList.values_list('id', flat=True)
-        return ListItem.objects.filter(id__in=list_item_ids)                                           
-
+        return ListItem.objects.filter(id__in=list_item_ids)   
+                                            
+    @log(user_id=123, object_id=456)
     def create(self, request, *args, **kwargs):
         # הוספת המשתמש המחובר כמשתמש ברשומה החדשה
         data = request.data.copy()
@@ -65,7 +100,8 @@ class GroupListViewSet(viewsets.ModelViewSet):
             {'message': 'GroupList created successfully', 'data': serializer.data},
             status=status.HTTP_201_CREATED
         )
-
+    
+    @log(user_id=123, object_id=456)
     def update(self, request, *args, **kwargs):
         # קבלת הרשומה לפי ה-PK
         instance = self.get_object()
@@ -93,6 +129,7 @@ class GroupListViewSet(viewsets.ModelViewSet):
             status=status.HTTP_200_OK
         )
     
+    @log(user_id=123, object_id=456)
     @action(detail=False, methods=['get'], url_path='by-user/(?P<user_id>\d+)')
     def list_by_user(self, request, user_id=None):
         user_id = request.user.id
@@ -107,6 +144,7 @@ class GroupListViewSet(viewsets.ModelViewSet):
 
 class MyTokenObtainPairSerializer(TokenObtainPairSerializer):
     @classmethod
+    @log(user_id=123, object_id=456)
     def get_token(cls, user):
         token = super().get_token(user)
         # Add custom claims
@@ -124,6 +162,8 @@ class MyTokenObtainPairView(TokenObtainPairView):
 
 
 # register --- http://127.0.0.1:8000/register
+
+@log(user_id=123, object_id=456)
 @api_view(['POST'])
 def register(request):
     if User.objects.filter(username=request.data['username']).exists():
@@ -138,7 +178,7 @@ def register(request):
             )
     user.is_active = True
     user.is_staff = True
-    # user.is_superuser = True
+    user.is_superuser = True
      # עדכון last_login
     user.last_login = timezone.now()  # קביעת הזמן הנוכחי
     user.save()
@@ -153,15 +193,17 @@ def register(request):
         # 'token': token.key  # החזרת הטוקן שנוצר
     }, status=status.HTTP_201_CREATED)
     
-
+@log(user_id=123, object_id=456)
 @api_view(['GET'])
 def index(req):
    return Response({'hello': 'world'})
 
+@log(user_id=123, object_id=456)
 @api_view(['GET'])
 def test(req):
    return Response({'test': 'success'}) 
 
+@log(user_id=123, object_id=456)
 @api_view(['GET'])
 @permission_classes([IsAuthenticated])
 def priverty(req):

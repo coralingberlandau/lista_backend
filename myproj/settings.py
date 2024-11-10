@@ -13,6 +13,9 @@ https://docs.djangoproject.com/en/4.2/ref/settings/
 from pathlib import Path
 
 from datetime import timedelta   
+import os
+
+
 
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -122,8 +125,39 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.2/howto/static-files/
 
+# STATIC_URL = '/static/'
+# MEDIA_URL = '/images/'
+
+
+# STATICFILES_DIRS = [
+#     BASE_DIR / 'static',
+#    ]
+
+# MEDIA_ROOT = BASE_DIR / 'static/images'
+# STATIC_ROOT = BASE_DIR / 'staticfiles'
+
+# settings.py
+
+# # URL שבו ניתן לגשת לקבצי המדיה (תמונות, קבצים שהועלו)
+# MEDIA_URL = '/media/'
+
+# # המיקום הפיזי שבו ישמרו התמונות והקבצים המועלים
+# MEDIA_ROOT = BASE_DIR / 'media'
+
+# # URL של קבצים סטטיים (כגון CSS, JS)
+# STATIC_URL = '/static/'
+
+# # מיקום הקבצים הסטטיים (כגון CSS, JS)
+# STATICFILES_DIRS = [
+#     BASE_DIR / 'static',
+# ]
+
+# תיקיית הקבצים הסטטיים שנבנית על ידי Django בזמן פרודקשן
+STATIC_ROOT = BASE_DIR / 'staticfiles'
+
 STATIC_URL = '/static/'
 MEDIA_URL = '/images/'
+
 
 STATICFILES_DIRS = [
     BASE_DIR / 'static',
@@ -132,10 +166,46 @@ STATICFILES_DIRS = [
 MEDIA_ROOT = BASE_DIR / 'static/images'
 STATIC_ROOT = BASE_DIR / 'staticfiles'
 
+
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+# בתוך settings.py
+LOGGING = {
+    'version': 1,
+    'disable_existing_loggers': False,
+    'formatters': {
+        'verbose': {
+            'format': '%(asctime)s - %(name)s - %(levelname)s - %(message)s'
+        },
+        'simple': {
+            'format': '%(levelname)s - %(message)s'
+        },
+    },
+    'handlers': {
+        'console': {
+            'class': 'logging.StreamHandler',
+            'formatter': 'simple',
+        },
+        'file': {
+            'class': 'logging.FileHandler',
+            # 'filename': 'logs/application.log',
+            'filename': os.path.join(BASE_DIR, 'logs', 'application.log'),
+            'formatter': 'verbose',
+        },
+    },
+    'loggers': {
+        '': {
+            'handlers': ['console', 'file'],  # רישום הלוג גם בקונסול וגם בקובץ
+            'level': 'INFO',  # ניתן לשנות את רמת הלוג אם רוצים פחות פלט
+        },
+    },
+}
+
+
+
 
 ## for /
 APPEND_SLASH = False

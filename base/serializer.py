@@ -1,5 +1,5 @@
 from rest_framework import serializers
-from .models import ListItem, GroupList
+from .models import ListItem, GroupList, ListItemImage
 from django.contrib.auth.models import User
 
 class UserSerializer(serializers.ModelSerializer):
@@ -43,3 +43,9 @@ class GroupListSerializer(serializers.ModelSerializer):
         if 'user' not in attrs:
             raise serializers.ValidationError({"user": "This field is required."})
         return attrs
+    
+class ListItemImageSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = ListItemImage
+        fields = ['id', 'list_item', 'image']
+        extra_kwargs = {'list_item': {'write_only': True}}
