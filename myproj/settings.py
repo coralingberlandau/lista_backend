@@ -205,6 +205,36 @@ LOGGING = {
 }
 
 
+# EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+
+# 
+# EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+# EMAIL_HOST = 'smtp.gmail.com'  # למשל, אם את משתמשת ב-Gmail
+# EMAIL_PORT = 587
+# EMAIL_USE_TLS = True
+# EMAIL_HOST_USER = 'listaassistance@gmail.com'
+# EMAIL_HOST_PASSWORD = 'lista2024'
+
+
+FRONTEND_URL = "http://localhost:8081"  # או כתובת ה-frontend שלך בשרת
+
+EMAIL_BACKEND = 'sendgrid_backend.SendgridBackend'
+SENDGRID_API_KEY = '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'
+SENDGRID_SANDBOX_MODE_IN_DEBUG = False
+
+DEFAULT_FROM_EMAIL = 'listaassistance@gmail.com'
+
+
+
+# True
+# # False  # הפכי את זה ל-True לפיתוח בלבד
+
+
+# SendGrid
+# SG.BWPk8xAFS_K5ZxfELx999g.iOxkRxewtaExdWZFhw3XwIY-Judy9TPXnHVWaR7UpdQCopied!
+
+
+# L78HFR38VMVXDND7SY8PQ6CN
 
 
 ## for /

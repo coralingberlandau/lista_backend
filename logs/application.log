@@ -1810,3 +1810,765 @@ django.contrib.auth.models.User.DoesNotExist: User matching query does not exist
 2024-11-10 14:18:19,021 - application_logger - INFO - Function list_by_user executed successfully in views.py | User ID: 123 | Object ID: 456
 2024-11-10 14:18:24,866 - application_logger - INFO - Function view executed successfully in csrf.py | User ID: 123 | Object ID: 456
 2024-11-10 14:18:24,866 - django.request - WARNING - Not Found: /get_user_info/feef/
+2024-11-10 16:04:20,628 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-10 16:04:30,828 - application_logger - INFO - Function get_token executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-10 16:04:30,869 - application_logger - INFO - Function list_by_user executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-10 16:07:00,044 - application_logger - INFO - Function get_token executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-10 16:07:00,078 - application_logger - INFO - Function list_by_user executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-10 16:09:50,094 - application_logger - INFO - Function get_token executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-10 16:09:50,170 - application_logger - INFO - Function list_by_user executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-10 16:10:58,523 - application_logger - INFO - Function get_token executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-10 16:10:58,555 - application_logger - INFO - Function list_by_user executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-10 16:11:33,742 - application_logger - INFO - Function get_token executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-10 16:11:33,782 - application_logger - INFO - Function list_by_user executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-10 16:11:49,385 - application_logger - INFO - Function get_token executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-10 16:11:49,426 - application_logger - INFO - Function list_by_user executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-10 16:12:08,209 - application_logger - INFO - Function get_token executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-10 16:12:08,281 - application_logger - INFO - Function list_by_user executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-10 16:20:31,914 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/models.py changed, reloading.
+2024-11-10 16:20:32,282 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-10 16:21:05,409 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/models.py changed, reloading.
+2024-11-10 16:21:05,738 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-10 16:23:29,244 - django.request - WARNING - Not Found: /favicon.ico
+2024-11-10 16:24:17,500 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-10 17:27:01,100 - application_logger - INFO - Function get_token executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-10 17:27:01,162 - application_logger - INFO - Function list_by_user executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-10 17:30:02,998 - application_logger - INFO - Function get_token executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-10 17:30:03,047 - application_logger - INFO - Function list_by_user executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-10 17:33:30,570 - application_logger - INFO - Function get_token executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-10 17:33:30,642 - application_logger - INFO - Function list_by_user executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-10 17:34:08,902 - application_logger - INFO - Function get_token executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-10 17:34:08,951 - application_logger - INFO - Function list_by_user executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-10 17:35:52,974 - application_logger - INFO - Function get_token executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-10 17:35:53,062 - application_logger - INFO - Function list_by_user executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-10 17:39:08,679 - application_logger - INFO - Function get_token executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-10 17:39:08,792 - application_logger - INFO - Function list_by_user executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-10 17:42:03,481 - application_logger - INFO - Function get_token executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-10 17:42:03,535 - application_logger - INFO - Function list_by_user executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-10 17:43:33,726 - application_logger - INFO - Function get_token executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-10 17:43:33,783 - application_logger - INFO - Function list_by_user executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-10 17:46:45,961 - application_logger - INFO - Function get_token executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-10 17:46:46,023 - application_logger - INFO - Function list_by_user executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-10 17:49:18,766 - application_logger - INFO - Function get_token executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-10 17:49:18,825 - application_logger - INFO - Function list_by_user executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-10 17:51:30,095 - application_logger - INFO - Function get_token executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-10 17:51:30,139 - application_logger - INFO - Function list_by_user executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-10 17:54:51,294 - application_logger - INFO - Function get_token executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-10 17:54:51,349 - application_logger - INFO - Function list_by_user executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-10 17:56:55,536 - application_logger - INFO - Function get_token executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-10 17:56:55,585 - application_logger - INFO - Function list_by_user executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-10 18:16:16,470 - application_logger - INFO - Function get_token executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-10 18:16:16,513 - application_logger - INFO - Function list_by_user executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-10 18:16:23,697 - application_logger - INFO - Function get_token executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-10 18:16:23,718 - application_logger - INFO - Function list_by_user executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-10 18:17:17,508 - application_logger - INFO - Function get_token executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-10 18:17:17,628 - application_logger - INFO - Function list_by_user executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-10 18:17:22,980 - application_logger - INFO - Function get_token executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-10 18:17:23,000 - application_logger - INFO - Function list_by_user executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-10 18:18:21,299 - application_logger - INFO - Function get_token executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-10 18:18:21,337 - application_logger - INFO - Function list_by_user executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-10 18:18:31,467 - application_logger - INFO - Function get_token executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-10 18:18:31,490 - application_logger - INFO - Function list_by_user executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-10 18:18:37,694 - application_logger - INFO - Function get_queryset executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-10 18:18:37,703 - application_logger - INFO - Function perform_update executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-10 18:18:37,727 - application_logger - INFO - Function list_by_user executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-11 07:08:10,935 - application_logger - INFO - Function get_token executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-11 07:08:10,981 - application_logger - INFO - Function list_by_user executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-11 07:08:25,186 - application_logger - INFO - Function get_token executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-11 07:08:25,237 - application_logger - INFO - Function list_by_user executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-11 07:13:51,008 - django.request - WARNING - Unauthorized: /login
+2024-11-11 07:13:55,204 - application_logger - INFO - Function get_token executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-11 07:13:55,263 - application_logger - INFO - Function list_by_user executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-11 07:25:32,787 - application_logger - INFO - Function get_token executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-11 07:25:32,829 - application_logger - INFO - Function list_by_user executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-11 07:32:19,773 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-11 07:32:20,238 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-11 07:32:29,641 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-11 07:32:29,980 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-11 07:32:32,070 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-11 07:32:32,301 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-11 07:32:35,402 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-11 07:32:35,617 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-11 07:32:38,724 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-11 07:32:38,927 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-11 07:32:41,030 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-11 07:32:41,292 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-11 07:32:53,612 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-11 07:32:53,871 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-11 07:32:58,016 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-11 07:32:58,256 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-11 07:33:00,348 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-11 07:33:00,603 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-11 07:33:22,184 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-11 07:33:22,533 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-11 07:33:27,836 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-11 07:33:28,063 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-11 07:33:32,295 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-11 07:33:32,554 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-11 07:33:36,732 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-11 07:33:36,945 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-11 07:33:47,319 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-11 07:33:47,558 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-11 07:33:49,708 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-11 07:33:49,999 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-11 07:35:06,325 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-11 07:35:06,679 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-11 07:35:18,056 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-11 07:35:18,397 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-11 07:35:19,612 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-11 07:35:19,836 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-11 07:35:32,254 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-11 07:35:32,570 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-11 07:35:34,651 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-11 07:35:34,890 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-11 07:35:41,151 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-11 07:35:41,399 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-11 07:35:43,566 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-11 07:35:43,786 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-11 07:35:46,940 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-11 07:35:47,169 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-11 07:36:11,935 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/myproj/settings.py changed, reloading.
+2024-11-11 08:25:21,611 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-11 08:34:28,025 - application_logger - INFO - Function get_token executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-11 08:34:28,076 - application_logger - INFO - Function list_by_user executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-11 08:34:37,591 - application_logger - INFO - Function get_queryset executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-11 08:34:37,600 - application_logger - INFO - Function perform_update executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-11 08:34:37,631 - application_logger - INFO - Function list_by_user executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-11 08:56:00,341 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-11 08:56:00,738 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-11 08:56:05,014 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-11 08:56:05,282 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-11 08:56:07,424 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-11 08:56:07,667 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-11 08:56:56,188 - application_logger - INFO - Function post executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-11 08:56:56,189 - django.request - WARNING - Not Found: /reset_password
+2024-11-11 08:57:41,178 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/urls.py changed, reloading.
+2024-11-11 08:57:41,576 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-11 08:57:44,901 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/urls.py changed, reloading.
+2024-11-11 08:57:45,111 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-11 08:57:47,292 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/urls.py changed, reloading.
+2024-11-11 08:57:47,548 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-11 08:59:37,951 - application_logger - INFO - Function get_token executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-11 08:59:37,951 - application_logger - INFO - Function view executed successfully in csrf.py | User ID: 123 | Object ID: 456
+2024-11-11 08:59:37,992 - application_logger - INFO - Function list_by_user executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-11 09:00:08,673 - application_logger - INFO - Function post executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-11 09:00:21,842 - application_logger - INFO - Function post executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-11 09:00:46,722 - application_logger - INFO - Function get_token executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-11 09:00:46,756 - application_logger - INFO - Function list_by_user executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-11 09:00:54,077 - application_logger - INFO - Function get_token executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-11 09:00:54,104 - application_logger - INFO - Function list_by_user executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-11 09:01:01,569 - django.request - WARNING - Unauthorized: /login
+2024-11-11 09:14:55,048 - application_logger - ERROR - Error in post: [Errno 61] Connection refused | User ID: 123 | Object ID: 456
+2024-11-11 09:14:55,081 - django.request - ERROR - Internal Server Error: /reset_password_request
+Traceback (most recent call last):
+  File "/Users/coralingber/Desktop/untitled folder 2/lista/backend/env/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/coralingber/Desktop/untitled folder 2/lista/backend/env/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/coralingber/Desktop/untitled folder 2/lista/backend/env/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/coralingber/Desktop/untitled folder 2/lista/backend/env/lib/python3.12/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/coralingber/Desktop/untitled folder 2/lista/backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/coralingber/Desktop/untitled folder 2/lista/backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/coralingber/Desktop/untitled folder 2/lista/backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Users/coralingber/Desktop/untitled folder 2/lista/backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/coralingber/Desktop/untitled folder 2/lista/backend/base/logging_utils.py", line 32, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py", line 278, in post
+    send_mail(
+  File "/Users/coralingber/Desktop/untitled folder 2/lista/backend/env/lib/python3.12/site-packages/django/core/mail/__init__.py", line 88, in send_mail
+    return mail.send()
+           ^^^^^^^^^^^
+  File "/Users/coralingber/Desktop/untitled folder 2/lista/backend/env/lib/python3.12/site-packages/django/core/mail/message.py", line 301, in send
+    return self.get_connection(fail_silently).send_messages([self])
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/coralingber/Desktop/untitled folder 2/lista/backend/env/lib/python3.12/site-packages/django/core/mail/backends/smtp.py", line 128, in send_messages
+    new_conn_created = self.open()
+                       ^^^^^^^^^^^
+  File "/Users/coralingber/Desktop/untitled folder 2/lista/backend/env/lib/python3.12/site-packages/django/core/mail/backends/smtp.py", line 86, in open
+    self.connection = self.connection_class(
+                      ^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.12/3.12.6/Frameworks/Python.framework/Versions/3.12/lib/python3.12/smtplib.py", line 255, in __init__
+    (code, msg) = self.connect(host, port)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.12/3.12.6/Frameworks/Python.framework/Versions/3.12/lib/python3.12/smtplib.py", line 341, in connect
+    self.sock = self._get_socket(host, port, self.timeout)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.12/3.12.6/Frameworks/Python.framework/Versions/3.12/lib/python3.12/smtplib.py", line 312, in _get_socket
+    return socket.create_connection((host, port), timeout,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.12/3.12.6/Frameworks/Python.framework/Versions/3.12/lib/python3.12/socket.py", line 865, in create_connection
+    raise exceptions[0]
+  File "/opt/homebrew/Cellar/python@3.12/3.12.6/Frameworks/Python.framework/Versions/3.12/lib/python3.12/socket.py", line 850, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 61] Connection refused
+2024-11-11 11:01:14,452 - django.request - WARNING - Unauthorized: /login
+2024-11-11 11:01:14,962 - django.request - WARNING - Unauthorized: /login
+2024-11-11 11:01:15,488 - django.request - WARNING - Unauthorized: /login
+2024-11-11 11:04:52,876 - application_logger - ERROR - Error in post: [Errno 61] Connection refused | User ID: 123 | Object ID: 456
+2024-11-11 11:04:52,902 - django.request - ERROR - Internal Server Error: /reset_password_request
+Traceback (most recent call last):
+  File "/Users/coralingber/Desktop/untitled folder 2/lista/backend/env/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/coralingber/Desktop/untitled folder 2/lista/backend/env/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/coralingber/Desktop/untitled folder 2/lista/backend/env/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/coralingber/Desktop/untitled folder 2/lista/backend/env/lib/python3.12/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/coralingber/Desktop/untitled folder 2/lista/backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/coralingber/Desktop/untitled folder 2/lista/backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/coralingber/Desktop/untitled folder 2/lista/backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Users/coralingber/Desktop/untitled folder 2/lista/backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/coralingber/Desktop/untitled folder 2/lista/backend/base/logging_utils.py", line 32, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py", line 278, in post
+    send_mail(
+  File "/Users/coralingber/Desktop/untitled folder 2/lista/backend/env/lib/python3.12/site-packages/django/core/mail/__init__.py", line 88, in send_mail
+    return mail.send()
+           ^^^^^^^^^^^
+  File "/Users/coralingber/Desktop/untitled folder 2/lista/backend/env/lib/python3.12/site-packages/django/core/mail/message.py", line 301, in send
+    return self.get_connection(fail_silently).send_messages([self])
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/coralingber/Desktop/untitled folder 2/lista/backend/env/lib/python3.12/site-packages/django/core/mail/backends/smtp.py", line 128, in send_messages
+    new_conn_created = self.open()
+                       ^^^^^^^^^^^
+  File "/Users/coralingber/Desktop/untitled folder 2/lista/backend/env/lib/python3.12/site-packages/django/core/mail/backends/smtp.py", line 86, in open
+    self.connection = self.connection_class(
+                      ^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.12/3.12.6/Frameworks/Python.framework/Versions/3.12/lib/python3.12/smtplib.py", line 255, in __init__
+    (code, msg) = self.connect(host, port)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.12/3.12.6/Frameworks/Python.framework/Versions/3.12/lib/python3.12/smtplib.py", line 341, in connect
+    self.sock = self._get_socket(host, port, self.timeout)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.12/3.12.6/Frameworks/Python.framework/Versions/3.12/lib/python3.12/smtplib.py", line 312, in _get_socket
+    return socket.create_connection((host, port), timeout,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.12/3.12.6/Frameworks/Python.framework/Versions/3.12/lib/python3.12/socket.py", line 865, in create_connection
+    raise exceptions[0]
+  File "/opt/homebrew/Cellar/python@3.12/3.12.6/Frameworks/Python.framework/Versions/3.12/lib/python3.12/socket.py", line 850, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 61] Connection refused
+2024-11-11 11:05:58,699 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/urls.py changed, reloading.
+2024-11-11 11:05:59,166 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-11 11:07:03,799 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-11 11:07:04,171 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-11 11:07:10,470 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-11 11:07:10,725 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-11 11:08:10,299 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-11 11:08:10,628 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-11 11:08:32,298 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-11 11:08:32,670 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-11 11:08:33,815 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-11 11:08:34,034 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-11 11:11:39,978 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/myproj/settings.py changed, reloading.
+2024-11-11 11:11:40,311 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-11 11:13:51,879 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-11 11:13:52,280 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-11 11:13:54,365 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-11 11:13:54,574 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-11 11:14:02,762 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-11 11:14:03,027 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-11 11:14:05,100 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-11 11:14:05,363 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-11 11:14:17,546 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-11 11:14:30,933 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-11 11:14:55,970 - application_logger - INFO - Function post executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-11 11:14:55,971 - django.request - ERROR - Internal Server Error: /reset_password_request
+2024-11-11 11:16:48,672 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/myproj/settings.py changed, reloading.
+2024-11-11 11:16:49,012 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-11 11:17:15,884 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-11 11:17:16,226 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-11 11:17:19,347 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-11 11:17:19,622 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-11 11:17:25,870 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-11 11:17:26,117 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-11 11:17:29,292 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-11 11:17:29,501 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-11 11:17:30,564 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-11 11:17:30,803 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-11 11:17:31,860 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-11 11:17:32,073 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-11 11:17:34,149 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-11 11:17:34,377 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-11 11:17:47,835 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-11 11:17:48,259 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-11 11:17:53,520 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-11 11:17:53,835 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-11 11:17:55,028 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-11 11:17:55,248 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-11 11:17:56,375 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-11 11:17:56,608 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-11 11:17:59,772 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-11 11:18:00,014 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-11 11:18:01,077 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-11 11:18:01,284 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-11 11:18:04,408 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-11 11:18:04,718 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-11 11:18:51,082 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-11 11:18:51,520 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-11 11:18:58,847 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-11 11:18:59,149 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-11 11:19:01,246 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-11 11:19:01,513 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-11 11:19:02,648 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-11 11:19:02,885 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-11 11:20:13,958 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-11 11:20:14,320 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-11 11:20:29,776 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-11 11:20:30,114 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-11 11:20:32,273 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-11 11:20:32,498 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-11 11:21:02,309 - application_logger - INFO - Function post executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-11 11:22:25,200 - application_logger - INFO - Function post executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-11 11:22:25,202 - django.request - WARNING - Not Found: /reset_password_request
+2024-11-11 11:23:02,685 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-11 11:23:03,142 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-11 11:23:06,283 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/urls.py changed, reloading.
+2024-11-11 11:23:06,533 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-11 11:23:10,761 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/urls.py changed, reloading.
+2024-11-11 11:23:10,977 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-11 11:23:56,032 - application_logger - INFO - Function post executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-11 11:23:56,033 - django.request - WARNING - Not Found: /reset_password_request
+2024-11-11 11:48:18,066 - application_logger - INFO - Function post executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-11 11:52:08,238 - application_logger - INFO - Function post executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-11 11:53:15,750 - application_logger - INFO - Function post executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-11 11:54:14,612 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-11 11:54:15,051 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-11 11:54:20,352 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-11 11:54:20,583 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-11 11:54:24,804 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-11 11:54:25,055 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-11 11:54:28,797 - application_logger - INFO - Function post executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-11 12:18:11,711 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-11 12:18:12,115 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-11 12:18:14,217 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-11 12:18:14,460 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-11 12:18:28,969 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-11 12:18:29,279 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-11 12:18:33,497 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-11 12:18:33,719 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-11 12:18:35,857 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-11 12:18:36,069 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-11 12:18:50,348 - application_logger - INFO - Function post executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-11 12:23:14,472 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-11 12:23:14,825 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-11 12:23:19,063 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-11 12:23:19,296 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-11 12:23:26,591 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-11 12:23:26,828 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-11 12:23:27,996 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-11 12:23:28,243 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-11 12:23:31,428 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-11 12:23:31,707 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-11 12:23:34,871 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-11 12:23:35,191 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-11 12:23:37,372 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-11 12:23:37,590 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-11 12:25:04,942 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/myproj/settings.py changed, reloading.
+2024-11-11 12:25:05,335 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-11 12:25:07,506 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/myproj/settings.py changed, reloading.
+2024-11-11 12:25:07,862 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-11 12:26:18,018 - application_logger - INFO - Function post executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-11 12:29:59,689 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/myproj/settings.py changed, reloading.
+2024-11-11 12:30:00,151 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-11 12:30:04,393 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/myproj/settings.py changed, reloading.
+2024-11-11 12:30:04,648 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-11 12:30:58,034 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/myproj/settings.py changed, reloading.
+2024-11-11 12:30:58,376 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-11 12:31:01,573 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/myproj/settings.py changed, reloading.
+2024-11-11 12:31:01,890 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-11 12:31:03,011 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/myproj/settings.py changed, reloading.
+2024-11-11 12:31:03,262 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-11 12:31:07,509 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/myproj/settings.py changed, reloading.
+2024-11-11 12:31:22,427 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-11 12:31:48,901 - application_logger - INFO - Function post executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-11 12:31:48,903 - django.request - ERROR - Internal Server Error: /reset_password_request
+2024-11-11 12:32:48,527 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-11 12:33:05,021 - application_logger - INFO - Function post executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-11 12:33:05,023 - django.request - ERROR - Internal Server Error: /reset_password_request
+2024-11-11 12:38:20,841 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-11 12:38:38,427 - application_logger - INFO - Function post executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-11 12:38:38,429 - django.request - ERROR - Internal Server Error: /reset_password_request
+2024-11-11 12:53:45,336 - application_logger - INFO - Function get_token executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-11 12:53:45,416 - application_logger - INFO - Function list_by_user executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-11 12:55:08,663 - application_logger - INFO - Function get_token executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-11 12:55:08,735 - application_logger - INFO - Function list_by_user executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-11 12:56:36,413 - application_logger - INFO - Function get_token executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-11 12:56:36,467 - application_logger - INFO - Function list_by_user executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-11 12:56:40,134 - application_logger - INFO - Function list_by_user executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-11 12:57:49,022 - application_logger - INFO - Function get_token executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-11 12:57:49,065 - application_logger - INFO - Function list_by_user executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-11 12:58:46,384 - application_logger - INFO - Function list_by_user executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-11 13:37:32,320 - application_logger - INFO - Function get_token executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-11 13:37:32,389 - application_logger - INFO - Function list_by_user executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-11 13:38:00,421 - application_logger - INFO - Function get_token executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-11 13:38:00,487 - application_logger - INFO - Function list_by_user executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-11 13:38:14,625 - application_logger - INFO - Function list_by_user executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-11 13:38:27,781 - application_logger - INFO - Function list_by_user executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-11 13:38:30,521 - application_logger - INFO - Function list_by_user executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-11 13:38:34,943 - application_logger - INFO - Function list_by_user executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-11 13:41:32,723 - application_logger - INFO - Function get_token executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-11 13:41:32,875 - application_logger - INFO - Function list_by_user executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-11 13:42:08,585 - application_logger - INFO - Function get_token executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-11 13:42:08,764 - application_logger - INFO - Function list_by_user executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-11 13:43:22,360 - application_logger - INFO - Function get_token executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-11 13:43:22,414 - application_logger - INFO - Function list_by_user executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-11 13:43:53,937 - application_logger - INFO - Function get_token executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-11 13:43:54,124 - application_logger - INFO - Function list_by_user executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-11 13:44:19,905 - application_logger - INFO - Function get_token executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-11 13:44:20,195 - application_logger - INFO - Function list_by_user executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-11 13:44:41,280 - application_logger - INFO - Function get_token executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-11 13:44:41,400 - application_logger - INFO - Function list_by_user executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-11 13:45:02,380 - application_logger - INFO - Function get_token executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-11 13:45:02,561 - application_logger - INFO - Function list_by_user executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-11 13:45:55,902 - application_logger - INFO - Function get_token executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-11 13:45:55,997 - application_logger - INFO - Function list_by_user executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-11 15:08:13,470 - application_logger - INFO - Function get_token executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-11 15:08:13,528 - application_logger - INFO - Function list_by_user executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-11 15:10:32,401 - application_logger - INFO - Function get_token executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-11 15:10:32,462 - application_logger - INFO - Function list_by_user executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-11 15:10:53,783 - application_logger - INFO - Function get_token executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-11 15:10:53,818 - application_logger - INFO - Function list_by_user executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-11 15:11:42,084 - application_logger - INFO - Function get_token executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-11 15:11:42,163 - application_logger - INFO - Function list_by_user executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-11 15:12:06,046 - application_logger - INFO - Function get_token executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-11 15:12:06,089 - application_logger - INFO - Function list_by_user executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-11 15:13:15,409 - application_logger - INFO - Function get_token executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-11 15:13:15,452 - application_logger - INFO - Function list_by_user executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-11 15:15:12,335 - application_logger - INFO - Function get_token executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-11 15:15:12,510 - application_logger - INFO - Function list_by_user executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-11 15:16:01,023 - application_logger - INFO - Function get_token executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-11 15:16:01,055 - application_logger - INFO - Function list_by_user executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-11 15:16:38,465 - application_logger - INFO - Function get_token executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-11 15:16:38,499 - application_logger - INFO - Function list_by_user executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-11 15:17:06,598 - application_logger - INFO - Function get_token executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-11 15:17:06,632 - application_logger - INFO - Function list_by_user executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-11 15:18:41,983 - application_logger - INFO - Function get_token executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-11 15:18:42,017 - application_logger - INFO - Function list_by_user executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-11 15:19:07,704 - application_logger - INFO - Function get_token executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-11 15:19:07,739 - application_logger - INFO - Function list_by_user executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-11 15:20:55,756 - application_logger - INFO - Function get_token executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-11 15:20:55,819 - application_logger - INFO - Function list_by_user executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-11 15:23:45,724 - application_logger - INFO - Function get_token executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-11 15:23:45,752 - application_logger - INFO - Function list_by_user executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-11 15:24:50,678 - application_logger - INFO - Function get_token executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-11 15:24:50,703 - application_logger - INFO - Function list_by_user executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-11 15:24:58,445 - application_logger - INFO - Function get_queryset executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-11 15:24:58,454 - application_logger - INFO - Function perform_update executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-11 15:24:58,476 - application_logger - INFO - Function list_by_user executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-11 15:25:08,679 - application_logger - INFO - Function perform_create executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-11 15:25:08,696 - application_logger - INFO - Function create executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-11 15:25:08,718 - application_logger - INFO - Function list_by_user executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-11 16:00:11,839 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/myproj/settings.py changed, reloading.
+2024-11-11 16:22:03,309 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-11 16:22:22,415 - application_logger - INFO - Function get_token executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-11 16:22:22,441 - application_logger - INFO - Function list_by_user executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-11 16:22:50,204 - application_logger - INFO - Function post executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-11 16:22:50,204 - django.request - ERROR - Internal Server Error: /reset_password_request
+2024-11-11 16:27:17,021 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-11 16:27:25,237 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/myproj/settings.py changed, reloading.
+2024-11-11 16:27:25,492 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-11 16:27:32,719 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/myproj/settings.py changed, reloading.
+2024-11-11 16:27:32,930 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-11 16:27:35,018 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/myproj/settings.py changed, reloading.
+2024-11-11 16:27:35,220 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-11 16:27:42,255 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-11 16:28:25,308 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-11 16:28:25,692 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-11 16:28:28,818 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-11 16:28:29,071 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-11 16:39:09,552 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-11 16:39:31,967 - application_logger - ERROR - Error in send_password_reset_email: 'str' object has no attribute 'get' | User ID: 123 | Object ID: 456
+2024-11-11 16:39:31,968 - application_logger - INFO - Function post executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-11 16:39:31,969 - django.request - ERROR - Internal Server Error: /reset_password_request
+2024-11-11 16:40:29,884 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-11 16:40:30,235 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-11 16:40:48,028 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-11 16:41:16,029 - application_logger - ERROR - Error in send_password_reset_email: 'str' object has no attribute 'get' | User ID: 123 | Object ID: 456
+2024-11-11 16:41:16,031 - application_logger - INFO - Function post executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-11 16:41:16,032 - django.request - ERROR - Internal Server Error: /reset_password_request
+2024-11-11 16:42:07,341 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-11 16:42:07,774 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-11 16:42:35,742 - application_logger - ERROR - Error in send_password_reset_email: 'str' object has no attribute 'get' | User ID: 123 | Object ID: 456
+2024-11-11 16:42:35,744 - application_logger - INFO - Function post executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-11 16:42:35,745 - django.request - ERROR - Internal Server Error: /reset_password_request
+2024-11-11 16:43:29,016 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-11 16:43:29,398 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-11 16:45:13,449 - application_logger - ERROR - Error in send_password_reset_email: 'str' object has no attribute 'get' | User ID: 123 | Object ID: 456
+2024-11-11 16:45:13,450 - application_logger - INFO - Function post executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-11 16:45:13,451 - django.request - ERROR - Internal Server Error: /reset_password_request
+2024-11-11 16:45:38,776 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-11 16:45:39,170 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-11 16:45:44,435 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/urls.py changed, reloading.
+2024-11-11 16:45:44,677 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-11 16:45:52,886 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-11 16:45:53,181 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-11 16:46:09,655 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/urls.py changed, reloading.
+2024-11-11 16:46:10,013 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-11 16:46:26,878 - application_logger - ERROR - Error in send_password_reset_email: 'str' object has no attribute 'get' | User ID: 123 | Object ID: 456
+2024-11-11 16:46:26,879 - application_logger - INFO - Function post executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-11 16:46:26,880 - django.request - ERROR - Internal Server Error: /reset_password_request
+2024-11-11 16:49:28,291 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-11 16:49:28,801 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-11 16:49:42,235 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-11 16:49:42,625 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-11 16:49:47,845 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-11 16:49:48,075 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-11 16:50:52,885 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/myproj/settings.py changed, reloading.
+2024-11-11 16:50:53,289 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-11 16:50:54,493 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/myproj/settings.py changed, reloading.
+2024-11-11 16:50:54,756 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-11 16:52:35,693 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/myproj/settings.py changed, reloading.
+2024-11-11 16:54:23,689 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-11 16:54:47,346 - application_logger - ERROR - Error in send_password_reset_email: name 'SendGridAPIClient' is not defined | User ID: 123 | Object ID: 456
+2024-11-11 16:54:47,347 - application_logger - INFO - Function post executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-11 16:54:47,348 - django.request - ERROR - Internal Server Error: /reset_password_request
+2024-11-11 16:57:01,445 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-11 16:57:01,941 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-11 16:57:16,409 - application_logger - ERROR - Error in send_password_reset_email: 'str' object has no attribute 'get' | User ID: 123 | Object ID: 456
+2024-11-11 16:57:16,411 - application_logger - INFO - Function post executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-11 16:57:16,413 - django.request - ERROR - Internal Server Error: /reset_password_request
+2024-11-11 17:02:43,267 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-11 17:02:43,754 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-11 17:02:44,913 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-11 17:02:45,243 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-11 17:03:00,711 - application_logger - ERROR - Error in send_password_reset_email: 'str' object has no attribute 'get' | User ID: 123 | Object ID: 456
+2024-11-11 17:03:00,712 - application_logger - INFO - Function post executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-11 17:03:00,725 - django.request - ERROR - Internal Server Error: /reset_password_request
+2024-11-11 17:03:11,014 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-11 17:03:11,379 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-11 17:03:12,567 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-11 17:03:12,850 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-11 17:03:14,941 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-11 17:03:15,184 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-11 17:03:20,430 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-11 17:03:20,662 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-11 17:03:22,844 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-11 17:03:23,082 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-11 17:03:24,210 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-11 17:03:24,429 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-11 17:03:26,575 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-11 17:03:26,801 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-11 17:03:28,948 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-11 17:03:29,358 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-11 17:03:30,485 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-11 17:03:30,843 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-11 17:03:37,520 - application_logger - ERROR - Error in send_password_reset_email: 'str' object has no attribute 'get' | User ID: 123 | Object ID: 456
+2024-11-11 17:03:37,521 - application_logger - INFO - Function post executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-11 17:03:37,522 - django.request - ERROR - Internal Server Error: /reset_password_request
+2024-11-11 17:03:51,590 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-11 17:03:51,972 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-11 17:03:55,218 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-11 17:03:55,519 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-11 17:03:59,696 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-11 17:03:59,970 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-11 17:04:01,144 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-11 17:04:01,378 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-11 17:04:06,646 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-11 17:04:06,937 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-11 17:04:11,860 - application_logger - ERROR - Error in send_password_reset_email: 'str' object has no attribute 'get' | User ID: 123 | Object ID: 456
+2024-11-11 17:04:11,860 - application_logger - INFO - Function post executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-11 17:04:11,861 - django.request - ERROR - Internal Server Error: /reset_password_request
+2024-11-11 17:04:33,834 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-11 17:04:34,229 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-11 17:04:37,412 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-11 17:04:37,672 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-11 17:04:38,805 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-11 17:04:39,044 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-11 17:04:40,204 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-11 17:04:40,456 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-11 17:04:43,638 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-11 17:04:43,883 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-11 17:04:47,083 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-11 17:04:47,318 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-11 17:04:51,543 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-11 17:04:51,785 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-11 17:04:52,936 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-11 17:04:53,208 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-11 17:05:02,159 - application_logger - ERROR - Error in send_password_reset_email: 'str' object has no attribute 'get' | User ID: 123 | Object ID: 456
+2024-11-11 17:05:02,160 - application_logger - INFO - Function post executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-11 17:05:02,161 - django.request - ERROR - Internal Server Error: /reset_password_request
+2024-11-11 17:06:53,452 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-11 17:06:54,272 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-11 17:07:04,281 - application_logger - ERROR - Error in send_password_reset_email: Mail.__init__() got an unexpected keyword argument 'to_emails' | User ID: 123 | Object ID: 456
+2024-11-11 17:07:04,282 - application_logger - INFO - Function post executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-11 17:07:04,283 - django.request - ERROR - Internal Server Error: /reset_password_request
+2024-11-11 17:08:50,731 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-11 17:08:51,095 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-11 17:09:11,680 - application_logger - ERROR - Error in send_password_reset_email: Mail.__init__() got an unexpected keyword argument 'plain_text_content' | User ID: 123 | Object ID: 456
+2024-11-11 17:09:11,681 - application_logger - INFO - Function post executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-11 17:09:11,682 - django.request - ERROR - Internal Server Error: /reset_password_request
+2024-11-11 17:10:38,038 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-11 17:10:38,415 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-11 17:12:03,521 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-11 17:12:03,915 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-11 17:12:13,508 - application_logger - ERROR - Error in send_password_reset_email: Mail.__init__() got an unexpected keyword argument 'plain_text_content' | User ID: 123 | Object ID: 456
+2024-11-11 17:12:13,509 - application_logger - INFO - Function post executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-11 17:12:13,509 - django.request - ERROR - Internal Server Error: /reset_password_request
+2024-11-11 17:13:14,871 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-11 17:13:15,459 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-11 17:13:16,628 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-11 17:13:16,875 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-11 17:13:23,243 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-11 17:13:23,501 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-11 17:13:27,684 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-11 17:13:27,932 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-11 17:13:37,952 - application_logger - ERROR - Error in send_password_reset_email: 'SendGridAPIClient' object has no attribute 'send' | User ID: 123 | Object ID: 456
+2024-11-11 17:13:37,952 - application_logger - INFO - Function post executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-11 17:13:37,954 - django.request - ERROR - Internal Server Error: /reset_password_request
+2024-11-11 17:14:27,515 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-11 17:14:27,889 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-11 17:14:36,615 - application_logger - ERROR - Error in send_password_reset_email: HTTP Error 401: Unauthorized | User ID: 123 | Object ID: 456
+2024-11-11 17:14:36,616 - application_logger - INFO - Function post executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-11 17:14:36,618 - django.request - ERROR - Internal Server Error: /reset_password_request
+2024-11-11 17:15:23,284 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-11 17:15:23,690 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-11 17:15:32,393 - application_logger - ERROR - Error in send_password_reset_email: 'api_key' is an invalid keyword argument for print() | User ID: 123 | Object ID: 456
+2024-11-11 17:15:32,395 - application_logger - INFO - Function post executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-11 17:15:32,396 - django.request - ERROR - Internal Server Error: /reset_password_request
+2024-11-11 17:15:46,493 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-11 17:15:46,838 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-11 17:15:52,794 - application_logger - ERROR - Error in send_password_reset_email: HTTP Error 401: Unauthorized | User ID: 123 | Object ID: 456
+2024-11-11 17:15:52,796 - application_logger - INFO - Function post executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-11 17:15:52,796 - django.request - ERROR - Internal Server Error: /reset_password_request
+2024-11-11 17:16:18,849 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/myproj/settings.py changed, reloading.
+2024-11-11 17:16:19,230 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-11 17:16:27,715 - application_logger - ERROR - Error in send_password_reset_email: HTTP Error 400: Bad Request | User ID: 123 | Object ID: 456
+2024-11-11 17:16:27,716 - application_logger - INFO - Function post executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-11 17:16:27,716 - django.request - ERROR - Internal Server Error: /reset_password_request
+2024-11-11 17:17:00,522 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-11 17:17:00,923 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-11 17:17:03,092 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-11 17:17:03,347 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-11 17:17:04,477 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-11 17:17:04,692 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-11 17:17:05,849 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-11 17:17:06,110 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-11 17:17:07,243 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-11 17:17:07,486 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-11 17:17:08,620 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-11 17:17:08,840 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-11 17:17:30,402 - application_logger - ERROR - Error in send_password_reset_email: HTTP Error 400: Bad Request | User ID: 123 | Object ID: 456
+2024-11-11 17:17:30,411 - application_logger - INFO - Function post executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-11 17:17:30,412 - django.request - ERROR - Internal Server Error: /reset_password_request
+2024-11-11 17:18:31,909 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-11 17:18:32,269 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-11 17:18:39,470 - application_logger - ERROR - Error in send_password_reset_email: HTTP Error 400: Bad Request | User ID: 123 | Object ID: 456
+2024-11-11 17:18:39,472 - application_logger - INFO - Function post executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-11 17:18:39,473 - django.request - ERROR - Internal Server Error: /reset_password_request
+2024-11-11 17:21:08,501 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-11 17:21:08,919 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-11 17:21:13,124 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-11 17:21:13,349 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-11 17:21:14,476 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-11 17:21:14,698 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-11 17:21:16,841 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-11 17:21:17,089 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-11 17:21:21,281 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-11 17:21:21,542 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-11 17:21:23,680 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-11 17:21:23,906 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-11 17:21:26,054 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-11 17:21:26,306 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-11 17:21:28,448 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-11 17:21:28,703 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-11 17:21:42,224 - application_logger - ERROR - Error in send_password_reset_email: HTTP Error 400: Bad Request | User ID: 123 | Object ID: 456
+2024-11-11 17:21:42,225 - application_logger - INFO - Function post executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-11 17:21:42,226 - django.request - ERROR - Internal Server Error: /reset_password_request
+2024-11-11 17:23:41,361 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-11 17:23:41,760 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-11 17:23:44,957 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-11 17:23:45,179 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-11 17:23:57,153 - application_logger - ERROR - Error in send_password_reset_email: HTTP Error 403: Forbidden | User ID: 123 | Object ID: 456
+2024-11-11 17:23:57,155 - application_logger - INFO - Function post executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-11 17:23:57,156 - django.request - ERROR - Internal Server Error: /reset_password_request
+2024-11-11 17:27:25,442 - application_logger - ERROR - Error in send_password_reset_email: HTTP Error 403: Forbidden | User ID: 123 | Object ID: 456
+2024-11-11 17:27:25,443 - application_logger - INFO - Function post executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-11 17:27:25,444 - django.request - ERROR - Internal Server Error: /reset_password_request
+2024-11-11 17:33:15,151 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-11 17:33:15,688 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-11 17:33:16,783 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-11 17:33:17,125 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-11 17:33:21,355 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-11 17:33:21,812 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-11 17:33:29,070 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-11 17:33:29,395 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-11 17:33:31,570 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-11 17:33:31,831 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-11 17:33:35,003 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-11 17:33:35,423 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-11 17:33:48,851 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-11 17:33:49,308 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-11 17:33:51,523 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-11 17:33:51,756 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-11 17:33:53,902 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-11 17:33:54,135 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-11 17:33:56,293 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-11 17:33:56,540 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-11 17:33:58,680 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-11 17:33:58,901 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-11 17:34:02,061 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-11 17:34:02,322 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-11 17:34:12,707 - application_logger - ERROR - Error in send_password_reset_email: Mail.__init__() got an unexpected keyword argument 'html_content' | User ID: 123 | Object ID: 456
+2024-11-11 17:34:12,708 - application_logger - INFO - Function post executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-11 17:34:12,708 - django.request - ERROR - Internal Server Error: /reset_password_request
+2024-11-11 17:34:56,848 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-11 17:34:57,213 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-11 17:35:12,661 - application_logger - ERROR - Error in send_password_reset_email: 'SendGridAPIClient' object has no attribute 'send' | User ID: 123 | Object ID: 456
+2024-11-11 17:35:12,663 - application_logger - INFO - Function post executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-11 17:35:12,664 - django.request - ERROR - Internal Server Error: /reset_password_request
+2024-11-11 17:35:26,175 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-11 17:35:26,543 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-11 17:35:27,699 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-11 17:35:27,941 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-11 17:35:36,982 - application_logger - ERROR - Error in send_password_reset_email: 'str' object has no attribute 'get' | User ID: 123 | Object ID: 456
+2024-11-11 17:35:36,983 - application_logger - INFO - Function post executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-11 17:35:36,984 - django.request - ERROR - Internal Server Error: /reset_password_request
+2024-11-11 17:36:11,271 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-11 17:36:11,732 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-11 17:36:21,258 - application_logger - INFO - Function send_password_reset_email executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-11 17:36:21,259 - application_logger - INFO - Function post executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-11 17:39:10,026 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-11 17:39:10,421 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-11 17:39:12,585 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-11 17:39:12,836 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-11 17:39:26,266 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-11 17:39:26,610 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-11 17:39:43,079 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/myproj/settings.py changed, reloading.
+2024-11-11 17:39:43,464 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-11 17:41:02,469 - application_logger - INFO - Function get_token executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-11 17:41:02,501 - application_logger - INFO - Function list_by_user executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-11 17:41:09,654 - application_logger - INFO - Function get_queryset executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-11 17:41:09,663 - application_logger - INFO - Function perform_update executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-11 17:41:09,688 - application_logger - INFO - Function list_by_user executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-11 17:41:17,527 - application_logger - INFO - Function perform_create executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-11 17:41:17,547 - application_logger - INFO - Function create executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-11 17:41:17,571 - application_logger - INFO - Function list_by_user executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-11 17:41:23,363 - application_logger - INFO - Function get_queryset executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-11 17:41:23,368 - application_logger - INFO - Function perform_update executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-11 17:41:23,378 - application_logger - INFO - Function list_by_user executed successfully in views.py | User ID: 123 | Object ID: 456

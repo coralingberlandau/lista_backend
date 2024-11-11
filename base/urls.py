@@ -20,4 +20,8 @@ urlpatterns = [
    path('register', views.register),
    path('get_user_info/<str:email>/', views.get_user_info_by_email, name='get_user_info_by_email'),
 
+   path('reset_password_request', views.ResetPasswordRequestView.as_view(), name='reset_password_request'),
+
+   path('reset_password', views.ResetPasswordView.as_view(), name='reset_password'),
+
 ]
