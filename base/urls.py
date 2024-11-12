@@ -13,15 +13,17 @@ router.register(r'listitemimages', ListItemImageViewSet)
 
 urlpatterns = [
    path('', views.index),
-   path('test', views.test),
+   path('test/', views.test),
    path('', include(router.urls)),
-   path('login', views.MyTokenObtainPairView.as_view()),
-   path('priverty', views.priverty),
-   path('register', views.register),
+   path('login/', views.MyTokenObtainPairView.as_view()),
+   path('priverty/', views.priverty),
+   path('register/', views.register),
    path('get_user_info/<str:email>/', views.get_user_info_by_email, name='get_user_info_by_email'),
 
-   path('reset_password_request', views.ResetPasswordRequestView.as_view(), name='reset_password_request'),
+    path('user/<int:user_id>/', views.update_user, name='update_user'),
 
-   path('reset_password', views.ResetPasswordView.as_view(), name='reset_password'),
+   path('reset_password_request/', views.ResetPasswordRequestView.as_view(), name='reset_password_request'),
+
+   path('reset_password/', views.ResetPasswordView.as_view(), name='reset_password'),
 
 ]

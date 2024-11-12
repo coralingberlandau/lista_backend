@@ -2572,3 +2572,280 @@ ConnectionRefusedError: [Errno 61] Connection refused
 2024-11-11 17:41:23,363 - application_logger - INFO - Function get_queryset executed successfully in views.py | User ID: 123 | Object ID: 456
 2024-11-11 17:41:23,368 - application_logger - INFO - Function perform_update executed successfully in views.py | User ID: 123 | Object ID: 456
 2024-11-11 17:41:23,378 - application_logger - INFO - Function list_by_user executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-12 07:38:37,936 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-12 07:38:50,387 - application_logger - INFO - Function get_token executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-12 07:38:50,423 - application_logger - INFO - Function list_by_user executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-12 07:43:26,052 - application_logger - INFO - Function get_token executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-12 07:43:26,074 - application_logger - INFO - Function list_by_user executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-12 07:43:32,353 - application_logger - INFO - Function get_queryset executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-12 07:43:32,359 - application_logger - INFO - Function perform_update executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-12 07:43:32,379 - application_logger - INFO - Function list_by_user executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-12 07:43:56,104 - application_logger - INFO - Function get_queryset executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-12 07:43:56,109 - application_logger - INFO - Function perform_update executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-12 07:43:56,132 - application_logger - INFO - Function list_by_user executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-12 07:45:06,666 - application_logger - INFO - Function get_queryset executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-12 07:45:06,671 - application_logger - INFO - Function perform_update executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-12 07:45:06,694 - application_logger - INFO - Function list_by_user executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-12 07:48:40,313 - application_logger - INFO - Function get_token executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-12 07:48:40,349 - application_logger - INFO - Function list_by_user executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-12 07:51:29,471 - application_logger - INFO - Function get_token executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-12 07:51:29,511 - application_logger - INFO - Function list_by_user executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-12 07:54:28,894 - application_logger - INFO - Function get_token executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-12 07:54:28,935 - application_logger - INFO - Function list_by_user executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-12 07:55:11,894 - application_logger - INFO - Function get_token executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-12 07:55:12,022 - application_logger - INFO - Function list_by_user executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-12 07:55:48,650 - django.request - WARNING - Bad Request: /listitem/
+2024-11-12 07:55:54,485 - application_logger - INFO - Function perform_create executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-12 07:55:54,501 - application_logger - INFO - Function create executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-12 07:55:54,530 - application_logger - INFO - Function list_by_user executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-12 07:56:02,138 - application_logger - INFO - Function get_queryset executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-12 07:56:02,142 - application_logger - INFO - Function perform_update executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-12 07:56:02,161 - application_logger - INFO - Function list_by_user executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-12 08:11:01,013 - application_logger - INFO - Function get_token executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-12 08:11:01,045 - application_logger - INFO - Function list_by_user executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-12 08:12:52,810 - application_logger - INFO - Function get_token executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-12 08:12:52,841 - application_logger - INFO - Function list_by_user executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-12 08:14:35,640 - application_logger - INFO - Function get_token executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-12 08:14:35,673 - application_logger - INFO - Function list_by_user executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-12 08:19:04,952 - application_logger - INFO - Function get_token executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-12 08:19:04,985 - application_logger - INFO - Function list_by_user executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-12 08:19:51,777 - application_logger - INFO - Function get_token executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-12 08:19:51,800 - application_logger - INFO - Function list_by_user executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-12 08:20:01,004 - application_logger - INFO - Function get_token executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-12 08:20:01,034 - application_logger - INFO - Function list_by_user executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-12 08:21:04,223 - application_logger - INFO - Function get_token executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-12 08:21:04,257 - application_logger - INFO - Function list_by_user executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-12 09:00:21,070 - application_logger - INFO - Function get_token executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-12 09:00:21,099 - application_logger - INFO - Function list_by_user executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-12 09:12:07,880 - application_logger - INFO - Function get_token executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-12 09:12:07,949 - application_logger - INFO - Function list_by_user executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-12 09:12:20,496 - application_logger - INFO - Function get_token executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-12 09:12:20,532 - application_logger - INFO - Function list_by_user executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-12 09:12:21,551 - django.request - WARNING - Not Found: /user/1
+2024-11-12 09:12:45,600 - django.request - WARNING - Not Found: /user/1
+2024-11-12 09:12:58,158 - application_logger - INFO - Function get_token executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-12 09:12:58,203 - application_logger - INFO - Function list_by_user executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-12 09:16:42,236 - application_logger - INFO - Function get_token executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-12 09:16:42,303 - application_logger - INFO - Function list_by_user executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-12 09:16:46,877 - django.request - WARNING - Not Found: /user/1
+2024-11-12 11:06:29,592 - application_logger - INFO - Function get_token executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-12 11:06:29,644 - application_logger - INFO - Function list_by_user executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-12 11:06:33,331 - django.request - WARNING - Not Found: /user/1
+2024-11-12 11:06:58,618 - application_logger - INFO - Function get_token executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-12 11:06:58,672 - application_logger - INFO - Function list_by_user executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-12 11:07:01,222 - django.request - WARNING - Not Found: /user/1
+2024-11-12 11:07:37,344 - application_logger - INFO - Function get_token executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-12 11:07:37,406 - application_logger - INFO - Function list_by_user executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-12 11:07:56,441 - application_logger - INFO - Function get_token executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-12 11:07:56,514 - application_logger - INFO - Function list_by_user executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-12 11:07:59,225 - django.request - WARNING - Not Found: /user/1
+2024-11-12 11:25:35,914 - application_logger - INFO - Function get_token executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-12 11:25:36,074 - application_logger - INFO - Function list_by_user executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-12 11:25:38,465 - django.request - WARNING - Not Found: /user/1
+2024-11-12 11:25:40,940 - application_logger - INFO - Function list_by_user executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-12 12:50:40,021 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-12 12:50:40,550 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-12 12:50:51,918 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-12 12:50:52,283 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-12 12:51:02,529 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-12 12:51:02,870 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-12 12:51:03,951 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-12 12:51:04,169 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-12 12:51:05,238 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-12 12:51:05,465 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-12 12:51:17,758 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-12 12:51:18,093 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-12 12:51:19,178 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-12 12:51:19,380 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-12 12:51:25,554 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-12 12:51:25,787 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-12 12:51:26,857 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-12 12:51:27,075 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-12 12:51:28,144 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-12 12:51:28,359 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-12 12:55:19,686 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-12 12:55:34,059 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-12 12:55:34,392 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-12 12:56:45,137 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-12 12:56:45,513 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-12 12:56:54,871 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-12 12:56:55,176 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-12 12:57:31,205 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/urls.py changed, reloading.
+2024-11-12 12:57:31,586 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-12 12:57:59,395 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-12 12:57:59,742 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-12 12:58:03,940 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-12 12:58:04,215 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-12 12:58:16,625 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/urls.py changed, reloading.
+2024-11-12 12:58:16,957 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-12 12:58:18,101 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/urls.py changed, reloading.
+2024-11-12 12:58:18,322 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-12 12:58:24,600 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/urls.py changed, reloading.
+2024-11-12 12:58:24,858 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-12 12:58:25,985 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/urls.py changed, reloading.
+2024-11-12 12:58:26,224 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-12 12:58:27,372 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/urls.py changed, reloading.
+2024-11-12 12:58:27,590 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-12 12:58:29,744 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/urls.py changed, reloading.
+2024-11-12 12:58:29,981 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-12 12:58:33,164 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/urls.py changed, reloading.
+2024-11-12 12:58:33,384 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-12 12:59:49,603 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-12 12:59:49,999 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-12 12:59:58,305 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-12 12:59:58,739 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-12 13:00:09,078 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-12 13:00:09,649 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-12 13:01:10,933 - django.request - WARNING - Not Found: /login
+2024-11-12 13:01:13,828 - django.request - WARNING - Not Found: /login
+2024-11-12 13:01:31,389 - django.request - WARNING - Not Found: /login
+2024-11-12 13:01:41,696 - application_logger - INFO - Function get_token executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-12 13:01:41,768 - application_logger - INFO - Function list_by_user executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-12 13:01:46,778 - django.request - WARNING - Not Found: /user/1
+2024-11-12 13:02:21,360 - application_logger - INFO - Function view executed successfully in csrf.py | User ID: 123 | Object ID: 456
+2024-11-12 13:02:21,410 - application_logger - INFO - Function list_by_user executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-12 13:04:23,091 - application_logger - INFO - Function list_by_user executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-12 13:04:27,747 - django.request - WARNING - Bad Request: /listitem/
+2024-11-12 13:05:05,932 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/urls.py changed, reloading.
+2024-11-12 13:05:06,436 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-12 13:05:07,604 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/urls.py changed, reloading.
+2024-11-12 13:05:07,889 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-12 13:05:09,021 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/urls.py changed, reloading.
+2024-11-12 13:05:09,359 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-12 13:05:09,648 - django.request - WARNING - Not Found: /grouplists/by-user/1/
+2024-11-12 13:05:15,627 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/urls.py changed, reloading.
+2024-11-12 13:05:15,907 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-12 13:05:30,890 - application_logger - INFO - Function get_token executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-12 13:05:30,943 - application_logger - INFO - Function list_by_user executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-12 13:05:36,999 - application_logger - INFO - Function perform_create executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-12 13:05:37,016 - application_logger - INFO - Function create executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-12 13:05:37,068 - application_logger - INFO - Function list_by_user executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-12 13:05:48,617 - application_logger - INFO - Function get_queryset executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-12 13:05:48,623 - application_logger - INFO - Function perform_update executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-12 13:05:48,694 - application_logger - INFO - Function list_by_user executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-12 13:07:27,064 - application_logger - INFO - Function view executed successfully in csrf.py | User ID: 123 | Object ID: 456
+2024-11-12 13:07:27,067 - django.request - WARNING - Method Not Allowed: /user/1/
+2024-11-12 13:07:54,573 - application_logger - INFO - Function list_by_user executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-12 13:46:55,571 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-12 13:46:56,073 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-12 13:47:12,786 - application_logger - INFO - Function get_token executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-12 13:47:12,837 - application_logger - INFO - Function list_by_user executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-12 13:47:15,047 - application_logger - INFO - Function view executed successfully in csrf.py | User ID: 123 | Object ID: 456
+2024-11-12 13:47:19,901 - application_logger - INFO - Function view executed successfully in csrf.py | User ID: 123 | Object ID: 456
+2024-11-12 13:47:19,931 - application_logger - INFO - Function list_by_user executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-12 13:59:16,598 - application_logger - INFO - Function get_token executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-12 13:59:16,678 - application_logger - INFO - Function list_by_user executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-12 13:59:51,904 - application_logger - INFO - Function get_token executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-12 13:59:51,948 - application_logger - INFO - Function list_by_user executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-12 14:05:06,300 - application_logger - INFO - Function get_token executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-12 14:05:06,331 - application_logger - INFO - Function list_by_user executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-12 14:05:51,821 - application_logger - INFO - Function list_by_user executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-12 14:07:18,005 - application_logger - INFO - Function get_token executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-12 14:07:18,038 - application_logger - INFO - Function list_by_user executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-12 14:07:57,997 - application_logger - INFO - Function get_token executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-12 14:07:58,037 - application_logger - INFO - Function list_by_user executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-12 14:09:38,683 - application_logger - INFO - Function get_token executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-12 14:09:38,725 - application_logger - INFO - Function list_by_user executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-12 14:10:04,722 - application_logger - INFO - Function get_token executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-12 14:10:04,755 - application_logger - INFO - Function list_by_user executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-12 14:10:49,612 - application_logger - INFO - Function get_token executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-12 14:10:49,648 - application_logger - INFO - Function list_by_user executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-12 14:13:17,165 - application_logger - INFO - Function get_token executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-12 14:13:17,227 - application_logger - INFO - Function list_by_user executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-12 14:14:46,950 - application_logger - INFO - Function get_token executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-12 14:14:46,997 - application_logger - INFO - Function list_by_user executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-12 14:15:15,399 - application_logger - INFO - Function get_token executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-12 14:15:15,426 - application_logger - INFO - Function list_by_user executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-12 14:16:06,413 - application_logger - INFO - Function get_token executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-12 14:16:06,447 - application_logger - INFO - Function list_by_user executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-12 14:18:18,822 - application_logger - INFO - Function get_token executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-12 14:18:18,873 - application_logger - INFO - Function list_by_user executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-12 14:20:02,887 - application_logger - INFO - Function get_token executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-12 14:20:02,926 - application_logger - INFO - Function list_by_user executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-12 14:20:39,920 - application_logger - INFO - Function get_token executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-12 14:20:39,965 - application_logger - INFO - Function list_by_user executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-12 14:21:58,945 - application_logger - INFO - Function get_token executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-12 14:21:58,996 - application_logger - INFO - Function list_by_user executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-12 14:25:24,988 - application_logger - INFO - Function view executed successfully in csrf.py | User ID: 123 | Object ID: 456
+2024-11-12 14:26:29,918 - application_logger - INFO - Function get_token executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-12 14:26:29,971 - application_logger - INFO - Function list_by_user executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-12 14:27:22,662 - application_logger - INFO - Function get_token executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-12 14:27:22,695 - application_logger - INFO - Function list_by_user executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-12 14:27:39,040 - application_logger - INFO - Function get_token executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-12 14:27:39,085 - application_logger - INFO - Function list_by_user executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-12 14:28:12,522 - application_logger - INFO - Function get_token executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-12 14:28:12,557 - application_logger - INFO - Function list_by_user executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-12 14:31:35,125 - application_logger - INFO - Function get_token executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-12 14:31:35,167 - application_logger - INFO - Function list_by_user executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-12 14:31:52,203 - application_logger - INFO - Function get_token executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-12 14:31:52,242 - application_logger - INFO - Function list_by_user executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-12 14:32:33,764 - application_logger - INFO - Function get_token executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-12 14:32:33,810 - application_logger - INFO - Function list_by_user executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-12 14:33:41,060 - application_logger - INFO - Function get_token executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-12 14:33:41,086 - application_logger - INFO - Function list_by_user executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-12 14:34:52,082 - application_logger - INFO - Function get_token executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-12 14:34:52,110 - application_logger - INFO - Function list_by_user executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-12 14:43:23,298 - application_logger - INFO - Function get_token executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-12 14:43:23,329 - application_logger - INFO - Function list_by_user executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-12 14:43:54,229 - application_logger - INFO - Function get_token executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-12 14:43:54,254 - application_logger - INFO - Function list_by_user executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-12 14:44:13,428 - application_logger - INFO - Function get_token executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-12 14:44:13,458 - application_logger - INFO - Function list_by_user executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-12 14:45:27,870 - application_logger - INFO - Function get_token executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-12 14:45:27,901 - application_logger - INFO - Function list_by_user executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-12 14:45:47,881 - application_logger - INFO - Function get_token executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-12 14:45:47,906 - application_logger - INFO - Function list_by_user executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-12 14:46:04,791 - application_logger - INFO - Function get_token executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-12 14:46:04,817 - application_logger - INFO - Function list_by_user executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-12 15:17:01,487 - application_logger - INFO - Function get_token executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-12 15:17:01,516 - application_logger - INFO - Function list_by_user executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-12 15:17:15,815 - application_logger - INFO - Function get_token executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-12 15:17:15,853 - application_logger - INFO - Function list_by_user executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-12 15:20:42,604 - application_logger - INFO - Function get_token executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-12 15:20:42,630 - application_logger - INFO - Function list_by_user executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-12 15:21:43,734 - application_logger - INFO - Function get_token executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-12 15:21:43,772 - application_logger - INFO - Function list_by_user executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-12 15:22:38,167 - application_logger - INFO - Function get_token executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-12 15:22:38,203 - application_logger - INFO - Function list_by_user executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-12 15:23:13,341 - application_logger - INFO - Function get_token executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-12 15:23:13,368 - application_logger - INFO - Function list_by_user executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-12 15:24:17,682 - application_logger - INFO - Function get_token executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-12 15:24:17,708 - application_logger - INFO - Function list_by_user executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-12 15:25:45,702 - application_logger - INFO - Function get_token executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-12 15:25:45,730 - application_logger - INFO - Function list_by_user executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-12 15:26:11,967 - application_logger - INFO - Function get_token executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-12 15:26:11,996 - application_logger - INFO - Function list_by_user executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-12 15:55:59,770 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-12 15:56:00,356 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-12 15:56:02,550 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-12 15:56:02,808 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-12 15:56:55,898 - application_logger - INFO - Function post executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-12 15:56:55,899 - django.request - WARNING - Bad Request: /reset_password/
+2024-11-12 15:57:35,556 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-12 15:57:36,168 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-12 15:57:55,841 - application_logger - INFO - Function post executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-12 15:58:10,402 - django.request - WARNING - Unauthorized: /login/
+2024-11-12 15:58:19,931 - application_logger - INFO - Function get_token executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-12 15:58:20,003 - application_logger - INFO - Function list_by_user executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-12 17:22:16,481 - application_logger - INFO - Function get_token executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-12 17:22:16,534 - application_logger - INFO - Function list_by_user executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-12 17:22:19,674 - application_logger - INFO - Function list_by_user executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-12 17:23:03,930 - application_logger - INFO - Function get_token executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-12 17:23:03,998 - application_logger - INFO - Function list_by_user executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-12 17:23:10,988 - application_logger - INFO - Function view executed successfully in csrf.py | User ID: 123 | Object ID: 456
+2024-11-12 17:23:13,101 - application_logger - INFO - Function list_by_user executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-12 17:23:18,952 - application_logger - INFO - Function list_by_user executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-12 17:27:08,330 - application_logger - INFO - Function get_token executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-12 17:27:08,362 - application_logger - INFO - Function list_by_user executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-12 17:29:15,286 - application_logger - INFO - Function get_token executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-12 17:29:15,366 - application_logger - INFO - Function list_by_user executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-12 17:37:54,923 - application_logger - INFO - Function list_by_user executed successfully in views.py | User ID: 123 | Object ID: 456
+2024-11-12 18:07:05,276 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-12 18:07:05,899 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-12 18:07:40,841 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-12 18:07:41,224 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-12 18:07:56,500 - django.request - WARNING - Unauthorized: /grouplists/by-user/1/
+2024-11-12 18:14:41,826 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-12 18:14:42,231 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-12 18:14:45,422 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-12 18:14:45,662 - django.utils.autoreload - INFO - Watching for file changes with StatReloader

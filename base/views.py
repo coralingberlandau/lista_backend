@@ -1,3 +1,4 @@
+from django.shortcuts import get_object_or_404
 from rest_framework.response import Response
 from rest_framework import viewsets, status
 
@@ -211,6 +212,39 @@ def register(request):
         'access': access  # מחזיר את הטוקן
         # 'token': token.key  # החזרת הטוקן שנוצר
     }, status=status.HTTP_201_CREATED)
+
+
+# update--- http://127.0.0.1:8000/user/<int:user_id>/
+
+@log(user_id=123, object_id=456)
+@api_view(['GET', 'PATCH'])
+def update_user(request, user_id):
+    # קבלת המשתמש או הודעת שגיאה אם לא קיים
+    user = get_object_or_404(User, pk=user_id)
+
+    if request.method == 'GET':
+        # החזרת נתוני המשתמש בתגובה
+        user_data = {
+            "username": user.username,
+            "first_name": user.first_name,
+            "last_name": user.last_name,
+            "email": user.email
+        }
+        return Response(user_data, status=status.HTTP_200_OK)
+
+    elif request.method == 'PATCH':
+        data = request.data
+        # עדכון רק השדות שהועברו בבקשה
+        user.username = data.get('username', user.username)
+        user.first_name = data.get('first_name', user.first_name)
+        user.last_name = data.get('last_name', user.last_name)
+        user.email = data.get('email', user.email)
+        user.save()
+
+        return Response({"message": "Profile updated successfully!"}, status=status.HTTP_200_OK)
+
+
+
     
 @log(user_id=123, object_id=456)
 @api_view(['GET'])
@@ -249,7 +283,7 @@ class ResetPasswordView(APIView):
     @log(user_id=123, object_id=456)
     def post(self, request):
         email = request.data.get("email")
-        new_password = request.data.get("new_password")
+        new_password = request.data.get("password")
 
         if not email or not new_password:
             return Response({"error": "Email and new password are required."}, status=status.HTTP_400_BAD_REQUEST)
@@ -264,56 +298,6 @@ class ResetPasswordView(APIView):
         except User.DoesNotExist:
             return Response({"error": "User with this email does not exist."}, status=status.HTTP_404_NOT_FOUND)
         
-
-# @log(user_id=123, object_id=456)
-# def send_password_reset_email(email):
-#     sg = sendgrid.SendGridAPIClient(api_key=settings.SENDGRID_API_KEY)
-#     from_email = Email(settings.DEFAULT_FROM_EMAIL)
-#     to_email = Email(email)  # ודא שמדובר ב-Email ולא ב-string
-#     subject = "Password Reset Request"
-#     content = Content("text/plain", f"Click the link to reset your password: http://localhost:3000/reset_password?email={email}")
-#     mail = Mail(from_email, to_email, subject, content)
-
-#     try:
-#         response = sg.send(mail)
-#         print(f"Email sent to {email} with status code {response.status_code}")
-#         return response
-#     except Exception as e:
-#         print(f"Error sending email: {str(e)}")
-#         raise e
-
-# class ResetPasswordRequestView(APIView):
-#     @log(user_id=123, object_id=456)  # אנא בדוק שהדקורטור הזה אכן עובד
-#     def post(self, request):
-#         email = request.data.get("email")
-#         print(f"Received email: {email}")
-
-#         if not email:
-#             return Response({"error": "Email is required"}, status=status.HTTP_400_BAD_REQUEST)
-
-#         try:
-#             user = User.objects.get(email=email)
-
-#             # יצירת הקישור לאיפוס סיסמה
-#             reset_url = f"{settings.FRONTEND_URL}/reset-password?email={email}"
-#             print(reset_url)
-#             print(user)
-
-#             # שלח מייל עם הקישור לאיפוס סיסמה דרך SendGrid
-#             send_password_reset_email(email)  # קריאה לפונקציה שנשלחת את המייל
-
-#             print(email)
-#             return Response({"message": "Password reset email has been sent."}, status=status.HTTP_200_OK)
-
-#         except User.DoesNotExist:
-#             return Response({"error": "User with this email does not exist."}, status=status.HTTP_404_NOT_FOUND)
-
-#         except Exception as e:
-#             # לוג את השגיאה המלאה בקונסול כדי לראות פרטים נוספים
-#             print(f"Error: {str(e)}")
-#             return Response({"error": f"An error occurred: {str(e)}"}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
-
-
 # שליחת מייל איפוס סיסמה
 @log(user_id=123, object_id=456)
 def send_password_reset_email(email):
@@ -321,7 +305,7 @@ def send_password_reset_email(email):
     from_email = Email(settings.DEFAULT_FROM_EMAIL)
     to_email = Email(email)  # ודא שמדובר ב-Email ולא ב-string
     subject = "Password Reset Request"
-    content = Content("text/plain", f"Click the link to reset your password: {settings.FRONTEND_URL}/reset-password?email={email}")
+    content = Content("text/plain", f"Click the link to reset your password: {settings.FRONTEND_URL}/change-password?email={email}")
 
     print(from_email, to_email, subject, content)
     mail = Mail(from_email=from_email, to_email=to_email, subject=subject, content=content)
