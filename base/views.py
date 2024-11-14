@@ -25,12 +25,19 @@ from django.core.exceptions import PermissionDenied
 from django.core.mail import send_mail
 from rest_framework.views import APIView
 
+from django.core.files.base import ContentFile
+import base64
 
 from django.conf import settings
-
 from sendgrid import SendGridAPIClient
-
 from sendgrid.helpers.mail import Mail, Email, Content
+
+
+
+import os
+
+from django.core.files.storage import default_storage
+import json
 
 
 
@@ -40,12 +47,12 @@ class ListItemViewSet(viewsets.ModelViewSet):
     queryset = ListItem.objects.all()
     serializer_class = ListItemSerializer
 
-    @log(user_id=123, object_id=456)
+    @log()
     def get_queryset(self):
         user_id = self.request.query_params.get('user_id')
         return ListItem.objects.filter(user_id=user_id) if user_id else ListItem.objects.all()
 
-    @log(user_id=123, object_id=456)
+    @log()
     @action(detail=False, methods=['get'], url_path='by-user/(?P<user_id>\d+)')
     def get_by_user(self, request, user_id=None):
         user = request.user  # המשתמש המחובר מזוהה על ידי הטוקן
@@ -55,21 +62,21 @@ class ListItemViewSet(viewsets.ModelViewSet):
         serializer = ListItemSerializer(user_items, many=True)
         return Response(serializer.data)
 
-    @log(user_id=123, object_id=456)
+    @log()
     def perform_update(self, serializer):
         user = self.request.user
         if user.is_anonymous:
             raise PermissionDenied("User not logged in.")
         serializer.save(user=user)  # שמירה של המשתמש המחובר
 
-    @log(user_id=123, object_id=456)
+    @log()
     def perform_create(self, serializer):
         user = self.request.user
         if user.is_anonymous:
             raise PermissionDenied("User not logged in.")
         serializer.save(user=user)
 
-    @log(user_id=123, object_id=456)
+    @log()
     @action(detail=True, methods=['patch'])
     def delete_item(self, request, pk=None):
         """
@@ -87,9 +94,6 @@ class ListItemViewSet(viewsets.ModelViewSet):
         except ListItem.DoesNotExist:
             return Response({"error": "Item not found!"}, status=404)
         
-class ListItemImageViewSet(viewsets.ModelViewSet):
-    queryset = ListItemImage.objects.all()
-    serializer_class = ListItemImageSerializer
 
 # ViewSet for GroupList
 class GroupListViewSet(viewsets.ModelViewSet):
@@ -97,7 +101,7 @@ class GroupListViewSet(viewsets.ModelViewSet):
     serializer_class = GroupListSerializer
     permission_classes = [IsAuthenticated]
 
-    @log(user_id=123, object_id=456)
+    @log()
     def get_queryset(self):
         user_id = self.request.query_params.get('user_id', None)
 
@@ -105,7 +109,7 @@ class GroupListViewSet(viewsets.ModelViewSet):
         list_item_ids = groupList.values_list('id', flat=True)
         return ListItem.objects.filter(id__in=list_item_ids)   
                                             
-    @log(user_id=123, object_id=456)
+    @log()
     def create(self, request, *args, **kwargs):
         # הוספת המשתמש המחובר כמשתמש ברשומה החדשה
         data = request.data.copy()
@@ -123,7 +127,7 @@ class GroupListViewSet(viewsets.ModelViewSet):
             status=status.HTTP_201_CREATED
         )
     
-    @log(user_id=123, object_id=456)
+    @log()
     def update(self, request, *args, **kwargs):
         # קבלת הרשומה לפי ה-PK
         instance = self.get_object()
@@ -151,7 +155,7 @@ class GroupListViewSet(viewsets.ModelViewSet):
             status=status.HTTP_200_OK
         )
     
-    @log(user_id=123, object_id=456)
+    @log()
     @action(detail=False, methods=['get'], url_path='by-user/(?P<user_id>\d+)')
     def list_by_user(self, request, user_id):
         user_id = request.user.id
@@ -166,7 +170,7 @@ class GroupListViewSet(viewsets.ModelViewSet):
 
 class MyTokenObtainPairSerializer(TokenObtainPairSerializer):
     @classmethod
-    @log(user_id=123, object_id=456)
+    @log()
     def get_token(cls, user):
         token = super().get_token(user)
         # Add custom claims
@@ -183,7 +187,7 @@ class MyTokenObtainPairView(TokenObtainPairView):
    serializer_class = MyTokenObtainPairSerializer
 
 # register --- http://127.0.0.1:8000/register
-@log(user_id=123, object_id=456)
+@log()
 @api_view(['POST'])
 def register(request):
     if User.objects.filter(username=request.data['username']).exists():
@@ -216,7 +220,7 @@ def register(request):
 
 # update--- http://127.0.0.1:8000/user/<int:user_id>/
 
-@log(user_id=123, object_id=456)
+@log()
 @api_view(['GET', 'PATCH'])
 def update_user(request, user_id):
     # קבלת המשתמש או הודעת שגיאה אם לא קיים
@@ -246,23 +250,23 @@ def update_user(request, user_id):
 
 
     
-@log(user_id=123, object_id=456)
+@log()
 @api_view(['GET'])
 def index(req):
    return Response({'hello': 'world'})
 
-@log(user_id=123, object_id=456)
+@log()
 @api_view(['GET'])
 def test(req):
    return Response({'test': 'success'}) 
 
-@log(user_id=123, object_id=456)
+@log()
 @api_view(['GET'])
 @permission_classes([IsAuthenticated])
 def priverty(req):
   return Response({'priverty': 'success'})
 
-@log(user_id=123, object_id=456)
+@log()
 @api_view(['GET'])
 def get_user_info_by_email(request, email):
     email = email
@@ -280,7 +284,7 @@ def get_user_info_by_email(request, email):
     
 
 class ResetPasswordView(APIView):
-    @log(user_id=123, object_id=456)
+    @log()
     def post(self, request):
         email = request.data.get("email")
         new_password = request.data.get("password")
@@ -299,7 +303,7 @@ class ResetPasswordView(APIView):
             return Response({"error": "User with this email does not exist."}, status=status.HTTP_404_NOT_FOUND)
         
 # שליחת מייל איפוס סיסמה
-@log(user_id=123, object_id=456)
+@log()
 def send_password_reset_email(email):
     sg = SendGridAPIClient(api_key=settings.SENDGRID_API_KEY)
     from_email = Email(settings.DEFAULT_FROM_EMAIL)
@@ -319,7 +323,7 @@ def send_password_reset_email(email):
 
 # קלאס לפונקציה שמטפלת בבקשה לשליחת מייל איפוס סיסמה
 class ResetPasswordRequestView(APIView):
-    @log(user_id=123, object_id=456)  # אנא בדוק שהדקורטור הזה אכן עובד
+    @log()
     def post(self, request):
         email = request.data.get("email")
         print(f"Received email: {email}")
@@ -344,3 +348,78 @@ class ResetPasswordRequestView(APIView):
             # לוג את השגיאה המלאה בקונסול כדי לראות פרטים נוספים
             print(f"Error: {str(e)}")
             return Response({"error": f"An error occurred: {str(e)}"}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
+        
+class ListItemImageViewSet(viewsets.ModelViewSet):
+    queryset = ListItemImage.objects.all()
+    serializer_class = ListItemImageSerializer
+
+    @log()
+    @action(detail=False, methods=['post'])
+    def upload_images(self, request):
+        list_item_id = request.data.get('list_item')
+        images_data = request.data.getlist('images')
+
+        if not list_item_id:
+            return Response({"error": "list_item is required."}, status=status.HTTP_400_BAD_REQUEST)
+        if not images_data:
+            return Response({"error": "images array is required."}, status=status.HTTP_400_BAD_REQUEST)
+
+        # בדיקת קיום הפריט
+        try:
+            list_item = ListItem.objects.get(id=list_item_id)
+        except ListItem.DoesNotExist:
+            return Response({"error": "List item not found."}, status=status.HTTP_404_NOT_FOUND)
+
+        image_instances = []
+        for image_data in images_data:
+            try:
+                # המרת Base64 לנתוני JSON
+                image_json = json.loads(image_data)
+                base64_image = image_json['uri']
+                file_name = image_json['fileName']
+                mime_type = image_json['mimeType']
+                index = image_json['index']
+
+                    # הגדרת סיומת הקובץ מ-MIME type (jpeg, png, וכו')
+                extension = mime_type.split('/')[1] if '/' in mime_type else 'jpeg'
+                image_file_name = f"{file_name or f'image_{index}'}.{extension}"
+
+                    # יצירת ContentFile ושמירה
+                image_data = base64.b64decode(base64_image)
+                image_content = ContentFile(image_data, name=image_file_name)
+                file_path = default_storage.save(os.path.join('list_item_images', image_file_name), image_content)
+
+                    # יצירת מופע ListItemImage עם הנתיב
+                image_instance = ListItemImage(
+                    list_item=list_item,
+                    image=file_path,  # שמירת הנתיב לשימוש עתידי
+                    index=index,
+                    mime_type=mime_type
+                )
+                image_instances.append(image_instance)
+            except Exception as e:
+                return Response({"error": "Failed to decode base64 image", "details": str(e)}, status=status.HTTP_400_BAD_REQUEST)
+
+            # שמירת כל המופעים בבסיס הנתונים
+        ListItemImage.objects.bulk_create(image_instances)
+        return Response({"status": "Images uploaded successfully"}, status=status.HTTP_201_CREATED)
+        
+
+
+    @log()
+    @action(detail=True, methods=['get'])
+    def get_images_for_list_item(self, request, list_item_id):
+        index = request.GET.get('index')  # קבלת אינדקס מהבקשה, אם קיים
+        if index is not None:
+            images = ListItemImage.objects.filter(list_item_id=list_item_id, index=index)
+        else:
+            images = ListItemImage.objects.filter(list_item_id=list_item_id)
+            
+        image_data = [
+            {
+                "id": image.id,
+                "url": image.image.url,
+                "index": image.index
+            } for image in images
+        ]
+        return Response({"images": image_data})

@@ -48,4 +48,3 @@ class ListItemImageSerializer(serializers.ModelSerializer):
     class Meta:
         model = ListItemImage
         fields = '__all__'
-        extra_kwargs = {'list_item': {'write_only': True}}
