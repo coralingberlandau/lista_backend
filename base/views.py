@@ -406,15 +406,11 @@ class ListItemImageViewSet(viewsets.ModelViewSet):
         
 
 
-    @log()
-    @action(detail=True, methods=['get'])
+    # @log()
+    # @action(detail=True, methods=['get'])
     def get_images_for_list_item(self, request, list_item_id):
-        index = request.GET.get('index')  # קבלת אינדקס מהבקשה, אם קיים
-        if index is not None:
-            images = ListItemImage.objects.filter(list_item_id=list_item_id, index=index)
-        else:
-            images = ListItemImage.objects.filter(list_item_id=list_item_id)
-            
+        print('here')
+        images = ListItemImage.objects.filter(list_item_id=list_item_id)
         image_data = [
             {
                 "id": image.id,

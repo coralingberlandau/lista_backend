@@ -812,3 +812,396 @@ TypeError: ListItemImageViewSet.get_images_for_list_item() got an unexpected key
 2024-11-14 09:14:36,368 - application_logger - INFO - Function perform_update executed successfully in views.py | Unknown User | No Object ID | Result: None
 2024-11-14 09:14:36,395 - application_logger - INFO - Function upload_images executed successfully in views.py | Unknown User | No Object ID | Result: <Response status_code=201, "text/html; charset=utf-8">
 2024-11-14 09:14:36,432 - application_logger - INFO - Function list_by_user executed successfully in views.py | Unknown User | No Object ID | Result: <Response status_code=200, "text/html; charset=utf-8">
+2024-11-14 09:25:49,419 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-14 09:25:55,787 - application_logger - INFO - Function get_token executed successfully in views.py | Unknown User | No Object ID | Result: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTczOTM1MjM1NSwiaWF0IjoxNzMxNTc2MzU1LCJqdGkiOiI1NWUxYzg1NTI3Yzk0ZDViYjYwZWE1ZjA1YWI3Mjg5NCIsInVzZXJfaWQiOjEsInVzZXJuYW1lIjoiY29yYWwifQ._X2NquZHV8iHOaa_SaTcuA_fEK_MbdHgfKOvl9qOzcU
+2024-11-14 09:25:55,870 - application_logger - INFO - Function list_by_user executed successfully in views.py | Unknown User | No Object ID | Result: <Response status_code=200, "text/html; charset=utf-8">
+2024-11-14 09:25:59,029 - application_logger - ERROR - Error in get_images_for_list_item: ListItemImageViewSet.get_images_for_list_item() got an unexpected keyword argument 'pk' | Unknown User | No Object ID | Args: (<base.views.ListItemImageViewSet object at 0x1032fcdd0>, <rest_framework.request.Request: GET '/listitemimages/1/get_images_for_list_item/'>), Kwargs: {'pk': '1'}
+2024-11-14 09:25:59,031 - application_logger - ERROR - Stack Trace: Traceback (most recent call last):
+  File "/Users/coralingber/Desktop/untitled folder 2/lista/backend/base/logging_utils.py", line 38, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+TypeError: ListItemImageViewSet.get_images_for_list_item() got an unexpected keyword argument 'pk'
+
+2024-11-14 09:25:59,084 - django.request - ERROR - Internal Server Error: /listitemimages/1/get_images_for_list_item/
+Traceback (most recent call last):
+  File "/Users/coralingber/Desktop/untitled folder 2/lista/backend/env/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/coralingber/Desktop/untitled folder 2/lista/backend/env/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/coralingber/Desktop/untitled folder 2/lista/backend/env/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/coralingber/Desktop/untitled folder 2/lista/backend/env/lib/python3.12/site-packages/rest_framework/viewsets.py", line 124, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/coralingber/Desktop/untitled folder 2/lista/backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/coralingber/Desktop/untitled folder 2/lista/backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/coralingber/Desktop/untitled folder 2/lista/backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Users/coralingber/Desktop/untitled folder 2/lista/backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/coralingber/Desktop/untitled folder 2/lista/backend/base/logging_utils.py", line 38, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+TypeError: ListItemImageViewSet.get_images_for_list_item() got an unexpected keyword argument 'pk'
+2024-11-14 09:38:00,965 - application_logger - INFO - Function get_token executed successfully in views.py | Unknown User | No Object ID | Result: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTczOTM1MzA4MCwiaWF0IjoxNzMxNTc3MDgwLCJqdGkiOiIzZGQ5MzIyNDY4Nzk0Zjg1OTY4Zjg2N2FjM2ViMjQwNCIsInVzZXJfaWQiOjEsInVzZXJuYW1lIjoiY29yYWwifQ.j857EENKRfVo-6Q_4V-Wx2ka3n09WOiEL2wHAdl3Fm8
+2024-11-14 09:38:01,047 - application_logger - INFO - Function list_by_user executed successfully in views.py | Unknown User | No Object ID | Result: <Response status_code=200, "text/html; charset=utf-8">
+2024-11-14 09:38:03,517 - application_logger - ERROR - Error in get_images_for_list_item: ListItemImageViewSet.get_images_for_list_item() got an unexpected keyword argument 'pk' | Unknown User | No Object ID | Args: (<base.views.ListItemImageViewSet object at 0x103566450>, <rest_framework.request.Request: GET '/listitemimages/1/get_images_for_list_item/'>), Kwargs: {'pk': '1'}
+2024-11-14 09:38:03,520 - application_logger - ERROR - Stack Trace: Traceback (most recent call last):
+  File "/Users/coralingber/Desktop/untitled folder 2/lista/backend/base/logging_utils.py", line 38, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+TypeError: ListItemImageViewSet.get_images_for_list_item() got an unexpected keyword argument 'pk'
+
+2024-11-14 09:38:03,578 - django.request - ERROR - Internal Server Error: /listitemimages/1/get_images_for_list_item/
+Traceback (most recent call last):
+  File "/Users/coralingber/Desktop/untitled folder 2/lista/backend/env/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/coralingber/Desktop/untitled folder 2/lista/backend/env/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/coralingber/Desktop/untitled folder 2/lista/backend/env/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/coralingber/Desktop/untitled folder 2/lista/backend/env/lib/python3.12/site-packages/rest_framework/viewsets.py", line 124, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/coralingber/Desktop/untitled folder 2/lista/backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/coralingber/Desktop/untitled folder 2/lista/backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/coralingber/Desktop/untitled folder 2/lista/backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Users/coralingber/Desktop/untitled folder 2/lista/backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/coralingber/Desktop/untitled folder 2/lista/backend/base/logging_utils.py", line 38, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+TypeError: ListItemImageViewSet.get_images_for_list_item() got an unexpected keyword argument 'pk'
+2024-11-14 09:38:57,398 - application_logger - INFO - Function get_token executed successfully in views.py | Unknown User | No Object ID | Result: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTczOTM1MzEzNywiaWF0IjoxNzMxNTc3MTM3LCJqdGkiOiIxZTIwMzNhYzBlMjA0MGFmYTk4ZmU0YWYwNWFkY2Q1ZCIsInVzZXJfaWQiOjEsInVzZXJuYW1lIjoiY29yYWwifQ.ELeDcMPaKbnhJVi3Lho087zWeGKhZkcxsjKu3ovXlas
+2024-11-14 09:38:57,441 - application_logger - INFO - Function list_by_user executed successfully in views.py | Unknown User | No Object ID | Result: <Response status_code=200, "text/html; charset=utf-8">
+2024-11-14 09:38:59,075 - application_logger - ERROR - Error in get_images_for_list_item: ListItemImageViewSet.get_images_for_list_item() got an unexpected keyword argument 'pk' | Unknown User | No Object ID | Args: (<base.views.ListItemImageViewSet object at 0x1032fe7b0>, <rest_framework.request.Request: GET '/listitemimages/1/get_images_for_list_item/'>), Kwargs: {'pk': '1'}
+2024-11-14 09:38:59,077 - application_logger - ERROR - Stack Trace: Traceback (most recent call last):
+  File "/Users/coralingber/Desktop/untitled folder 2/lista/backend/base/logging_utils.py", line 38, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+TypeError: ListItemImageViewSet.get_images_for_list_item() got an unexpected keyword argument 'pk'
+
+2024-11-14 09:38:59,135 - django.request - ERROR - Internal Server Error: /listitemimages/1/get_images_for_list_item/
+Traceback (most recent call last):
+  File "/Users/coralingber/Desktop/untitled folder 2/lista/backend/env/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/coralingber/Desktop/untitled folder 2/lista/backend/env/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/coralingber/Desktop/untitled folder 2/lista/backend/env/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/coralingber/Desktop/untitled folder 2/lista/backend/env/lib/python3.12/site-packages/rest_framework/viewsets.py", line 124, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/coralingber/Desktop/untitled folder 2/lista/backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/coralingber/Desktop/untitled folder 2/lista/backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/coralingber/Desktop/untitled folder 2/lista/backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Users/coralingber/Desktop/untitled folder 2/lista/backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/coralingber/Desktop/untitled folder 2/lista/backend/base/logging_utils.py", line 38, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+TypeError: ListItemImageViewSet.get_images_for_list_item() got an unexpected keyword argument 'pk'
+2024-11-14 09:43:53,108 - application_logger - INFO - Function get_token executed successfully in views.py | Unknown User | No Object ID | Result: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTczOTM1MzQzMywiaWF0IjoxNzMxNTc3NDMzLCJqdGkiOiI0NmY2ZTczNjVhMGE0MjQzODU4MWY3M2U4N2NhZWZmMCIsInVzZXJfaWQiOjEsInVzZXJuYW1lIjoiY29yYWwifQ.BC12335BaLK0blZJdfIM10QEjQoligC2mDaRwoEOyWs
+2024-11-14 09:43:53,227 - application_logger - INFO - Function list_by_user executed successfully in views.py | Unknown User | No Object ID | Result: <Response status_code=200, "text/html; charset=utf-8">
+2024-11-14 09:43:55,053 - application_logger - ERROR - Error in get_images_for_list_item: ListItemImageViewSet.get_images_for_list_item() got an unexpected keyword argument 'pk' | Unknown User | No Object ID | Args: (<base.views.ListItemImageViewSet object at 0x1035d9400>, <rest_framework.request.Request: GET '/listitemimages/1/get_images_for_list_item/'>), Kwargs: {'pk': '1'}
+2024-11-14 09:43:55,067 - application_logger - ERROR - Stack Trace: Traceback (most recent call last):
+  File "/Users/coralingber/Desktop/untitled folder 2/lista/backend/base/logging_utils.py", line 38, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+TypeError: ListItemImageViewSet.get_images_for_list_item() got an unexpected keyword argument 'pk'
+
+2024-11-14 09:43:55,103 - django.request - ERROR - Internal Server Error: /listitemimages/1/get_images_for_list_item/
+Traceback (most recent call last):
+  File "/Users/coralingber/Desktop/untitled folder 2/lista/backend/env/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/coralingber/Desktop/untitled folder 2/lista/backend/env/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/coralingber/Desktop/untitled folder 2/lista/backend/env/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/coralingber/Desktop/untitled folder 2/lista/backend/env/lib/python3.12/site-packages/rest_framework/viewsets.py", line 124, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/coralingber/Desktop/untitled folder 2/lista/backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/coralingber/Desktop/untitled folder 2/lista/backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/coralingber/Desktop/untitled folder 2/lista/backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Users/coralingber/Desktop/untitled folder 2/lista/backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/coralingber/Desktop/untitled folder 2/lista/backend/base/logging_utils.py", line 38, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+TypeError: ListItemImageViewSet.get_images_for_list_item() got an unexpected keyword argument 'pk'
+2024-11-14 09:44:58,529 - application_logger - INFO - Function get_token executed successfully in views.py | Unknown User | No Object ID | Result: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTczOTM1MzQ5OCwiaWF0IjoxNzMxNTc3NDk4LCJqdGkiOiI2ZGEwM2NjMjJmMzQ0NzY1YWJiZmEwNTc5OGEzMmUyNyIsInVzZXJfaWQiOjEsInVzZXJuYW1lIjoiY29yYWwifQ.Q0ED-iU3L9qSHy5JvGHYDO-a_knNAvoqtYVRDNKiT0o
+2024-11-14 09:44:58,571 - application_logger - INFO - Function list_by_user executed successfully in views.py | Unknown User | No Object ID | Result: <Response status_code=200, "text/html; charset=utf-8">
+2024-11-14 09:45:00,089 - application_logger - ERROR - Error in get_images_for_list_item: ListItemImageViewSet.get_images_for_list_item() got an unexpected keyword argument 'pk' | Unknown User | No Object ID | Args: (<base.views.ListItemImageViewSet object at 0x1035db7a0>, <rest_framework.request.Request: GET '/listitemimages/1/get_images_for_list_item/'>), Kwargs: {'pk': '1'}
+2024-11-14 09:45:00,091 - application_logger - ERROR - Stack Trace: Traceback (most recent call last):
+  File "/Users/coralingber/Desktop/untitled folder 2/lista/backend/base/logging_utils.py", line 38, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+TypeError: ListItemImageViewSet.get_images_for_list_item() got an unexpected keyword argument 'pk'
+
+2024-11-14 09:45:00,142 - django.request - ERROR - Internal Server Error: /listitemimages/1/get_images_for_list_item/
+Traceback (most recent call last):
+  File "/Users/coralingber/Desktop/untitled folder 2/lista/backend/env/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/coralingber/Desktop/untitled folder 2/lista/backend/env/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/coralingber/Desktop/untitled folder 2/lista/backend/env/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/coralingber/Desktop/untitled folder 2/lista/backend/env/lib/python3.12/site-packages/rest_framework/viewsets.py", line 124, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/coralingber/Desktop/untitled folder 2/lista/backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/coralingber/Desktop/untitled folder 2/lista/backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/coralingber/Desktop/untitled folder 2/lista/backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Users/coralingber/Desktop/untitled folder 2/lista/backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/coralingber/Desktop/untitled folder 2/lista/backend/base/logging_utils.py", line 38, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+TypeError: ListItemImageViewSet.get_images_for_list_item() got an unexpected keyword argument 'pk'
+2024-11-14 09:45:42,889 - application_logger - INFO - Function perform_create executed successfully in views.py | Unknown User | No Object ID | Result: None
+2024-11-14 09:45:42,929 - application_logger - INFO - Function create executed successfully in views.py | Unknown User | No Object ID | Result: <Response status_code=201, "text/html; charset=utf-8">
+2024-11-14 09:45:43,016 - application_logger - INFO - Function upload_images executed successfully in views.py | Unknown User | No Object ID | Result: <Response status_code=201, "text/html; charset=utf-8">
+2024-11-14 09:45:43,056 - application_logger - INFO - Function list_by_user executed successfully in views.py | Unknown User | No Object ID | Result: <Response status_code=200, "text/html; charset=utf-8">
+2024-11-14 09:47:24,229 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-14 09:47:24,653 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-14 09:47:29,877 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-14 09:47:30,213 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-14 09:47:31,333 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-14 09:47:31,531 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-14 09:47:32,583 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-14 09:47:32,835 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-14 09:47:45,244 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-14 09:47:45,599 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-14 09:47:49,800 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-14 09:47:50,046 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-14 09:52:33,340 - application_logger - INFO - Function get_token executed successfully in views.py | Unknown User | No Object ID | Result: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTczOTM1Mzk1MywiaWF0IjoxNzMxNTc3OTUzLCJqdGkiOiIxZjljYTc0ZDkzZTg0NTY4ODBjNTIxYWM0NDU0YTllMiIsInVzZXJfaWQiOjEsInVzZXJuYW1lIjoiY29yYWwifQ.wgzuWW2AC5pmSdPdWRoQLTBPrjnKByHNrgGwBl84fyg
+2024-11-14 09:52:33,450 - application_logger - INFO - Function list_by_user executed successfully in views.py | Unknown User | No Object ID | Result: <Response status_code=200, "text/html; charset=utf-8">
+2024-11-14 09:52:37,414 - application_logger - ERROR - Error in get_images_for_list_item: ListItemImageViewSet.get_images_for_list_item() got an unexpected keyword argument 'pk' | Unknown User | No Object ID | Args: (<base.views.ListItemImageViewSet object at 0x104c7c3b0>, <rest_framework.request.Request: GET '/listitemimages/78/get_images_for_list_item/'>), Kwargs: {'pk': '78'}
+2024-11-14 09:52:37,419 - application_logger - ERROR - Stack Trace: Traceback (most recent call last):
+  File "/Users/coralingber/Desktop/untitled folder 2/lista/backend/base/logging_utils.py", line 38, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+TypeError: ListItemImageViewSet.get_images_for_list_item() got an unexpected keyword argument 'pk'
+
+2024-11-14 09:52:37,483 - django.request - ERROR - Internal Server Error: /listitemimages/78/get_images_for_list_item/
+Traceback (most recent call last):
+  File "/Users/coralingber/Desktop/untitled folder 2/lista/backend/env/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/coralingber/Desktop/untitled folder 2/lista/backend/env/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/coralingber/Desktop/untitled folder 2/lista/backend/env/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/coralingber/Desktop/untitled folder 2/lista/backend/env/lib/python3.12/site-packages/rest_framework/viewsets.py", line 124, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/coralingber/Desktop/untitled folder 2/lista/backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/coralingber/Desktop/untitled folder 2/lista/backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/coralingber/Desktop/untitled folder 2/lista/backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Users/coralingber/Desktop/untitled folder 2/lista/backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/coralingber/Desktop/untitled folder 2/lista/backend/base/logging_utils.py", line 38, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+TypeError: ListItemImageViewSet.get_images_for_list_item() got an unexpected keyword argument 'pk'
+2024-11-14 09:53:38,651 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/urls.py changed, reloading.
+2024-11-14 09:53:39,046 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-14 09:53:40,200 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/urls.py changed, reloading.
+2024-11-14 09:53:40,431 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-14 09:53:46,727 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/urls.py changed, reloading.
+2024-11-14 09:53:46,982 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-14 09:54:04,835 - application_logger - INFO - Function get_token executed successfully in views.py | Unknown User | No Object ID | Result: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTczOTM1NDA0NCwiaWF0IjoxNzMxNTc4MDQ0LCJqdGkiOiJlYTcwMTcyNGFmZjk0NDEwOGFiMGRjODVlOGY3MDllNCIsInVzZXJfaWQiOjEsInVzZXJuYW1lIjoiY29yYWwifQ.PMfrOwSOMbdtAvedICMclVjg4RNTEYpRypSpnoCf0Ak
+2024-11-14 09:54:04,864 - application_logger - INFO - Function list_by_user executed successfully in views.py | Unknown User | No Object ID | Result: <Response status_code=200, "text/html; charset=utf-8">
+2024-11-14 09:54:09,142 - application_logger - ERROR - Error in get_images_for_list_item: ListItemImageViewSet.get_images_for_list_item() got an unexpected keyword argument 'pk' | Unknown User | No Object ID | Args: (<base.views.ListItemImageViewSet object at 0x103643da0>, <rest_framework.request.Request: GET '/listitemimages/78/get_images_for_list_item/'>), Kwargs: {'pk': '78'}
+2024-11-14 09:54:09,144 - application_logger - ERROR - Stack Trace: Traceback (most recent call last):
+  File "/Users/coralingber/Desktop/untitled folder 2/lista/backend/base/logging_utils.py", line 38, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+TypeError: ListItemImageViewSet.get_images_for_list_item() got an unexpected keyword argument 'pk'
+
+2024-11-14 09:54:09,172 - django.request - ERROR - Internal Server Error: /listitemimages/78/get_images_for_list_item/
+Traceback (most recent call last):
+  File "/Users/coralingber/Desktop/untitled folder 2/lista/backend/env/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/coralingber/Desktop/untitled folder 2/lista/backend/env/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/coralingber/Desktop/untitled folder 2/lista/backend/env/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/coralingber/Desktop/untitled folder 2/lista/backend/env/lib/python3.12/site-packages/rest_framework/viewsets.py", line 124, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/coralingber/Desktop/untitled folder 2/lista/backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/coralingber/Desktop/untitled folder 2/lista/backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/coralingber/Desktop/untitled folder 2/lista/backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Users/coralingber/Desktop/untitled folder 2/lista/backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/coralingber/Desktop/untitled folder 2/lista/backend/base/logging_utils.py", line 38, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+TypeError: ListItemImageViewSet.get_images_for_list_item() got an unexpected keyword argument 'pk'
+2024-11-14 09:54:35,461 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-14 09:54:35,909 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-14 09:54:38,099 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-14 09:54:38,356 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-14 09:54:39,526 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-14 09:54:39,781 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-14 09:54:40,919 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-14 09:54:41,336 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-14 09:54:51,449 - application_logger - INFO - Function get_token executed successfully in views.py | Unknown User | No Object ID | Result: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTczOTM1NDA5MSwiaWF0IjoxNzMxNTc4MDkxLCJqdGkiOiI2ZWVhNDQ5MDBkNzM0OGU3ODEyOWRlN2RkNTk2ZWQ5NyIsInVzZXJfaWQiOjEsInVzZXJuYW1lIjoiY29yYWwifQ.ycg6k4-akXSUNJG1U-vjHshhquFA-nm6aO28kNgNll8
+2024-11-14 09:54:51,481 - application_logger - INFO - Function list_by_user executed successfully in views.py | Unknown User | No Object ID | Result: <Response status_code=200, "text/html; charset=utf-8">
+2024-11-14 09:55:00,844 - application_logger - ERROR - Error in get_images_for_list_item: ListItemImageViewSet.get_images_for_list_item() got an unexpected keyword argument 'pk' | Unknown User | No Object ID | Args: (<base.views.ListItemImageViewSet object at 0x107eac1d0>, <rest_framework.request.Request: GET '/listitemimages/78/get_images_for_list_item/'>), Kwargs: {'pk': '78'}
+2024-11-14 09:55:00,847 - application_logger - ERROR - Stack Trace: Traceback (most recent call last):
+  File "/Users/coralingber/Desktop/untitled folder 2/lista/backend/base/logging_utils.py", line 38, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+TypeError: ListItemImageViewSet.get_images_for_list_item() got an unexpected keyword argument 'pk'
+
+2024-11-14 09:55:00,942 - django.request - ERROR - Internal Server Error: /listitemimages/78/get_images_for_list_item/
+Traceback (most recent call last):
+  File "/Users/coralingber/Desktop/untitled folder 2/lista/backend/env/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/coralingber/Desktop/untitled folder 2/lista/backend/env/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/coralingber/Desktop/untitled folder 2/lista/backend/env/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/coralingber/Desktop/untitled folder 2/lista/backend/env/lib/python3.12/site-packages/rest_framework/viewsets.py", line 124, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/coralingber/Desktop/untitled folder 2/lista/backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/coralingber/Desktop/untitled folder 2/lista/backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/coralingber/Desktop/untitled folder 2/lista/backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Users/coralingber/Desktop/untitled folder 2/lista/backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/coralingber/Desktop/untitled folder 2/lista/backend/base/logging_utils.py", line 38, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+TypeError: ListItemImageViewSet.get_images_for_list_item() got an unexpected keyword argument 'pk'
+2024-11-14 09:57:04,049 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-14 09:57:13,978 - application_logger - INFO - Function get_token executed successfully in views.py | Unknown User | No Object ID | Result: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTczOTM1NDIzMywiaWF0IjoxNzMxNTc4MjMzLCJqdGkiOiIyMjFmMzAwMTlhZjM0MmZmODY3NGVhMDU1ZTU2Yzk1MCIsInVzZXJfaWQiOjEsInVzZXJuYW1lIjoiY29yYWwifQ.odvp7p6CpFjrp24tmpJZYVBfr7z4utyxQNObQYCa6nU
+2024-11-14 09:57:14,022 - application_logger - INFO - Function list_by_user executed successfully in views.py | Unknown User | No Object ID | Result: <Response status_code=200, "text/html; charset=utf-8">
+2024-11-14 09:57:17,984 - application_logger - ERROR - Error in get_images_for_list_item: ListItemImageViewSet.get_images_for_list_item() got an unexpected keyword argument 'pk' | Unknown User | No Object ID | Args: (<base.views.ListItemImageViewSet object at 0x106935520>, <rest_framework.request.Request: GET '/listitemimages/78/get_images_for_list_item/'>), Kwargs: {'pk': '78'}
+2024-11-14 09:57:17,987 - application_logger - ERROR - Stack Trace: Traceback (most recent call last):
+  File "/Users/coralingber/Desktop/untitled folder 2/lista/backend/base/logging_utils.py", line 38, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+TypeError: ListItemImageViewSet.get_images_for_list_item() got an unexpected keyword argument 'pk'
+
+2024-11-14 09:57:18,054 - django.request - ERROR - Internal Server Error: /listitemimages/78/get_images_for_list_item/
+Traceback (most recent call last):
+  File "/Users/coralingber/Desktop/untitled folder 2/lista/backend/env/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/coralingber/Desktop/untitled folder 2/lista/backend/env/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/coralingber/Desktop/untitled folder 2/lista/backend/env/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/coralingber/Desktop/untitled folder 2/lista/backend/env/lib/python3.12/site-packages/rest_framework/viewsets.py", line 124, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/coralingber/Desktop/untitled folder 2/lista/backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/coralingber/Desktop/untitled folder 2/lista/backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/coralingber/Desktop/untitled folder 2/lista/backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Users/coralingber/Desktop/untitled folder 2/lista/backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/coralingber/Desktop/untitled folder 2/lista/backend/base/logging_utils.py", line 38, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+TypeError: ListItemImageViewSet.get_images_for_list_item() got an unexpected keyword argument 'pk'
+2024-11-14 09:58:38,780 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-14 09:58:39,192 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-14 09:58:51,179 - application_logger - INFO - Function get_token executed successfully in views.py | Unknown User | No Object ID | Result: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTczOTM1NDMzMSwiaWF0IjoxNzMxNTc4MzMxLCJqdGkiOiI4OWYxZTY2M2NiMTA0Y2Y1YjQyYmQ4MjBmZWMwMzEyMCIsInVzZXJfaWQiOjEsInVzZXJuYW1lIjoiY29yYWwifQ.-4PhCDqvswa9ByJmpqrmDat82it0rjQwDBn2JjSgK_k
+2024-11-14 09:58:51,211 - application_logger - INFO - Function list_by_user executed successfully in views.py | Unknown User | No Object ID | Result: <Response status_code=200, "text/html; charset=utf-8">
+2024-11-14 10:00:17,338 - application_logger - INFO - Function get_token executed successfully in views.py | Unknown User | No Object ID | Result: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTczOTM1NDQxNywiaWF0IjoxNzMxNTc4NDE3LCJqdGkiOiI0MTE3NThlMjY4YzA0ZmNlYWUzOWViZDAwNGRjNjg2YyIsInVzZXJfaWQiOjEsInVzZXJuYW1lIjoiY29yYWwifQ.TnVyuNX_4pQboxrlKXFg0oKjPYeADV55LM4CJiEOpBA
+2024-11-14 10:00:17,404 - application_logger - INFO - Function list_by_user executed successfully in views.py | Unknown User | No Object ID | Result: <Response status_code=200, "text/html; charset=utf-8">
+2024-11-14 10:02:11,252 - application_logger - INFO - Function get_token executed successfully in views.py | Unknown User | No Object ID | Result: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTczOTM1NDUzMSwiaWF0IjoxNzMxNTc4NTMxLCJqdGkiOiJkOWU2M2I5Mjc5Nzc0NjJiOWZlZWFlMjVmMjhmM2RlNCIsInVzZXJfaWQiOjEsInVzZXJuYW1lIjoiY29yYWwifQ.LBZ0feAuexhquaHPAPd84ysKGqSeqOnyq7_6NfbEdag
+2024-11-14 10:02:11,302 - application_logger - INFO - Function list_by_user executed successfully in views.py | Unknown User | No Object ID | Result: <Response status_code=200, "text/html; charset=utf-8">
+2024-11-14 10:03:04,199 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-14 10:03:04,641 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-14 10:03:13,450 - application_logger - INFO - Function get_token executed successfully in views.py | Unknown User | No Object ID | Result: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTczOTM1NDU5MywiaWF0IjoxNzMxNTc4NTkzLCJqdGkiOiIwNzE4ZDZkOTFjZGU0NDk2YTcwZTA3MjQzNjE0MWVhMiIsInVzZXJfaWQiOjEsInVzZXJuYW1lIjoiY29yYWwifQ.B9PHPmjXm8esKFWB2YcqQDjIpOinGDDcfViSmobqJ_I
+2024-11-14 10:03:13,508 - application_logger - INFO - Function list_by_user executed successfully in views.py | Unknown User | No Object ID | Result: <Response status_code=200, "text/html; charset=utf-8">
+2024-11-14 10:03:30,704 - application_logger - INFO - Function list_by_user executed successfully in views.py | Unknown User | No Object ID | Result: <Response status_code=200, "text/html; charset=utf-8">
+2024-11-14 10:11:31,854 - application_logger - INFO - Function list_by_user executed successfully in views.py | Unknown User | No Object ID | Result: <Response status_code=200, "text/html; charset=utf-8">
+2024-11-14 10:11:39,770 - application_logger - INFO - Function perform_create executed successfully in views.py | Unknown User | No Object ID | Result: None
+2024-11-14 10:11:39,787 - application_logger - INFO - Function create executed successfully in views.py | Unknown User | No Object ID | Result: <Response status_code=201, "text/html; charset=utf-8">
+2024-11-14 10:11:39,804 - application_logger - INFO - Function upload_images executed successfully in views.py | Unknown User | No Object ID | Result: <Response status_code=201, "text/html; charset=utf-8">
+2024-11-14 10:11:39,857 - application_logger - INFO - Function list_by_user executed successfully in views.py | Unknown User | No Object ID | Result: <Response status_code=200, "text/html; charset=utf-8">
+2024-11-14 10:12:04,351 - application_logger - INFO - Function perform_create executed successfully in views.py | Unknown User | No Object ID | Result: None
+2024-11-14 10:12:04,367 - application_logger - INFO - Function create executed successfully in views.py | Unknown User | No Object ID | Result: <Response status_code=201, "text/html; charset=utf-8">
+2024-11-14 10:12:04,379 - application_logger - INFO - Function upload_images executed successfully in views.py | Unknown User | No Object ID | Result: <Response status_code=201, "text/html; charset=utf-8">
+2024-11-14 10:12:04,479 - application_logger - INFO - Function list_by_user executed successfully in views.py | Unknown User | No Object ID | Result: <Response status_code=200, "text/html; charset=utf-8">
+2024-11-14 10:12:17,214 - application_logger - INFO - Function get_queryset executed successfully in views.py | Unknown User | No Object ID | Result: <QuerySet [<ListItem: todolist for sunday>, <ListItem: testtt>, <ListItem: t>, <ListItem: ddd>, <ListItem: wwwww>, <ListItem: fsgdg>, <ListItem: New>, <ListItem: sadfsfsf>, <ListItem: eweedfsfs>, <ListItem: nneniiii>, <ListItem: dafsf>, <ListItem: tesstooooo>, <ListItem: weqe>, <ListItem: tessstoooo>, <ListItem: ertertret>, <ListItem: werwre>, <ListItem: adaedar>, <ListItem: test>, <ListItem: test>, <ListItem: wdew>, '...(remaining elements truncated)...']>
+2024-11-14 10:12:17,217 - application_logger - INFO - Function perform_update executed successfully in views.py | Unknown User | No Object ID | Result: None
+2024-11-14 10:12:17,222 - application_logger - INFO - Function upload_images executed successfully in views.py | Unknown User | No Object ID | Result: <Response status_code=400, "text/html; charset=utf-8">
+2024-11-14 10:12:17,223 - django.request - WARNING - Bad Request: /listitemimages/upload_images/
+2024-11-14 10:12:17,264 - application_logger - INFO - Function list_by_user executed successfully in views.py | Unknown User | No Object ID | Result: <Response status_code=200, "text/html; charset=utf-8">
+2024-11-14 10:12:26,109 - application_logger - INFO - Function list_by_user executed successfully in views.py | Unknown User | No Object ID | Result: <Response status_code=200, "text/html; charset=utf-8">

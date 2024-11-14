@@ -22,7 +22,7 @@ urlpatterns = [
    path('user/<int:user_id>/', views.update_user, name='update_user'),
    path('reset_password_request/', views.ResetPasswordRequestView.as_view(), name='reset_password_request'),
    path('reset_password/', views.ResetPasswordView.as_view(), name='reset_password'),
-   path('listitemimages/<int:pk>/get_images_for_list_item/', ListItemImageViewSet.as_view({'get': 'get_images_for_list_item'}), name='get_images_for_list_item'),
+   path('listitemimages/<int:list_item_id>/get_images_for_list_item/', ListItemImageViewSet.as_view({'get': 'get_images_for_list_item'}), name='get_images_for_list_item'),
    path('listitemimages/upload_images/', ListItemImageViewSet.as_view({'post': 'upload_images'}), name='upload_images'),
 
 ]
