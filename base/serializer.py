@@ -1,5 +1,5 @@
 from rest_framework import serializers
-from .models import ListItem, GroupList, ListItemImage
+from .models import ListItem, GroupList, ListItemImage, Customization
 from django.contrib.auth.models import User
 
 class UserSerializer(serializers.ModelSerializer):
@@ -48,3 +48,9 @@ class ListItemImageSerializer(serializers.ModelSerializer):
     class Meta:
         model = ListItemImage
         fields = '__all__'
+
+
+class CustomizationSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Customization
+        fields = '__all__'  # או תוכל לציין את השדות שברצונך להחזיר

@@ -3,8 +3,8 @@ from rest_framework.response import Response
 from rest_framework import viewsets, status
 
 from django.db import models
-from .models import ListItem, GroupList, ListItemImage
-from base.serializer import ListItemImageSerializer, ListItemSerializer, GroupListSerializer
+from .models import ListItem, GroupList, ListItemImage, Customization
+from base.serializer import ListItemImageSerializer, ListItemSerializer, GroupListSerializer, CustomizationSerializer
 from rest_framework.decorators import api_view, permission_classes
 from rest_framework.permissions import IsAuthenticated
 from rest_framework_simplejwt.serializers import TokenObtainPairSerializer
@@ -419,3 +419,67 @@ class ListItemImageViewSet(viewsets.ModelViewSet):
             } for image in images
         ]
         return Response({"images": image_data})
+
+
+
+# ViewSet למודל Customization
+class CustomizationViewSet(viewsets.ModelViewSet):
+    queryset = Customization.objects.all()
+    serializer_class = CustomizationSerializer
+    permission_classes = [IsAuthenticated]
+
+    def create(self, request, *args, **kwargs):
+        """
+        Handle POST request to create or update a user's background customization.
+        """
+        user = request.user
+        background_image_id = request.data.get('background_image_id', '')
+
+        if not background_image_id:
+            return Response(
+                {"error": "background_image_id is required."},
+                status=400
+            )
+
+        # Get or create the customization for the authenticated user
+        customization, created = Customization.objects.update_or_create(
+            user=user,
+            defaults={'background_image_id': background_image_id}
+        )
+
+        # Serialize the result and return the response
+        serializer = CustomizationSerializer(customization)
+        return Response(
+            {
+                "message": "Background updated successfully.",
+                "data": serializer.data,
+                "status": "created" if created else "updated"
+            },
+            status=201 if created else 200
+
+        )
+    
+    @action(detail=False, methods=['get'], url_path='get_user_customization')
+    def get_customization_for_user(self, request, *args, **kwargs):
+        """
+        Handle GET request to retrieve the customization for the authenticated user.
+        """
+        user = request.user
+        print('hwebebwbewfbijfbiwefibefwh')
+
+        # Retrieve the customization for the authenticated user
+        try:
+            customization = Customization.objects.get(user=user)
+        except Customization.DoesNotExist:
+            return Response({
+                "message": "Customization not found for this user.",
+                "data": {}
+            }, status=200)
+
+        # Serialize and return the result
+        serializer = CustomizationSerializer(customization)
+        print(f"Customization for user {user.id}: {customization}")
+        return Response({
+            "message": "Customization retrieved successfully.",
+            "data": serializer.data
+        }, status=200)

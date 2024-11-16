@@ -42,3 +42,11 @@ class ListItemImage(models.Model):
     def __str__(self):
         return f"Image for {self.list_item.title} - {self.image.name}"
 
+
+
+class Customization(models.Model):
+    user = models.ForeignKey(User, on_delete=models.CASCADE)  # קשר עם המשתמש
+    background_image_id = models.CharField(max_length=20, default='')  # ברירת מחדל ריקה
+
+    # def __str__(self):
+    #     return f"Preferences for user ID {self.user.pk} - Background image ID: {self.background_image_id}"
