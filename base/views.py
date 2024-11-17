@@ -406,11 +406,18 @@ class ListItemImageViewSet(viewsets.ModelViewSet):
         
 
 
-    # @log()
-    # @action(detail=True, methods=['get'])
-    def get_images_for_list_item(self, request, list_item_id):
+    @action(detail=True, methods=['get'], url_path='get_images_for_list_item')
+    def get_images_for_list_item(self, request, *args, **kwargs):
+        # קבלת ה- pk מה-kwargs
+        list_item_id = kwargs.get('pk')
+        
         print('here')
         images = ListItemImage.objects.filter(list_item_id=list_item_id)
+        if not images.exists():
+            return Response({"images": [], "message": "No images found for this list item."}, status=200)
+        
+        print('cooralllllll', images )
+
         image_data = [
             {
                 "id": image.id,

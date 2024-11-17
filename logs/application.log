@@ -2469,3 +2469,570 @@ Original exception text was: 'QuerySet' object has no attribute 'user'.
 2024-11-16 19:06:33,409 - application_logger - INFO - Function get_token executed successfully in views.py | Unknown User | No Object ID | Result: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTczOTU1OTk5MywiaWF0IjoxNzMxNzgzOTkzLCJqdGkiOiI3ZmZmOWU4MjVkNTg0OTNjYjc2NDdhYTYxNTBkODFkOCIsInVzZXJfaWQiOjEsInVzZXJuYW1lIjoiY29yYWwifQ.mR2gdJ3hBOMc8mOX3EFsSEeIltpzRnffmyCTymYic8I
 2024-11-16 19:06:33,451 - application_logger - INFO - Function list_by_user executed successfully in views.py | Unknown User | No Object ID | Result: <Response status_code=200, "text/html; charset=utf-8">
 2024-11-16 19:06:36,516 - application_logger - INFO - Function list_by_user executed successfully in views.py | Unknown User | No Object ID | Result: <Response status_code=200, "text/html; charset=utf-8">
+2024-11-17 06:56:40,205 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-17 07:09:28,505 - application_logger - INFO - Function get_token executed successfully in views.py | Unknown User | No Object ID | Result: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTczOTYwMzM2OCwiaWF0IjoxNzMxODI3MzY4LCJqdGkiOiJjNThhNjI4ZjI0N2I0NGQ2OWQ5YWE2NzdlZTk4NTYzZSIsInVzZXJfaWQiOjEsInVzZXJuYW1lIjoiY29yYWwifQ.EicSchsOI64kbbVd6uFsJXcewlFzP2JP4gT1wMBp3w8
+2024-11-17 07:09:28,537 - application_logger - INFO - Function list_by_user executed successfully in views.py | Unknown User | No Object ID | Result: <Response status_code=200, "text/html; charset=utf-8">
+2024-11-17 07:20:16,765 - application_logger - INFO - Function get_token executed successfully in views.py | Unknown User | No Object ID | Result: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTczOTYwNDAxNiwiaWF0IjoxNzMxODI4MDE2LCJqdGkiOiIyZTk5ZGRiNzBjODU0NDhmYjg2ODBmMTZjOTYxNjEzNSIsInVzZXJfaWQiOjEsInVzZXJuYW1lIjoiY29yYWwifQ.oKWKlSssXkOHLtZhzWcE5ZXdV_Vqe_opjwllhJaVsqc
+2024-11-17 07:20:16,793 - application_logger - INFO - Function list_by_user executed successfully in views.py | Unknown User | No Object ID | Result: <Response status_code=200, "text/html; charset=utf-8">
+2024-11-17 07:27:26,218 - application_logger - INFO - Function get_token executed successfully in views.py | Unknown User | No Object ID | Result: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTczOTYwNDQ0NiwiaWF0IjoxNzMxODI4NDQ2LCJqdGkiOiJkMTRiYTFlNjFkNGI0MzZkODZkMTZmOGQ4NGM4OWRjZiIsInVzZXJfaWQiOjEsInVzZXJuYW1lIjoiY29yYWwifQ.9GPCmxoqxqtbUeEqhYoSTabb-OWZUweix6sJHJ1sPi4
+2024-11-17 07:27:26,257 - application_logger - INFO - Function list_by_user executed successfully in views.py | Unknown User | No Object ID | Result: <Response status_code=200, "text/html; charset=utf-8">
+2024-11-17 07:28:32,716 - application_logger - INFO - Function get_token executed successfully in views.py | Unknown User | No Object ID | Result: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTczOTYwNDUxMiwiaWF0IjoxNzMxODI4NTEyLCJqdGkiOiIxYTY2MjFlNDYwNmQ0MjUwOTY3NzJhOWVkNzMzOTNhMyIsInVzZXJfaWQiOjEsInVzZXJuYW1lIjoiY29yYWwifQ.41HnvQ31msZ8r-wi23qlD0d_5sQwnPLGeXN_n3m7Co8
+2024-11-17 07:28:32,749 - application_logger - INFO - Function list_by_user executed successfully in views.py | Unknown User | No Object ID | Result: <Response status_code=200, "text/html; charset=utf-8">
+2024-11-17 07:28:37,941 - application_logger - INFO - Function list_by_user executed successfully in views.py | Unknown User | No Object ID | Result: <Response status_code=200, "text/html; charset=utf-8">
+2024-11-17 07:48:30,640 - application_logger - INFO - Function get_token executed successfully in views.py | Unknown User | No Object ID | Result: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTczOTYwNTcxMCwiaWF0IjoxNzMxODI5NzEwLCJqdGkiOiIxZWMyNTc4NDIyNjI0ZTg3OTVmM2IzZWFjMzZlMGRlZSIsInVzZXJfaWQiOjEsInVzZXJuYW1lIjoiY29yYWwifQ.CI_88v0QVAr9Pp3PAk9ihSs6e7RV1wRCXgwBTptct4E
+2024-11-17 07:48:30,676 - application_logger - INFO - Function list_by_user executed successfully in views.py | Unknown User | No Object ID | Result: <Response status_code=200, "text/html; charset=utf-8">
+2024-11-17 07:48:32,988 - application_logger - INFO - Function list_by_user executed successfully in views.py | Unknown User | No Object ID | Result: <Response status_code=200, "text/html; charset=utf-8">
+2024-11-17 07:48:58,243 - application_logger - INFO - Function get_token executed successfully in views.py | Unknown User | No Object ID | Result: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTczOTYwNTczOCwiaWF0IjoxNzMxODI5NzM4LCJqdGkiOiIwMzJjNDRkZjQ2M2M0MGRkYmVjMGVjZWZiNTZjZjU2YiIsInVzZXJfaWQiOjEsInVzZXJuYW1lIjoiY29yYWwifQ.N79-ihrJDhUeAVm1XkP3uI0OnYgHqdCOI1ol730BAnk
+2024-11-17 07:48:58,278 - application_logger - INFO - Function list_by_user executed successfully in views.py | Unknown User | No Object ID | Result: <Response status_code=200, "text/html; charset=utf-8">
+2024-11-17 07:49:00,313 - application_logger - INFO - Function list_by_user executed successfully in views.py | Unknown User | No Object ID | Result: <Response status_code=200, "text/html; charset=utf-8">
+2024-11-17 07:50:01,086 - application_logger - INFO - Function get_token executed successfully in views.py | Unknown User | No Object ID | Result: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTczOTYwNTgwMSwiaWF0IjoxNzMxODI5ODAxLCJqdGkiOiI1NDhkZWUxYjAyYmQ0YjY2OTAzNDg5YThhZWRkNzEzOCIsInVzZXJfaWQiOjEsInVzZXJuYW1lIjoiY29yYWwifQ.ZVZP-qBQhI7nHrJYitzT_WQvjFY6vWYudNsAxE0jO5A
+2024-11-17 07:50:01,116 - application_logger - INFO - Function list_by_user executed successfully in views.py | Unknown User | No Object ID | Result: <Response status_code=200, "text/html; charset=utf-8">
+2024-11-17 07:51:56,625 - application_logger - INFO - Function get_token executed successfully in views.py | Unknown User | No Object ID | Result: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTczOTYwNTkxNiwiaWF0IjoxNzMxODI5OTE2LCJqdGkiOiIxNzM4MThmY2UyNTc0ZGI0ODcyMGJjMWUzNDJhZGU2MiIsInVzZXJfaWQiOjEsInVzZXJuYW1lIjoiY29yYWwifQ.Q1gL6MLZxF71RB7ncXCRK8FVe_Qv8hke5j-6XpzrGYs
+2024-11-17 07:51:56,663 - application_logger - INFO - Function list_by_user executed successfully in views.py | Unknown User | No Object ID | Result: <Response status_code=200, "text/html; charset=utf-8">
+2024-11-17 07:52:57,981 - application_logger - INFO - Function get_token executed successfully in views.py | Unknown User | No Object ID | Result: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTczOTYwNTk3NywiaWF0IjoxNzMxODI5OTc3LCJqdGkiOiI2NjUxYTI0MjFjYTE0MTEwYmMyY2Q0ODU5NzExOWFjYyIsInVzZXJfaWQiOjEsInVzZXJuYW1lIjoiY29yYWwifQ.OCwSoiAwnMXpeunU3xnqlvrYhnPqrNI5BWBMIs-Re9Y
+2024-11-17 07:52:58,008 - application_logger - INFO - Function list_by_user executed successfully in views.py | Unknown User | No Object ID | Result: <Response status_code=200, "text/html; charset=utf-8">
+2024-11-17 07:53:32,596 - application_logger - INFO - Function get_token executed successfully in views.py | Unknown User | No Object ID | Result: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTczOTYwNjAxMiwiaWF0IjoxNzMxODMwMDEyLCJqdGkiOiI1YjRiZGM3MjA3OWE0ZDNiYmNkZGZhNjk1NDRmYTFlMSIsInVzZXJfaWQiOjEsInVzZXJuYW1lIjoiY29yYWwifQ.RU8Ct_Kvfm8pgWkQeWwm4BF4DiZbMHAUQo8e8JJP9Yg
+2024-11-17 07:53:32,623 - application_logger - INFO - Function list_by_user executed successfully in views.py | Unknown User | No Object ID | Result: <Response status_code=200, "text/html; charset=utf-8">
+2024-11-17 07:53:34,541 - application_logger - INFO - Function list_by_user executed successfully in views.py | Unknown User | No Object ID | Result: <Response status_code=200, "text/html; charset=utf-8">
+2024-11-17 07:54:43,879 - application_logger - INFO - Function get_token executed successfully in views.py | Unknown User | No Object ID | Result: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTczOTYwNjA4MywiaWF0IjoxNzMxODMwMDgzLCJqdGkiOiI0NWQ3NGNhYmE1YjI0MDFkOWZkYzVhZTBiOTM3MGRhYyIsInVzZXJfaWQiOjEsInVzZXJuYW1lIjoiY29yYWwifQ._Ba2zSQi_rv5R7jcA5NIaWI7ilWTu1JfTFMcWiMPU3k
+2024-11-17 07:54:43,912 - application_logger - INFO - Function list_by_user executed successfully in views.py | Unknown User | No Object ID | Result: <Response status_code=200, "text/html; charset=utf-8">
+2024-11-17 07:55:09,184 - application_logger - INFO - Function get_token executed successfully in views.py | Unknown User | No Object ID | Result: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTczOTYwNjEwOSwiaWF0IjoxNzMxODMwMTA5LCJqdGkiOiI0YzNjODIxNzcyNmQ0Zjk2OGEwYzFkY2VlOTFjODQ3MSIsInVzZXJfaWQiOjEsInVzZXJuYW1lIjoiY29yYWwifQ.fbq4gTtlZQ0Ccq0ut_3D5_Ylm8PGKes9fWtYADexEuY
+2024-11-17 07:55:09,216 - application_logger - INFO - Function list_by_user executed successfully in views.py | Unknown User | No Object ID | Result: <Response status_code=200, "text/html; charset=utf-8">
+2024-11-17 07:56:37,590 - application_logger - INFO - Function get_token executed successfully in views.py | Unknown User | No Object ID | Result: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTczOTYwNjE5NywiaWF0IjoxNzMxODMwMTk3LCJqdGkiOiIxZGFjNTllMWRmZmQ0N2NlOGQ2MDAxY2EwYzVmMzJlZiIsInVzZXJfaWQiOjEsInVzZXJuYW1lIjoiY29yYWwifQ.TlFEyBTIIX3qy49c259UX88iQobAxY7i5jz_NCCBwDw
+2024-11-17 07:56:37,621 - application_logger - INFO - Function list_by_user executed successfully in views.py | Unknown User | No Object ID | Result: <Response status_code=200, "text/html; charset=utf-8">
+2024-11-17 07:57:30,790 - application_logger - INFO - Function get_token executed successfully in views.py | Unknown User | No Object ID | Result: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTczOTYwNjI1MCwiaWF0IjoxNzMxODMwMjUwLCJqdGkiOiI5OTRlYzU3NzI2ZWM0M2Q5YTgyYjM4ZDgxY2Q1NmJhMiIsInVzZXJfaWQiOjEsInVzZXJuYW1lIjoiY29yYWwifQ.UK_yWAd4cQIRtqiBN3BVRaJ1BJQQFcMUWUk1ka9uOtg
+2024-11-17 07:57:30,826 - application_logger - INFO - Function list_by_user executed successfully in views.py | Unknown User | No Object ID | Result: <Response status_code=200, "text/html; charset=utf-8">
+2024-11-17 07:59:28,011 - application_logger - INFO - Function get_token executed successfully in views.py | Unknown User | No Object ID | Result: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTczOTYwNjM2OCwiaWF0IjoxNzMxODMwMzY4LCJqdGkiOiJhZGQ4NjQxMWNiZjY0Y2Q4OGNiNTc5NzQ1Y2EyYmQ5YyIsInVzZXJfaWQiOjEsInVzZXJuYW1lIjoiY29yYWwifQ.OnBbNw2EyLqRci6ryBuayC9t_StBbuhhFm9Z6ab0qr4
+2024-11-17 07:59:28,039 - application_logger - INFO - Function list_by_user executed successfully in views.py | Unknown User | No Object ID | Result: <Response status_code=200, "text/html; charset=utf-8">
+2024-11-17 07:59:30,924 - application_logger - INFO - Function list_by_user executed successfully in views.py | Unknown User | No Object ID | Result: <Response status_code=200, "text/html; charset=utf-8">
+2024-11-17 08:00:05,641 - application_logger - INFO - Function get_token executed successfully in views.py | Unknown User | No Object ID | Result: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTczOTYwNjQwNSwiaWF0IjoxNzMxODMwNDA1LCJqdGkiOiIzMzJkYWI1YTAxNmQ0MjBkOTBiYWIwNTkwNjdlYWM5NSIsInVzZXJfaWQiOjEsInVzZXJuYW1lIjoiY29yYWwifQ.mXHybRUsAEPTFcSEwuaQVgMkAEBGWUo2Tna1HCFegt4
+2024-11-17 08:00:05,680 - application_logger - INFO - Function list_by_user executed successfully in views.py | Unknown User | No Object ID | Result: <Response status_code=200, "text/html; charset=utf-8">
+2024-11-17 08:00:08,586 - application_logger - INFO - Function list_by_user executed successfully in views.py | Unknown User | No Object ID | Result: <Response status_code=200, "text/html; charset=utf-8">
+2024-11-17 08:00:41,250 - application_logger - INFO - Function get_token executed successfully in views.py | Unknown User | No Object ID | Result: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTczOTYwNjQ0MSwiaWF0IjoxNzMxODMwNDQxLCJqdGkiOiJkMzU4M2IwZDUyMTk0ZjIwYjM3ZTVjMmJhZmY5MzQzYyIsInVzZXJfaWQiOjEsInVzZXJuYW1lIjoiY29yYWwifQ.bFR2eB7pi6QEh0ZREm0_mOJtmCjPYcpM9bzN6AxRZX4
+2024-11-17 08:00:41,277 - application_logger - INFO - Function list_by_user executed successfully in views.py | Unknown User | No Object ID | Result: <Response status_code=200, "text/html; charset=utf-8">
+2024-11-17 08:01:29,533 - application_logger - INFO - Function get_token executed successfully in views.py | Unknown User | No Object ID | Result: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTczOTYwNjQ4OSwiaWF0IjoxNzMxODMwNDg5LCJqdGkiOiI2MDRlM2E0MmNkN2U0ZmY2YjJlZWE5NmE0NmVhNTBkMSIsInVzZXJfaWQiOjEsInVzZXJuYW1lIjoiY29yYWwifQ.sgrQqS6owBpBbMr1BPwvzc-hg7U-srbKnxpGsTm0Ww8
+2024-11-17 08:01:29,565 - application_logger - INFO - Function list_by_user executed successfully in views.py | Unknown User | No Object ID | Result: <Response status_code=200, "text/html; charset=utf-8">
+2024-11-17 08:15:53,738 - application_logger - INFO - Function get_token executed successfully in views.py | Unknown User | No Object ID | Result: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTczOTYwNzM1MywiaWF0IjoxNzMxODMxMzUzLCJqdGkiOiI1MmQxYzA2MTdlMDA0MTAyYTk0M2ViNTliNmU0OTExZCIsInVzZXJfaWQiOjEsInVzZXJuYW1lIjoiY29yYWwifQ.Xo2AJZzrO-kt0WFkGMM9073bUHjUu6wwPc5DL4IYot4
+2024-11-17 08:15:53,779 - application_logger - INFO - Function list_by_user executed successfully in views.py | Unknown User | No Object ID | Result: <Response status_code=200, "text/html; charset=utf-8">
+2024-11-17 08:15:56,563 - application_logger - INFO - Function list_by_user executed successfully in views.py | Unknown User | No Object ID | Result: <Response status_code=200, "text/html; charset=utf-8">
+2024-11-17 08:18:46,282 - application_logger - INFO - Function get_token executed successfully in views.py | Unknown User | No Object ID | Result: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTczOTYwNzUyNiwiaWF0IjoxNzMxODMxNTI2LCJqdGkiOiJiMjEyNThiNDlhNjY0NTA4YTJhMDg2YjZjNDA5MDY3MiIsInVzZXJfaWQiOjEsInVzZXJuYW1lIjoiY29yYWwifQ.LC6GUYAkO2uhBXvnRA9E1i_7tRuYbyx4XGeVDI1_abQ
+2024-11-17 08:18:46,318 - application_logger - INFO - Function list_by_user executed successfully in views.py | Unknown User | No Object ID | Result: <Response status_code=200, "text/html; charset=utf-8">
+2024-11-17 08:30:46,264 - application_logger - INFO - Function get_token executed successfully in views.py | Unknown User | No Object ID | Result: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTczOTYwODI0NiwiaWF0IjoxNzMxODMyMjQ2LCJqdGkiOiJlMWIxOWNkMGRkN2M0MmQ3ODUzYmY0Y2FjNjIxYTQzNCIsInVzZXJfaWQiOjEsInVzZXJuYW1lIjoiY29yYWwifQ._n_N-bG-PDpY6PXvuwCgJ3-holgYa5bRBiPhnu3TUGk
+2024-11-17 08:30:46,295 - application_logger - INFO - Function list_by_user executed successfully in views.py | Unknown User | No Object ID | Result: <Response status_code=200, "text/html; charset=utf-8">
+2024-11-17 08:31:07,544 - application_logger - INFO - Function get_token executed successfully in views.py | Unknown User | No Object ID | Result: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTczOTYwODI2NywiaWF0IjoxNzMxODMyMjY3LCJqdGkiOiJmZDhhMzU0OTg1MjQ0ZGQ4YmJmZjBiMGZhODdlMDk4ZCIsInVzZXJfaWQiOjEsInVzZXJuYW1lIjoiY29yYWwifQ.HPw81eJiRhCRUVeUcvvMLRu9Rhtf6s7_6NdO3NSVNnI
+2024-11-17 08:31:07,575 - application_logger - INFO - Function list_by_user executed successfully in views.py | Unknown User | No Object ID | Result: <Response status_code=200, "text/html; charset=utf-8">
+2024-11-17 08:32:43,801 - application_logger - INFO - Function get_token executed successfully in views.py | Unknown User | No Object ID | Result: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTczOTYwODM2MywiaWF0IjoxNzMxODMyMzYzLCJqdGkiOiJlNWZkY2MzM2IxN2I0OTI1YjIxN2U1NzgzMjExNDU0MiIsInVzZXJfaWQiOjEsInVzZXJuYW1lIjoiY29yYWwifQ.PM6DlM2ayZpEmWOtP9WJLP62X-HQzg6pKe7mKh7uuyI
+2024-11-17 08:32:43,829 - application_logger - INFO - Function list_by_user executed successfully in views.py | Unknown User | No Object ID | Result: <Response status_code=200, "text/html; charset=utf-8">
+2024-11-17 08:32:46,113 - application_logger - INFO - Function list_by_user executed successfully in views.py | Unknown User | No Object ID | Result: <Response status_code=200, "text/html; charset=utf-8">
+2024-11-17 08:33:33,959 - application_logger - INFO - Function get_token executed successfully in views.py | Unknown User | No Object ID | Result: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTczOTYwODQxMywiaWF0IjoxNzMxODMyNDEzLCJqdGkiOiI5MjkwMmMxNTIzZTk0OTUwOGNkMGIxMTBmZDgxODc2YSIsInVzZXJfaWQiOjEsInVzZXJuYW1lIjoiY29yYWwifQ.OYCJPXvBZfaB8dabk3kIgXCIsnIzGkfEzsbEr8nws6k
+2024-11-17 08:33:33,990 - application_logger - INFO - Function list_by_user executed successfully in views.py | Unknown User | No Object ID | Result: <Response status_code=200, "text/html; charset=utf-8">
+2024-11-17 08:34:08,156 - application_logger - INFO - Function get_token executed successfully in views.py | Unknown User | No Object ID | Result: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTczOTYwODQ0OCwiaWF0IjoxNzMxODMyNDQ4LCJqdGkiOiI4NTQ0NjZmOTdhNmY0MmViOWFhNTM1MzA3OThlMGNjMyIsInVzZXJfaWQiOjEsInVzZXJuYW1lIjoiY29yYWwifQ.surKnopC259_VoDpYOFCfYvvCvTVI4PjwkVwE2GibSs
+2024-11-17 08:34:08,181 - application_logger - INFO - Function list_by_user executed successfully in views.py | Unknown User | No Object ID | Result: <Response status_code=200, "text/html; charset=utf-8">
+2024-11-17 08:34:11,052 - application_logger - INFO - Function list_by_user executed successfully in views.py | Unknown User | No Object ID | Result: <Response status_code=200, "text/html; charset=utf-8">
+2024-11-17 08:34:28,425 - application_logger - INFO - Function get_token executed successfully in views.py | Unknown User | No Object ID | Result: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTczOTYwODQ2OCwiaWF0IjoxNzMxODMyNDY4LCJqdGkiOiJkN2ViNDQ5ZTk4ZDI0ZjE4ODY3NTlkOTM2YjgyZTUxOSIsInVzZXJfaWQiOjEsInVzZXJuYW1lIjoiY29yYWwifQ.S_B5XKwDdHtv3rwYWAWl-prCP2rBYgl_xFEHbBm-VKg
+2024-11-17 08:34:28,457 - application_logger - INFO - Function list_by_user executed successfully in views.py | Unknown User | No Object ID | Result: <Response status_code=200, "text/html; charset=utf-8">
+2024-11-17 08:35:17,347 - application_logger - INFO - Function get_token executed successfully in views.py | Unknown User | No Object ID | Result: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTczOTYwODUxNywiaWF0IjoxNzMxODMyNTE3LCJqdGkiOiIwMWU0MmYxODRlMTE0ZmMxYjllZDkyNWNmZThmMDRlZCIsInVzZXJfaWQiOjEsInVzZXJuYW1lIjoiY29yYWwifQ.DWrvEh1z2sCRjEAESOjK8aEzNm2rUAnq_uFE95PDyUQ
+2024-11-17 08:35:17,373 - application_logger - INFO - Function list_by_user executed successfully in views.py | Unknown User | No Object ID | Result: <Response status_code=200, "text/html; charset=utf-8">
+2024-11-17 08:36:31,075 - application_logger - INFO - Function get_token executed successfully in views.py | Unknown User | No Object ID | Result: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTczOTYwODU5MSwiaWF0IjoxNzMxODMyNTkxLCJqdGkiOiJjNzAzOTUwOTgyZjQ0ZWUxOWQwZDIxYjAwYmExM2VlNSIsInVzZXJfaWQiOjEsInVzZXJuYW1lIjoiY29yYWwifQ.1YyCmEp3QZBUEriGUCNkS-ddhIcBQSrtePCEnQ3fAqU
+2024-11-17 08:36:31,106 - application_logger - INFO - Function list_by_user executed successfully in views.py | Unknown User | No Object ID | Result: <Response status_code=200, "text/html; charset=utf-8">
+2024-11-17 08:38:08,145 - application_logger - INFO - Function get_token executed successfully in views.py | Unknown User | No Object ID | Result: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTczOTYwODY4OCwiaWF0IjoxNzMxODMyNjg4LCJqdGkiOiJiM2YzNjNjNmI5Y2Q0ODkyYjg3MWYxZDRkYWY1YmYzMCIsInVzZXJfaWQiOjEsInVzZXJuYW1lIjoiY29yYWwifQ.PEO9KkemTgYLf20f8u3oT8wO1w2upF2GlITPyaxmJOs
+2024-11-17 08:38:08,172 - application_logger - INFO - Function list_by_user executed successfully in views.py | Unknown User | No Object ID | Result: <Response status_code=200, "text/html; charset=utf-8">
+2024-11-17 08:55:09,597 - application_logger - INFO - Function get_token executed successfully in views.py | Unknown User | No Object ID | Result: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTczOTYwOTcwOSwiaWF0IjoxNzMxODMzNzA5LCJqdGkiOiI0ZTcwZjVhNzY0MTE0ZGUyOWVhZDFmZmUxYTEwZjVmYSIsInVzZXJfaWQiOjEsInVzZXJuYW1lIjoiY29yYWwifQ.r6mYqYSNB0LyGo9O3NlIrbYEz-mvTiZtMoUrL4qmuVw
+2024-11-17 08:55:09,625 - application_logger - INFO - Function list_by_user executed successfully in views.py | Unknown User | No Object ID | Result: <Response status_code=200, "text/html; charset=utf-8">
+2024-11-17 08:55:26,481 - application_logger - INFO - Function list_by_user executed successfully in views.py | Unknown User | No Object ID | Result: <Response status_code=200, "text/html; charset=utf-8">
+2024-11-17 08:55:51,209 - application_logger - INFO - Function list_by_user executed successfully in views.py | Unknown User | No Object ID | Result: <Response status_code=200, "text/html; charset=utf-8">
+2024-11-17 08:57:37,509 - application_logger - INFO - Function list_by_user executed successfully in views.py | Unknown User | No Object ID | Result: <Response status_code=200, "text/html; charset=utf-8">
+2024-11-17 08:57:43,735 - application_logger - INFO - Function list_by_user executed successfully in views.py | Unknown User | No Object ID | Result: <Response status_code=200, "text/html; charset=utf-8">
+2024-11-17 08:57:57,784 - application_logger - INFO - Function list_by_user executed successfully in views.py | Unknown User | No Object ID | Result: <Response status_code=200, "text/html; charset=utf-8">
+2024-11-17 08:58:20,678 - application_logger - INFO - Function list_by_user executed successfully in views.py | Unknown User | No Object ID | Result: <Response status_code=200, "text/html; charset=utf-8">
+2024-11-17 08:58:49,582 - application_logger - INFO - Function list_by_user executed successfully in views.py | Unknown User | No Object ID | Result: <Response status_code=200, "text/html; charset=utf-8">
+2024-11-17 08:59:12,500 - application_logger - INFO - Function get_token executed successfully in views.py | Unknown User | No Object ID | Result: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTczOTYwOTk1MiwiaWF0IjoxNzMxODMzOTUyLCJqdGkiOiI5YzM5YWFkNTBmMDA0MTA1YTMxY2IzNWU3ODQ2MDg0OCIsInVzZXJfaWQiOjEsInVzZXJuYW1lIjoiY29yYWwifQ.G5s3Sf4mmsgaoVQJngLUvkFdUqtF2OpmKFZ6R95hkPg
+2024-11-17 08:59:12,550 - application_logger - INFO - Function list_by_user executed successfully in views.py | Unknown User | No Object ID | Result: <Response status_code=200, "text/html; charset=utf-8">
+2024-11-17 08:59:31,143 - application_logger - INFO - Function list_by_user executed successfully in views.py | Unknown User | No Object ID | Result: <Response status_code=200, "text/html; charset=utf-8">
+2024-11-17 08:59:45,129 - application_logger - INFO - Function list_by_user executed successfully in views.py | Unknown User | No Object ID | Result: <Response status_code=200, "text/html; charset=utf-8">
+2024-11-17 09:00:02,515 - application_logger - INFO - Function list_by_user executed successfully in views.py | Unknown User | No Object ID | Result: <Response status_code=200, "text/html; charset=utf-8">
+2024-11-17 09:39:22,904 - application_logger - INFO - Function get_token executed successfully in views.py | Unknown User | No Object ID | Result: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTczOTYxMjM2MiwiaWF0IjoxNzMxODM2MzYyLCJqdGkiOiI5MzQwN2IwZWMzZGM0NGE1YmRmMWIxNDlhNDBjMGZiMSIsInVzZXJfaWQiOjEsInVzZXJuYW1lIjoiY29yYWwifQ.tvcB3FqXLYlt1yOvZwurzoE_ufGcDF04nL6KTLWB838
+2024-11-17 09:39:22,946 - application_logger - INFO - Function list_by_user executed successfully in views.py | Unknown User | No Object ID | Result: <Response status_code=200, "text/html; charset=utf-8">
+2024-11-17 09:39:41,316 - application_logger - INFO - Function list_by_user executed successfully in views.py | Unknown User | No Object ID | Result: <Response status_code=200, "text/html; charset=utf-8">
+2024-11-17 09:39:45,773 - application_logger - INFO - Function list_by_user executed successfully in views.py | Unknown User | No Object ID | Result: <Response status_code=200, "text/html; charset=utf-8">
+2024-11-17 09:39:55,504 - application_logger - INFO - Function list_by_user executed successfully in views.py | Unknown User | No Object ID | Result: <Response status_code=200, "text/html; charset=utf-8">
+2024-11-17 09:40:56,425 - application_logger - INFO - Function list_by_user executed successfully in views.py | Unknown User | No Object ID | Result: <Response status_code=200, "text/html; charset=utf-8">
+2024-11-17 09:49:23,546 - application_logger - INFO - Function get_token executed successfully in views.py | Unknown User | No Object ID | Result: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTczOTYxMjk2MywiaWF0IjoxNzMxODM2OTYzLCJqdGkiOiIwMTM3ZDgxY2FjZjU0NWE1OTQyZmZkZjViMDA1MjY0OCIsInVzZXJfaWQiOjEsInVzZXJuYW1lIjoiY29yYWwifQ.YYsCJooCp1wUT6TbZNpc_npLbCcD--oQz1MXmKy2vQU
+2024-11-17 09:49:23,586 - application_logger - INFO - Function list_by_user executed successfully in views.py | Unknown User | No Object ID | Result: <Response status_code=200, "text/html; charset=utf-8">
+2024-11-17 09:49:35,123 - application_logger - INFO - Function list_by_user executed successfully in views.py | Unknown User | No Object ID | Result: <Response status_code=200, "text/html; charset=utf-8">
+2024-11-17 09:50:24,236 - application_logger - INFO - Function get_token executed successfully in views.py | Unknown User | No Object ID | Result: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTczOTYxMzAyNCwiaWF0IjoxNzMxODM3MDI0LCJqdGkiOiJjMzkyOTVmYmE3ZTI0NTQ3YTAyZmFmMDQ5Y2NiM2NmYyIsInVzZXJfaWQiOjEsInVzZXJuYW1lIjoiY29yYWwifQ.qpmbeRRaTTM1IpTeJTxswjbfGtFpz1pTHo_crxkUPfk
+2024-11-17 09:50:24,273 - application_logger - INFO - Function list_by_user executed successfully in views.py | Unknown User | No Object ID | Result: <Response status_code=200, "text/html; charset=utf-8">
+2024-11-17 09:50:41,953 - application_logger - INFO - Function list_by_user executed successfully in views.py | Unknown User | No Object ID | Result: <Response status_code=200, "text/html; charset=utf-8">
+2024-11-17 09:50:52,907 - application_logger - INFO - Function list_by_user executed successfully in views.py | Unknown User | No Object ID | Result: <Response status_code=200, "text/html; charset=utf-8">
+2024-11-17 09:55:50,699 - application_logger - INFO - Function get_token executed successfully in views.py | Unknown User | No Object ID | Result: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTczOTYxMzM1MCwiaWF0IjoxNzMxODM3MzUwLCJqdGkiOiJmN2Y4NTJkZWQ5MTE0N2JhYTE2YjNmMTc1MzZjZjk3MSIsInVzZXJfaWQiOjEsInVzZXJuYW1lIjoiY29yYWwifQ.6XM3ligd9bsRvGMJpOcaZT8Le0zmPJZQg28jZrOrbU0
+2024-11-17 09:55:50,736 - application_logger - INFO - Function list_by_user executed successfully in views.py | Unknown User | No Object ID | Result: <Response status_code=200, "text/html; charset=utf-8">
+2024-11-17 09:55:57,192 - django.request - ERROR - Internal Server Error: /customizations/
+Traceback (most recent call last):
+  File "/Users/coralingber/Desktop/untitled folder 2/lista/backend/env/lib/python3.12/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/coralingber/Desktop/untitled folder 2/lista/backend/env/lib/python3.12/site-packages/django/db/backends/sqlite3/base.py", line 354, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: database is locked
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/coralingber/Desktop/untitled folder 2/lista/backend/env/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/coralingber/Desktop/untitled folder 2/lista/backend/env/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/coralingber/Desktop/untitled folder 2/lista/backend/env/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/coralingber/Desktop/untitled folder 2/lista/backend/env/lib/python3.12/site-packages/rest_framework/viewsets.py", line 124, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/coralingber/Desktop/untitled folder 2/lista/backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/coralingber/Desktop/untitled folder 2/lista/backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/coralingber/Desktop/untitled folder 2/lista/backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Users/coralingber/Desktop/untitled folder 2/lista/backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py", line 445, in create
+    customization, created = Customization.objects.update_or_create(
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/coralingber/Desktop/untitled folder 2/lista/backend/env/lib/python3.12/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/coralingber/Desktop/untitled folder 2/lista/backend/env/lib/python3.12/site-packages/django/db/models/query.py", line 1009, in update_or_create
+    obj.save(using=self.db, update_fields=update_fields)
+  File "/Users/coralingber/Desktop/untitled folder 2/lista/backend/env/lib/python3.12/site-packages/django/db/models/base.py", line 891, in save
+    self.save_base(
+  File "/Users/coralingber/Desktop/untitled folder 2/lista/backend/env/lib/python3.12/site-packages/django/db/models/base.py", line 997, in save_base
+    updated = self._save_table(
+              ^^^^^^^^^^^^^^^^^
+  File "/Users/coralingber/Desktop/untitled folder 2/lista/backend/env/lib/python3.12/site-packages/django/db/models/base.py", line 1129, in _save_table
+    updated = self._do_update(
+              ^^^^^^^^^^^^^^^^
+  File "/Users/coralingber/Desktop/untitled folder 2/lista/backend/env/lib/python3.12/site-packages/django/db/models/base.py", line 1194, in _do_update
+    return filtered._update(values) > 0
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/coralingber/Desktop/untitled folder 2/lista/backend/env/lib/python3.12/site-packages/django/db/models/query.py", line 1278, in _update
+    return query.get_compiler(self.db).execute_sql(CURSOR)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/coralingber/Desktop/untitled folder 2/lista/backend/env/lib/python3.12/site-packages/django/db/models/sql/compiler.py", line 2003, in execute_sql
+    cursor = super().execute_sql(result_type)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/coralingber/Desktop/untitled folder 2/lista/backend/env/lib/python3.12/site-packages/django/db/models/sql/compiler.py", line 1574, in execute_sql
+    cursor.execute(sql, params)
+  File "/Users/coralingber/Desktop/untitled folder 2/lista/backend/env/lib/python3.12/site-packages/django/db/backends/utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/coralingber/Desktop/untitled folder 2/lista/backend/env/lib/python3.12/site-packages/django/db/backends/utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/coralingber/Desktop/untitled folder 2/lista/backend/env/lib/python3.12/site-packages/django/db/backends/utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/coralingber/Desktop/untitled folder 2/lista/backend/env/lib/python3.12/site-packages/django/db/backends/utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/coralingber/Desktop/untitled folder 2/lista/backend/env/lib/python3.12/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/Users/coralingber/Desktop/untitled folder 2/lista/backend/env/lib/python3.12/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/coralingber/Desktop/untitled folder 2/lista/backend/env/lib/python3.12/site-packages/django/db/backends/sqlite3/base.py", line 354, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: database is locked
+2024-11-17 09:56:00,455 - application_logger - INFO - Function list_by_user executed successfully in views.py | Unknown User | No Object ID | Result: <Response status_code=200, "text/html; charset=utf-8">
+2024-11-17 09:59:30,636 - application_logger - INFO - Function get_token executed successfully in views.py | Unknown User | No Object ID | Result: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTczOTYxMzU3MCwiaWF0IjoxNzMxODM3NTcwLCJqdGkiOiJjNDVmMDgwODgyNTg0NzA1YTFiNWUxODU3OTI4ODk4ZCIsInVzZXJfaWQiOjEsInVzZXJuYW1lIjoiY29yYWwifQ.tk_D5ZlTdXBATCIVHvsQoARtgU05jV3OmtZdIbOyLbc
+2024-11-17 09:59:30,668 - application_logger - INFO - Function list_by_user executed successfully in views.py | Unknown User | No Object ID | Result: <Response status_code=200, "text/html; charset=utf-8">
+2024-11-17 09:59:41,869 - application_logger - INFO - Function list_by_user executed successfully in views.py | Unknown User | No Object ID | Result: <Response status_code=200, "text/html; charset=utf-8">
+2024-11-17 10:00:03,792 - application_logger - INFO - Function get_token executed successfully in views.py | Unknown User | No Object ID | Result: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTczOTYxMzYwMywiaWF0IjoxNzMxODM3NjAzLCJqdGkiOiJiY2Y4YmYwYmE0NTE0NmU2YWI0NTlhZjEzYzdmODBiNCIsInVzZXJfaWQiOjEsInVzZXJuYW1lIjoiY29yYWwifQ.-JkTWx_qSoV0yckoAZjnrFyUfJkrGHXdsE7qwwhy_uQ
+2024-11-17 10:00:03,822 - application_logger - INFO - Function list_by_user executed successfully in views.py | Unknown User | No Object ID | Result: <Response status_code=200, "text/html; charset=utf-8">
+2024-11-17 10:00:14,723 - application_logger - INFO - Function list_by_user executed successfully in views.py | Unknown User | No Object ID | Result: <Response status_code=200, "text/html; charset=utf-8">
+2024-11-17 10:00:46,887 - application_logger - INFO - Function get_token executed successfully in views.py | Unknown User | No Object ID | Result: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTczOTYxMzY0NiwiaWF0IjoxNzMxODM3NjQ2LCJqdGkiOiI5ZTMxZDkwZWJkNjI0MGUyODNiMGU2NGMzYWM0MjNjYiIsInVzZXJfaWQiOjEsInVzZXJuYW1lIjoiY29yYWwifQ.nL7YPo-wDbs0ke6Fbj-No8-VTgELkMvoeNTKJMd48pc
+2024-11-17 10:00:46,914 - application_logger - INFO - Function list_by_user executed successfully in views.py | Unknown User | No Object ID | Result: <Response status_code=200, "text/html; charset=utf-8">
+2024-11-17 10:00:55,543 - application_logger - INFO - Function list_by_user executed successfully in views.py | Unknown User | No Object ID | Result: <Response status_code=200, "text/html; charset=utf-8">
+2024-11-17 10:01:03,956 - application_logger - INFO - Function list_by_user executed successfully in views.py | Unknown User | No Object ID | Result: <Response status_code=200, "text/html; charset=utf-8">
+2024-11-17 10:01:20,349 - application_logger - INFO - Function get_token executed successfully in views.py | Unknown User | No Object ID | Result: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTczOTYxMzY4MCwiaWF0IjoxNzMxODM3NjgwLCJqdGkiOiI0YzVjMzM5NTNhMTI0ZDRkODQ0OGMxMzkyYzE1ZThiNiIsInVzZXJfaWQiOjEsInVzZXJuYW1lIjoiY29yYWwifQ.qtbvAyNrq_X_HEZLGv3y_kiKq4jJMBIot5XjuE3Avm8
+2024-11-17 10:01:20,377 - application_logger - INFO - Function list_by_user executed successfully in views.py | Unknown User | No Object ID | Result: <Response status_code=200, "text/html; charset=utf-8">
+2024-11-17 10:01:28,280 - application_logger - INFO - Function list_by_user executed successfully in views.py | Unknown User | No Object ID | Result: <Response status_code=200, "text/html; charset=utf-8">
+2024-11-17 10:02:07,923 - application_logger - INFO - Function list_by_user executed successfully in views.py | Unknown User | No Object ID | Result: <Response status_code=200, "text/html; charset=utf-8">
+2024-11-17 10:03:30,847 - application_logger - INFO - Function get_token executed successfully in views.py | Unknown User | No Object ID | Result: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTczOTYxMzgxMCwiaWF0IjoxNzMxODM3ODEwLCJqdGkiOiJlZWY0ZTZkYjJkMDk0MDA0ODRlY2ZkOTM4ZTRjZWYzYiIsInVzZXJfaWQiOjEsInVzZXJuYW1lIjoiY29yYWwifQ.hS9t1ck0msMlIsfW_9JIZw9RuJZd4yAw4xnU7-HORYY
+2024-11-17 10:03:30,875 - application_logger - INFO - Function list_by_user executed successfully in views.py | Unknown User | No Object ID | Result: <Response status_code=200, "text/html; charset=utf-8">
+2024-11-17 10:04:34,956 - application_logger - INFO - Function get_token executed successfully in views.py | Unknown User | No Object ID | Result: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTczOTYxMzg3NCwiaWF0IjoxNzMxODM3ODc0LCJqdGkiOiI4N2I1N2VmNDU3M2Q0OGY4YWMzMjQxNzg2YzY4NjIwNCIsInVzZXJfaWQiOjEsInVzZXJuYW1lIjoiY29yYWwifQ.X4z57zQOtVQLG8Moo2F6pdAf4xO6993URQyt3wdfzSw
+2024-11-17 10:04:34,988 - application_logger - INFO - Function list_by_user executed successfully in views.py | Unknown User | No Object ID | Result: <Response status_code=200, "text/html; charset=utf-8">
+2024-11-17 10:04:37,761 - application_logger - INFO - Function list_by_user executed successfully in views.py | Unknown User | No Object ID | Result: <Response status_code=200, "text/html; charset=utf-8">
+2024-11-17 10:05:28,300 - application_logger - INFO - Function get_token executed successfully in views.py | Unknown User | No Object ID | Result: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTczOTYxMzkyOCwiaWF0IjoxNzMxODM3OTI4LCJqdGkiOiI5NjlmNGE3YTVmNGI0YjFiOTZmYjI2NjFmMWM0MjQ5OCIsInVzZXJfaWQiOjEsInVzZXJuYW1lIjoiY29yYWwifQ.2xOLM_jc-w4wtEINL7YkRbr95D7vsznHp8ykPmB3U5s
+2024-11-17 10:05:28,333 - application_logger - INFO - Function list_by_user executed successfully in views.py | Unknown User | No Object ID | Result: <Response status_code=200, "text/html; charset=utf-8">
+2024-11-17 10:05:41,819 - application_logger - INFO - Function list_by_user executed successfully in views.py | Unknown User | No Object ID | Result: <Response status_code=200, "text/html; charset=utf-8">
+2024-11-17 10:11:00,803 - application_logger - INFO - Function get_token executed successfully in views.py | Unknown User | No Object ID | Result: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTczOTYxNDI2MCwiaWF0IjoxNzMxODM4MjYwLCJqdGkiOiI0ZmRlMGIwZjQ0ZTk0MzNjODNmOTM4Nzg0YWNjZjZmOCIsInVzZXJfaWQiOjEsInVzZXJuYW1lIjoiY29yYWwifQ.0nEIRffhHAhDdByyHIW2FqF5US8bzisHUWczcpmF8E0
+2024-11-17 10:11:00,829 - application_logger - INFO - Function list_by_user executed successfully in views.py | Unknown User | No Object ID | Result: <Response status_code=200, "text/html; charset=utf-8">
+2024-11-17 10:13:17,366 - application_logger - INFO - Function get_token executed successfully in views.py | Unknown User | No Object ID | Result: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTczOTYxNDM5NywiaWF0IjoxNzMxODM4Mzk3LCJqdGkiOiI2YWQ0MjhhNjRjNTE0M2FiYWU3YmRkODU4MzlmM2ZkZSIsInVzZXJfaWQiOjEsInVzZXJuYW1lIjoiY29yYWwifQ.hRd1hoLW7JyfzR5YaLhZmsGZXOcz6RB0CZVwI9LBkJk
+2024-11-17 10:13:17,400 - application_logger - INFO - Function list_by_user executed successfully in views.py | Unknown User | No Object ID | Result: <Response status_code=200, "text/html; charset=utf-8">
+2024-11-17 10:20:39,614 - application_logger - INFO - Function get_token executed successfully in views.py | Unknown User | No Object ID | Result: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTczOTYxNDgzOSwiaWF0IjoxNzMxODM4ODM5LCJqdGkiOiJkODA1OTM5M2Q5N2Q0YWJiOWM0Y2Y3M2VlMTA1YzBjYSIsInVzZXJfaWQiOjEsInVzZXJuYW1lIjoiY29yYWwifQ.ir0IUr0w48t8te88_9n3a3CUTq3kC82v_NhDc_KM70E
+2024-11-17 10:20:39,653 - application_logger - INFO - Function list_by_user executed successfully in views.py | Unknown User | No Object ID | Result: <Response status_code=200, "text/html; charset=utf-8">
+2024-11-17 10:20:51,617 - application_logger - INFO - Function list_by_user executed successfully in views.py | Unknown User | No Object ID | Result: <Response status_code=200, "text/html; charset=utf-8">
+2024-11-17 10:21:07,794 - application_logger - INFO - Function list_by_user executed successfully in views.py | Unknown User | No Object ID | Result: <Response status_code=200, "text/html; charset=utf-8">
+2024-11-17 10:21:16,028 - application_logger - INFO - Function list_by_user executed successfully in views.py | Unknown User | No Object ID | Result: <Response status_code=200, "text/html; charset=utf-8">
+2024-11-17 10:21:29,102 - application_logger - INFO - Function list_by_user executed successfully in views.py | Unknown User | No Object ID | Result: <Response status_code=200, "text/html; charset=utf-8">
+2024-11-17 10:24:54,748 - application_logger - INFO - Function get_token executed successfully in views.py | Unknown User | No Object ID | Result: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTczOTYxNTA5NCwiaWF0IjoxNzMxODM5MDk0LCJqdGkiOiJiNzY5MjcxZjY1MjI0YTQ3YTRmZDViYzcyM2E3YWI0NCIsInVzZXJfaWQiOjEsInVzZXJuYW1lIjoiY29yYWwifQ.hhF3Xs3ODY2HFS_n1dPB0WMWvtDiKKVTee97FT3PW28
+2024-11-17 10:24:54,793 - application_logger - INFO - Function list_by_user executed successfully in views.py | Unknown User | No Object ID | Result: <Response status_code=200, "text/html; charset=utf-8">
+2024-11-17 10:25:04,101 - application_logger - INFO - Function list_by_user executed successfully in views.py | Unknown User | No Object ID | Result: <Response status_code=200, "text/html; charset=utf-8">
+2024-11-17 10:25:07,316 - application_logger - INFO - Function list_by_user executed successfully in views.py | Unknown User | No Object ID | Result: <Response status_code=200, "text/html; charset=utf-8">
+2024-11-17 10:25:09,663 - application_logger - INFO - Function list_by_user executed successfully in views.py | Unknown User | No Object ID | Result: <Response status_code=200, "text/html; charset=utf-8">
+2024-11-17 10:25:17,315 - application_logger - INFO - Function list_by_user executed successfully in views.py | Unknown User | No Object ID | Result: <Response status_code=200, "text/html; charset=utf-8">
+2024-11-17 10:28:18,017 - application_logger - INFO - Function get_token executed successfully in views.py | Unknown User | No Object ID | Result: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTczOTYxNTI5OCwiaWF0IjoxNzMxODM5Mjk4LCJqdGkiOiJkNWY1YWNjN2FiNjQ0NDlhYjM4ODk5OWJkNjczN2Y3OCIsInVzZXJfaWQiOjEsInVzZXJuYW1lIjoiY29yYWwifQ.CFUxiHBxvDfuBg-iV2-Xi1v3TXmHI9lgFOfFSMU-I-k
+2024-11-17 10:28:18,063 - application_logger - INFO - Function list_by_user executed successfully in views.py | Unknown User | No Object ID | Result: <Response status_code=200, "text/html; charset=utf-8">
+2024-11-17 10:28:32,270 - application_logger - INFO - Function list_by_user executed successfully in views.py | Unknown User | No Object ID | Result: <Response status_code=200, "text/html; charset=utf-8">
+2024-11-17 10:28:42,850 - application_logger - INFO - Function list_by_user executed successfully in views.py | Unknown User | No Object ID | Result: <Response status_code=200, "text/html; charset=utf-8">
+2024-11-17 10:28:48,591 - application_logger - INFO - Function list_by_user executed successfully in views.py | Unknown User | No Object ID | Result: <Response status_code=200, "text/html; charset=utf-8">
+2024-11-17 10:29:34,022 - application_logger - INFO - Function get_token executed successfully in views.py | Unknown User | No Object ID | Result: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTczOTYxNTM3NCwiaWF0IjoxNzMxODM5Mzc0LCJqdGkiOiI5ZGI2YTQyYWMzMTE0MDkxOTI0ZjFmNDBhMGQxY2YwOCIsInVzZXJfaWQiOjEsInVzZXJuYW1lIjoiY29yYWwifQ.toh0dUA7b-sRkDYhWywjCaqjq2iaU9dL_0Oty4cr_dQ
+2024-11-17 10:29:34,059 - application_logger - INFO - Function list_by_user executed successfully in views.py | Unknown User | No Object ID | Result: <Response status_code=200, "text/html; charset=utf-8">
+2024-11-17 10:29:37,065 - application_logger - INFO - Function list_by_user executed successfully in views.py | Unknown User | No Object ID | Result: <Response status_code=200, "text/html; charset=utf-8">
+2024-11-17 10:29:45,221 - application_logger - INFO - Function list_by_user executed successfully in views.py | Unknown User | No Object ID | Result: <Response status_code=200, "text/html; charset=utf-8">
+2024-11-17 10:29:52,191 - application_logger - INFO - Function list_by_user executed successfully in views.py | Unknown User | No Object ID | Result: <Response status_code=200, "text/html; charset=utf-8">
+2024-11-17 10:29:57,792 - application_logger - INFO - Function list_by_user executed successfully in views.py | Unknown User | No Object ID | Result: <Response status_code=200, "text/html; charset=utf-8">
+2024-11-17 10:40:40,455 - application_logger - INFO - Function get_token executed successfully in views.py | Unknown User | No Object ID | Result: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTczOTYxNjA0MCwiaWF0IjoxNzMxODQwMDQwLCJqdGkiOiJiZjVmNjg0MzhkN2U0MGZhYjIzY2Y2MTIzMjk0OTZmZSIsInVzZXJfaWQiOjEsInVzZXJuYW1lIjoiY29yYWwifQ.uNNnGcU6WS40jRCjs-2UVbRMwBFcnq7pQbQouQaFBg0
+2024-11-17 10:40:40,496 - application_logger - INFO - Function list_by_user executed successfully in views.py | Unknown User | No Object ID | Result: <Response status_code=200, "text/html; charset=utf-8">
+2024-11-17 10:40:46,442 - application_logger - INFO - Function list_by_user executed successfully in views.py | Unknown User | No Object ID | Result: <Response status_code=200, "text/html; charset=utf-8">
+2024-11-17 10:40:53,755 - application_logger - INFO - Function list_by_user executed successfully in views.py | Unknown User | No Object ID | Result: <Response status_code=200, "text/html; charset=utf-8">
+2024-11-17 10:44:30,261 - application_logger - INFO - Function get_token executed successfully in views.py | Unknown User | No Object ID | Result: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTczOTYxNjI3MCwiaWF0IjoxNzMxODQwMjcwLCJqdGkiOiJjOTYxZWJlNzQ2OGI0OWQ5YjBlOTg3MGUzODFhMTRmNCIsInVzZXJfaWQiOjEsInVzZXJuYW1lIjoiY29yYWwifQ.CLct-xKKTkZYdFKg3QSKvHZ8FPEdZclGOdDR2Jh8OBQ
+2024-11-17 10:44:30,302 - application_logger - INFO - Function list_by_user executed successfully in views.py | Unknown User | No Object ID | Result: <Response status_code=200, "text/html; charset=utf-8">
+2024-11-17 10:44:34,428 - application_logger - INFO - Function list_by_user executed successfully in views.py | Unknown User | No Object ID | Result: <Response status_code=200, "text/html; charset=utf-8">
+2024-11-17 10:44:44,182 - application_logger - INFO - Function list_by_user executed successfully in views.py | Unknown User | No Object ID | Result: <Response status_code=200, "text/html; charset=utf-8">
+2024-11-17 10:45:36,144 - application_logger - INFO - Function get_token executed successfully in views.py | Unknown User | No Object ID | Result: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTczOTYxNjMzNiwiaWF0IjoxNzMxODQwMzM2LCJqdGkiOiI3OGYyM2EyNGQyN2M0ZGI5YWUxMjE4NjFlMjgzNDAxNiIsInVzZXJfaWQiOjEsInVzZXJuYW1lIjoiY29yYWwifQ.aUp9dbufXApymO-bnq9khGyLBV0onhaMA7-sgHhg1ms
+2024-11-17 10:45:36,190 - application_logger - INFO - Function list_by_user executed successfully in views.py | Unknown User | No Object ID | Result: <Response status_code=200, "text/html; charset=utf-8">
+2024-11-17 10:45:42,532 - application_logger - INFO - Function list_by_user executed successfully in views.py | Unknown User | No Object ID | Result: <Response status_code=200, "text/html; charset=utf-8">
+2024-11-17 10:45:49,112 - application_logger - INFO - Function list_by_user executed successfully in views.py | Unknown User | No Object ID | Result: <Response status_code=200, "text/html; charset=utf-8">
+2024-11-17 10:45:56,344 - application_logger - INFO - Function list_by_user executed successfully in views.py | Unknown User | No Object ID | Result: <Response status_code=200, "text/html; charset=utf-8">
+2024-11-17 10:46:00,685 - application_logger - INFO - Function list_by_user executed successfully in views.py | Unknown User | No Object ID | Result: <Response status_code=200, "text/html; charset=utf-8">
+2024-11-17 10:47:48,760 - application_logger - INFO - Function get_token executed successfully in views.py | Unknown User | No Object ID | Result: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTczOTYxNjQ2OCwiaWF0IjoxNzMxODQwNDY4LCJqdGkiOiJiYjg4YTE0N2Y0NmM0NDVlYjU1OWY0NGQ2YmE4NmQzMyIsInVzZXJfaWQiOjEsInVzZXJuYW1lIjoiY29yYWwifQ.ObR9ivMCxJMryBslYAQJ2nES4YKU550NrHGiEmu-Ql0
+2024-11-17 10:47:48,796 - application_logger - INFO - Function list_by_user executed successfully in views.py | Unknown User | No Object ID | Result: <Response status_code=200, "text/html; charset=utf-8">
+2024-11-17 10:48:00,077 - application_logger - INFO - Function list_by_user executed successfully in views.py | Unknown User | No Object ID | Result: <Response status_code=200, "text/html; charset=utf-8">
+2024-11-17 10:48:12,690 - application_logger - INFO - Function list_by_user executed successfully in views.py | Unknown User | No Object ID | Result: <Response status_code=200, "text/html; charset=utf-8">
+2024-11-17 10:48:25,101 - application_logger - INFO - Function list_by_user executed successfully in views.py | Unknown User | No Object ID | Result: <Response status_code=200, "text/html; charset=utf-8">
+2024-11-17 10:48:32,672 - application_logger - INFO - Function list_by_user executed successfully in views.py | Unknown User | No Object ID | Result: <Response status_code=200, "text/html; charset=utf-8">
+2024-11-17 10:48:41,143 - application_logger - INFO - Function list_by_user executed successfully in views.py | Unknown User | No Object ID | Result: <Response status_code=200, "text/html; charset=utf-8">
+2024-11-17 10:48:46,340 - application_logger - INFO - Function list_by_user executed successfully in views.py | Unknown User | No Object ID | Result: <Response status_code=200, "text/html; charset=utf-8">
+2024-11-17 10:48:52,867 - application_logger - INFO - Function list_by_user executed successfully in views.py | Unknown User | No Object ID | Result: <Response status_code=200, "text/html; charset=utf-8">
+2024-11-17 10:48:56,050 - application_logger - INFO - Function list_by_user executed successfully in views.py | Unknown User | No Object ID | Result: <Response status_code=200, "text/html; charset=utf-8">
+2024-11-17 10:55:42,048 - application_logger - INFO - Function get_token executed successfully in views.py | Unknown User | No Object ID | Result: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTczOTYxNjk0MiwiaWF0IjoxNzMxODQwOTQyLCJqdGkiOiJiZGMxNDdiN2JiZTE0ZTg5YjViMTFiNjdjZGNmNjdmYSIsInVzZXJfaWQiOjEsInVzZXJuYW1lIjoiY29yYWwifQ.IJUiu3i6I-UAIwDp-NPXTIhS74Dakx5zdPo-orD_bTc
+2024-11-17 10:55:42,093 - application_logger - INFO - Function list_by_user executed successfully in views.py | Unknown User | No Object ID | Result: <Response status_code=200, "text/html; charset=utf-8">
+2024-11-17 10:56:53,785 - application_logger - INFO - Function get_token executed successfully in views.py | Unknown User | No Object ID | Result: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTczOTYxNzAxMywiaWF0IjoxNzMxODQxMDEzLCJqdGkiOiIyZmNjMzMyNDI3MDY0NDVjOWY1NGQxZjA4M2U1M2U0YyIsInVzZXJfaWQiOjEsInVzZXJuYW1lIjoiY29yYWwifQ.RYpmNgcSqOVULupEFPl20cZeu15yP7EzQOHfB3CsuiY
+2024-11-17 10:56:53,822 - application_logger - INFO - Function list_by_user executed successfully in views.py | Unknown User | No Object ID | Result: <Response status_code=200, "text/html; charset=utf-8">
+2024-11-17 10:58:19,575 - application_logger - INFO - Function get_token executed successfully in views.py | Unknown User | No Object ID | Result: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTczOTYxNzA5OSwiaWF0IjoxNzMxODQxMDk5LCJqdGkiOiJkMzI5NDU2ZDcwZmI0NGFmODk4OTYzYTAyNDU0ZTFkYSIsInVzZXJfaWQiOjEsInVzZXJuYW1lIjoiY29yYWwifQ.VgQkB4TOzN_yC9DXW86lNwmV7IUhFxA-gZjCOXOFQNw
+2024-11-17 10:58:19,612 - application_logger - INFO - Function list_by_user executed successfully in views.py | Unknown User | No Object ID | Result: <Response status_code=200, "text/html; charset=utf-8">
+2024-11-17 11:00:06,722 - application_logger - INFO - Function list_by_user executed successfully in views.py | Unknown User | No Object ID | Result: <Response status_code=200, "text/html; charset=utf-8">
+2024-11-17 11:03:38,280 - application_logger - INFO - Function get_token executed successfully in views.py | Unknown User | No Object ID | Result: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTczOTYxNzQxOCwiaWF0IjoxNzMxODQxNDE4LCJqdGkiOiI1MTU1Mjc1ZjVhMGU0ODMwYWJjN2RmMGNjODlkYjNlZSIsInVzZXJfaWQiOjEsInVzZXJuYW1lIjoiY29yYWwifQ.LF_vJ5Z4nwGMnsGvj07zrP0IOL4rLwPn-6iQH912DBs
+2024-11-17 11:03:38,317 - application_logger - INFO - Function list_by_user executed successfully in views.py | Unknown User | No Object ID | Result: <Response status_code=200, "text/html; charset=utf-8">
+2024-11-17 11:03:48,757 - application_logger - INFO - Function list_by_user executed successfully in views.py | Unknown User | No Object ID | Result: <Response status_code=200, "text/html; charset=utf-8">
+2024-11-17 11:04:08,105 - application_logger - INFO - Function list_by_user executed successfully in views.py | Unknown User | No Object ID | Result: <Response status_code=200, "text/html; charset=utf-8">
+2024-11-17 11:04:20,094 - application_logger - INFO - Function list_by_user executed successfully in views.py | Unknown User | No Object ID | Result: <Response status_code=200, "text/html; charset=utf-8">
+2024-11-17 11:04:31,891 - application_logger - INFO - Function list_by_user executed successfully in views.py | Unknown User | No Object ID | Result: <Response status_code=200, "text/html; charset=utf-8">
+2024-11-17 11:04:40,962 - application_logger - INFO - Function list_by_user executed successfully in views.py | Unknown User | No Object ID | Result: <Response status_code=200, "text/html; charset=utf-8">
+2024-11-17 11:04:53,025 - application_logger - INFO - Function get_token executed successfully in views.py | Unknown User | No Object ID | Result: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTczOTYxNzQ5MywiaWF0IjoxNzMxODQxNDkzLCJqdGkiOiIxYzIwYTc1ZmJkM2E0YWEyOGQyYjJlZGYwZjZkZjBlOCIsInVzZXJfaWQiOjEsInVzZXJuYW1lIjoiY29yYWwifQ.0NpWDcA3YlEjcRVD-61KpTA5304JHReZvWA6TbfdSMw
+2024-11-17 11:04:53,075 - application_logger - INFO - Function list_by_user executed successfully in views.py | Unknown User | No Object ID | Result: <Response status_code=200, "text/html; charset=utf-8">
+2024-11-17 11:05:55,344 - application_logger - INFO - Function get_token executed successfully in views.py | Unknown User | No Object ID | Result: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTczOTYxNzU1NSwiaWF0IjoxNzMxODQxNTU1LCJqdGkiOiIwOWExOGMxYTVjNDk0MDliOWY4YmU1Njk2YzE5YmNkZiIsInVzZXJfaWQiOjEsInVzZXJuYW1lIjoiY29yYWwifQ.vBFFsL7-QMDSxlxUIELitQ6ZBVgA_CXLXezkYi0QDGQ
+2024-11-17 11:05:55,382 - application_logger - INFO - Function list_by_user executed successfully in views.py | Unknown User | No Object ID | Result: <Response status_code=200, "text/html; charset=utf-8">
+2024-11-17 11:09:22,261 - application_logger - INFO - Function get_token executed successfully in views.py | Unknown User | No Object ID | Result: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTczOTYxNzc2MiwiaWF0IjoxNzMxODQxNzYyLCJqdGkiOiJkMjRlNjAyYzFlYWU0YWU4OGQ3MDI2ODRlMTEzODk4NyIsInVzZXJfaWQiOjEsInVzZXJuYW1lIjoiY29yYWwifQ.TUhzK-h5Kteho6n0Hg_1vX8ax-DISH2DQ4TMdyCrCk8
+2024-11-17 11:09:22,292 - application_logger - INFO - Function list_by_user executed successfully in views.py | Unknown User | No Object ID | Result: <Response status_code=200, "text/html; charset=utf-8">
+2024-11-17 11:10:15,240 - application_logger - INFO - Function get_token executed successfully in views.py | Unknown User | No Object ID | Result: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTczOTYxNzgxNSwiaWF0IjoxNzMxODQxODE1LCJqdGkiOiI3NjYzYWUzYTJjYjE0MTA3YWI1ODk0NGNjZmFlNTI5OCIsInVzZXJfaWQiOjEsInVzZXJuYW1lIjoiY29yYWwifQ.XKGq2zFFnZ2srxnCX0jYfd6-lzZFjD1bRH7Q_Hn8DXo
+2024-11-17 11:10:15,269 - application_logger - INFO - Function list_by_user executed successfully in views.py | Unknown User | No Object ID | Result: <Response status_code=200, "text/html; charset=utf-8">
+2024-11-17 11:10:54,547 - application_logger - INFO - Function get_token executed successfully in views.py | Unknown User | No Object ID | Result: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTczOTYxNzg1NCwiaWF0IjoxNzMxODQxODU0LCJqdGkiOiJhNzYwNjdjYzY5MzU0ZTQ3YjVjM2I1N2M5ODNlODFiNSIsInVzZXJfaWQiOjEsInVzZXJuYW1lIjoiY29yYWwifQ.u8uw4Kl0ZL3DXYLDY5I4xkejlbgWUkF7inOq_ygjn3E
+2024-11-17 11:10:54,581 - application_logger - INFO - Function list_by_user executed successfully in views.py | Unknown User | No Object ID | Result: <Response status_code=200, "text/html; charset=utf-8">
+2024-11-17 11:11:01,706 - application_logger - INFO - Function list_by_user executed successfully in views.py | Unknown User | No Object ID | Result: <Response status_code=200, "text/html; charset=utf-8">
+2024-11-17 11:11:06,973 - application_logger - INFO - Function list_by_user executed successfully in views.py | Unknown User | No Object ID | Result: <Response status_code=200, "text/html; charset=utf-8">
+2024-11-17 11:11:16,093 - application_logger - INFO - Function list_by_user executed successfully in views.py | Unknown User | No Object ID | Result: <Response status_code=200, "text/html; charset=utf-8">
+2024-11-17 11:11:25,986 - application_logger - INFO - Function list_by_user executed successfully in views.py | Unknown User | No Object ID | Result: <Response status_code=200, "text/html; charset=utf-8">
+2024-11-17 11:11:53,755 - application_logger - INFO - Function get_token executed successfully in views.py | Unknown User | No Object ID | Result: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTczOTYxNzkxMywiaWF0IjoxNzMxODQxOTEzLCJqdGkiOiI5NzEyOWM5YmZiYzI0MGVjOWY3MzE4MjEyZTcxYzA5OSIsInVzZXJfaWQiOjEsInVzZXJuYW1lIjoiY29yYWwifQ.7CNpOVivgdMLNP8RgDe_XUh3PZjYlvmDdS42pPWbUGM
+2024-11-17 11:11:53,787 - application_logger - INFO - Function list_by_user executed successfully in views.py | Unknown User | No Object ID | Result: <Response status_code=200, "text/html; charset=utf-8">
+2024-11-17 11:13:13,112 - application_logger - INFO - Function get_token executed successfully in views.py | Unknown User | No Object ID | Result: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTczOTYxNzk5MywiaWF0IjoxNzMxODQxOTkzLCJqdGkiOiI3Y2MyYTljMmE0Y2E0YjI0YTdlOGUxNGFkYWZkNzY2NCIsInVzZXJfaWQiOjEsInVzZXJuYW1lIjoiY29yYWwifQ.QJalN59R2-9cCcDV9gKu5YHX_MiGMMxDm-ZVRxyPgxQ
+2024-11-17 11:13:13,147 - application_logger - INFO - Function list_by_user executed successfully in views.py | Unknown User | No Object ID | Result: <Response status_code=200, "text/html; charset=utf-8">
+2024-11-17 11:13:28,754 - application_logger - INFO - Function list_by_user executed successfully in views.py | Unknown User | No Object ID | Result: <Response status_code=200, "text/html; charset=utf-8">
+2024-11-17 11:13:39,901 - application_logger - INFO - Function list_by_user executed successfully in views.py | Unknown User | No Object ID | Result: <Response status_code=200, "text/html; charset=utf-8">
+2024-11-17 11:13:43,549 - application_logger - INFO - Function list_by_user executed successfully in views.py | Unknown User | No Object ID | Result: <Response status_code=200, "text/html; charset=utf-8">
+2024-11-17 12:02:41,270 - django.request - WARNING - Unauthorized: /listitem/
+2024-11-17 12:03:10,721 - application_logger - INFO - Function get_token executed successfully in views.py | Unknown User | No Object ID | Result: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTczOTYyMDk5MCwiaWF0IjoxNzMxODQ0OTkwLCJqdGkiOiIyOGUyNGRlNjBhMWE0NmEzODliZmRjMTliYWFmNGYyMCIsInVzZXJfaWQiOjEsInVzZXJuYW1lIjoiY29yYWwifQ.GONcr1P9TMBoRRLsp4onObHVX9UWLa5tzg4Mz6YzHuk
+2024-11-17 12:03:10,756 - application_logger - INFO - Function list_by_user executed successfully in views.py | Unknown User | No Object ID | Result: <Response status_code=200, "text/html; charset=utf-8">
+2024-11-17 12:03:38,134 - application_logger - INFO - Function perform_create executed successfully in views.py | Unknown User | No Object ID | Result: None
+2024-11-17 12:03:38,148 - application_logger - INFO - Function create executed successfully in views.py | Unknown User | No Object ID | Result: <Response status_code=201, "text/html; charset=utf-8">
+2024-11-17 12:03:38,161 - application_logger - INFO - Function upload_images executed successfully in views.py | Unknown User | No Object ID | Result: <Response status_code=201, "text/html; charset=utf-8">
+2024-11-17 12:03:38,190 - application_logger - INFO - Function list_by_user executed successfully in views.py | Unknown User | No Object ID | Result: <Response status_code=200, "text/html; charset=utf-8">
+2024-11-17 12:04:04,675 - application_logger - INFO - Function get_queryset executed successfully in views.py | Unknown User | No Object ID | Result: <QuerySet [<ListItem: tessttt>]>
+2024-11-17 12:04:04,681 - application_logger - INFO - Function perform_update executed successfully in views.py | Unknown User | No Object ID | Result: None
+2024-11-17 12:08:20,742 - application_logger - INFO - Function get_token executed successfully in views.py | Unknown User | No Object ID | Result: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTczOTYyMTMwMCwiaWF0IjoxNzMxODQ1MzAwLCJqdGkiOiI3NWJlYzZiZmY0YTQ0YWY5OGE3ZmFkZmYzNmM5ODg0YyIsInVzZXJfaWQiOjEsInVzZXJuYW1lIjoiY29yYWwifQ.-37f5-5fV9Nf-7jgoCrmPhdOyAK2qVNAKAoXvLTZN4E
+2024-11-17 12:08:20,770 - application_logger - INFO - Function list_by_user executed successfully in views.py | Unknown User | No Object ID | Result: <Response status_code=200, "text/html; charset=utf-8">
+2024-11-17 12:08:28,779 - application_logger - INFO - Function get_queryset executed successfully in views.py | Unknown User | No Object ID | Result: <QuerySet [<ListItem: tessttt>]>
+2024-11-17 12:08:28,783 - application_logger - INFO - Function perform_update executed successfully in views.py | Unknown User | No Object ID | Result: None
+2024-11-17 12:11:48,163 - application_logger - INFO - Function get_token executed successfully in views.py | Unknown User | No Object ID | Result: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTczOTYyMTUwOCwiaWF0IjoxNzMxODQ1NTA4LCJqdGkiOiIyMGVmOThhNmJiMTE0YjNkOTMzMTI1NmFhZDU0YjgxYSIsInVzZXJfaWQiOjEsInVzZXJuYW1lIjoiY29yYWwifQ.RtTKi-b0ltB8a0ePzWuG7fK27q82lY3Gem-Xi92dXds
+2024-11-17 12:11:48,207 - application_logger - INFO - Function list_by_user executed successfully in views.py | Unknown User | No Object ID | Result: <Response status_code=200, "text/html; charset=utf-8">
+2024-11-17 12:11:51,006 - application_logger - INFO - Function list_by_user executed successfully in views.py | Unknown User | No Object ID | Result: <Response status_code=200, "text/html; charset=utf-8">
+2024-11-17 12:12:01,089 - application_logger - INFO - Function get_queryset executed successfully in views.py | Unknown User | No Object ID | Result: <QuerySet [<ListItem: tessttt>]>
+2024-11-17 12:12:01,092 - application_logger - INFO - Function perform_update executed successfully in views.py | Unknown User | No Object ID | Result: None
+2024-11-17 12:13:32,076 - application_logger - INFO - Function get_token executed successfully in views.py | Unknown User | No Object ID | Result: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTczOTYyMTYxMiwiaWF0IjoxNzMxODQ1NjEyLCJqdGkiOiIwOTE1NTgzNWNjNTc0YmZhOWI4MDFmYWU3ZGRmYjFlNSIsInVzZXJfaWQiOjEsInVzZXJuYW1lIjoiY29yYWwifQ.BFccYA35Vf3lOTw_HkX76aEb3wcnB2C4MLsP1BX3LUI
+2024-11-17 12:13:32,117 - application_logger - INFO - Function list_by_user executed successfully in views.py | Unknown User | No Object ID | Result: <Response status_code=200, "text/html; charset=utf-8">
+2024-11-17 12:13:36,002 - application_logger - INFO - Function list_by_user executed successfully in views.py | Unknown User | No Object ID | Result: <Response status_code=200, "text/html; charset=utf-8">
+2024-11-17 12:13:43,362 - application_logger - INFO - Function get_queryset executed successfully in views.py | Unknown User | No Object ID | Result: <QuerySet [<ListItem: tessttt>]>
+2024-11-17 12:13:43,366 - application_logger - INFO - Function perform_update executed successfully in views.py | Unknown User | No Object ID | Result: None
+2024-11-17 12:16:37,343 - application_logger - INFO - Function get_token executed successfully in views.py | Unknown User | No Object ID | Result: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTczOTYyMTc5NywiaWF0IjoxNzMxODQ1Nzk3LCJqdGkiOiI2MGM1NjgxMTIxZWM0NzZjYjUyMTExYTEzM2E0ZjRkOSIsInVzZXJfaWQiOjEsInVzZXJuYW1lIjoiY29yYWwifQ.7CCJ_fumzNB-L9lIXd9EHKxJShb1UFPyP7rtGZvZiRI
+2024-11-17 12:16:37,382 - application_logger - INFO - Function list_by_user executed successfully in views.py | Unknown User | No Object ID | Result: <Response status_code=200, "text/html; charset=utf-8">
+2024-11-17 12:17:19,869 - application_logger - INFO - Function get_token executed successfully in views.py | Unknown User | No Object ID | Result: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTczOTYyMTgzOSwiaWF0IjoxNzMxODQ1ODM5LCJqdGkiOiI4MzM0MWNlYTcxYzg0ZTMyOThjM2EyZjE5ZTExYmNlNiIsInVzZXJfaWQiOjEsInVzZXJuYW1lIjoiY29yYWwifQ.7Rcgapvsz9Mn9Mh5CB_3TPZFIkTmehF2n59KhLddO-w
+2024-11-17 12:17:19,914 - application_logger - INFO - Function list_by_user executed successfully in views.py | Unknown User | No Object ID | Result: <Response status_code=200, "text/html; charset=utf-8">
+2024-11-17 12:17:42,692 - application_logger - INFO - Function perform_create executed successfully in views.py | Unknown User | No Object ID | Result: None
+2024-11-17 12:17:42,706 - application_logger - INFO - Function create executed successfully in views.py | Unknown User | No Object ID | Result: <Response status_code=201, "text/html; charset=utf-8">
+2024-11-17 12:17:42,738 - application_logger - INFO - Function upload_images executed successfully in views.py | Unknown User | No Object ID | Result: <Response status_code=201, "text/html; charset=utf-8">
+2024-11-17 12:17:42,772 - application_logger - INFO - Function list_by_user executed successfully in views.py | Unknown User | No Object ID | Result: <Response status_code=200, "text/html; charset=utf-8">
+2024-11-17 12:18:13,367 - application_logger - INFO - Function get_token executed successfully in views.py | Unknown User | No Object ID | Result: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTczOTYyMTg5MywiaWF0IjoxNzMxODQ1ODkzLCJqdGkiOiJjYzRiNGY0YzcwMDU0N2Y2YTA0MDE1MjU3ODUxNjU0YSIsInVzZXJfaWQiOjEsInVzZXJuYW1lIjoiY29yYWwifQ.d9WwD8lgYiBgAXXbwuWVCwuO0mZI0njlQMqm-c90azU
+2024-11-17 12:18:13,407 - application_logger - INFO - Function list_by_user executed successfully in views.py | Unknown User | No Object ID | Result: <Response status_code=200, "text/html; charset=utf-8">
+2024-11-17 12:26:26,463 - application_logger - INFO - Function get_token executed successfully in views.py | Unknown User | No Object ID | Result: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTczOTYyMjM4NiwiaWF0IjoxNzMxODQ2Mzg2LCJqdGkiOiI2MGI5NTI3YjAzNTk0NDg5OTg2ODAxYjc1NGVjZWFhYiIsInVzZXJfaWQiOjEsInVzZXJuYW1lIjoiY29yYWwifQ.pxNcJ6fo2qnIQ5p4rO_7dTdEvy6Sz5bGH-stI5QgO48
+2024-11-17 12:26:26,491 - application_logger - INFO - Function list_by_user executed successfully in views.py | Unknown User | No Object ID | Result: <Response status_code=200, "text/html; charset=utf-8">
+2024-11-17 12:26:30,053 - application_logger - INFO - Function list_by_user executed successfully in views.py | Unknown User | No Object ID | Result: <Response status_code=200, "text/html; charset=utf-8">
+2024-11-17 12:26:40,823 - application_logger - INFO - Function get_queryset executed successfully in views.py | Unknown User | No Object ID | Result: <QuerySet [<ListItem: tessttt>, <ListItem: dsesr>]>
+2024-11-17 12:26:40,828 - application_logger - INFO - Function perform_update executed successfully in views.py | Unknown User | No Object ID | Result: None
+2024-11-17 12:26:40,836 - application_logger - INFO - Function upload_images executed successfully in views.py | Unknown User | No Object ID | Result: <Response status_code=400, "text/html; charset=utf-8">
+2024-11-17 12:26:40,836 - django.request - WARNING - Bad Request: /listitemimages/upload_images/
+2024-11-17 12:26:40,851 - application_logger - INFO - Function list_by_user executed successfully in views.py | Unknown User | No Object ID | Result: <Response status_code=200, "text/html; charset=utf-8">
+2024-11-17 12:33:05,478 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-17 12:33:05,966 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-17 12:33:09,084 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-17 12:33:09,286 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-17 12:33:25,815 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/urls.py changed, reloading.
+2024-11-17 12:33:26,145 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-17 12:33:27,286 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/urls.py changed, reloading.
+2024-11-17 12:33:27,501 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-17 12:33:38,892 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-17 12:33:39,196 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-17 12:34:54,335 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-17 12:34:54,699 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-17 12:35:07,155 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-17 12:35:07,505 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-17 12:35:10,625 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-17 12:35:10,851 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-17 12:36:21,581 - application_logger - INFO - Function get_token executed successfully in views.py | Unknown User | No Object ID | Result: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTczOTYyMjk4MSwiaWF0IjoxNzMxODQ2OTgxLCJqdGkiOiIyNjY1MTA1YTg3MzA0ZGYzYTE0MTExNDQ1NDdkMmVkNiIsInVzZXJfaWQiOjEsInVzZXJuYW1lIjoiY29yYWwifQ.MU4_F_NSjWBEkSBMGs1ADefwL9pJWopufMpctqIg8vM
+2024-11-17 12:36:21,649 - application_logger - INFO - Function list_by_user executed successfully in views.py | Unknown User | No Object ID | Result: <Response status_code=200, "text/html; charset=utf-8">
+2024-11-17 12:36:22,624 - django.request - WARNING - Not Found: /listitemimages/1/get_images_for_list_item/
+2024-11-17 12:36:45,880 - application_logger - INFO - Function get_token executed successfully in views.py | Unknown User | No Object ID | Result: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTczOTYyMzAwNSwiaWF0IjoxNzMxODQ3MDA1LCJqdGkiOiIzYjRmOWQ4OTZkZjI0MmIxYTlkMTBjYWNlNGUxNTRlMCIsInVzZXJfaWQiOjEsInVzZXJuYW1lIjoiY29yYWwifQ.xlothyFzrWa4cgg74XYhypYBlmsgJjRjMNnQnMIfetQ
+2024-11-17 12:36:45,928 - application_logger - INFO - Function list_by_user executed successfully in views.py | Unknown User | No Object ID | Result: <Response status_code=200, "text/html; charset=utf-8">
+2024-11-17 12:36:47,080 - django.request - ERROR - Internal Server Error: /listitemimages/get_images_for_list_item/
+Traceback (most recent call last):
+  File "/Users/coralingber/Desktop/untitled folder 2/lista/backend/env/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/coralingber/Desktop/untitled folder 2/lista/backend/env/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/coralingber/Desktop/untitled folder 2/lista/backend/env/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/coralingber/Desktop/untitled folder 2/lista/backend/env/lib/python3.12/site-packages/rest_framework/viewsets.py", line 124, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/coralingber/Desktop/untitled folder 2/lista/backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/coralingber/Desktop/untitled folder 2/lista/backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/coralingber/Desktop/untitled folder 2/lista/backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Users/coralingber/Desktop/untitled folder 2/lista/backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: ListItemImageViewSet.get_images_for_list_item() missing 1 required positional argument: 'list_item_id'
+2024-11-17 12:38:42,326 - application_logger - INFO - Function get_token executed successfully in views.py | Unknown User | No Object ID | Result: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTczOTYyMzEyMiwiaWF0IjoxNzMxODQ3MTIyLCJqdGkiOiJlNTNiMGRjNDE0ZWM0NmRhYmVhOGQzNDBlMDVjYTVkNyIsInVzZXJfaWQiOjEsInVzZXJuYW1lIjoiY29yYWwifQ.6-YbLVn3VXWetFMo1Ts6Er4A8w1yZ43B9nF0fwKjkyM
+2024-11-17 12:38:42,364 - application_logger - INFO - Function list_by_user executed successfully in views.py | Unknown User | No Object ID | Result: <Response status_code=200, "text/html; charset=utf-8">
+2024-11-17 12:38:42,454 - application_logger - INFO - Function get_token executed successfully in views.py | Unknown User | No Object ID | Result: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTczOTYyMzEyMiwiaWF0IjoxNzMxODQ3MTIyLCJqdGkiOiI5NTFmMGJhYTc5Y2M0NzRiYTUzOWE2Yjg5NWQ2ZmEzMSIsInVzZXJfaWQiOjEsInVzZXJuYW1lIjoiY29yYWwifQ.3bScIyCSgn5Xa8RA_xo_ZYgHWPHd0xeMUqjR_wYB-xQ
+2024-11-17 12:38:43,470 - django.request - WARNING - Not Found: /listitemimages/1/get_images_for_list_item/
+2024-11-17 12:39:27,728 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-17 12:39:28,214 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-17 12:40:39,157 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-17 12:40:39,547 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-17 12:40:40,615 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-17 12:40:40,819 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-17 12:41:26,383 - application_logger - INFO - Function get_token executed successfully in views.py | Unknown User | No Object ID | Result: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTczOTYyMzI4NiwiaWF0IjoxNzMxODQ3Mjg2LCJqdGkiOiIzNWVkNDA2Mjg0YzA0Mjg1OTVmMmY1Y2ZhNDcyYjU5NSIsInVzZXJfaWQiOjEsInVzZXJuYW1lIjoiY29yYWwifQ.5vtHvleDtICC9m2ltVsazu3kr5BPNIPScKgbYLgZXoY
+2024-11-17 12:41:26,425 - application_logger - INFO - Function list_by_user executed successfully in views.py | Unknown User | No Object ID | Result: <Response status_code=200, "text/html; charset=utf-8">
+2024-11-17 12:41:27,414 - django.request - ERROR - Internal Server Error: /listitemimages/1/get_images_for_list_item/
+Traceback (most recent call last):
+  File "/Users/coralingber/Desktop/untitled folder 2/lista/backend/env/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/coralingber/Desktop/untitled folder 2/lista/backend/env/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/coralingber/Desktop/untitled folder 2/lista/backend/env/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/coralingber/Desktop/untitled folder 2/lista/backend/env/lib/python3.12/site-packages/rest_framework/viewsets.py", line 124, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/coralingber/Desktop/untitled folder 2/lista/backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/coralingber/Desktop/untitled folder 2/lista/backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/coralingber/Desktop/untitled folder 2/lista/backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Users/coralingber/Desktop/untitled folder 2/lista/backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: ListItemImageViewSet.get_images_for_list_item() got an unexpected keyword argument 'pk'
+2024-11-17 12:42:45,181 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-17 12:42:45,565 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-17 12:42:52,871 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-17 12:42:53,205 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-17 12:42:55,287 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-17 12:42:55,500 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-17 12:42:57,681 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-17 12:42:57,877 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-17 12:43:25,861 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-17 12:43:39,313 - application_logger - INFO - Function get_token executed successfully in views.py | Unknown User | No Object ID | Result: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTczOTYyMzQxOSwiaWF0IjoxNzMxODQ3NDE5LCJqdGkiOiJhYTJiYjdhMDA5NTk0MmE3OTMyNWI3NWEyZmVhYTMxOCIsInVzZXJfaWQiOjEsInVzZXJuYW1lIjoiY29yYWwifQ.rAEGRlzFiF8nr96afmhGyJtvDAYx0M6gYPxrjzbXL1I
+2024-11-17 12:43:39,369 - application_logger - INFO - Function list_by_user executed successfully in views.py | Unknown User | No Object ID | Result: <Response status_code=200, "text/html; charset=utf-8">
+2024-11-17 12:43:40,440 - django.request - ERROR - Internal Server Error: /listitemimages/1/get_images_for_list_item/
+Traceback (most recent call last):
+  File "/Users/coralingber/Desktop/untitled folder 2/lista/backend/env/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/coralingber/Desktop/untitled folder 2/lista/backend/env/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/coralingber/Desktop/untitled folder 2/lista/backend/env/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/coralingber/Desktop/untitled folder 2/lista/backend/env/lib/python3.12/site-packages/rest_framework/viewsets.py", line 124, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/coralingber/Desktop/untitled folder 2/lista/backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/coralingber/Desktop/untitled folder 2/lista/backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/coralingber/Desktop/untitled folder 2/lista/backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Users/coralingber/Desktop/untitled folder 2/lista/backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: ListItemImageViewSet.get_images_for_list_item() got an unexpected keyword argument 'pk'
+2024-11-17 12:44:11,606 - django.request - ERROR - Internal Server Error: /listitemimages/1/get_images_for_list_item/
+Traceback (most recent call last):
+  File "/Users/coralingber/Desktop/untitled folder 2/lista/backend/env/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/coralingber/Desktop/untitled folder 2/lista/backend/env/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/coralingber/Desktop/untitled folder 2/lista/backend/env/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/coralingber/Desktop/untitled folder 2/lista/backend/env/lib/python3.12/site-packages/rest_framework/viewsets.py", line 124, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/coralingber/Desktop/untitled folder 2/lista/backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/coralingber/Desktop/untitled folder 2/lista/backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/coralingber/Desktop/untitled folder 2/lista/backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Users/coralingber/Desktop/untitled folder 2/lista/backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: ListItemImageViewSet.get_images_for_list_item() got an unexpected keyword argument 'pk'
+2024-11-17 12:44:11,697 - django.request - WARNING - Not Found: /favicon.ico
+2024-11-17 12:45:05,902 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-17 12:45:06,311 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-17 12:45:07,381 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-17 12:45:07,578 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-17 12:45:09,756 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-17 12:45:09,968 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-17 12:45:16,040 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-17 12:45:43,681 - application_logger - INFO - Function get_token executed successfully in views.py | Unknown User | No Object ID | Result: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTczOTYyMzU0MywiaWF0IjoxNzMxODQ3NTQzLCJqdGkiOiJmNWU1NWUzNmM1Yzc0Y2JlYTQ0M2QzNzkzNmNhMGVhOCIsInVzZXJfaWQiOjEsInVzZXJuYW1lIjoiY29yYWwifQ.Mxj-h1-xvlrxbOzHVP3K8xDSTgPTY7zEwxnDiaphW6g
+2024-11-17 12:45:43,714 - application_logger - INFO - Function list_by_user executed successfully in views.py | Unknown User | No Object ID | Result: <Response status_code=200, "text/html; charset=utf-8">
+2024-11-17 12:46:47,491 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-17 12:46:47,861 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-17 12:46:49,015 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-17 12:46:49,203 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-17 12:46:53,400 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-17 12:46:53,627 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-17 12:46:55,718 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-17 12:46:55,942 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-17 12:46:58,092 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-17 12:46:58,345 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-17 12:47:01,542 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-17 12:47:01,766 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-17 12:47:07,867 - application_logger - INFO - Function get_token executed successfully in views.py | Unknown User | No Object ID | Result: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTczOTYyMzYyNywiaWF0IjoxNzMxODQ3NjI3LCJqdGkiOiI1ZTBmYmFhMzY0MTY0NWE1YWIwNmJiMGEzODYwZGM1NyIsInVzZXJfaWQiOjEsInVzZXJuYW1lIjoiY29yYWwifQ.thIzXCRK4HvkN0Ty_00-DMrSrA-mfP9ZmIgSsPqj1-U
+2024-11-17 12:47:07,928 - application_logger - INFO - Function list_by_user executed successfully in views.py | Unknown User | No Object ID | Result: <Response status_code=200, "text/html; charset=utf-8">
+2024-11-17 12:53:05,611 - application_logger - INFO - Function get_token executed successfully in views.py | Unknown User | No Object ID | Result: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTczOTYyMzk4NSwiaWF0IjoxNzMxODQ3OTg1LCJqdGkiOiJkZDViYzkxZTQyNWM0YzQ1ODk5NTZhMjVlM2IyYjNlZiIsInVzZXJfaWQiOjEsInVzZXJuYW1lIjoiY29yYWwifQ.8Dx_bIbCa3gC9MxAFQdeDEHKq8222IDv4mnWLTGJ_-4
+2024-11-17 12:53:05,652 - application_logger - INFO - Function list_by_user executed successfully in views.py | Unknown User | No Object ID | Result: <Response status_code=200, "text/html; charset=utf-8">
+2024-11-17 12:55:13,126 - application_logger - INFO - Function get_token executed successfully in views.py | Unknown User | No Object ID | Result: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTczOTYyNDExMywiaWF0IjoxNzMxODQ4MTEzLCJqdGkiOiI4OWEwMjI2NzJhOTQ0NWEzYjNjODllMTBmNzYwYWYzNiIsInVzZXJfaWQiOjEsInVzZXJuYW1lIjoiY29yYWwifQ.NSnbJ6BS5c6uG4y-52Viw62nQhlewz6QeGjDI4lfN18
+2024-11-17 12:55:13,193 - application_logger - INFO - Function list_by_user executed successfully in views.py | Unknown User | No Object ID | Result: <Response status_code=200, "text/html; charset=utf-8">
+2024-11-17 12:57:31,812 - application_logger - INFO - Function get_token executed successfully in views.py | Unknown User | No Object ID | Result: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTczOTYyNDI1MSwiaWF0IjoxNzMxODQ4MjUxLCJqdGkiOiI3MzQyMmMzNGVhNjI0ZTM3YWM5ZDc5YmU1Mjg4NjBlZCIsInVzZXJfaWQiOjEsInVzZXJuYW1lIjoiY29yYWwifQ.e0NeEKmNyerg7gBbHlkZ8TzBp2tz4FV4vlY1KmrfozQ
+2024-11-17 12:57:31,867 - application_logger - INFO - Function list_by_user executed successfully in views.py | Unknown User | No Object ID | Result: <Response status_code=200, "text/html; charset=utf-8">
+2024-11-17 12:57:34,242 - application_logger - INFO - Function list_by_user executed successfully in views.py | Unknown User | No Object ID | Result: <Response status_code=200, "text/html; charset=utf-8">
+2024-11-17 12:58:11,015 - application_logger - INFO - Function get_token executed successfully in views.py | Unknown User | No Object ID | Result: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTczOTYyNDI5MSwiaWF0IjoxNzMxODQ4MjkxLCJqdGkiOiI2YTMyOTAxYWViNGM0ZGU1OWM1NjNjNzk0NGZiMTI4YSIsInVzZXJfaWQiOjEsInVzZXJuYW1lIjoiY29yYWwifQ.kHGVtQZMgQxU67qgw_pOldLb3ao61zJmn5ijTeNbdNM
+2024-11-17 12:58:11,057 - application_logger - INFO - Function list_by_user executed successfully in views.py | Unknown User | No Object ID | Result: <Response status_code=200, "text/html; charset=utf-8">
+2024-11-17 12:58:32,524 - application_logger - INFO - Function get_token executed successfully in views.py | Unknown User | No Object ID | Result: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTczOTYyNDMxMiwiaWF0IjoxNzMxODQ4MzEyLCJqdGkiOiJiN2UxOTRmMDI1NWE0YTc3YTQwMDgwNWI4M2Y0M2E3NyIsInVzZXJfaWQiOjEsInVzZXJuYW1lIjoiY29yYWwifQ.DrrIAhm1qnK_2rxdFU_vwt7ZnsqozKEpsio-jtxAm54
+2024-11-17 12:58:32,570 - application_logger - INFO - Function list_by_user executed successfully in views.py | Unknown User | No Object ID | Result: <Response status_code=200, "text/html; charset=utf-8">
+2024-11-17 12:58:35,822 - application_logger - INFO - Function list_by_user executed successfully in views.py | Unknown User | No Object ID | Result: <Response status_code=200, "text/html; charset=utf-8">
+2024-11-17 12:58:48,119 - application_logger - INFO - Function perform_create executed successfully in views.py | Unknown User | No Object ID | Result: None
+2024-11-17 12:58:48,139 - application_logger - INFO - Function create executed successfully in views.py | Unknown User | No Object ID | Result: <Response status_code=201, "text/html; charset=utf-8">
+2024-11-17 12:58:48,147 - application_logger - INFO - Function upload_images executed successfully in views.py | Unknown User | No Object ID | Result: <Response status_code=400, "text/html; charset=utf-8">
+2024-11-17 12:58:48,147 - django.request - WARNING - Bad Request: /listitemimages/upload_images/
+2024-11-17 12:59:03,155 - application_logger - INFO - Function get_token executed successfully in views.py | Unknown User | No Object ID | Result: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTczOTYyNDM0MywiaWF0IjoxNzMxODQ4MzQzLCJqdGkiOiI1ZDk4NjcwYTg0N2I0Y2I5ODM1MDM0OTgwNjkxOTI5NyIsInVzZXJfaWQiOjEsInVzZXJuYW1lIjoiY29yYWwifQ.xjcDISN_5sdlh1nFBMpQxZz5_nJILzUzMNUyhZ73kWk
+2024-11-17 12:59:03,196 - application_logger - INFO - Function list_by_user executed successfully in views.py | Unknown User | No Object ID | Result: <Response status_code=200, "text/html; charset=utf-8">
+2024-11-17 12:59:08,195 - application_logger - INFO - Function get_queryset executed successfully in views.py | Unknown User | No Object ID | Result: <QuerySet [<ListItem: tessttt>, <ListItem: dsesr>, <ListItem: srer>]>
+2024-11-17 12:59:08,197 - application_logger - INFO - Function perform_update executed successfully in views.py | Unknown User | No Object ID | Result: None
+2024-11-17 12:59:08,204 - application_logger - INFO - Function upload_images executed successfully in views.py | Unknown User | No Object ID | Result: <Response status_code=400, "text/html; charset=utf-8">
+2024-11-17 12:59:08,204 - django.request - WARNING - Bad Request: /listitemimages/upload_images/
+2024-11-17 13:01:56,019 - application_logger - INFO - Function get_token executed successfully in views.py | Unknown User | No Object ID | Result: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTczOTYyNDUxNiwiaWF0IjoxNzMxODQ4NTE2LCJqdGkiOiIwZmRlZWU1MTIyZDA0Y2Y2YmE4ZTBlOWRlMDFhMjVlOCIsInVzZXJfaWQiOjEsInVzZXJuYW1lIjoiY29yYWwifQ.yiLAsd54QaODM-UEgCVq1KpIQyVwAQ6ER5NqzCbBmgw
+2024-11-17 13:01:56,081 - application_logger - INFO - Function list_by_user executed successfully in views.py | Unknown User | No Object ID | Result: <Response status_code=200, "text/html; charset=utf-8">
+2024-11-17 13:02:04,588 - application_logger - INFO - Function get_queryset executed successfully in views.py | Unknown User | No Object ID | Result: <QuerySet [<ListItem: tessttt>, <ListItem: dsesr>, <ListItem: srer>]>
+2024-11-17 13:02:04,592 - application_logger - INFO - Function perform_update executed successfully in views.py | Unknown User | No Object ID | Result: None
+2024-11-17 13:02:04,604 - application_logger - INFO - Function upload_images executed successfully in views.py | Unknown User | No Object ID | Result: <Response status_code=400, "text/html; charset=utf-8">
+2024-11-17 13:02:04,604 - django.request - WARNING - Bad Request: /listitemimages/upload_images/
+2024-11-17 13:02:32,732 - application_logger - INFO - Function get_token executed successfully in views.py | Unknown User | No Object ID | Result: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTczOTYyNDU1MiwiaWF0IjoxNzMxODQ4NTUyLCJqdGkiOiJiN2U4OTliMzc1MjA0MjRhOGI3MGRmOTg1ZmVjNGE5MSIsInVzZXJfaWQiOjEsInVzZXJuYW1lIjoiY29yYWwifQ.BIvUjMGJUbZVf60r5vMVs4wB7VcJLJXheVh2zX7aEK0
+2024-11-17 13:02:32,777 - application_logger - INFO - Function list_by_user executed successfully in views.py | Unknown User | No Object ID | Result: <Response status_code=200, "text/html; charset=utf-8">
+2024-11-17 13:02:36,204 - application_logger - INFO - Function list_by_user executed successfully in views.py | Unknown User | No Object ID | Result: <Response status_code=200, "text/html; charset=utf-8">
+2024-11-17 13:02:44,798 - application_logger - INFO - Function get_queryset executed successfully in views.py | Unknown User | No Object ID | Result: <QuerySet [<ListItem: tessttt>, <ListItem: dsesr>, <ListItem: srer>]>
+2024-11-17 13:02:44,802 - application_logger - INFO - Function perform_update executed successfully in views.py | Unknown User | No Object ID | Result: None
+2024-11-17 13:02:44,818 - application_logger - INFO - Function upload_images executed successfully in views.py | Unknown User | No Object ID | Result: <Response status_code=201, "text/html; charset=utf-8">
+2024-11-17 13:02:44,847 - application_logger - INFO - Function list_by_user executed successfully in views.py | Unknown User | No Object ID | Result: <Response status_code=200, "text/html; charset=utf-8">
+2024-11-17 13:08:40,186 - application_logger - INFO - Function get_token executed successfully in views.py | Unknown User | No Object ID | Result: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTczOTYyNDkyMCwiaWF0IjoxNzMxODQ4OTIwLCJqdGkiOiI3ZGQ2Yjk3YTdhYWU0OWQ0ODNkMzE5NTVlYTBiNmJkNSIsInVzZXJfaWQiOjEsInVzZXJuYW1lIjoiY29yYWwifQ.chptcdBdSuunwGz6t8GdUPk4_AwinFTsfcdqRO8DJU0
+2024-11-17 13:08:40,231 - application_logger - INFO - Function list_by_user executed successfully in views.py | Unknown User | No Object ID | Result: <Response status_code=200, "text/html; charset=utf-8">
+2024-11-17 13:08:47,758 - application_logger - INFO - Function get_queryset executed successfully in views.py | Unknown User | No Object ID | Result: <QuerySet [<ListItem: tessttt>, <ListItem: dsesr>, <ListItem: srer>]>
+2024-11-17 13:08:47,762 - application_logger - INFO - Function perform_update executed successfully in views.py | Unknown User | No Object ID | Result: None
+2024-11-17 13:08:47,768 - application_logger - INFO - Function upload_images executed successfully in views.py | Unknown User | No Object ID | Result: <Response status_code=400, "text/html; charset=utf-8">
+2024-11-17 13:08:47,768 - django.request - WARNING - Bad Request: /listitemimages/upload_images/
+2024-11-17 13:08:47,813 - application_logger - INFO - Function list_by_user executed successfully in views.py | Unknown User | No Object ID | Result: <Response status_code=200, "text/html; charset=utf-8">
+2024-11-17 13:08:51,133 - application_logger - INFO - Function list_by_user executed successfully in views.py | Unknown User | No Object ID | Result: <Response status_code=200, "text/html; charset=utf-8">
+2024-11-17 13:08:58,215 - application_logger - INFO - Function list_by_user executed successfully in views.py | Unknown User | No Object ID | Result: <Response status_code=200, "text/html; charset=utf-8">
+2024-11-17 13:09:45,839 - application_logger - INFO - Function get_token executed successfully in views.py | Unknown User | No Object ID | Result: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTczOTYyNDk4NSwiaWF0IjoxNzMxODQ4OTg1LCJqdGkiOiI3Y2VhNWQzM2E0MTY0ZTRlYjhkMWY0NjBhN2ZiNDgzOCIsInVzZXJfaWQiOjEsInVzZXJuYW1lIjoiY29yYWwifQ._rk-nNAMaKYbNzYcMOGpackQyq9HA9eG7Szc5K5vo80
+2024-11-17 13:09:45,888 - application_logger - INFO - Function list_by_user executed successfully in views.py | Unknown User | No Object ID | Result: <Response status_code=200, "text/html; charset=utf-8">
+2024-11-17 13:15:48,255 - application_logger - INFO - Function get_token executed successfully in views.py | Unknown User | No Object ID | Result: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTczOTYyNTM0OCwiaWF0IjoxNzMxODQ5MzQ4LCJqdGkiOiI4NjZlZTEzNWMzYWY0OWUxYWVjZWE3M2IwMmViZTdhOCIsInVzZXJfaWQiOjEsInVzZXJuYW1lIjoiY29yYWwifQ.5NGySHX9kvidxRkrYoz4AWF_cNbHazYEIUamciFarsQ
+2024-11-17 13:15:48,308 - application_logger - INFO - Function list_by_user executed successfully in views.py | Unknown User | No Object ID | Result: <Response status_code=200, "text/html; charset=utf-8">
+2024-11-17 13:15:54,791 - application_logger - INFO - Function get_queryset executed successfully in views.py | Unknown User | No Object ID | Result: <QuerySet [<ListItem: tessttt>, <ListItem: dsesr>, <ListItem: srer>]>
+2024-11-17 13:15:54,795 - application_logger - INFO - Function perform_update executed successfully in views.py | Unknown User | No Object ID | Result: None
+2024-11-17 13:16:17,366 - application_logger - INFO - Function get_token executed successfully in views.py | Unknown User | No Object ID | Result: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTczOTYyNTM3NywiaWF0IjoxNzMxODQ5Mzc3LCJqdGkiOiJiNmY4MWUzYmM1ZDA0MmIwYmU5MWNlMjlkYTE0YTBhZSIsInVzZXJfaWQiOjEsInVzZXJuYW1lIjoiY29yYWwifQ.KWHafyc7-9u6f7mtrENgmuXPpbTkZMwoWrOdgvPPU4U
+2024-11-17 13:16:17,408 - application_logger - INFO - Function list_by_user executed successfully in views.py | Unknown User | No Object ID | Result: <Response status_code=200, "text/html; charset=utf-8">
+2024-11-17 13:16:22,731 - application_logger - INFO - Function get_queryset executed successfully in views.py | Unknown User | No Object ID | Result: <QuerySet [<ListItem: tessttt>, <ListItem: dsesr>, <ListItem: srer>]>
+2024-11-17 13:16:22,736 - application_logger - INFO - Function perform_update executed successfully in views.py | Unknown User | No Object ID | Result: None
+2024-11-17 13:16:22,743 - application_logger - INFO - Function upload_images executed successfully in views.py | Unknown User | No Object ID | Result: <Response status_code=400, "text/html; charset=utf-8">
+2024-11-17 13:16:22,744 - django.request - WARNING - Bad Request: /listitemimages/upload_images/
+2024-11-17 13:16:22,767 - application_logger - INFO - Function list_by_user executed successfully in views.py | Unknown User | No Object ID | Result: <Response status_code=200, "text/html; charset=utf-8">
+2024-11-17 13:18:12,425 - application_logger - INFO - Function get_token executed successfully in views.py | Unknown User | No Object ID | Result: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTczOTYyNTQ5MiwiaWF0IjoxNzMxODQ5NDkyLCJqdGkiOiI1YjQ1Y2U3NjY3YTA0Yzc5OWIwOGMyNTMzOTFlNmFkYSIsInVzZXJfaWQiOjEsInVzZXJuYW1lIjoiY29yYWwifQ.dTK_ZxjJcZkP9j0HGW8dlX_coO2C8x7b3pMy6zDD1OE
+2024-11-17 13:18:12,482 - application_logger - INFO - Function list_by_user executed successfully in views.py | Unknown User | No Object ID | Result: <Response status_code=200, "text/html; charset=utf-8">
+2024-11-17 13:20:44,593 - application_logger - INFO - Function get_token executed successfully in views.py | Unknown User | No Object ID | Result: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTczOTYyNTY0NCwiaWF0IjoxNzMxODQ5NjQ0LCJqdGkiOiI2NTQ4NjhlMDRkYzE0NGM5YTVjNjU4YjkwNGYzYjEwNSIsInVzZXJfaWQiOjEsInVzZXJuYW1lIjoiY29yYWwifQ.GdHG7XQT7xC5-PS04NKatGA6FJgIjusl2EErSWLAaFU
+2024-11-17 13:20:44,641 - application_logger - INFO - Function list_by_user executed successfully in views.py | Unknown User | No Object ID | Result: <Response status_code=200, "text/html; charset=utf-8">
+2024-11-17 13:22:24,235 - application_logger - INFO - Function get_token executed successfully in views.py | Unknown User | No Object ID | Result: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTczOTYyNTc0NCwiaWF0IjoxNzMxODQ5NzQ0LCJqdGkiOiIyOTVkYzBhYjJjMDQ0NmY1YjdkYWQ5YTMwNTc1MDZjMCIsInVzZXJfaWQiOjEsInVzZXJuYW1lIjoiY29yYWwifQ.xALtmcvI4132XCoGuu2f7BD7UHaqpQZKrDMLQ8eKe90
+2024-11-17 13:22:24,276 - application_logger - INFO - Function list_by_user executed successfully in views.py | Unknown User | No Object ID | Result: <Response status_code=200, "text/html; charset=utf-8">
+2024-11-17 13:23:47,072 - application_logger - INFO - Function get_token executed successfully in views.py | Unknown User | No Object ID | Result: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTczOTYyNTgyNywiaWF0IjoxNzMxODQ5ODI3LCJqdGkiOiIxOTgyMDU1N2FlNGY0MDc2OTgzODU3Y2FhODBmMjliNSIsInVzZXJfaWQiOjEsInVzZXJuYW1lIjoiY29yYWwifQ.EerX-H-xCm6dEYDF10BfP9F5J64K1iKAQ1WUhvpHt7k
+2024-11-17 13:23:47,106 - application_logger - INFO - Function list_by_user executed successfully in views.py | Unknown User | No Object ID | Result: <Response status_code=200, "text/html; charset=utf-8">
+2024-11-17 13:26:59,799 - application_logger - INFO - Function get_token executed successfully in views.py | Unknown User | No Object ID | Result: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTczOTYyNjAxOSwiaWF0IjoxNzMxODUwMDE5LCJqdGkiOiI1MTM2N2RjYzNkYWM0ZTUwODc2MmE3YTU1MjY2MjdlOCIsInVzZXJfaWQiOjEsInVzZXJuYW1lIjoiY29yYWwifQ.TkH3-ZpwFS2vIRoLuR1dnTKAzC_Dku0TARG23-gPQJA
+2024-11-17 13:26:59,829 - application_logger - INFO - Function list_by_user executed successfully in views.py | Unknown User | No Object ID | Result: <Response status_code=200, "text/html; charset=utf-8">
+2024-11-17 13:31:00,653 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/urls.py changed, reloading.
+2024-11-17 13:31:01,040 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
