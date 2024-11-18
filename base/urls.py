@@ -23,8 +23,5 @@ urlpatterns = [
    path('user/<int:user_id>/', views.update_user, name='update_user'),
    path('reset_password_request/', views.ResetPasswordRequestView.as_view(), name='reset_password_request'),
    path('reset_password/', views.ResetPasswordView.as_view(), name='reset_password'),
-   path('listitemimages/upload_images/', ListItemImageViewSet.as_view({'post': 'upload_images'}), name='upload_images'),
-
 ]
 
-# urlpatterns += router.urls

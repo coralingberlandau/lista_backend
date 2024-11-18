@@ -32,8 +32,6 @@ from django.conf import settings
 from sendgrid import SendGridAPIClient
 from sendgrid.helpers.mail import Mail, Email, Content
 
-
-
 import os
 
 from django.core.files.storage import default_storage
@@ -47,12 +45,12 @@ class ListItemViewSet(viewsets.ModelViewSet):
     queryset = ListItem.objects.all()
     serializer_class = ListItemSerializer
 
-    @log()
+    @log(user_id="request.user.id", object_id="list_item.id")
     def get_queryset(self):
         user_id = self.request.query_params.get('user_id')
         return ListItem.objects.filter(user_id=user_id) if user_id else ListItem.objects.all()
-
-    @log()
+    
+    @log(user_id="request.user.id", object_id="list_item.id")
     @action(detail=False, methods=['get'], url_path='by-user/(?P<user_id>\d+)')
     def get_by_user(self, request, user_id=None):
         user = request.user  # המשתמש המחובר מזוהה על ידי הטוקן
@@ -61,22 +59,23 @@ class ListItemViewSet(viewsets.ModelViewSet):
         user_items = ListItem.objects.filter(user=user)  # חיפוש הרשומות של המשתמש המחובר בלבד
         serializer = ListItemSerializer(user_items, many=True)
         return Response(serializer.data)
+    
 
-    @log()
+    @log(user_id="request.user.id", object_id="list_item.id")
     def perform_update(self, serializer):
         user = self.request.user
         if user.is_anonymous:
             raise PermissionDenied("User not logged in.")
         serializer.save(user=user)  # שמירה של המשתמש המחובר
 
-    @log()
+    @log(user_id="request.user.id", object_id="list_item.id")
     def perform_create(self, serializer):
         user = self.request.user
         if user.is_anonymous:
             raise PermissionDenied("User not logged in.")
         serializer.save(user=user)
 
-    @log()
+    @log(user_id="request.user.id", object_id="list_item.id")
     @action(detail=True, methods=['patch'])
     def delete_item(self, request, pk=None):
         """
@@ -101,7 +100,7 @@ class GroupListViewSet(viewsets.ModelViewSet):
     serializer_class = GroupListSerializer
     permission_classes = [IsAuthenticated]
 
-    @log()
+    @log(user_id="request.user.id", object_id="list_item.id")
     def get_queryset(self):
         user_id = self.request.query_params.get('user_id', None)
 
@@ -109,7 +108,7 @@ class GroupListViewSet(viewsets.ModelViewSet):
         list_item_ids = groupList.values_list('id', flat=True)
         return ListItem.objects.filter(id__in=list_item_ids)   
                                             
-    @log()
+    @log(user_id="request.user.id", object_id="list_item.id")
     def create(self, request, *args, **kwargs):
         # הוספת המשתמש המחובר כמשתמש ברשומה החדשה
         data = request.data.copy()
@@ -127,7 +126,7 @@ class GroupListViewSet(viewsets.ModelViewSet):
             status=status.HTTP_201_CREATED
         )
     
-    @log()
+    @log(user_id="request.user.id", object_id="list_item.id")
     def update(self, request, *args, **kwargs):
         # קבלת הרשומה לפי ה-PK
         instance = self.get_object()
@@ -155,7 +154,7 @@ class GroupListViewSet(viewsets.ModelViewSet):
             status=status.HTTP_200_OK
         )
     
-    @log()
+    @log(user_id="request.user.id", object_id="list_item.id")
     @action(detail=False, methods=['get'], url_path='by-user/(?P<user_id>\d+)')
     def list_by_user(self, request, user_id):
         user_id = request.user.id
@@ -170,7 +169,8 @@ class GroupListViewSet(viewsets.ModelViewSet):
 
 class MyTokenObtainPairSerializer(TokenObtainPairSerializer):
     @classmethod
-    @log()
+
+    @log(user_id="request.user.id", object_id="list_item.id")
     def get_token(cls, user):
         token = super().get_token(user)
         # Add custom claims
@@ -187,7 +187,7 @@ class MyTokenObtainPairView(TokenObtainPairView):
    serializer_class = MyTokenObtainPairSerializer
 
 # register --- http://127.0.0.1:8000/register
-@log()
+@log(user_id="request.user.id", object_id="list_item.id")
 @api_view(['POST'])
 def register(request):
     if User.objects.filter(username=request.data['username']).exists():
@@ -220,7 +220,7 @@ def register(request):
 
 # update--- http://127.0.0.1:8000/user/<int:user_id>/
 
-@log()
+@log(user_id="request.user.id", object_id="list_item.id")
 @api_view(['GET', 'PATCH'])
 def update_user(request, user_id):
     # קבלת המשתמש או הודעת שגיאה אם לא קיים
@@ -250,23 +250,23 @@ def update_user(request, user_id):
 
 
     
-@log()
+@log(user_id="request.user.id", object_id="list_item.id")
 @api_view(['GET'])
 def index(req):
    return Response({'hello': 'world'})
 
-@log()
+@log(user_id="request.user.id", object_id="list_item.id")
 @api_view(['GET'])
 def test(req):
    return Response({'test': 'success'}) 
 
-@log()
+@log(user_id="request.user.id", object_id="list_item.id")
 @api_view(['GET'])
 @permission_classes([IsAuthenticated])
 def priverty(req):
   return Response({'priverty': 'success'})
 
-@log()
+@log(user_id="request.user.id", object_id="list_item.id")
 @api_view(['GET'])
 def get_user_info_by_email(request, email):
     email = email
@@ -284,7 +284,9 @@ def get_user_info_by_email(request, email):
     
 
 class ResetPasswordView(APIView):
-    @log()
+    # @log  # שימוש בדקורטור הלוג
+
+    @log(user_id="request.user.id", object_id="list_item.id")
     def post(self, request):
         email = request.data.get("email")
         new_password = request.data.get("password")
@@ -303,7 +305,7 @@ class ResetPasswordView(APIView):
             return Response({"error": "User with this email does not exist."}, status=status.HTTP_404_NOT_FOUND)
         
 # שליחת מייל איפוס סיסמה
-@log()
+@log(user_id="request.user.id", object_id="list_item.id")
 def send_password_reset_email(email):
     sg = SendGridAPIClient(api_key=settings.SENDGRID_API_KEY)
     from_email = Email(settings.DEFAULT_FROM_EMAIL)
@@ -323,7 +325,7 @@ def send_password_reset_email(email):
 
 # קלאס לפונקציה שמטפלת בבקשה לשליחת מייל איפוס סיסמה
 class ResetPasswordRequestView(APIView):
-    @log()
+    @log(user_id="request.user.id", object_id="list_item.id")
     def post(self, request):
         email = request.data.get("email")
         print(f"Received email: {email}")
@@ -353,9 +355,12 @@ class ListItemImageViewSet(viewsets.ModelViewSet):
     queryset = ListItemImage.objects.all()
     serializer_class = ListItemImageSerializer
 
-    @log()
-    @action(detail=False, methods=['post'])
+    # @log()
+    # @action(detail=True, methods=['post', 'patch'], url_path='upload_images')
+    @log(user_id="request.user.id", object_id="list_item.id")
+    @action(detail=False, methods=['post'], url_path='upload_images')
     def upload_images(self, request):
+        print('gab')
         list_item_id = request.data.get('list_item')
         images_data = request.data.getlist('images')
 
@@ -385,6 +390,7 @@ class ListItemImageViewSet(viewsets.ModelViewSet):
                 image_file_name = f"{file_name or f'image_{index}'}.{extension}"
 
                     # יצירת ContentFile ושמירה
+
                 image_data = base64.b64decode(base64_image)
                 image_content = ContentFile(image_data, name=image_file_name)
                 file_path = default_storage.save(os.path.join('list_item_images', image_file_name), image_content)
@@ -405,7 +411,7 @@ class ListItemImageViewSet(viewsets.ModelViewSet):
         return Response({"status": "Images uploaded successfully"}, status=status.HTTP_201_CREATED)
         
 
-
+    @log(user_id="request.user.id", object_id="list_item.id")
     @action(detail=True, methods=['get'], url_path='get_images_for_list_item')
     def get_images_for_list_item(self, request, *args, **kwargs):
         # קבלת ה- pk מה-kwargs
@@ -435,6 +441,7 @@ class CustomizationViewSet(viewsets.ModelViewSet):
     serializer_class = CustomizationSerializer
     permission_classes = [IsAuthenticated]
 
+    @log(user_id="request.user.id", object_id="list_item.id")
     def create(self, request, *args, **kwargs):
         """
         Handle POST request to create or update a user's background customization.
@@ -465,14 +472,13 @@ class CustomizationViewSet(viewsets.ModelViewSet):
             status=201 if created else 200
 
         )
-    
+    @log(user_id="request.user.id", object_id="list_item.id")
     @action(detail=False, methods=['get'], url_path='get_user_customization')
     def get_customization_for_user(self, request, *args, **kwargs):
         """
         Handle GET request to retrieve the customization for the authenticated user.
         """
         user = request.user
-        print('hwebebwbewfbijfbiwefibefwh')
 
         # Retrieve the customization for the authenticated user
         try:
@@ -485,7 +491,6 @@ class CustomizationViewSet(viewsets.ModelViewSet):
 
         # Serialize and return the result
         serializer = CustomizationSerializer(customization)
-        print(f"Customization for user {user.id}: {customization}")
         return Response({
             "message": "Customization retrieved successfully.",
             "data": serializer.data

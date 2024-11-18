@@ -1,61 +1,140 @@
+import json
 import logging
 import os
-from functools import wraps
+import platform
+import time
 import traceback
-
+from functools import wraps
+from logging.handlers import RotatingFileHandler
 
 LOG_FILE = "logs/application.log"
 
-# הגדרת הלוגר
-def setup_logger(log_file):
+# JSON Formatter Class
+class JSONFormatter(logging.Formatter):
+    def format(self, record):
+        log_record = {
+            "time": self.formatTime(record, self.datefmt),
+            "level": record.levelname,
+            "message": record.getMessage(),
+            "function": record.funcName,
+            "filename": record.filename,
+            "line": record.lineno,
+            "host": platform.node(),
+            "system": f"{platform.system()} {platform.release()}",
+            "python_version": platform.python_version(),
+        }
+        if record.exc_info:
+            log_record["exception"] = self.formatException(record.exc_info)
+        
+        # Add dynamic information with a safety check
+        dynamic_info = getattr(record, 'dynamic_info', None)
+        if dynamic_info and isinstance(dynamic_info, dict):  # Ensure dynamic_info is valid
+            log_record.update(dynamic_info)
+        else:
+            log_record["dynamic_info"] = "No dynamic info provided"  # Fallback message
+
+        return json.dumps(log_record)
+
+# Setup Logger
+def setup_logger(log_file, level=logging.DEBUG):
     logger = logging.getLogger("application_logger")
     if not logger.hasHandlers():
-        logger.setLevel(logging.DEBUG)  # הגדרת רמת הלוגים ל-Debug כדי לכלול את כל הרמות
-        handler = logging.FileHandler(log_file)
-        formatter = logging.Formatter('%(asctime)s - %(filename)s - %(funcName)s - %(levelname)s - %(message)s')
-        handler.setFormatter(formatter)
+        logger.setLevel(level)
+        os.makedirs(os.path.dirname(log_file), exist_ok=True)
+        handler = RotatingFileHandler(log_file, maxBytes=5 * 1024 * 1024, backupCount=3)
+        handler.setFormatter(JSONFormatter())
         logger.addHandler(handler)
     return logger
 
-# דקורטור ללוג (אפשרי לקרוא לו ככה גם בלי פרמטרים)
+# Log API Call
+def log_api_call(url, method, status_code, response_time, payload=None):
+    logger = setup_logger(LOG_FILE)
+    logger.info({
+        "event": "api_call",
+        "url": url,
+        "method": method,
+        "status_code": status_code,
+        "response_time": f"{response_time:.2f}s",
+        "payload": payload,
+    })
+
+# Log Deletion Event
+def log_deletion(user_id, object_id, object_type):
+    logger = setup_logger(LOG_FILE)
+    logger.warning({
+        "event": "deletion",
+        "user_id": user_id,
+        "object_id": object_id,
+        "object_type": object_type,
+    })
+
+
+# Decorator with Logging
 def log(user_id=None, object_id=None):
     def decorator(func):
         @wraps(func)
         def wrapper(*args, **kwargs):
             logger = setup_logger(LOG_FILE)
-
             function_name = func.__name__
             file_name = os.path.basename(func.__code__.co_filename)
+            start_time = time.time()
+
+            # User and Request Info
+            request = args[1] if len(args) > 1 else None
+            user_info = f"User ID: {user_id}" if user_id else "No User Info"
+            object_info = f"Object ID: {object_id}" if object_id else "No Object Info"
             
-            # אם לא נשלחו פרמטרים, תוצג הודעה ברירת מחדל
-            user_info = f"User ID: {user_id}" if user_id else "Unknown User"
-            object_info = f"Object ID: {object_id}" if object_id else "No Object ID"
-            
-            # רשום את קריאת הפונקציה עם כל המידע
-            logger.debug(f"Calling function {function_name} in {file_name} with args: {args}, kwargs: {kwargs} | {user_info} | {object_info}")
+            # Check if request is an instance of HttpRequest before accessing META
+            if request and hasattr(request, 'META'):
+                ip_address = request.META.get('REMOTE_ADDR', 'Unknown IP')
+                method = request.method if hasattr(request, 'method') else 'No Method'
+                headers = request.headers if hasattr(request, 'headers') else 'No Headers'
+            else:
+                ip_address = 'No Request Info'
+                method = 'No Method'
+                headers = 'No Headers'
+
+            logger.debug({
+                "event": "function_call",
+                "function": function_name,
+                "file": file_name,
+                "user_info": user_info,
+                "object_info": object_info,
+                "ip": ip_address,
+                "method": method,
+                "headers": dict(headers) if headers != 'No Headers' else "No Headers",
+            })
 
             try:
                 result = func(*args, **kwargs)
+                execution_time = time.time() - start_time
 
-                # לוג של הצלחה לאחר ביצוע הפונקציה
-                logger.info(f"Function {function_name} executed successfully in {file_name} | {user_info} | {object_info} | Result: {result}")
+                # Add dynamic information here with a fallback to prevent errors
+                dynamic_info = {
+                    "extra_info_key": "additional_value",  # Replace with actual dynamic info
+                    "another_field": "another_value"
+                }
+                if dynamic_info is None:  # Ensure it's not None
+                    dynamic_info = {"message": "No additional dynamic information"}
+
+                # If dynamic_info is invalid, use the fallback
+                logger.info({
+                    "event": "function_success",
+                    "function": function_name,
+                    "execution_time": execution_time,
+                    "result": str(result),
+                    "dynamic_info": dynamic_info  # Include additional dynamic info here
+                })
                 return result
 
-            except ValueError as ve:
-                # לוג של אזהרה במקרה של Exception מסויים
-                logger.warning(f"Warning in {function_name}: {str(ve)} | {user_info} | {object_info} | Args: {args}, Kwargs: {kwargs}")
-                return None
-
             except Exception as e:
-                # לוג של שגיאה
-                logger.error(f"Error in {function_name}: {str(e)} | {user_info} | {object_info} | Args: {args}, Kwargs: {kwargs}")
-                logger.error(f"Stack Trace: {traceback.format_exc()}")  # להוסיף את ה-Stack Trace בשגיאות
-                raise  # להמשיך לזרוק את השגיאה
-
-            except SystemExit as se:
-                # לוג של יציאה קריטית
-                logger.critical(f"Critical system exit in {function_name}: {str(se)} | {user_info} | {object_info}")
-                raise  # להמשיך עם SystemExit
+                logger.error({
+                    "event": "error",
+                    "function": function_name,
+                    "error": str(e),
+                    "stack_trace": traceback.format_exc(limit=3),  # Include last 3 calls only
+                })
+                raise
 
         return wrapper
     return decorator

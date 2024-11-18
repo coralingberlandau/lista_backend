@@ -3036,3 +3036,894 @@ TypeError: ListItemImageViewSet.get_images_for_list_item() got an unexpected key
 2024-11-17 13:26:59,829 - application_logger - INFO - Function list_by_user executed successfully in views.py | Unknown User | No Object ID | Result: <Response status_code=200, "text/html; charset=utf-8">
 2024-11-17 13:31:00,653 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/urls.py changed, reloading.
 2024-11-17 13:31:01,040 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-17 15:00:03,695 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-17 15:00:08,351 - application_logger - INFO - Function get_token executed successfully in views.py | Unknown User | No Object ID | Result: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTczOTYzMTYwOCwiaWF0IjoxNzMxODU1NjA4LCJqdGkiOiI5YzEwYjY2MDZkOTQ0MjI4Yjk1ZjAzYWZhNWI3NTA4YyIsInVzZXJfaWQiOjEsInVzZXJuYW1lIjoiY29yYWwifQ.TDRm0VJbdz21ou3kj6PDFWKB3iPGYGuEtgf1-Ra4-sk
+2024-11-17 15:00:08,396 - application_logger - INFO - Function list_by_user executed successfully in views.py | Unknown User | No Object ID | Result: <Response status_code=200, "text/html; charset=utf-8">
+2024-11-17 15:00:12,385 - application_logger - INFO - Function list_by_user executed successfully in views.py | Unknown User | No Object ID | Result: <Response status_code=200, "text/html; charset=utf-8">
+2024-11-17 15:01:00,811 - application_logger - INFO - Function get_token executed successfully in views.py | Unknown User | No Object ID | Result: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTczOTYzMTY2MCwiaWF0IjoxNzMxODU1NjYwLCJqdGkiOiI3ZjUzMTY3NzNiOGM0MmI1OWM1ZWUxOGQ2ZDIwZjYxOCIsInVzZXJfaWQiOjEsInVzZXJuYW1lIjoiY29yYWwifQ.VDKSJ8gDwA5OOdDMIq0kJr5O4JQgMUzOUChu0gxRilw
+2024-11-17 15:01:00,841 - application_logger - INFO - Function list_by_user executed successfully in views.py | Unknown User | No Object ID | Result: <Response status_code=200, "text/html; charset=utf-8">
+2024-11-17 15:01:10,118 - application_logger - INFO - Function get_queryset executed successfully in views.py | Unknown User | No Object ID | Result: <QuerySet [<ListItem: tessttt>, <ListItem: dsesr>, <ListItem: srer>]>
+2024-11-17 15:01:10,124 - application_logger - INFO - Function perform_update executed successfully in views.py | Unknown User | No Object ID | Result: None
+2024-11-17 15:01:10,148 - application_logger - INFO - Function upload_images executed successfully in views.py | Unknown User | No Object ID | Result: <Response status_code=201, "text/html; charset=utf-8">
+2024-11-17 15:01:10,157 - application_logger - INFO - Function list_by_user executed successfully in views.py | Unknown User | No Object ID | Result: <Response status_code=200, "text/html; charset=utf-8">
+2024-11-17 15:01:14,677 - application_logger - INFO - Function list_by_user executed successfully in views.py | Unknown User | No Object ID | Result: <Response status_code=200, "text/html; charset=utf-8">
+2024-11-17 15:01:25,759 - application_logger - INFO - Function get_queryset executed successfully in views.py | Unknown User | No Object ID | Result: <QuerySet [<ListItem: tessttt>, <ListItem: dsesr>, <ListItem: srer>]>
+2024-11-17 15:01:25,762 - application_logger - INFO - Function perform_update executed successfully in views.py | Unknown User | No Object ID | Result: None
+2024-11-17 15:01:25,770 - application_logger - INFO - Function upload_images executed successfully in views.py | Unknown User | No Object ID | Result: <Response status_code=400, "text/html; charset=utf-8">
+2024-11-17 15:01:25,770 - django.request - WARNING - Bad Request: /listitemimages/upload_images/
+2024-11-17 15:01:25,792 - application_logger - INFO - Function list_by_user executed successfully in views.py | Unknown User | No Object ID | Result: <Response status_code=200, "text/html; charset=utf-8">
+2024-11-17 15:05:36,702 - application_logger - INFO - Function get_token executed successfully in views.py | Unknown User | No Object ID | Result: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTczOTYzMTkzNiwiaWF0IjoxNzMxODU1OTM2LCJqdGkiOiIzNzZjM2VjMGRmYTI0MzUyYTMxY2U4YWVlZDJjNWMzOCIsInVzZXJfaWQiOjEsInVzZXJuYW1lIjoiY29yYWwifQ.dGVurfAeVF_kcH7G4Jp2dB3R9humQRMh8q9rggixlm8
+2024-11-17 15:05:36,732 - application_logger - INFO - Function list_by_user executed successfully in views.py | Unknown User | No Object ID | Result: <Response status_code=200, "text/html; charset=utf-8">
+2024-11-17 15:05:41,410 - application_logger - INFO - Function get_queryset executed successfully in views.py | Unknown User | No Object ID | Result: <QuerySet [<ListItem: tessttt>, <ListItem: dsesr>, <ListItem: srer>]>
+2024-11-17 15:05:41,414 - application_logger - INFO - Function perform_update executed successfully in views.py | Unknown User | No Object ID | Result: None
+2024-11-17 15:05:41,420 - application_logger - INFO - Function upload_images executed successfully in views.py | Unknown User | No Object ID | Result: <Response status_code=400, "text/html; charset=utf-8">
+2024-11-17 15:05:41,420 - django.request - WARNING - Bad Request: /listitemimages/upload_images/
+2024-11-17 15:05:41,437 - application_logger - INFO - Function list_by_user executed successfully in views.py | Unknown User | No Object ID | Result: <Response status_code=200, "text/html; charset=utf-8">
+2024-11-17 15:06:23,045 - application_logger - INFO - Function list_by_user executed successfully in views.py | Unknown User | No Object ID | Result: <Response status_code=200, "text/html; charset=utf-8">
+2024-11-17 15:06:31,105 - application_logger - INFO - Function perform_create executed successfully in views.py | Unknown User | No Object ID | Result: None
+2024-11-17 15:06:31,118 - application_logger - INFO - Function create executed successfully in views.py | Unknown User | No Object ID | Result: <Response status_code=201, "text/html; charset=utf-8">
+2024-11-17 15:06:31,128 - application_logger - INFO - Function upload_images executed successfully in views.py | Unknown User | No Object ID | Result: <Response status_code=201, "text/html; charset=utf-8">
+2024-11-17 15:06:31,153 - application_logger - INFO - Function list_by_user executed successfully in views.py | Unknown User | No Object ID | Result: <Response status_code=200, "text/html; charset=utf-8">
+2024-11-17 15:06:38,469 - application_logger - INFO - Function get_queryset executed successfully in views.py | Unknown User | No Object ID | Result: <QuerySet [<ListItem: tessttt>, <ListItem: dsesr>, <ListItem: srer>, <ListItem: wrwerw>]>
+2024-11-17 15:06:38,476 - application_logger - INFO - Function perform_update executed successfully in views.py | Unknown User | No Object ID | Result: None
+2024-11-17 15:06:38,485 - application_logger - INFO - Function upload_images executed successfully in views.py | Unknown User | No Object ID | Result: <Response status_code=400, "text/html; charset=utf-8">
+2024-11-17 15:06:38,485 - django.request - WARNING - Bad Request: /listitemimages/upload_images/
+2024-11-17 15:06:38,504 - application_logger - INFO - Function list_by_user executed successfully in views.py | Unknown User | No Object ID | Result: <Response status_code=200, "text/html; charset=utf-8">
+2024-11-17 15:07:33,951 - application_logger - INFO - Function get_token executed successfully in views.py | Unknown User | No Object ID | Result: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTczOTYzMjA1MywiaWF0IjoxNzMxODU2MDUzLCJqdGkiOiI1YjBmMDgxNjI3YmY0NjhhODFjOGQxNTY1YjY3YzdkMiIsInVzZXJfaWQiOjEsInVzZXJuYW1lIjoiY29yYWwifQ.j6ENoaGz6FzSmjykcZ5l-THoRDn9I48MpXg2f8mFrNU
+2024-11-17 15:07:33,988 - application_logger - INFO - Function list_by_user executed successfully in views.py | Unknown User | No Object ID | Result: <Response status_code=200, "text/html; charset=utf-8">
+2024-11-17 15:07:39,579 - application_logger - INFO - Function get_queryset executed successfully in views.py | Unknown User | No Object ID | Result: <QuerySet [<ListItem: tessttt>, <ListItem: dsesr>, <ListItem: srer>, <ListItem: wrwerw>]>
+2024-11-17 15:07:39,584 - application_logger - INFO - Function perform_update executed successfully in views.py | Unknown User | No Object ID | Result: None
+2024-11-17 15:07:39,591 - application_logger - INFO - Function upload_images executed successfully in views.py | Unknown User | No Object ID | Result: <Response status_code=400, "text/html; charset=utf-8">
+2024-11-17 15:07:39,592 - django.request - WARNING - Bad Request: /listitemimages/upload_images/
+2024-11-17 15:07:39,618 - application_logger - INFO - Function list_by_user executed successfully in views.py | Unknown User | No Object ID | Result: <Response status_code=200, "text/html; charset=utf-8">
+2024-11-17 15:08:15,539 - application_logger - INFO - Function get_queryset executed successfully in views.py | Unknown User | No Object ID | Result: <QuerySet [<ListItem: tessttt>, <ListItem: dsesr>, <ListItem: srer>, <ListItem: wrwerw>]>
+2024-11-17 15:08:15,543 - application_logger - INFO - Function perform_update executed successfully in views.py | Unknown User | No Object ID | Result: None
+2024-11-17 15:08:15,549 - application_logger - INFO - Function upload_images executed successfully in views.py | Unknown User | No Object ID | Result: <Response status_code=400, "text/html; charset=utf-8">
+2024-11-17 15:08:15,550 - django.request - WARNING - Bad Request: /listitemimages/upload_images/
+2024-11-17 15:08:15,598 - application_logger - INFO - Function list_by_user executed successfully in views.py | Unknown User | No Object ID | Result: <Response status_code=200, "text/html; charset=utf-8">
+2024-11-17 15:09:46,683 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-17 15:09:47,134 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-17 15:10:04,459 - application_logger - INFO - Function get_token executed successfully in views.py | Unknown User | No Object ID | Result: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTczOTYzMjIwNCwiaWF0IjoxNzMxODU2MjA0LCJqdGkiOiIzYjQzZTkxZGFhNjE0YTdkYWEzZTJjZjk0MjgzMDk5OSIsInVzZXJfaWQiOjEsInVzZXJuYW1lIjoiY29yYWwifQ.TdKylhK1SWepEBGuQ9NFf010Z2kQjUM3_T7lNsiOAUM
+2024-11-17 15:10:04,518 - application_logger - INFO - Function list_by_user executed successfully in views.py | Unknown User | No Object ID | Result: <Response status_code=200, "text/html; charset=utf-8">
+2024-11-17 15:10:15,432 - application_logger - INFO - Function get_queryset executed successfully in views.py | Unknown User | No Object ID | Result: <QuerySet [<ListItem: tessttt>, <ListItem: dsesr>, <ListItem: srer>, <ListItem: wrwerw>]>
+2024-11-17 15:10:15,439 - application_logger - INFO - Function perform_update executed successfully in views.py | Unknown User | No Object ID | Result: None
+2024-11-17 15:10:15,447 - django.request - WARNING - Method Not Allowed: /listitemimages/upload_images/
+2024-11-17 15:10:15,537 - application_logger - INFO - Function list_by_user executed successfully in views.py | Unknown User | No Object ID | Result: <Response status_code=200, "text/html; charset=utf-8">
+2024-11-17 15:13:34,247 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/urls.py changed, reloading.
+2024-11-17 15:13:34,621 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-17 15:14:29,093 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-17 15:14:29,603 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-17 15:15:24,286 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-17 15:15:24,799 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-17 15:16:09,156 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-17 15:16:09,510 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-17 15:16:11,712 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-17 15:16:11,945 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-17 15:16:28,417 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-17 15:16:28,805 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-17 15:16:32,032 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/urls.py changed, reloading.
+2024-11-17 15:16:32,265 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-17 15:18:04,150 - application_logger - INFO - Function get_token executed successfully in views.py | Unknown User | No Object ID | Result: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTczOTYzMjY4NCwiaWF0IjoxNzMxODU2Njg0LCJqdGkiOiJjYjMxMTQ1MGZjZWI0YjA0OGFhOWJjZTYwMjY1NWYxYyIsInVzZXJfaWQiOjEsInVzZXJuYW1lIjoiY29yYWwifQ.UP84t7Y0Kh7ALN0ofwHRlV6oNCfXIVtEYqKk4cdpj2M
+2024-11-17 15:18:04,191 - application_logger - INFO - Function list_by_user executed successfully in views.py | Unknown User | No Object ID | Result: <Response status_code=200, "text/html; charset=utf-8">
+2024-11-17 15:18:11,703 - application_logger - INFO - Function perform_create executed successfully in views.py | Unknown User | No Object ID | Result: None
+2024-11-17 15:18:11,741 - application_logger - INFO - Function create executed successfully in views.py | Unknown User | No Object ID | Result: <Response status_code=201, "text/html; charset=utf-8">
+2024-11-17 15:18:11,747 - django.request - WARNING - Method Not Allowed: /listitemimages/upload_images/
+2024-11-17 15:18:11,768 - application_logger - INFO - Function list_by_user executed successfully in views.py | Unknown User | No Object ID | Result: <Response status_code=200, "text/html; charset=utf-8">
+2024-11-17 15:18:36,484 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-17 15:18:36,850 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-17 15:18:48,215 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-17 15:18:48,557 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-17 15:18:49,699 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-17 15:18:49,930 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-17 15:18:51,056 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-17 15:18:51,258 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-17 15:19:01,984 - application_logger - INFO - Function get_token executed successfully in views.py | Unknown User | No Object ID | Result: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTczOTYzMjc0MSwiaWF0IjoxNzMxODU2NzQxLCJqdGkiOiJmMDVhMTI2OTAwNjY0YzFmODhlODI1M2ZmZjM1NjBkYyIsInVzZXJfaWQiOjEsInVzZXJuYW1lIjoiY29yYWwifQ.cMd5-ApdMI8FimdNfVxttJUp92kutd1-qeZJPtLwfVo
+2024-11-17 15:19:02,128 - application_logger - INFO - Function list_by_user executed successfully in views.py | Unknown User | No Object ID | Result: <Response status_code=200, "text/html; charset=utf-8">
+2024-11-17 15:19:05,174 - application_logger - INFO - Function list_by_user executed successfully in views.py | Unknown User | No Object ID | Result: <Response status_code=200, "text/html; charset=utf-8">
+2024-11-17 15:19:13,065 - application_logger - INFO - Function perform_create executed successfully in views.py | Unknown User | No Object ID | Result: None
+2024-11-17 15:19:13,089 - application_logger - INFO - Function create executed successfully in views.py | Unknown User | No Object ID | Result: <Response status_code=201, "text/html; charset=utf-8">
+2024-11-17 15:19:13,094 - django.request - WARNING - Method Not Allowed: /listitemimages/upload_images/
+2024-11-17 15:19:13,129 - application_logger - INFO - Function list_by_user executed successfully in views.py | Unknown User | No Object ID | Result: <Response status_code=200, "text/html; charset=utf-8">
+2024-11-17 15:19:25,503 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-17 15:19:25,903 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-17 15:19:31,155 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-17 15:19:31,381 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-17 15:19:33,549 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/urls.py changed, reloading.
+2024-11-17 15:19:33,814 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-17 15:19:45,122 - application_logger - INFO - Function get_token executed successfully in views.py | Unknown User | No Object ID | Result: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTczOTYzMjc4NSwiaWF0IjoxNzMxODU2Nzg1LCJqdGkiOiI2MTAzNzhlZjBmM2Y0NDZhYmE3YmIxZmM3MGIxNTA2ZiIsInVzZXJfaWQiOjEsInVzZXJuYW1lIjoiY29yYWwifQ.jEqF52UqOhAQbhZp-8WvFqxF_0WC3nq9b65MuPfRqYw
+2024-11-17 15:19:45,158 - application_logger - INFO - Function list_by_user executed successfully in views.py | Unknown User | No Object ID | Result: <Response status_code=200, "text/html; charset=utf-8">
+2024-11-17 15:19:47,953 - application_logger - INFO - Function list_by_user executed successfully in views.py | Unknown User | No Object ID | Result: <Response status_code=200, "text/html; charset=utf-8">
+2024-11-17 15:19:54,705 - application_logger - INFO - Function perform_create executed successfully in views.py | Unknown User | No Object ID | Result: None
+2024-11-17 15:19:54,717 - application_logger - INFO - Function create executed successfully in views.py | Unknown User | No Object ID | Result: <Response status_code=201, "text/html; charset=utf-8">
+2024-11-17 15:19:54,722 - django.request - WARNING - Method Not Allowed: /listitemimages/upload_images/
+2024-11-17 15:19:54,751 - application_logger - INFO - Function list_by_user executed successfully in views.py | Unknown User | No Object ID | Result: <Response status_code=200, "text/html; charset=utf-8">
+2024-11-17 15:21:12,714 - application_logger - INFO - Function get_token executed successfully in views.py | Unknown User | No Object ID | Result: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTczOTYzMjg3MiwiaWF0IjoxNzMxODU2ODcyLCJqdGkiOiJkYmVlODI0MWY0Y2M0ZTY1ODA3YzI4YWFlZDdlMTUyMCIsInVzZXJfaWQiOjEsInVzZXJuYW1lIjoiY29yYWwifQ._5fjEAd11Gl1J4a23z6kk3OxMgCPLM8TR3wirlATCpg
+2024-11-17 15:21:12,756 - application_logger - INFO - Function list_by_user executed successfully in views.py | Unknown User | No Object ID | Result: <Response status_code=200, "text/html; charset=utf-8">
+2024-11-17 15:21:15,312 - application_logger - INFO - Function list_by_user executed successfully in views.py | Unknown User | No Object ID | Result: <Response status_code=200, "text/html; charset=utf-8">
+2024-11-17 15:21:21,401 - application_logger - INFO - Function perform_create executed successfully in views.py | Unknown User | No Object ID | Result: None
+2024-11-17 15:21:21,415 - application_logger - INFO - Function create executed successfully in views.py | Unknown User | No Object ID | Result: <Response status_code=201, "text/html; charset=utf-8">
+2024-11-17 15:21:21,420 - django.request - WARNING - Method Not Allowed: /listitemimages/upload_images/
+2024-11-17 15:21:21,442 - application_logger - INFO - Function list_by_user executed successfully in views.py | Unknown User | No Object ID | Result: <Response status_code=200, "text/html; charset=utf-8">
+2024-11-17 15:23:06,670 - application_logger - INFO - Function get_token executed successfully in views.py | Unknown User | No Object ID | Result: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTczOTYzMjk4NiwiaWF0IjoxNzMxODU2OTg2LCJqdGkiOiI0YTE4NTg5NzdmMTM0YWEyOTgxYmIyYTA5MDg1OGFhZSIsInVzZXJfaWQiOjEsInVzZXJuYW1lIjoiY29yYWwifQ.P6nl1vYVylHVAKJ-PeqsIdrc2N8OjNXS-QoiGIm7uUw
+2024-11-17 15:23:06,727 - application_logger - INFO - Function list_by_user executed successfully in views.py | Unknown User | No Object ID | Result: <Response status_code=200, "text/html; charset=utf-8">
+2024-11-17 15:23:09,744 - application_logger - INFO - Function list_by_user executed successfully in views.py | Unknown User | No Object ID | Result: <Response status_code=200, "text/html; charset=utf-8">
+2024-11-17 15:23:12,855 - application_logger - INFO - Function get_queryset executed successfully in views.py | Unknown User | No Object ID | Result: <QuerySet [<ListItem: tessttt>, <ListItem: dsesr>, <ListItem: srer>, <ListItem: wrwerw>, <ListItem: weqweqwe>, <ListItem: edaerer>, <ListItem: aweqer>, <ListItem: qweqwe>]>
+2024-11-17 15:23:12,860 - application_logger - INFO - Function perform_update executed successfully in views.py | Unknown User | No Object ID | Result: None
+2024-11-17 15:23:12,866 - django.request - WARNING - Method Not Allowed: /listitemimages/upload_images/
+2024-11-17 15:23:12,897 - application_logger - INFO - Function list_by_user executed successfully in views.py | Unknown User | No Object ID | Result: <Response status_code=200, "text/html; charset=utf-8">
+2024-11-17 15:23:16,303 - application_logger - INFO - Function list_by_user executed successfully in views.py | Unknown User | No Object ID | Result: <Response status_code=200, "text/html; charset=utf-8">
+2024-11-17 15:23:23,905 - application_logger - INFO - Function perform_create executed successfully in views.py | Unknown User | No Object ID | Result: None
+2024-11-17 15:23:23,922 - application_logger - INFO - Function create executed successfully in views.py | Unknown User | No Object ID | Result: <Response status_code=201, "text/html; charset=utf-8">
+2024-11-17 15:23:23,927 - django.request - WARNING - Method Not Allowed: /listitemimages/upload_images/
+2024-11-17 15:23:23,955 - application_logger - INFO - Function list_by_user executed successfully in views.py | Unknown User | No Object ID | Result: <Response status_code=200, "text/html; charset=utf-8">
+2024-11-17 15:24:43,253 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-17 15:24:43,628 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-17 15:24:44,700 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-17 15:24:44,948 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-17 15:25:04,563 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-17 15:25:04,916 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-17 15:25:08,148 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-17 15:25:08,367 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-17 15:25:14,877 - application_logger - INFO - Function get_token executed successfully in views.py | Unknown User | No Object ID | Result: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTczOTYzMzExNCwiaWF0IjoxNzMxODU3MTE0LCJqdGkiOiIxMDFkNDQ2NzgxZDE0NzBkYjY4MWM0MzU3YmI2ZDgyZSIsInVzZXJfaWQiOjEsInVzZXJuYW1lIjoiY29yYWwifQ.2iGWYjWUmuMM0P1P-6Hdtaco-8FCf9RBARumAsMd1I4
+2024-11-17 15:25:14,956 - application_logger - INFO - Function list_by_user executed successfully in views.py | Unknown User | No Object ID | Result: <Response status_code=200, "text/html; charset=utf-8">
+2024-11-17 15:25:27,504 - application_logger - INFO - Function list_by_user executed successfully in views.py | Unknown User | No Object ID | Result: <Response status_code=200, "text/html; charset=utf-8">
+2024-11-17 15:25:40,115 - application_logger - INFO - Function get_queryset executed successfully in views.py | Unknown User | No Object ID | Result: <QuerySet [<ListItem: tessttt>, <ListItem: dsesr>, <ListItem: srer>, <ListItem: wrwerw>, <ListItem: weqweqwe>, <ListItem: edaerer>, <ListItem: aweqer>, <ListItem: qweqwe>, <ListItem: aerwr>]>
+2024-11-17 15:25:40,119 - application_logger - INFO - Function perform_update executed successfully in views.py | Unknown User | No Object ID | Result: None
+2024-11-17 15:25:40,181 - application_logger - INFO - Function list_by_user executed successfully in views.py | Unknown User | No Object ID | Result: <Response status_code=200, "text/html; charset=utf-8">
+2024-11-17 15:25:46,914 - application_logger - INFO - Function list_by_user executed successfully in views.py | Unknown User | No Object ID | Result: <Response status_code=200, "text/html; charset=utf-8">
+2024-11-17 15:26:04,197 - application_logger - INFO - Function get_queryset executed successfully in views.py | Unknown User | No Object ID | Result: <QuerySet [<ListItem: tessttt>, <ListItem: dsesr>, <ListItem: srer>, <ListItem: wrwerw>, <ListItem: weqweqwe>, <ListItem: edaerer>, <ListItem: aweqer>, <ListItem: qweqwe>, <ListItem: aerwr>]>
+2024-11-17 15:26:04,201 - application_logger - INFO - Function perform_update executed successfully in views.py | Unknown User | No Object ID | Result: None
+2024-11-17 15:26:04,211 - django.request - WARNING - Bad Request: /listitemimages/upload_images/
+2024-11-17 15:26:04,246 - application_logger - INFO - Function list_by_user executed successfully in views.py | Unknown User | No Object ID | Result: <Response status_code=200, "text/html; charset=utf-8">
+2024-11-17 15:26:10,130 - application_logger - INFO - Function list_by_user executed successfully in views.py | Unknown User | No Object ID | Result: <Response status_code=200, "text/html; charset=utf-8">
+2024-11-17 15:26:29,644 - application_logger - INFO - Function get_queryset executed successfully in views.py | Unknown User | No Object ID | Result: <QuerySet [<ListItem: tessttt>, <ListItem: dsesr>, <ListItem: srer>, <ListItem: wrwerw>, <ListItem: weqweqwe>, <ListItem: edaerer>, <ListItem: aweqer>, <ListItem: qweqwe>, <ListItem: aerwr>]>
+2024-11-17 15:26:29,649 - application_logger - INFO - Function perform_update executed successfully in views.py | Unknown User | No Object ID | Result: None
+2024-11-17 15:26:29,664 - django.request - WARNING - Bad Request: /listitemimages/upload_images/
+2024-11-17 15:26:29,731 - application_logger - INFO - Function list_by_user executed successfully in views.py | Unknown User | No Object ID | Result: <Response status_code=200, "text/html; charset=utf-8">
+2024-11-17 15:27:52,967 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-17 15:27:53,368 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-17 15:27:57,592 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-17 15:27:57,812 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-17 15:28:04,048 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-17 15:28:04,285 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-17 15:28:15,446 - application_logger - INFO - Function get_token executed successfully in views.py | Unknown User | No Object ID | Result: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTczOTYzMzI5NSwiaWF0IjoxNzMxODU3Mjk1LCJqdGkiOiJmZDM0YmFlODE2NDM0ZDdmYWMwYTFhNThmMTU1Njg5NSIsInVzZXJfaWQiOjEsInVzZXJuYW1lIjoiY29yYWwifQ.MMuuuRxySuhjtdCNtGkXXpmDMvWNgWIYfMe52tcT71o
+2024-11-17 15:28:15,500 - application_logger - INFO - Function list_by_user executed successfully in views.py | Unknown User | No Object ID | Result: <Response status_code=200, "text/html; charset=utf-8">
+2024-11-17 15:28:22,506 - application_logger - INFO - Function get_queryset executed successfully in views.py | Unknown User | No Object ID | Result: <QuerySet [<ListItem: tessttt>, <ListItem: dsesr>, <ListItem: srer>, <ListItem: wrwerw>, <ListItem: weqweqwe>, <ListItem: edaerer>, <ListItem: aweqer>, <ListItem: qweqwe>, <ListItem: aerwr>]>
+2024-11-17 15:28:22,510 - application_logger - INFO - Function perform_update executed successfully in views.py | Unknown User | No Object ID | Result: None
+2024-11-17 15:28:22,518 - django.request - WARNING - Bad Request: /listitemimages/upload_images/
+2024-11-17 15:28:22,541 - application_logger - INFO - Function list_by_user executed successfully in views.py | Unknown User | No Object ID | Result: <Response status_code=200, "text/html; charset=utf-8">
+2024-11-17 15:28:41,448 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-17 15:28:41,786 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-17 15:28:44,896 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-17 15:28:45,084 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-17 15:28:46,246 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-17 15:28:46,463 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-17 15:28:50,662 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-17 15:28:50,892 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-17 15:28:52,975 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-17 15:28:53,203 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-17 15:28:54,260 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-17 15:28:54,456 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-17 15:29:02,336 - application_logger - INFO - Function get_token executed successfully in views.py | Unknown User | No Object ID | Result: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTczOTYzMzM0MiwiaWF0IjoxNzMxODU3MzQyLCJqdGkiOiIwMjc0YjRkMjY3MzY0NTZkYTFjNjhjMWVjZWFjM2JmZiIsInVzZXJfaWQiOjEsInVzZXJuYW1lIjoiY29yYWwifQ.OQA4xOM6FAHj3hPUJ52Ue8jymeNvCH0mK0Bp-oWxXTQ
+2024-11-17 15:29:02,386 - application_logger - INFO - Function list_by_user executed successfully in views.py | Unknown User | No Object ID | Result: <Response status_code=200, "text/html; charset=utf-8">
+2024-11-17 15:29:07,721 - application_logger - INFO - Function get_queryset executed successfully in views.py | Unknown User | No Object ID | Result: <QuerySet [<ListItem: tessttt>, <ListItem: dsesr>, <ListItem: srer>, <ListItem: wrwerw>, <ListItem: weqweqwe>, <ListItem: edaerer>, <ListItem: aweqer>, <ListItem: qweqwe>, <ListItem: aerwr>]>
+2024-11-17 15:29:07,727 - application_logger - INFO - Function perform_update executed successfully in views.py | Unknown User | No Object ID | Result: None
+2024-11-17 15:29:07,737 - django.request - WARNING - Bad Request: /listitemimages/upload_images/
+2024-11-17 15:29:07,762 - application_logger - INFO - Function list_by_user executed successfully in views.py | Unknown User | No Object ID | Result: <Response status_code=200, "text/html; charset=utf-8">
+2024-11-17 15:30:17,797 - application_logger - INFO - Function get_token executed successfully in views.py | Unknown User | No Object ID | Result: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTczOTYzMzQxNywiaWF0IjoxNzMxODU3NDE3LCJqdGkiOiI0Nzg5NjNhMDA0YzE0ZGM3YTViZDI2NDRmOWNiOTE5ZiIsInVzZXJfaWQiOjEsInVzZXJuYW1lIjoiY29yYWwifQ.SGOM1VXc_p7L7Zo7SY9a6dz8KUvYFEU0NwcWVXtGtuY
+2024-11-17 15:30:17,933 - application_logger - INFO - Function list_by_user executed successfully in views.py | Unknown User | No Object ID | Result: <Response status_code=200, "text/html; charset=utf-8">
+2024-11-17 15:30:29,074 - application_logger - INFO - Function get_queryset executed successfully in views.py | Unknown User | No Object ID | Result: <QuerySet [<ListItem: tessttt>, <ListItem: dsesr>, <ListItem: srer>, <ListItem: wrwerw>, <ListItem: weqweqwe>, <ListItem: edaerer>, <ListItem: aweqer>, <ListItem: qweqwe>, <ListItem: aerwr>]>
+2024-11-17 15:30:29,079 - application_logger - INFO - Function perform_update executed successfully in views.py | Unknown User | No Object ID | Result: None
+2024-11-17 15:30:29,089 - django.request - WARNING - Bad Request: /listitemimages/upload_images/
+2024-11-17 15:30:29,114 - application_logger - INFO - Function list_by_user executed successfully in views.py | Unknown User | No Object ID | Result: <Response status_code=200, "text/html; charset=utf-8">
+2024-11-17 15:31:25,040 - application_logger - INFO - Function get_token executed successfully in views.py | Unknown User | No Object ID | Result: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTczOTYzMzQ4NSwiaWF0IjoxNzMxODU3NDg1LCJqdGkiOiIxMzkzZDcwZDI4MjA0MGVhYWJhM2VlNjJlOGZiYmFhNyIsInVzZXJfaWQiOjEsInVzZXJuYW1lIjoiY29yYWwifQ.SXN_2EeZ2ya5ijeEt-WBotXhLEjNhv1rq4eQxxVMYUA
+2024-11-17 15:31:25,071 - application_logger - INFO - Function list_by_user executed successfully in views.py | Unknown User | No Object ID | Result: <Response status_code=200, "text/html; charset=utf-8">
+2024-11-17 15:31:30,935 - application_logger - INFO - Function list_by_user executed successfully in views.py | Unknown User | No Object ID | Result: <Response status_code=200, "text/html; charset=utf-8">
+2024-11-17 15:31:38,895 - application_logger - INFO - Function get_queryset executed successfully in views.py | Unknown User | No Object ID | Result: <QuerySet [<ListItem: tessttt>, <ListItem: dsesr>, <ListItem: srer>, <ListItem: wrwerw>, <ListItem: weqweqwe>, <ListItem: edaerer>, <ListItem: aweqer>, <ListItem: qweqwe>, <ListItem: aerwr>]>
+2024-11-17 15:31:38,900 - application_logger - INFO - Function perform_update executed successfully in views.py | Unknown User | No Object ID | Result: None
+2024-11-17 15:31:38,926 - application_logger - INFO - Function list_by_user executed successfully in views.py | Unknown User | No Object ID | Result: <Response status_code=200, "text/html; charset=utf-8">
+2024-11-17 15:31:55,780 - application_logger - INFO - Function get_queryset executed successfully in views.py | Unknown User | No Object ID | Result: <QuerySet [<ListItem: tessttt>, <ListItem: dsesr>, <ListItem: srer>, <ListItem: wrwerw>, <ListItem: weqweqwe>, <ListItem: edaerer>, <ListItem: aweqer>, <ListItem: qweqwe>, <ListItem: aerwr>]>
+2024-11-17 15:31:55,784 - application_logger - INFO - Function perform_update executed successfully in views.py | Unknown User | No Object ID | Result: None
+2024-11-17 15:31:55,798 - django.request - WARNING - Bad Request: /listitemimages/upload_images/
+2024-11-17 15:31:55,830 - application_logger - INFO - Function list_by_user executed successfully in views.py | Unknown User | No Object ID | Result: <Response status_code=200, "text/html; charset=utf-8">
+2024-11-17 15:33:35,542 - application_logger - INFO - Function get_token executed successfully in views.py | Unknown User | No Object ID | Result: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTczOTYzMzYxNSwiaWF0IjoxNzMxODU3NjE1LCJqdGkiOiIyZjI5ODI2Y2YxNWY0ZTk4ODIxZjMwMTAzNDZlY2MwMSIsInVzZXJfaWQiOjEsInVzZXJuYW1lIjoiY29yYWwifQ.jQugRCWMX2_JTux0jfr5qf5VHyC4Q9fgmcsyK9zz8KQ
+2024-11-17 15:33:35,580 - application_logger - INFO - Function list_by_user executed successfully in views.py | Unknown User | No Object ID | Result: <Response status_code=200, "text/html; charset=utf-8">
+2024-11-17 15:33:42,754 - application_logger - INFO - Function get_queryset executed successfully in views.py | Unknown User | No Object ID | Result: <QuerySet [<ListItem: tessttt>, <ListItem: dsesr>, <ListItem: srer>, <ListItem: wrwerw>, <ListItem: weqweqwe>, <ListItem: edaerer>, <ListItem: aweqer>, <ListItem: qweqwe>, <ListItem: aerwr>]>
+2024-11-17 15:33:42,757 - application_logger - INFO - Function perform_update executed successfully in views.py | Unknown User | No Object ID | Result: None
+2024-11-17 15:33:42,766 - django.request - WARNING - Bad Request: /listitemimages/upload_images/
+2024-11-17 15:33:42,782 - application_logger - INFO - Function list_by_user executed successfully in views.py | Unknown User | No Object ID | Result: <Response status_code=200, "text/html; charset=utf-8">
+2024-11-17 15:33:58,056 - application_logger - INFO - Function get_queryset executed successfully in views.py | Unknown User | No Object ID | Result: <QuerySet [<ListItem: tessttt>, <ListItem: dsesr>, <ListItem: srer>, <ListItem: wrwerw>, <ListItem: weqweqwe>, <ListItem: edaerer>, <ListItem: aweqer>, <ListItem: qweqwe>, <ListItem: aerwr>]>
+2024-11-17 15:33:58,060 - application_logger - INFO - Function perform_update executed successfully in views.py | Unknown User | No Object ID | Result: None
+2024-11-17 15:33:58,071 - django.request - WARNING - Bad Request: /listitemimages/upload_images/
+2024-11-17 15:33:58,092 - application_logger - INFO - Function list_by_user executed successfully in views.py | Unknown User | No Object ID | Result: <Response status_code=200, "text/html; charset=utf-8">
+2024-11-17 15:34:41,602 - application_logger - INFO - Function get_token executed successfully in views.py | Unknown User | No Object ID | Result: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTczOTYzMzY4MSwiaWF0IjoxNzMxODU3NjgxLCJqdGkiOiJmMTA1NzFlNmM5NTM0MDAyYTNiYmNmM2IzY2UxZjI4NyIsInVzZXJfaWQiOjEsInVzZXJuYW1lIjoiY29yYWwifQ.qTcc6ew8A4VhvoZWZ6rajbYKXnfWs51kP8tVwte_ktw
+2024-11-17 15:34:41,645 - application_logger - INFO - Function list_by_user executed successfully in views.py | Unknown User | No Object ID | Result: <Response status_code=200, "text/html; charset=utf-8">
+2024-11-17 15:34:50,930 - application_logger - INFO - Function get_queryset executed successfully in views.py | Unknown User | No Object ID | Result: <QuerySet [<ListItem: tessttt>, <ListItem: dsesr>, <ListItem: srer>, <ListItem: wrwerw>, <ListItem: weqweqwe>, <ListItem: edaerer>, <ListItem: aweqer>, <ListItem: qweqwe>, <ListItem: aerwr>]>
+2024-11-17 15:34:50,932 - application_logger - INFO - Function perform_update executed successfully in views.py | Unknown User | No Object ID | Result: None
+2024-11-17 15:34:50,943 - django.request - WARNING - Bad Request: /listitemimages/upload_images/
+2024-11-17 15:34:50,971 - application_logger - INFO - Function list_by_user executed successfully in views.py | Unknown User | No Object ID | Result: <Response status_code=200, "text/html; charset=utf-8">
+2024-11-17 15:36:33,562 - application_logger - INFO - Function get_token executed successfully in views.py | Unknown User | No Object ID | Result: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTczOTYzMzc5MywiaWF0IjoxNzMxODU3NzkzLCJqdGkiOiI4OGY1NGVmYThiYWQ0MmI2YWI4ODVjOGFkZmEzZjIzYiIsInVzZXJfaWQiOjEsInVzZXJuYW1lIjoiY29yYWwifQ.lPC5LRhZ0yFAsYk2HchCkPYbavN8o0QRPNCg7Y_ktRM
+2024-11-17 15:36:33,610 - application_logger - INFO - Function list_by_user executed successfully in views.py | Unknown User | No Object ID | Result: <Response status_code=200, "text/html; charset=utf-8">
+2024-11-17 15:36:38,350 - application_logger - INFO - Function get_queryset executed successfully in views.py | Unknown User | No Object ID | Result: <QuerySet [<ListItem: tessttt>, <ListItem: dsesr>, <ListItem: srer>, <ListItem: wrwerw>, <ListItem: weqweqwe>, <ListItem: edaerer>, <ListItem: aweqer>, <ListItem: qweqwe>, <ListItem: aerwr>]>
+2024-11-17 15:36:38,354 - application_logger - INFO - Function perform_update executed successfully in views.py | Unknown User | No Object ID | Result: None
+2024-11-17 15:36:38,401 - application_logger - INFO - Function list_by_user executed successfully in views.py | Unknown User | No Object ID | Result: <Response status_code=200, "text/html; charset=utf-8">
+2024-11-17 15:37:36,874 - application_logger - INFO - Function list_by_user executed successfully in views.py | Unknown User | No Object ID | Result: <Response status_code=200, "text/html; charset=utf-8">
+2024-11-17 15:37:42,587 - application_logger - INFO - Function get_queryset executed successfully in views.py | Unknown User | No Object ID | Result: <QuerySet [<ListItem: tessttt>, <ListItem: dsesr>, <ListItem: srer>, <ListItem: wrwerw>, <ListItem: weqweqwe>, <ListItem: edaerer>, <ListItem: aweqer>, <ListItem: qweqwe>, <ListItem: aerwr>]>
+2024-11-17 15:37:42,594 - application_logger - INFO - Function perform_update executed successfully in views.py | Unknown User | No Object ID | Result: None
+2024-11-17 15:37:42,631 - application_logger - INFO - Function list_by_user executed successfully in views.py | Unknown User | No Object ID | Result: <Response status_code=200, "text/html; charset=utf-8">
+2024-11-17 15:38:10,176 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-17 15:38:10,593 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-17 15:38:12,798 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-17 15:38:13,015 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-17 15:38:14,153 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-17 15:38:14,346 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-17 15:38:23,675 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-17 15:38:23,899 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-17 15:38:28,129 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/urls.py changed, reloading.
+2024-11-17 15:38:28,436 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-17 15:38:38,445 - application_logger - INFO - Function get_token executed successfully in views.py | Unknown User | No Object ID | Result: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTczOTYzMzkxOCwiaWF0IjoxNzMxODU3OTE4LCJqdGkiOiI0Y2Q0YzEwNjRjODk0Y2E3YTE4ZDE2OTE2YjJiYTM4MSIsInVzZXJfaWQiOjEsInVzZXJuYW1lIjoiY29yYWwifQ.GsDebtI4O9RaytOHmr2tJIBZ-6mudjTgcV-o3dHLD0c
+2024-11-17 15:38:38,542 - application_logger - INFO - Function list_by_user executed successfully in views.py | Unknown User | No Object ID | Result: <Response status_code=200, "text/html; charset=utf-8">
+2024-11-17 15:39:00,443 - application_logger - INFO - Function perform_create executed successfully in views.py | Unknown User | No Object ID | Result: None
+2024-11-17 15:39:00,454 - application_logger - INFO - Function create executed successfully in views.py | Unknown User | No Object ID | Result: <Response status_code=201, "text/html; charset=utf-8">
+2024-11-17 15:39:00,598 - application_logger - INFO - Function list_by_user executed successfully in views.py | Unknown User | No Object ID | Result: <Response status_code=200, "text/html; charset=utf-8">
+2024-11-17 15:39:17,865 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-17 15:39:18,241 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-17 15:39:30,981 - application_logger - INFO - Function get_queryset executed successfully in views.py | Unknown User | No Object ID | Result: <QuerySet [<ListItem: tessttt>, <ListItem: dsesr>, <ListItem: srer>, <ListItem: wrwerw>, <ListItem: weqweqwe>, <ListItem: edaerer>, <ListItem: aweqer>, <ListItem: qweqwe>, <ListItem: aerwr>, <ListItem: wwwww>]>
+2024-11-17 15:39:30,985 - application_logger - INFO - Function perform_update executed successfully in views.py | Unknown User | No Object ID | Result: None
+2024-11-17 15:39:31,029 - application_logger - INFO - Function list_by_user executed successfully in views.py | Unknown User | No Object ID | Result: <Response status_code=200, "text/html; charset=utf-8">
+2024-11-17 15:39:34,479 - application_logger - INFO - Function list_by_user executed successfully in views.py | Unknown User | No Object ID | Result: <Response status_code=200, "text/html; charset=utf-8">
+2024-11-17 15:39:37,313 - application_logger - INFO - Function list_by_user executed successfully in views.py | Unknown User | No Object ID | Result: <Response status_code=200, "text/html; charset=utf-8">
+2024-11-17 15:44:41,459 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/urls.py changed, reloading.
+2024-11-17 15:44:41,848 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-17 15:45:08,675 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/urls.py changed, reloading.
+2024-11-17 15:45:09,082 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-17 15:45:18,477 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/urls.py changed, reloading.
+2024-11-17 15:45:18,705 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-17 15:45:50,663 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/urls.py changed, reloading.
+2024-11-17 15:45:51,022 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-17 15:45:52,215 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/urls.py changed, reloading.
+2024-11-17 15:45:52,451 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-17 15:46:09,988 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/urls.py changed, reloading.
+2024-11-17 15:46:10,305 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-17 15:46:11,442 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/urls.py changed, reloading.
+2024-11-17 15:46:11,668 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-17 15:46:13,847 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/urls.py changed, reloading.
+2024-11-17 15:46:14,062 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-17 15:46:15,217 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/urls.py changed, reloading.
+2024-11-17 15:46:15,426 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-17 15:46:18,624 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/urls.py changed, reloading.
+2024-11-17 15:46:18,867 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-17 15:51:28,875 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/logging_utils.py changed, reloading.
+2024-11-17 15:51:29,297 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-17 15:51:52,017 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-17 15:51:52,360 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-17 15:51:53,463 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-17 15:51:53,664 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-17 15:53:02,261 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-17 15:53:02,646 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-17 15:58:18,058 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/logging_utils.py changed, reloading.
+2024-11-17 15:58:18,503 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-17 15:58:19,667 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/logging_utils.py changed, reloading.
+2024-11-17 15:58:19,922 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-17 15:59:16,512 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-17 15:59:16,846 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-17 15:59:20,994 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-17 15:59:21,257 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-17 15:59:25,491 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-17 15:59:25,722 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-17 16:00:00,766 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-17 16:00:01,137 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-17 16:00:13,571 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-17 16:00:13,883 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-17 16:00:15,062 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-17 16:00:15,449 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-17 16:00:20,706 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-17 16:00:20,992 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-17 16:00:24,231 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-17 16:00:24,430 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-17 16:00:26,599 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-17 16:00:26,822 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-17 16:00:28,978 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-17 16:00:29,202 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-17 16:00:42,593 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-17 16:00:42,935 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-17 16:00:44,105 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-17 16:00:44,332 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-17 16:00:46,535 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-17 16:00:46,745 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-17 16:00:47,876 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-17 16:00:48,153 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-17 16:00:50,301 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-17 16:00:50,717 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-17 16:00:53,954 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-17 16:00:54,167 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-17 16:00:57,359 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-17 16:00:57,592 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-17 16:00:58,729 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-17 16:00:59,009 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-17 16:01:02,189 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-17 16:01:02,400 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-17 16:01:04,553 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-17 16:01:04,784 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-17 16:01:06,977 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-17 16:01:07,180 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-17 16:01:09,354 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-17 16:01:09,624 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-17 16:01:10,794 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-17 16:01:11,041 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-17 16:01:12,169 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-17 16:01:12,382 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-17 16:01:14,532 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-17 16:01:14,753 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-17 16:01:15,893 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-17 16:01:16,204 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-17 16:03:57,910 - django.request - ERROR - Internal Server Error: /login/
+Traceback (most recent call last):
+  File "/Users/coralingber/Desktop/untitled folder 2/lista/backend/env/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/coralingber/Desktop/untitled folder 2/lista/backend/env/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/coralingber/Desktop/untitled folder 2/lista/backend/env/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/coralingber/Desktop/untitled folder 2/lista/backend/env/lib/python3.12/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/coralingber/Desktop/untitled folder 2/lista/backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/coralingber/Desktop/untitled folder 2/lista/backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/coralingber/Desktop/untitled folder 2/lista/backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Users/coralingber/Desktop/untitled folder 2/lista/backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/coralingber/Desktop/untitled folder 2/lista/backend/env/lib/python3.12/site-packages/rest_framework_simplejwt/views.py", line 44, in post
+    serializer.is_valid(raise_exception=True)
+  File "/Users/coralingber/Desktop/untitled folder 2/lista/backend/env/lib/python3.12/site-packages/rest_framework/serializers.py", line 223, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/coralingber/Desktop/untitled folder 2/lista/backend/env/lib/python3.12/site-packages/rest_framework/serializers.py", line 445, in run_validation
+    value = self.validate(value)
+            ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/coralingber/Desktop/untitled folder 2/lista/backend/env/lib/python3.12/site-packages/rest_framework_simplejwt/serializers.py", line 75, in validate
+    refresh = self.get_token(self.user)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: log.<locals>.decorator() takes 1 positional argument but 2 were given
+2024-11-17 17:04:20,690 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-17 17:04:26,813 - django.request - ERROR - Internal Server Error: /login/
+Traceback (most recent call last):
+  File "/Users/coralingber/Desktop/untitled folder 2/lista/backend/env/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/coralingber/Desktop/untitled folder 2/lista/backend/env/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/coralingber/Desktop/untitled folder 2/lista/backend/env/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/coralingber/Desktop/untitled folder 2/lista/backend/env/lib/python3.12/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/coralingber/Desktop/untitled folder 2/lista/backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/coralingber/Desktop/untitled folder 2/lista/backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/coralingber/Desktop/untitled folder 2/lista/backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Users/coralingber/Desktop/untitled folder 2/lista/backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/coralingber/Desktop/untitled folder 2/lista/backend/env/lib/python3.12/site-packages/rest_framework_simplejwt/views.py", line 44, in post
+    serializer.is_valid(raise_exception=True)
+  File "/Users/coralingber/Desktop/untitled folder 2/lista/backend/env/lib/python3.12/site-packages/rest_framework/serializers.py", line 223, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/coralingber/Desktop/untitled folder 2/lista/backend/env/lib/python3.12/site-packages/rest_framework/serializers.py", line 445, in run_validation
+    value = self.validate(value)
+            ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/coralingber/Desktop/untitled folder 2/lista/backend/env/lib/python3.12/site-packages/rest_framework_simplejwt/serializers.py", line 75, in validate
+    refresh = self.get_token(self.user)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: log.<locals>.decorator() takes 1 positional argument but 2 were given
+2024-11-17 17:05:11,080 - django.request - ERROR - Internal Server Error: /login/
+Traceback (most recent call last):
+  File "/Users/coralingber/Desktop/untitled folder 2/lista/backend/env/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/coralingber/Desktop/untitled folder 2/lista/backend/env/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/coralingber/Desktop/untitled folder 2/lista/backend/env/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/coralingber/Desktop/untitled folder 2/lista/backend/env/lib/python3.12/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/coralingber/Desktop/untitled folder 2/lista/backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/coralingber/Desktop/untitled folder 2/lista/backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/coralingber/Desktop/untitled folder 2/lista/backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Users/coralingber/Desktop/untitled folder 2/lista/backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/coralingber/Desktop/untitled folder 2/lista/backend/env/lib/python3.12/site-packages/rest_framework_simplejwt/views.py", line 44, in post
+    serializer.is_valid(raise_exception=True)
+  File "/Users/coralingber/Desktop/untitled folder 2/lista/backend/env/lib/python3.12/site-packages/rest_framework/serializers.py", line 223, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/coralingber/Desktop/untitled folder 2/lista/backend/env/lib/python3.12/site-packages/rest_framework/serializers.py", line 445, in run_validation
+    value = self.validate(value)
+            ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/coralingber/Desktop/untitled folder 2/lista/backend/env/lib/python3.12/site-packages/rest_framework_simplejwt/serializers.py", line 75, in validate
+    refresh = self.get_token(self.user)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: log.<locals>.decorator() takes 1 positional argument but 2 were given
+2024-11-17 17:06:14,686 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/logging_utils.py changed, reloading.
+2024-11-17 17:06:15,040 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-17 17:07:11,525 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/logging_utils.py changed, reloading.
+2024-11-17 17:07:11,926 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-17 17:07:13,115 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/logging_utils.py changed, reloading.
+2024-11-17 17:07:13,423 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-17 17:07:20,665 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/logging_utils.py changed, reloading.
+2024-11-17 17:07:20,926 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-17 17:07:38,531 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/logging_utils.py changed, reloading.
+2024-11-17 17:07:38,908 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-17 17:15:04,135 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/logging_utils.py changed, reloading.
+2024-11-17 17:15:04,478 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-17 17:15:13,753 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/logging_utils.py changed, reloading.
+2024-11-17 17:15:14,116 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-17 17:15:15,186 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/logging_utils.py changed, reloading.
+2024-11-17 17:15:15,415 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-17 17:15:40,138 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/logging_utils.py changed, reloading.
+2024-11-17 17:15:40,479 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-17 17:15:47,313 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-17 17:15:54,846 - django.request - ERROR - Internal Server Error: /login/
+Traceback (most recent call last):
+  File "/Users/coralingber/Desktop/untitled folder 2/lista/backend/env/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/coralingber/Desktop/untitled folder 2/lista/backend/env/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/coralingber/Desktop/untitled folder 2/lista/backend/env/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/coralingber/Desktop/untitled folder 2/lista/backend/env/lib/python3.12/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/coralingber/Desktop/untitled folder 2/lista/backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/coralingber/Desktop/untitled folder 2/lista/backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/coralingber/Desktop/untitled folder 2/lista/backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Users/coralingber/Desktop/untitled folder 2/lista/backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/coralingber/Desktop/untitled folder 2/lista/backend/env/lib/python3.12/site-packages/rest_framework_simplejwt/views.py", line 44, in post
+    serializer.is_valid(raise_exception=True)
+  File "/Users/coralingber/Desktop/untitled folder 2/lista/backend/env/lib/python3.12/site-packages/rest_framework/serializers.py", line 223, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/coralingber/Desktop/untitled folder 2/lista/backend/env/lib/python3.12/site-packages/rest_framework/serializers.py", line 445, in run_validation
+    value = self.validate(value)
+            ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/coralingber/Desktop/untitled folder 2/lista/backend/env/lib/python3.12/site-packages/rest_framework_simplejwt/serializers.py", line 75, in validate
+    refresh = self.get_token(self.user)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: log.<locals>.decorator() takes 1 positional argument but 2 were given
+2024-11-17 17:17:29,859 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/logging_utils.py changed, reloading.
+2024-11-17 17:17:30,225 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-17 17:17:35,409 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/logging_utils.py changed, reloading.
+2024-11-17 17:17:35,719 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-17 17:17:47,335 - django.request - ERROR - Internal Server Error: /login/
+Traceback (most recent call last):
+  File "/Users/coralingber/Desktop/untitled folder 2/lista/backend/env/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/coralingber/Desktop/untitled folder 2/lista/backend/env/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/coralingber/Desktop/untitled folder 2/lista/backend/env/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/coralingber/Desktop/untitled folder 2/lista/backend/env/lib/python3.12/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/coralingber/Desktop/untitled folder 2/lista/backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/coralingber/Desktop/untitled folder 2/lista/backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/coralingber/Desktop/untitled folder 2/lista/backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Users/coralingber/Desktop/untitled folder 2/lista/backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/coralingber/Desktop/untitled folder 2/lista/backend/env/lib/python3.12/site-packages/rest_framework_simplejwt/views.py", line 44, in post
+    serializer.is_valid(raise_exception=True)
+  File "/Users/coralingber/Desktop/untitled folder 2/lista/backend/env/lib/python3.12/site-packages/rest_framework/serializers.py", line 223, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/coralingber/Desktop/untitled folder 2/lista/backend/env/lib/python3.12/site-packages/rest_framework/serializers.py", line 445, in run_validation
+    value = self.validate(value)
+            ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/coralingber/Desktop/untitled folder 2/lista/backend/env/lib/python3.12/site-packages/rest_framework_simplejwt/serializers.py", line 75, in validate
+    refresh = self.get_token(self.user)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: log.<locals>.decorator() takes 1 positional argument but 2 were given
+2024-11-17 17:20:33,053 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/logging_utils.py changed, reloading.
+2024-11-17 17:20:33,525 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-17 17:20:46,966 - django.request - ERROR - Internal Server Error: /login/
+Traceback (most recent call last):
+  File "/Users/coralingber/Desktop/untitled folder 2/lista/backend/env/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/coralingber/Desktop/untitled folder 2/lista/backend/env/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/coralingber/Desktop/untitled folder 2/lista/backend/env/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/coralingber/Desktop/untitled folder 2/lista/backend/env/lib/python3.12/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/coralingber/Desktop/untitled folder 2/lista/backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/coralingber/Desktop/untitled folder 2/lista/backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/coralingber/Desktop/untitled folder 2/lista/backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Users/coralingber/Desktop/untitled folder 2/lista/backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/coralingber/Desktop/untitled folder 2/lista/backend/env/lib/python3.12/site-packages/rest_framework_simplejwt/views.py", line 44, in post
+    serializer.is_valid(raise_exception=True)
+  File "/Users/coralingber/Desktop/untitled folder 2/lista/backend/env/lib/python3.12/site-packages/rest_framework/serializers.py", line 223, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/coralingber/Desktop/untitled folder 2/lista/backend/env/lib/python3.12/site-packages/rest_framework/serializers.py", line 445, in run_validation
+    value = self.validate(value)
+            ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/coralingber/Desktop/untitled folder 2/lista/backend/env/lib/python3.12/site-packages/rest_framework_simplejwt/serializers.py", line 75, in validate
+    refresh = self.get_token(self.user)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: log.<locals>.decorator() takes 1 positional argument but 2 were given
+2024-11-17 17:21:53,658 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/logging_utils.py changed, reloading.
+2024-11-17 17:21:54,062 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-17 17:21:55,228 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/logging_utils.py changed, reloading.
+2024-11-17 17:21:55,495 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-17 17:21:59,700 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/logging_utils.py changed, reloading.
+2024-11-17 17:21:59,922 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-17 17:22:15,439 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-17 17:22:23,810 - django.request - ERROR - Internal Server Error: /login/
+Traceback (most recent call last):
+  File "/Users/coralingber/Desktop/untitled folder 2/lista/backend/env/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/coralingber/Desktop/untitled folder 2/lista/backend/env/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/coralingber/Desktop/untitled folder 2/lista/backend/env/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/coralingber/Desktop/untitled folder 2/lista/backend/env/lib/python3.12/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/coralingber/Desktop/untitled folder 2/lista/backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/coralingber/Desktop/untitled folder 2/lista/backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/coralingber/Desktop/untitled folder 2/lista/backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Users/coralingber/Desktop/untitled folder 2/lista/backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/coralingber/Desktop/untitled folder 2/lista/backend/env/lib/python3.12/site-packages/rest_framework_simplejwt/views.py", line 44, in post
+    serializer.is_valid(raise_exception=True)
+  File "/Users/coralingber/Desktop/untitled folder 2/lista/backend/env/lib/python3.12/site-packages/rest_framework/serializers.py", line 223, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/coralingber/Desktop/untitled folder 2/lista/backend/env/lib/python3.12/site-packages/rest_framework/serializers.py", line 445, in run_validation
+    value = self.validate(value)
+            ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/coralingber/Desktop/untitled folder 2/lista/backend/env/lib/python3.12/site-packages/rest_framework_simplejwt/serializers.py", line 75, in validate
+    refresh = self.get_token(self.user)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: log.<locals>.decorator() takes 1 positional argument but 2 were given
+2024-11-17 17:27:06,606 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-17 17:27:07,036 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-17 17:27:34,126 - django.request - WARNING - Not Found: /customizations/get_user_customization/
+2024-11-17 17:27:55,583 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-17 17:27:56,061 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-17 17:28:04,066 - django.request - WARNING - Not Found: /grouplists/by-user/1/
+2024-11-17 17:28:08,691 - django.request - WARNING - Not Found: /grouplists/by-user/1/
+2024-11-17 17:28:20,137 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-17 17:28:20,508 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-17 17:28:22,669 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-17 17:28:22,926 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-17 17:28:26,119 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-17 17:28:26,330 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-17 17:28:28,495 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-17 17:28:28,732 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-17 17:28:30,878 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-17 17:28:31,090 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-17 17:28:33,288 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-17 17:28:33,555 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-17 17:28:36,756 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-17 17:28:37,008 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-17 17:28:38,136 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-17 17:28:38,353 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-17 17:28:39,515 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-17 17:28:39,824 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-17 17:28:40,953 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-17 17:28:41,180 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-17 17:28:45,409 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-17 17:28:45,626 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-17 17:28:47,754 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-17 17:28:47,953 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-17 17:28:50,099 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-17 17:28:50,339 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-17 17:28:52,503 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-17 17:28:52,720 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-17 17:28:54,896 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-17 17:28:55,109 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-17 17:28:56,245 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-17 17:28:56,524 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-17 17:28:59,749 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-17 17:28:59,973 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-17 17:29:01,104 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-17 17:29:01,321 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-17 17:29:03,508 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-17 17:29:03,746 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-17 17:29:05,919 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-17 17:29:06,207 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-17 17:29:07,340 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-17 17:29:07,548 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-17 17:30:35,650 - django.request - WARNING - Bad Request: /listitemimages/upload_images/
+2024-11-17 17:31:34,032 - django.request - WARNING - Bad Request: /listitemimages/upload_images/
+2024-11-17 17:31:42,455 - django.request - WARNING - Bad Request: /listitemimages/upload_images/
+2024-11-17 17:41:03,015 - django.request - WARNING - Unauthorized: /login/
+2024-11-17 18:33:16,502 - django.request - WARNING - Unauthorized: /login/
+2024-11-18 09:03:35,778 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/logging_utils.py changed, reloading.
+2024-11-18 09:03:36,262 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-18 09:03:39,524 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/logging_utils.py changed, reloading.
+2024-11-18 09:03:39,737 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-18 09:03:50,100 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/logging_utils.py changed, reloading.
+2024-11-18 09:03:50,332 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-18 09:04:11,907 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-18 09:04:12,265 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-18 09:04:13,414 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-18 09:04:13,623 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-18 09:04:14,770 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-18 09:04:14,984 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-18 09:04:16,145 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-18 09:04:16,367 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-18 09:04:18,513 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-18 09:04:18,730 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-18 09:07:52,397 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/logging_utils.py changed, reloading.
+2024-11-18 09:07:52,741 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-18 09:07:57,993 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/logging_utils.py changed, reloading.
+2024-11-18 09:07:58,216 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-18 09:07:59,391 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/logging_utils.py changed, reloading.
+2024-11-18 09:07:59,607 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-18 09:13:50,619 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/logging_utils.py changed, reloading.
+2024-11-18 09:13:50,987 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-18 09:15:42,026 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/logging_utils.py changed, reloading.
+2024-11-18 09:15:42,387 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-18 09:15:43,534 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/logging_utils.py changed, reloading.
+2024-11-18 09:15:43,791 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-18 09:16:49,527 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/logging_utils.py changed, reloading.
+2024-11-18 09:16:49,876 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-18 09:16:55,226 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/logging_utils.py changed, reloading.
+2024-11-18 09:16:55,481 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-18 09:17:45,948 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-18 09:17:46,290 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-18 09:17:52,473 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-18 09:17:52,833 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-18 09:17:53,897 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-18 09:17:54,098 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-18 09:17:57,190 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-18 09:17:57,385 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-18 09:18:01,638 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-18 09:18:01,868 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-18 09:18:04,061 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-18 09:18:04,278 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-18 09:18:10,540 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-18 09:18:10,760 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-18 09:18:12,848 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-18 09:18:13,085 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-18 09:18:16,292 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-18 09:18:16,508 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-18 09:18:18,672 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-18 09:18:18,889 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-18 09:18:20,051 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-18 09:18:20,295 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-18 09:18:22,475 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-18 09:18:22,764 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-18 09:18:23,971 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-18 09:18:24,263 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-18 09:18:27,438 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-18 09:18:27,708 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-18 09:18:28,838 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-18 09:18:29,052 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-18 09:18:31,196 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-18 09:18:31,405 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-18 09:18:37,636 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-18 09:18:37,924 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-18 09:18:39,068 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-18 09:18:39,269 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-18 09:18:54,772 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-18 09:18:55,115 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-18 09:18:58,314 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-18 09:18:58,543 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-18 09:18:59,676 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-18 09:18:59,904 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-18 09:19:28,446 - django.request - ERROR - Internal Server Error: /login/
+Traceback (most recent call last):
+  File "/Users/coralingber/Desktop/untitled folder 2/lista/backend/env/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/coralingber/Desktop/untitled folder 2/lista/backend/env/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/coralingber/Desktop/untitled folder 2/lista/backend/env/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/coralingber/Desktop/untitled folder 2/lista/backend/env/lib/python3.12/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/coralingber/Desktop/untitled folder 2/lista/backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/coralingber/Desktop/untitled folder 2/lista/backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/coralingber/Desktop/untitled folder 2/lista/backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Users/coralingber/Desktop/untitled folder 2/lista/backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/coralingber/Desktop/untitled folder 2/lista/backend/env/lib/python3.12/site-packages/rest_framework_simplejwt/views.py", line 44, in post
+    serializer.is_valid(raise_exception=True)
+  File "/Users/coralingber/Desktop/untitled folder 2/lista/backend/env/lib/python3.12/site-packages/rest_framework/serializers.py", line 223, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/coralingber/Desktop/untitled folder 2/lista/backend/env/lib/python3.12/site-packages/rest_framework/serializers.py", line 445, in run_validation
+    value = self.validate(value)
+            ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/coralingber/Desktop/untitled folder 2/lista/backend/env/lib/python3.12/site-packages/rest_framework_simplejwt/serializers.py", line 75, in validate
+    refresh = self.get_token(self.user)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/coralingber/Desktop/untitled folder 2/lista/backend/base/logging_utils.py", line 85, in wrapper
+    ip_address = request.META.get('REMOTE_ADDR', 'Unknown IP') if request else 'No Request Info'
+                 ^^^^^^^^^^^^
+AttributeError: 'User' object has no attribute 'META'. Did you mean: 'Meta'?
+2024-11-18 09:20:46,751 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/logging_utils.py changed, reloading.
+2024-11-18 09:20:47,126 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-18 09:21:46,807 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/logging_utils.py changed, reloading.
+2024-11-18 09:21:47,232 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-18 09:21:52,513 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/logging_utils.py changed, reloading.
+2024-11-18 09:21:52,756 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-18 09:22:06,176 - application_logger - INFO - {'event': 'function_success', 'function': 'get_token', 'execution_time': 0.011094093322753906, 'result': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTczOTY5NzcyNiwiaWF0IjoxNzMxOTIxNzI2LCJqdGkiOiI3Yzc1ODc1NzUwN2Y0ZmY1YTZhNWY1MjkzYjA4ZWI5NSIsInVzZXJfaWQiOjEsInVzZXJuYW1lIjoiY29yYWwifQ.W7u-vGdTPx3TwofvYjcwR5BQXSugooB-IA5cdbKAhnQ', 'dynamic_info': {'extra_info_key': 'additional_value', 'another_field': 'another_value'}}
+2024-11-18 09:22:15,330 - application_logger - INFO - {'event': 'function_success', 'function': 'get_queryset', 'execution_time': 4.1961669921875e-05, 'result': '<QuerySet [<ListItem: tessttt>, <ListItem: dsesr>, <ListItem: srer>, <ListItem: wrwerw>, <ListItem: weqweqwe>, <ListItem: edaerer>, <ListItem: aweqer>, <ListItem: qweqwe>, <ListItem: aerwr>, <ListItem: wwwww>, <ListItem: sefresrew>]>', 'dynamic_info': {'extra_info_key': 'additional_value', 'another_field': 'another_value'}}
+2024-11-18 09:22:15,337 - application_logger - INFO - {'event': 'function_success', 'function': 'perform_update', 'execution_time': 0.002830028533935547, 'result': 'None', 'dynamic_info': {'extra_info_key': 'additional_value', 'another_field': 'another_value'}}
+2024-11-18 09:22:15,346 - django.request - WARNING - Bad Request: /listitemimages/upload_images/
+2024-11-18 09:22:23,073 - application_logger - INFO - {'event': 'function_success', 'function': 'get_queryset', 'execution_time': 5.1975250244140625e-05, 'result': '<QuerySet [<ListItem: tessttt>, <ListItem: dsesr>, <ListItem: srer>, <ListItem: wrwerw>, <ListItem: weqweqwe>, <ListItem: edaerer>, <ListItem: aweqer>, <ListItem: qweqwe>, <ListItem: aerwr>, <ListItem: wwwww>, <ListItem: sefresrew>]>', 'dynamic_info': {'extra_info_key': 'additional_value', 'another_field': 'another_value'}}
+2024-11-18 09:22:23,078 - application_logger - INFO - {'event': 'function_success', 'function': 'perform_update', 'execution_time': 0.0028798580169677734, 'result': 'None', 'dynamic_info': {'extra_info_key': 'additional_value', 'another_field': 'another_value'}}
+2024-11-18 09:22:23,086 - django.request - WARNING - Bad Request: /listitemimages/upload_images/
+2024-11-18 09:22:34,855 - application_logger - INFO - {'event': 'function_success', 'function': 'get_queryset', 'execution_time': 3.314018249511719e-05, 'result': '<QuerySet [<ListItem: tessttt>, <ListItem: dsesr>, <ListItem: srer>, <ListItem: wrwerw>, <ListItem: weqweqwe>, <ListItem: edaerer>, <ListItem: aweqer>, <ListItem: qweqwe>, <ListItem: aerwr>, <ListItem: wwwww>, <ListItem: sefresrew>]>', 'dynamic_info': {'extra_info_key': 'additional_value', 'another_field': 'another_value'}}
+2024-11-18 09:22:34,862 - application_logger - INFO - {'event': 'function_success', 'function': 'perform_update', 'execution_time': 0.002218008041381836, 'result': 'None', 'dynamic_info': {'extra_info_key': 'additional_value', 'another_field': 'another_value'}}
+2024-11-18 09:23:40,591 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-18 09:23:40,955 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-18 09:23:44,059 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-18 09:23:44,260 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-18 09:23:47,463 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-18 09:23:47,710 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-18 09:23:48,843 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-18 09:23:49,043 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-18 09:23:52,124 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-18 09:23:52,332 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-18 09:23:55,570 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-18 09:23:55,806 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-18 09:23:57,867 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-18 09:23:58,085 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-18 09:24:02,297 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-18 09:24:02,525 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-18 09:24:05,629 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-18 09:24:06,005 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-18 09:24:27,681 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-18 09:24:27,912 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-18 09:24:29,982 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-18 09:24:30,179 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-18 09:24:36,467 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-18 09:24:36,728 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-18 09:24:38,800 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-18 09:24:39,022 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-18 09:24:41,194 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-18 09:24:41,431 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-18 09:24:44,517 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-18 09:24:44,743 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-18 09:24:45,908 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-18 09:24:46,120 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-18 09:24:48,196 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-18 09:24:48,444 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-18 09:24:49,601 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-18 09:24:49,812 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-18 09:24:51,879 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-18 09:24:52,108 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-18 09:24:53,280 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-18 09:24:53,485 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-18 09:24:56,566 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-18 09:24:56,811 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-18 09:25:02,075 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-18 09:25:02,318 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-18 09:25:06,533 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-18 09:25:06,791 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-18 09:25:08,968 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-18 09:25:09,196 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-18 09:25:11,299 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-18 09:25:11,508 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-18 09:25:12,640 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-18 09:25:12,876 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-18 09:25:16,047 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-18 09:25:16,269 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-18 09:25:18,370 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-18 09:25:18,575 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-18 09:25:22,794 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-18 09:25:23,004 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-18 09:25:25,074 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-18 09:25:25,304 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-18 09:25:31,577 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-18 09:25:31,804 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-18 09:25:35,912 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-18 09:25:36,185 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-18 09:25:43,497 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-18 09:25:43,732 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-18 09:25:47,951 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-18 09:25:48,217 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-18 09:25:52,450 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-18 09:25:52,662 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-18 09:25:55,753 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-18 09:25:55,999 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-18 09:26:00,231 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-18 09:26:00,496 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-18 09:26:02,580 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-18 09:26:02,800 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-18 09:26:08,044 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-18 09:26:08,291 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-18 09:26:14,582 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-18 09:26:14,847 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-18 09:26:21,096 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-18 09:26:21,334 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-18 09:26:24,529 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-18 09:26:24,732 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-18 09:26:53,631 - application_logger - INFO - {'event': 'function_success', 'function': 'get_token', 'execution_time': 0.007776975631713867, 'result': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTczOTY5ODAxMywiaWF0IjoxNzMxOTIyMDEzLCJqdGkiOiIyZmYyMmFiNWJjNjI0YWY3OTNhZjYxNDFhN2UzMmEwMyIsInVzZXJfaWQiOjEsInVzZXJuYW1lIjoiY29yYWwifQ.btpEtgnXzkse0RoQEATfiNIqsokrMwx0lObakKOEU_w', 'dynamic_info': {'extra_info_key': 'additional_value', 'another_field': 'another_value'}}
+2024-11-18 09:26:53,638 - application_logger - INFO - {'event': 'function_success', 'function': 'get_customization_for_user', 'execution_time': 0.0007338523864746094, 'result': '<Response status_code=200, "text/html; charset=utf-8">', 'dynamic_info': {'extra_info_key': 'additional_value', 'another_field': 'another_value'}}
+2024-11-18 09:26:53,660 - application_logger - INFO - {'event': 'function_success', 'function': 'list_by_user', 'execution_time': 0.0026140213012695312, 'result': '<Response status_code=200, "text/html; charset=utf-8">', 'dynamic_info': {'extra_info_key': 'additional_value', 'another_field': 'another_value'}}
+2024-11-18 09:26:54,633 - application_logger - INFO - {'event': 'function_success', 'function': 'get_images_for_list_item', 'execution_time': 0.0032851696014404297, 'result': '<Response status_code=200, "text/html; charset=utf-8">', 'dynamic_info': {'extra_info_key': 'additional_value', 'another_field': 'another_value'}}
+2024-11-18 09:27:00,494 - application_logger - INFO - {'event': 'function_success', 'function': 'get_queryset', 'execution_time': 2.7894973754882812e-05, 'result': '<QuerySet [<ListItem: tessttt>, <ListItem: dsesr>, <ListItem: srer>, <ListItem: wrwerw>, <ListItem: weqweqwe>, <ListItem: edaerer>, <ListItem: aweqer>, <ListItem: qweqwe>, <ListItem: aerwr>, <ListItem: wwwww>, <ListItem: sefresrew>]>', 'dynamic_info': {'extra_info_key': 'additional_value', 'another_field': 'another_value'}}
+2024-11-18 09:27:00,499 - application_logger - INFO - {'event': 'function_success', 'function': 'perform_update', 'execution_time': 0.0039081573486328125, 'result': 'None', 'dynamic_info': {'extra_info_key': 'additional_value', 'another_field': 'another_value'}}
+2024-11-18 09:27:00,506 - application_logger - INFO - {'event': 'function_success', 'function': 'upload_images', 'execution_time': 0.0012042522430419922, 'result': '<Response status_code=400, "text/html; charset=utf-8">', 'dynamic_info': {'extra_info_key': 'additional_value', 'another_field': 'another_value'}}
+2024-11-18 09:27:00,507 - django.request - WARNING - Bad Request: /listitemimages/upload_images/
+2024-11-18 09:27:00,547 - application_logger - INFO - {'event': 'function_success', 'function': 'list_by_user', 'execution_time': 0.00690913200378418, 'result': '<Response status_code=200, "text/html; charset=utf-8">', 'dynamic_info': {'extra_info_key': 'additional_value', 'another_field': 'another_value'}}
+2024-11-18 09:27:02,071 - application_logger - INFO - {'event': 'function_success', 'function': 'get_images_for_list_item', 'execution_time': 0.0042078495025634766, 'result': '<Response status_code=200, "text/html; charset=utf-8">', 'dynamic_info': {'extra_info_key': 'additional_value', 'another_field': 'another_value'}}
+2024-11-18 09:27:13,148 - application_logger - INFO - {'event': 'function_success', 'function': 'get_queryset', 'execution_time': 3.409385681152344e-05, 'result': '<QuerySet [<ListItem: tessttt>, <ListItem: dsesr>, <ListItem: srer>, <ListItem: wrwerw>, <ListItem: weqweqwe>, <ListItem: edaerer>, <ListItem: aweqer>, <ListItem: qweqwe>, <ListItem: aerwr>, <ListItem: wwwww>, <ListItem: sefresrew>]>', 'dynamic_info': {'extra_info_key': 'additional_value', 'another_field': 'another_value'}}
+2024-11-18 09:27:13,153 - application_logger - INFO - {'event': 'function_success', 'function': 'perform_update', 'execution_time': 0.0016489028930664062, 'result': 'None', 'dynamic_info': {'extra_info_key': 'additional_value', 'another_field': 'another_value'}}
+2024-11-18 09:27:13,161 - application_logger - INFO - {'event': 'function_success', 'function': 'upload_images', 'execution_time': 0.005192279815673828, 'result': '<Response status_code=201, "text/html; charset=utf-8">', 'dynamic_info': {'extra_info_key': 'additional_value', 'another_field': 'another_value'}}
+2024-11-18 09:27:13,192 - application_logger - INFO - {'event': 'function_success', 'function': 'list_by_user', 'execution_time': 0.00335693359375, 'result': '<Response status_code=200, "text/html; charset=utf-8">', 'dynamic_info': {'extra_info_key': 'additional_value', 'another_field': 'another_value'}}
+2024-11-18 09:27:15,048 - application_logger - INFO - {'event': 'function_success', 'function': 'get_images_for_list_item', 'execution_time': 0.0021479129791259766, 'result': '<Response status_code=200, "text/html; charset=utf-8">', 'dynamic_info': {'extra_info_key': 'additional_value', 'another_field': 'another_value'}}
+2024-11-18 09:27:16,776 - application_logger - INFO - {'event': 'function_success', 'function': 'list_by_user', 'execution_time': 0.0038721561431884766, 'result': '<Response status_code=200, "text/html; charset=utf-8">', 'dynamic_info': {'extra_info_key': 'additional_value', 'another_field': 'another_value'}}
+2024-11-18 09:27:17,707 - application_logger - INFO - {'event': 'function_success', 'function': 'get_images_for_list_item', 'execution_time': 0.005287885665893555, 'result': '<Response status_code=200, "text/html; charset=utf-8">', 'dynamic_info': {'extra_info_key': 'additional_value', 'another_field': 'another_value'}}
+2024-11-18 09:27:49,096 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/base/views.py changed, reloading.
+2024-11-18 09:27:49,487 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
