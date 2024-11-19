@@ -225,7 +225,8 @@ SENDGRID_SANDBOX_MODE_IN_DEBUG = False
 DEFAULT_FROM_EMAIL = 'listaassistance@gmail.com'
 
 
-
+## for /
+APPEND_SLASH = False 
 # True
 # # False  # הפכי את זה ל-True לפיתוח בלבד
 
@@ -237,8 +238,10 @@ DEFAULT_FROM_EMAIL = 'listaassistance@gmail.com'
 # L78HFR38VMVXDND7SY8PQ6CN
 
 
-## for /
-APPEND_SLASH = False
+OPENAI_API_KEY = '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'
+
+
+
 
 REST_FRAMEWORK = {
     'DEFAULT_AUTHENTICATION_CLASSES': (

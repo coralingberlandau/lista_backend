@@ -1,5 +1,5 @@
 from rest_framework import serializers
-from .models import ListItem, GroupList, ListItemImage, Customization
+from .models import ListItem, GroupList, ListItemImage, Customization, Recommendation
 from django.contrib.auth.models import User
 
 class UserSerializer(serializers.ModelSerializer):
@@ -17,11 +17,8 @@ class ListItemSerializer(serializers.ModelSerializer):
         }
     
 class GroupListSerializer(serializers.ModelSerializer):
-    # שדה של המשתמש שמחובר לרשימה
     user = serializers.PrimaryKeyRelatedField(queryset=User.objects.all())  
-    # שדה של המסמך ששייך לרשימה
     list_item = serializers.PrimaryKeyRelatedField(queryset=ListItem.objects.all())  
-    # שדה שמתאר את ה-ID של המשתמש ששיתף את הרשימה
     shared_by_user_id = serializers.SerializerMethodField()
 
     class Meta:
@@ -53,4 +50,10 @@ class ListItemImageSerializer(serializers.ModelSerializer):
 class CustomizationSerializer(serializers.ModelSerializer):
     class Meta:
         model = Customization
-        fields = '__all__'  # או תוכל לציין את השדות שברצונך להחזיר
+        fields = '__all__'  
+
+class RecommendationSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Recommendation
+        fields = '__all__'  
+

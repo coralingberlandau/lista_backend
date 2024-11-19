@@ -3,8 +3,8 @@ from rest_framework.response import Response
 from rest_framework import viewsets, status
 
 from django.db import models
-from .models import ListItem, GroupList, ListItemImage, Customization
-from base.serializer import ListItemImageSerializer, ListItemSerializer, GroupListSerializer, CustomizationSerializer
+from .models import ListItem, GroupList, ListItemImage, Customization, Recommendation
+from base.serializer import ListItemImageSerializer, ListItemSerializer, GroupListSerializer, CustomizationSerializer, RecommendationSerializer
 from rest_framework.decorators import api_view, permission_classes
 from rest_framework.permissions import IsAuthenticated
 from rest_framework_simplejwt.serializers import TokenObtainPairSerializer
@@ -38,6 +38,64 @@ from django.core.files.storage import default_storage
 import json
 
 
+# import numpy as np
+# import cv2
+# import face_recognition
+# import jwt
+# import datetime
+
+
+import openai
+from rest_framework.exceptions import NotFound
+
+
+openai.api_key = settings.OPENAI_API_KEY
+
+class RecommendationViewSet(viewsets.ModelViewSet):
+    queryset = Recommendation.objects.all()
+    serializer_class = RecommendationSerializer
+
+    def recommendations(self, request, listItemId):
+        try:
+
+            list_item = ListItem.objects.filter(id=listItemId).first()
+
+            if not list_item or not list_item.items:
+                raise NotFound("No items found in the list.")
+
+
+            items = [item.strip() for item in list_item.items.split('|')]
+            prompt = f"Recommend items for a shopping list that includes: {', '.join(items)}"
+
+
+            response = openai.completions.create(
+                model="gpt-3.5-turbo",  
+                prompt=prompt,
+                max_tokens=50
+        )
+
+            recommendations = response['choices'][0]['message']['content'].strip().split(',')
+
+            # Create a new recommendation record
+            recommendation = Recommendation.objects.create(
+                list_item=list_item,
+                recommended_items=",".join(recommendations)
+            )
+
+            # Serialize and return the recommendation
+            serializer = self.get_serializer(recommendation)
+            return Response(serializer.data)
+
+        except openai.error.OpenAIError as e:
+            return Response({"error": f"OpenAI error: {str(e)}"}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
+        except NotFound as e:
+            return Response({"error": str(e)}, status=status.HTTP_404_NOT_FOUND)
+        except Exception as e:
+            # Log the error for debugging purposes
+            print(f"Unexpected error: {str(e)}")
+            return Response({"error": "An unexpected error occurred."}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
+
+
 
 # GET http://127.0.0.1:8000/listitem/by-user/1/
 
@@ -51,7 +109,7 @@ class ListItemViewSet(viewsets.ModelViewSet):
         return ListItem.objects.filter(user_id=user_id) if user_id else ListItem.objects.all()
     
     @log(user_id="request.user.id", object_id="list_item.id")
-    @action(detail=False, methods=['get'], url_path='by-user/(?P<user_id>\d+)')
+    @action(detail=False, methods=['get'], url_path='by-user/(?P<user_id>\ d+)')
     def get_by_user(self, request, user_id=None):
         user = request.user  # המשתמש המחובר מזוהה על ידי הטוקן
         if user.is_anonymous:
@@ -59,8 +117,9 @@ class ListItemViewSet(viewsets.ModelViewSet):
         user_items = ListItem.objects.filter(user=user)  # חיפוש הרשומות של המשתמש המחובר בלבד
         serializer = ListItemSerializer(user_items, many=True)
         return Response(serializer.data)
-    
 
+    # זה אחרייי השילוב של הai זיהוי פנים
+  
     @log(user_id="request.user.id", object_id="list_item.id")
     def perform_update(self, serializer):
         user = self.request.user
@@ -284,7 +343,6 @@ def get_user_info_by_email(request, email):
     
 
 class ResetPasswordView(APIView):
-    # @log  # שימוש בדקורטור הלוג
 
     @log(user_id="request.user.id", object_id="list_item.id")
     def post(self, request):
@@ -304,7 +362,7 @@ class ResetPasswordView(APIView):
         except User.DoesNotExist:
             return Response({"error": "User with this email does not exist."}, status=status.HTTP_404_NOT_FOUND)
         
-# שליחת מייל איפוס סיסמה
+
 @log(user_id="request.user.id", object_id="list_item.id")
 def send_password_reset_email(email):
     sg = SendGridAPIClient(api_key=settings.SENDGRID_API_KEY)
@@ -313,7 +371,6 @@ def send_password_reset_email(email):
     subject = "Password Reset Request"
     content = Content("text/plain", f"Click the link to reset your password: {settings.FRONTEND_URL}/change-password?email={email}")
 
-    print(from_email, to_email, subject, content)
     mail = Mail(from_email=from_email, to_email=to_email, subject=subject, content=content)
     try:
         response = sg.client.mail.send.post(request_body=mail.get())
@@ -355,12 +412,9 @@ class ListItemImageViewSet(viewsets.ModelViewSet):
     queryset = ListItemImage.objects.all()
     serializer_class = ListItemImageSerializer
 
-    # @log()
-    # @action(detail=True, methods=['post', 'patch'], url_path='upload_images')
     @log(user_id="request.user.id", object_id="list_item.id")
     @action(detail=False, methods=['post'], url_path='upload_images')
     def upload_images(self, request):
-        print('gab')
         list_item_id = request.data.get('list_item')
         images_data = request.data.getlist('images')
 
@@ -417,13 +471,10 @@ class ListItemImageViewSet(viewsets.ModelViewSet):
         # קבלת ה- pk מה-kwargs
         list_item_id = kwargs.get('pk')
         
-        print('here')
         images = ListItemImage.objects.filter(list_item_id=list_item_id)
         if not images.exists():
             return Response({"images": [], "message": "No images found for this list item."}, status=200)
         
-        print('cooralllllll', images )
-
         image_data = [
             {
                 "id": image.id,
@@ -455,13 +506,11 @@ class CustomizationViewSet(viewsets.ModelViewSet):
                 status=400
             )
 
-        # Get or create the customization for the authenticated user
         customization, created = Customization.objects.update_or_create(
             user=user,
             defaults={'background_image_id': background_image_id}
         )
 
-        # Serialize the result and return the response
         serializer = CustomizationSerializer(customization)
         return Response(
             {
@@ -480,7 +529,6 @@ class CustomizationViewSet(viewsets.ModelViewSet):
         """
         user = request.user
 
-        # Retrieve the customization for the authenticated user
         try:
             customization = Customization.objects.get(user=user)
         except Customization.DoesNotExist:
@@ -489,9 +537,9 @@ class CustomizationViewSet(viewsets.ModelViewSet):
                 "data": {}
             }, status=200)
 
-        # Serialize and return the result
         serializer = CustomizationSerializer(customization)
         return Response({
             "message": "Customization retrieved successfully.",
             "data": serializer.data
         }, status=200)
+    

@@ -2,12 +2,11 @@ from django.db import models
 from django.contrib.auth.models import User
 
 class ListItem(models.Model):
-    title = models.CharField(max_length=255, default="No items")  # Title of the list
-    items = models.TextField(default="No items")  # Store items as a plain string
-    # description = models.JSONField(default=list)  # Store an array of strings
-    date_created = models.DateField(auto_now_add=True)  # Automatically adds creation date
-    user = models.ForeignKey(User, on_delete=models.CASCADE, related_name='owned_lists')  # The owner of the list
-    is_active = models.BooleanField(default=True)  # Indicates if the list is active
+    title = models.CharField(max_length=255, default="No items") 
+    items = models.TextField(default="No items") 
+    date_created = models.DateField(auto_now_add=True) 
+    user = models.ForeignKey(User, on_delete=models.CASCADE, related_name='owned_lists')  
+    is_active = models.BooleanField(default=True) 
 
     def __str__(self):
         return str(self.title)
@@ -43,10 +42,18 @@ class ListItemImage(models.Model):
         return f"Image for {self.list_item.title} - {self.image.name}"
 
 
-
 class Customization(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE)  # קשר עם המשתמש
     background_image_id = models.CharField(max_length=20, default='')  # ברירת מחדל ריקה
 
-    # def __str__(self):
-    #     return f"Preferences for user ID {self.user.pk} - Background image ID: {self.background_image_id}"
+    def __str__(self):
+        return f"Customization for user {self.user.username or self.user.pk} - image ID: {self.background_image_id}"
+
+   
+class Recommendation(models.Model):
+    list_item = models.ForeignKey(ListItem, on_delete=models.CASCADE, related_name="recommendations")  # רשימה קשורה
+    recommended_items = models.TextField()  # שדות הממליצים, מופרדים בפסיק
+    created_at = models.DateTimeField(auto_now_add=True)  # זמן יצירת ההמלצה
+
+    def __str__(self):
+        return f"Recommendation for {self.list_item.title} at {self.created_at}"
