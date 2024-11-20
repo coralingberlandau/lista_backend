@@ -483,6 +483,48 @@ class ListItemImageViewSet(viewsets.ModelViewSet):
             } for image in images
         ]
         return Response({"images": image_data})
+    
+    @log(user_id="request.user.id", object_id="list_item.id")
+    @action(detail=False, methods=['post'], url_path='update_images')
+    def update_images(self, request, *args, **kwargs):
+        print(request.data)
+        list_item_id = request.data.get('list_item_id')
+        updated_images_index = request.data.getlist('updatedImagesIndex[]')
+        deleted_images_index = request.data.getlist('deletedImagesIndex[]')
+
+
+        try:
+
+            # Delete images for the deleted images
+            for index in deleted_images_index:
+                images_to_delete = ListItemImage.objects.filter(index=index, list_item_id=list_item_id)
+                print(f"Found images to delete with index {index}: {images_to_delete}")
+                for image in images_to_delete:
+                    print(f"Deleting image {image.id} with index {image.index}")
+                    image.delete()
+
+            # Update image indices for the updated images
+            for index in updated_images_index:
+                images_to_update = ListItemImage.objects.filter(index=index, list_item_id=list_item_id)
+                print(f"Found images with index {index}: {images_to_update}")
+                for image in images_to_update:
+                    # Decrement the index by 1
+                    print(f"Updating image {image.id} - Old index: {image.index}")
+                    image.index -= 1
+
+                    try:
+                        image.save()
+                        print(f"Image {image.id} saved successfully with new index {image.index}")
+                    except Exception as e:
+                        print(f"Failed to save image {image.id}: {e}")
+
+
+
+            return Response({"message": "Images updated and deleted successfully"}, status=status.HTTP_200_OK)
+
+        except Exception as e:
+            print(f"Error during update: {str(e)}")
+            return Response({"error": str(e)}, status=status.HTTP_400_BAD_REQUEST)
 
 
 
