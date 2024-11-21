@@ -36,7 +36,7 @@ class ListItemImage(models.Model):
     list_item = models.ForeignKey(ListItem, on_delete=models.CASCADE, related_name='images')
     image = models.ImageField(null=True,blank=True,default='/placeholder.png' ,upload_to='list_item_images/')
     index = models.PositiveIntegerField(default=0)
-    mime_type = models.CharField(max_length=50, blank=True, null=True)  # New field for MIME type
+    mime_type = models.CharField(max_length=50, blank=True, null=True) 
 
     def __str__(self):
         return f"Image for {self.list_item.title} - {self.image.name}"
