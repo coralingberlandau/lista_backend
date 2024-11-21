@@ -22,8 +22,8 @@ class GroupList(models.Model):
         ('full_access', 'Full Access'),
     ]
 
-    user = models.ForeignKey(User, on_delete=models.CASCADE, related_name="group_lists")  # קשר עם משתמשים
-    list_item = models.ForeignKey(ListItem, on_delete=models.CASCADE, related_name="shared_with")  # קשר עם מסמכים
+    user = models.ForeignKey(User, on_delete=models.CASCADE, related_name="group_lists") 
+    list_item = models.ForeignKey(ListItem, on_delete=models.CASCADE, related_name="shared_with")  
     date_joined = models.DateField(auto_now_add=True)
     role = models.CharField(max_length=10, choices=ROLE_CHOICES, default='member')
     permission_type = models.CharField(max_length=20, choices=PERMISSION_CHOICES, default='read_only')
@@ -43,17 +43,18 @@ class ListItemImage(models.Model):
 
 
 class Customization(models.Model):
-    user = models.ForeignKey(User, on_delete=models.CASCADE)  # קשר עם המשתמש
-    background_image_id = models.CharField(max_length=20, default='')  # ברירת מחדל ריקה
+    user = models.ForeignKey(User, on_delete=models.CASCADE) 
+    background_image_id = models.CharField(max_length=20, default='')  
 
     def __str__(self):
         return f"Customization for user {self.user.username or self.user.pk} - image ID: {self.background_image_id}"
 
    
 class Recommendation(models.Model):
-    list_item = models.ForeignKey(ListItem, on_delete=models.CASCADE, related_name="recommendations")  # רשימה קשורה
-    recommended_items = models.TextField()  # שדות הממליצים, מופרדים בפסיק
-    created_at = models.DateTimeField(auto_now_add=True)  # זמן יצירת ההמלצה
+    list_item = models.ForeignKey(ListItem, on_delete=models.CASCADE, related_name="recommendations") 
+    recommended_items = models.TextField()  
+    created_at = models.DateTimeField(auto_now_add=True)  
 
     def __str__(self):
         return f"Recommendation for {self.list_item.title} at {self.created_at}"
+

@@ -12,8 +12,8 @@ class ListItemSerializer(serializers.ModelSerializer):
         model = ListItem
         fields = '__all__'
         extra_kwargs = {
-            'user': {'required': True},  # שדה חובה
-            'images': {'required': False},  # הפוך את השדה images לא חובה
+            'user': {'required': True}, 
+            'images': {'required': False}, 
         }
     
 class GroupListSerializer(serializers.ModelSerializer):
@@ -36,7 +36,6 @@ class GroupListSerializer(serializers.ModelSerializer):
         return None
 
     def validate(self, attrs):
-        # לוודא ש-fields הנדרשים קיימים, לדוג' 'user' לא חסר
         if 'user' not in attrs:
             raise serializers.ValidationError({"user": "This field is required."})
         return attrs

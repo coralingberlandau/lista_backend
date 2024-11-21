@@ -9,7 +9,6 @@ from logging.handlers import RotatingFileHandler
 
 LOG_FILE = "logs/application.log"
 
-# JSON Formatter Class
 class JSONFormatter(logging.Formatter):
     def format(self, record):
         log_record = {
@@ -26,16 +25,15 @@ class JSONFormatter(logging.Formatter):
         if record.exc_info:
             log_record["exception"] = self.formatException(record.exc_info)
         
-        # Add dynamic information with a safety check
         dynamic_info = getattr(record, 'dynamic_info', None)
-        if dynamic_info and isinstance(dynamic_info, dict):  # Ensure dynamic_info is valid
+        if dynamic_info and isinstance(dynamic_info, dict):  
             log_record.update(dynamic_info)
         else:
-            log_record["dynamic_info"] = "No dynamic info provided"  # Fallback message
+            log_record["dynamic_info"] = "No dynamic info provided" 
 
         return json.dumps(log_record)
 
-# Setup Logger
+
 def setup_logger(log_file, level=logging.DEBUG):
     logger = logging.getLogger("application_logger")
     if not logger.hasHandlers():
@@ -46,7 +44,7 @@ def setup_logger(log_file, level=logging.DEBUG):
         logger.addHandler(handler)
     return logger
 
-# Log API Call
+
 def log_api_call(url, method, status_code, response_time, payload=None):
     logger = setup_logger(LOG_FILE)
     logger.info({
@@ -58,7 +56,7 @@ def log_api_call(url, method, status_code, response_time, payload=None):
         "payload": payload,
     })
 
-# Log Deletion Event
+
 def log_deletion(user_id, object_id, object_type):
     logger = setup_logger(LOG_FILE)
     logger.warning({
@@ -69,7 +67,6 @@ def log_deletion(user_id, object_id, object_type):
     })
 
 
-# Decorator with Logging
 def log(user_id=None, object_id=None):
     def decorator(func):
         @wraps(func)
@@ -79,12 +76,10 @@ def log(user_id=None, object_id=None):
             file_name = os.path.basename(func.__code__.co_filename)
             start_time = time.time()
 
-            # User and Request Info
             request = args[1] if len(args) > 1 else None
             user_info = f"User ID: {user_id}" if user_id else "No User Info"
             object_info = f"Object ID: {object_id}" if object_id else "No Object Info"
             
-            # Check if request is an instance of HttpRequest before accessing META
             if request and hasattr(request, 'META'):
                 ip_address = request.META.get('REMOTE_ADDR', 'Unknown IP')
                 method = request.method if hasattr(request, 'method') else 'No Method'
@@ -109,21 +104,19 @@ def log(user_id=None, object_id=None):
                 result = func(*args, **kwargs)
                 execution_time = time.time() - start_time
 
-                # Add dynamic information here with a fallback to prevent errors
                 dynamic_info = {
-                    "extra_info_key": "additional_value",  # Replace with actual dynamic info
+                    "extra_info_key": "additional_value", 
                     "another_field": "another_value"
                 }
-                if dynamic_info is None:  # Ensure it's not None
+                if dynamic_info is None:  
                     dynamic_info = {"message": "No additional dynamic information"}
 
-                # If dynamic_info is invalid, use the fallback
                 logger.info({
                     "event": "function_success",
                     "function": function_name,
                     "execution_time": execution_time,
                     "result": str(result),
-                    "dynamic_info": dynamic_info  # Include additional dynamic info here
+                    "dynamic_info": dynamic_info  
                 })
                 return result
 
@@ -132,7 +125,7 @@ def log(user_id=None, object_id=None):
                     "event": "error",
                     "function": function_name,
                     "error": str(e),
-                    "stack_trace": traceback.format_exc(limit=3),  # Include last 3 calls only
+                    "stack_trace": traceback.format_exc(limit=3), 
                 })
                 raise
 
