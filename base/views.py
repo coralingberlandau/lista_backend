@@ -222,6 +222,38 @@ class GroupListViewSet(viewsets.ModelViewSet):
         items = ListItem.objects.filter(id__in=list_item_ids)     
         serializer = ListItemSerializer(items, many=True)
         return Response(serializer.data)   
+    
+
+
+
+    @log(user_id="request.user.id", object_id="list_item.id")
+    @action(detail=False, methods=['get'], url_path='permission_type')
+    def get_permission_type(self, request):
+        user_id = request.query_params.get('user_id')
+        list_item_id = request.query_params.get('list_item_id')
+
+        # בדוק אם ה-user_id ו-list_item_id לא null
+        if not user_id or not list_item_id:
+            return Response({'message': 'user_id and list_item_id are required'}, status=status.HTTP_400_BAD_REQUEST)
+
+        # הדפסת ערכים לבדיקת השאילתה
+        print(f"Fetching permission for user_id: {user_id} and list_item_id: {list_item_id}")
+
+        group_list = GroupList.objects.filter(user_id=user_id, list_item_id=list_item_id).first()
+
+        if not group_list:
+            return Response({'message': 'No group list found for the given user and item'}, status=status.HTTP_404_NOT_FOUND)
+
+        # הדפסת ה-permission_type
+        print(f"Permission type found: {group_list.permission_type}")
+
+        return Response({'permission_type': group_list.permission_type}, status=status.HTTP_200_OK)
+
+
+
+
+
+
 
     
 # login -- http://127.0.0.1:8000/login
