@@ -10,13 +10,9 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/4.2/ref/settings/
 """
 
-from pathlib import Path
-
-from datetime import timedelta   
 import os
-
-
-
+from datetime import timedelta
+from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -42,16 +38,15 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'base',
+    'lista',
     'rest_framework',
-    # 'rest_framework.authtoken',
-    'rest_framework_simplejwt.token_blacklist', 
+    'rest_framework_simplejwt.token_blacklist',
     'corsheaders',
 ]
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
-    'corsheaders.middleware.CorsMiddleware', 
+    'corsheaders.middleware.CorsMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
@@ -125,34 +120,6 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.2/howto/static-files/
 
-# STATIC_URL = '/static/'
-# MEDIA_URL = '/images/'
-
-
-# STATICFILES_DIRS = [
-#     BASE_DIR / 'static',
-#    ]
-
-# MEDIA_ROOT = BASE_DIR / 'static/images'
-# STATIC_ROOT = BASE_DIR / 'staticfiles'
-
-# settings.py
-
-# # URL שבו ניתן לגשת לקבצי המדיה (תמונות, קבצים שהועלו)
-# MEDIA_URL = '/media/'
-
-# # המיקום הפיזי שבו ישמרו התמונות והקבצים המועלים
-# MEDIA_ROOT = BASE_DIR / 'media'
-
-# # URL של קבצים סטטיים (כגון CSS, JS)
-# STATIC_URL = '/static/'
-
-# # מיקום הקבצים הסטטיים (כגון CSS, JS)
-# STATICFILES_DIRS = [
-#     BASE_DIR / 'static',
-# ]
-
-# תיקיית הקבצים הסטטיים שנבנית על ידי Django בזמן פרודקשן
 STATIC_ROOT = BASE_DIR / 'staticfiles'
 
 STATIC_URL = '/static/'
@@ -161,7 +128,7 @@ MEDIA_URL = '/images/'
 
 STATICFILES_DIRS = [
     BASE_DIR / 'static',
-   ]
+]
 
 MEDIA_ROOT = BASE_DIR / 'static/images'
 STATIC_ROOT = BASE_DIR / 'staticfiles'
@@ -172,7 +139,6 @@ STATIC_ROOT = BASE_DIR / 'staticfiles'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-# בתוך settings.py
 LOGGING = {
     'version': 1,
     'disable_existing_loggers': False,
@@ -191,32 +157,20 @@ LOGGING = {
         },
         'file': {
             'class': 'logging.FileHandler',
-            # 'filename': 'logs/application.log',
             'filename': os.path.join(BASE_DIR, 'logs', 'application.log'),
             'formatter': 'verbose',
         },
     },
     'loggers': {
         '': {
-            'handlers': ['console', 'file'],  # רישום הלוג גם בקונסול וגם בקובץ
-            'level': 'INFO',  # ניתן לשנות את רמת הלוג אם רוצים פחות פלט
+            'handlers': ['console', 'file'],
+            'level': 'INFO',
         },
     },
 }
 
 
-# EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
-
-# 
-# EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
-# EMAIL_HOST = 'smtp.gmail.com'  # למשל, אם את משתמשת ב-Gmail
-# EMAIL_PORT = 587
-# EMAIL_USE_TLS = True
-# EMAIL_HOST_USER = 'listaassistance@gmail.com'
-# EMAIL_HOST_PASSWORD = 'lista2024'
-
-
-FRONTEND_URL = "http://localhost:8081"  # או כתובת ה-frontend שלך בשרת
+FRONTEND_URL = "http://localhost:8081"
 
 EMAIL_BACKEND = 'sendgrid_backend.SendgridBackend'
 SENDGRID_API_KEY = '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'
@@ -224,32 +178,22 @@ SENDGRID_SANDBOX_MODE_IN_DEBUG = False
 
 DEFAULT_FROM_EMAIL = 'listaassistance@gmail.com'
 
+APPEND_SLASH = False
 
-## for /
-APPEND_SLASH = False 
-# True
-# # False  # הפכי את זה ל-True לפיתוח בלבד
+# OPENAI_API_KEY = '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'
 
-
-# SendGrid
-# SG.BWPk8xAFS_K5ZxfELx999g.iOxkRxewtaExdWZFhw3XwIY-Judy9TPXnHVWaR7UpdQCopied!
-
-
-# L78HFR38VMVXDND7SY8PQ6CN
-
-
-OPENAI_API_KEY = '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'
-
-
-
+OPENAI_API_KEY = (
+    'sk-proj-HTs_4QIuMpzs2F0o3mQlz5XMTUl8sQEKblP9De-uA8IZnLWDSA51oU7feW3h9MajV_'
+    'fdmyJXurT3BlbkFJGGP1rYScWUEDGXWoUcRQx7DztvtBX5kKV9j-dQpbSKNt3ox3WN23f1zYA02'
+    'R61GX4r0aeY4YIA'
+)
 
 REST_FRAMEWORK = {
     'DEFAULT_AUTHENTICATION_CLASSES': (
- 
+
         'rest_framework_simplejwt.authentication.JWTAuthentication',
     )
 }
-
 
 SIMPLE_JWT = {
     'ACCESS_TOKEN_LIFETIME': timedelta(minutes=25),
@@ -257,28 +201,28 @@ SIMPLE_JWT = {
     'ROTATE_REFRESH_TOKENS': True,
     'BLACKLIST_AFTER_ROTATION': True,
     'UPDATE_LAST_LOGIN': False,
- 
+
     'ALGORITHM': 'HS256',
     'VERIFYING_KEY': None,
     'AUDIENCE': None,
     'ISSUER': None,
     'JWK_URL': None,
     'LEEWAY': 0,
- 
+
     'AUTH_HEADER_TYPES': ('Bearer',),
     'AUTH_HEADER_NAME': 'HTTP_AUTHORIZATION',
     'USER_ID_FIELD': 'id',
     'USER_ID_CLAIM': 'user_id',
     'USER_AUTHENTICATION_RULE': 'rest_framework_simplejwt.authentication.default_user_authentication_rule',
- 
+
     'AUTH_TOKEN_CLASSES': ('rest_framework_simplejwt.tokens.AccessToken',),
     'TOKEN_TYPE_CLAIM': 'token_type',
- 
+
     'JTI_CLAIM': 'jti',
- 
+
     'SLIDING_TOKEN_REFRESH_EXP_CLAIM': 'refresh_exp',
     'SLIDING_TOKEN_LIFETIME': timedelta(minutes=5),
     'SLIDING_TOKEN_REFRESH_LIFETIME': timedelta(days=1),
 }
 
-CORS_ALLOW_ALL_ORIGINS = True  
+CORS_ALLOW_ALL_ORIGINS = True
