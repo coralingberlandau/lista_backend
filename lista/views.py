@@ -66,42 +66,47 @@ class RecommendationViewSet(viewsets.ModelViewSet):
         """
         try:
             list_item = ListItem.objects.filter(id=list_item_id).first()
+            print(f"Fetching recommendations for list item with ID: {list_item_id}")
 
             if not list_item or not list_item.items:
                 raise NotFound("No items found in the list.")
 
             items = [item.strip() for item in list_item.items.split('|')]
-            prompt = f"Recommend items for a shopping list that includes: {
-                ', '.join(items)}"
+            prompt = f"Recommend items for a shopping list that includes: {', '.join(items)}"
 
-            response = openai.Completion.create(
+            # קריאה ל-OpenAI לצורך יצירת המלצות
+            response = openai.completions.create(
                 model="gpt-3.5-turbo",
                 prompt=prompt,
-                max_tokens=50
+                max_tokens=100
             )
 
-            recommendations = response['choices'][0]['message']['content'].strip().split(
-                ',')
+            recommendations = response['choices'][0]['message']['content'].strip().split(',')
 
+            # שמירה בהמלצות ב-database
             recommendation = Recommendation.objects.create(
                 list_item=list_item,
                 recommended_items=",".join(recommendations)
             )
 
+            # מחזיר את ההמלצות בתגובה
             serializer = self.get_serializer(recommendation)
             return Response(serializer.data)
 
-        except openai.error.OpenAIError as e:
-            return Response({"error": f"OpenAI error: {str(e)}"},
-                            status=status.HTTP_500_INTERNAL_SERVER_ERROR)
         except NotFound as e:
+            # טיפול במקרה שהרשימה או הפריט לא נמצאים
             return Response({"error": str(e)},
                             status=status.HTTP_404_NOT_FOUND)
+        except openai.error.OpenAIError as e:
+            # טיפול בשגיאה מקונקטיביות עם OpenAI
+            print(f"Error occurred with OpenAI: {str(e)}")
+            return Response({"error": f"OpenAI error: {str(e)}"},
+                            status=status.HTTP_500_INTERNAL_SERVER_ERROR)
         except Exception as e:
+            # טיפול בשגיאות כלליות אחרות
             print(f"Unexpected error: {str(e)}")
             return Response({"error": "An unexpected error occurred."},
                             status=status.HTTP_500_INTERNAL_SERVER_ERROR)
-
 
 @log(user_id="request.user.id", object_id="list_item.id")
 @api_view(['GET'])
@@ -205,7 +210,6 @@ def register(request):
     if User.objects.filter(username=request.data['username']).exists():
         return Response({'error': 'Username already exists.'},
                         status=status.HTTP_400_BAD_REQUEST)
-    
 
     if User.objects.filter(email=request.data['email']).exists():
         return Response({'error': 'Email already in use.'},
@@ -275,7 +279,6 @@ def update_user(request, user_id):
     if request.method == 'PATCH':
         data = request.data
 
-        # בדיקות אם שם המשתמש או האימייל כבר קיימים במערכת
         if 'username' in data:
             username = data['username']
             if User.objects.filter(username=username).exclude(id=user.id).exists():
@@ -285,9 +288,10 @@ def update_user(request, user_id):
         if 'email' in data:
             email = data['email']
             try:
-                validate_email(email)  # לבדוק אם האימייל תקני
+                validate_email(email)
             except ValidationError:
-                return Response({"error": "Invalid email format."}, status=status.HTTP_400_BAD_REQUEST)
+                return Response(
+                    {"error": "Invalid email format."}, status=status.HTTP_400_BAD_REQUEST)
 
             if User.objects.filter(email=email).exclude(id=user.id).exists():
                 return Response({'error': 'Email already in use.'},
@@ -772,12 +776,9 @@ class ListItemImageViewSet(viewsets.ModelViewSet):
         - HTTP 400 Bad Request if any errors occur during the update or 
           deletion process.
         """
-
         list_item_id = request.data.get('list_item_id')
         updated_images_index = request.data.getlist('updatedImagesIndex[]')
         deleted_images_index = request.data.getlist('deletedImagesIndex[]')
-        print(updated_images_index)
-        print(deleted_images_index)
         try:
 
             for deleted_index in deleted_images_index:

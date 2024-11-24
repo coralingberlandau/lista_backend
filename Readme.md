@@ -1,19 +1,16 @@
+# **Welcome to Application LISTA - Backend** 👋  
 
+## **Lista - Personal and Collaborative List Management App**  
 
-כן, הפתרון הזה משלב את שני העקרונות: המלצות חכמות ו-ניהול רשימות חכמות.
-
-
-### **Welcome to Application LISTA - Backend** 👋  
-
-# **Lista - Personal and Collaborative List Management App**  
-
-The backend of **Lista**, a personal and collaborative list management app, is built to deliver seamless, secure, and efficient functionalities. Below is the detailed README for setting up and contributing to this project.
+The backend of **Lista**, a personal and collaborative list management app, 
+is built to deliver seamless, secure, and efficient functionalities.
+Below is the detailed README for setting up and contributing to this project.
 
 ---
 
 ## **📋 Overview**  
-**Lista** is your ultimate solution for organizing and managing personal and shared lists. It combines real-time updates, customization options, and a user-friendly experience.
-
+**Lista** is your ultimate solution for organizing and managing personal and shared lists. 
+It combines real-time updates, customization options, and a user-friendly experience.
 
 ---
 
@@ -24,7 +21,7 @@ The backend of **Lista**, a personal and collaborative list management app, is b
 ---
 
 ## **Database:**  
-- `data.json`: ??????  
+- **data.json**   
 
 ---
 ## **Table of Contents**  
@@ -74,16 +71,18 @@ with tailored permissions.
 
 ---
 
-## **Technologies Used**  
+## **Technologies Used**  ## **Technological Stack**   🚀
 
-| Domain       | Technology               |
-|--------------|--------------------------|
-| Frontend     | React Native TSX, Expo   |
-| Backend      | Django REST Framework, CORS |
-| Database     | SQLite                   |
-| Security     | JWT Authentication       |
-| Logging      | Python Logging Library   |
-| Code Quality | Pylint Static Analysis   |
+| Domain         | Technology                                                                        |
+|----------------|-----------------------------------------------------------------------------------|
+| Frontend       | React Native TSX, Expo                                                            |
+| Backend        | Django REST Framework, CORS                                                       |
+| Database       | SQLite                                                                            |
+| Security       | JWT Authentication                                                                |
+| Logging        | Python Logging Library                                                            |
+| Code Quality   | Pylint Static Analysis with PEP8 compliance and automatic formatting via autopep8.|
+| AI Integration | OpenAI API for smart recommendations and list management.                         |
+
 
 ---
 
@@ -91,8 +90,10 @@ with tailored permissions.
 - **Backend**: Django REST Framework, with CORS support to ensure smooth cross-origin communication.  
 - **Database**: SQLite for lightweight and efficient data storage.  
 - **Security**: Authentication and permission management using **JWT (JSON Web Tokens)**.  
-- **Communication**: **Axios** facilitates seamless HTTP requests between the frontend and backend.  
-- **Code Quality**: Static analysis performed with **Pylint** to maintain clean, error-free code.  
+- **Communication**: **Axios** facilitates seamless HTTP requests between the frontend and backend.   
+- **Code Quality**: Static analysis performed with **Pylint** to maintain clean, error-free code, 
+while adhering to **PEP8** standards for organized and consistent code formatting.
+Additionally, **autopep8** is used to automatically format the code according to **PEP8** guidelines.
 - **Logging**: Robust debugging and auditing capabilities via **Python's logging module**.  
 
 ---
@@ -102,6 +103,9 @@ with tailored permissions.
    - Create and manage lists by category (e.g., shopping, tasks, travel).  
    - Add tasks with notes, images, and deadlines.  
    - Mark tasks as complete.  
+   - **Delete Lists**: Option to delete unwanted or unused lists.  
+   - **Update Lists**: Update existing lists by adding or removing items, or modifying list details.  
+   - **Recycle Lists**: Option to reuse existing lists, including saving and restoring lists for future use.
 
 2. **List Sharing**  
    - Share lists with others via email.  
@@ -121,6 +125,13 @@ with tailored permissions.
 6. **Security and User Management**  
    - Secure registration and login with **JWT**.  
    - Permission-based management by user and list.  
+
+7. **Smart Recommendations and List Management**  
+   - **AI-Driven Recommendations**: The application integrates with OpenAI to provide personalized, 
+   intelligent recommendations for tasks or list items. These recommendations help 
+   users make smarter decisions when organizing their lists and tasks.  
+   - **Smart List Management**: By analyzing user behavior and preferences, the AI automatically organizes, 
+   categorizes, and suggests the most efficient ways to manage lists, improving productivity and organization.
 
 ---
 
@@ -154,7 +165,7 @@ Utilizes Django’s built-in `User` model:
 - **Username**: Unique within the system, used for login alongside the password
 - **First Name**: User's given name. 
 - **Last Name:**: User's family name 
-- **Email**: Used for sharing lists and password recovery.  
+- **Email**: Unique within the system, used for sharing lists and password recovery.  
 - **Password**: Secure authentication credential.  
 
 ### **ListItem**  
@@ -264,7 +275,7 @@ Follow these steps to install and run the application locally:
    - Detailed logs for debugging and monitoring using the Python logging library.  
 
 5. **Code Quality**  
-   - Code analyzed and improved using **Pylint**.  
+   - Code analyzed and improved using **Pylint** with PEP8 compliance and formatting via autopep8.  
 
 ---
 
@@ -284,47 +295,21 @@ Follow these steps to install and run the application locally:
 
 ### CRUD Operations  
 
-#### Customers  
-| Action  | URL                  | Method | Body (Example)                                                                                     |
-|---------|----------------------|--------|---------------------------------------------------------------------------------------------------|
-| Create  | `/api/customers/`    | POST   | `{ "name": "John", "email": "john@example.com", "phone": "123456789" }`                           |
-| Read    | `/api/customers/`    | GET    | None                                                                                              |
-| Read by ID | `/api/customers/<id>/` | GET    | None                                                                                              |
-| Update  | `/api/customers/<id>/` | PUT    | `{ "name": "John Updated", "phone": "987654321" }`                                                |
-| Delete  | `/api/customers/<id>/` | DELETE | None                                                                                              |
+#### Users  
+| Action        | URL                       | Method | Body (Example)                                                                                           |
+|---------------|---------------------------|--------|---------------------------------------------------------------------------------------------------------|
+| **Create**    | `/api/users/`              | POST   | `{ "user_id": "1", "username": "john_doe", "first_name": "John", "last_name": "Doe", "email": "john@example.com", "password": "securepassword123" }` |
+| **Read**      | `/api/users/`              | GET    | None (Retrieves all users)                                                                                                 |
+| **Read by ID**| `/api/users/<id>/`         | GET    | None (Retrieves user by ID)                                                                                                 |
+| **Update**    | `/api/users/<id>/`         | PUT    | `{ "username": "john_doe_updated", "first_name": "John", "last_name": "Doe", "email": "john_updated@example.com", "password": "newsecurepassword" }` |
+| **Delete**    | `/api/users/<id>/`         | DELETE | None                                                                                                    |
+
+
+
 
 ---
 
 ## **API Endpoints**  
-### Get All Lists  
-- **URL:** `/api/listitem/`  
-- **Method:** `GET`  
-- **Response:**  
-  ```json
-  [
-    {
-      "id": 1,
-      "title": "Shopping List",
-      "items": ["Milk", "Bread"],
-      "user_id": 2,
-
-    }
-  ]
-  ```  
-
-  ### Get Lists by user 
-- **URL:** `/api/listitem/by-user/{user_id}`  
-- **Method:** `GET`  
-- **Response:**  
-  ```json
-  [
-    {
-      "id": 1,
-      "title": "Shopping List",
-      "items": ["Milk", "Bread"],
-    }
-  ]
-  ```  
 
 ### User Authentication  
 #### Register  
@@ -351,6 +336,176 @@ Follow these steps to install and run the application locally:
     "password": "password123"
   }
   ```
+#### Get All Lists  
+- **URL:** `/api/listitem/`  
+- **Method:** `GET`  
+- **Response:**  
+  ```json
+  [
+    {
+      "id": 1,
+      "title": "Shopping List",
+      "items": ["Milk", "Bread"],
+      "user_id": 2,
+
+    }
+  ]
+  ```  
+
+#### Get Lists by user 
+- **URL:** `/api/listitem/by-user/{user_id}`  
+- **Method:** `GET`  
+- **Response:**  
+  ```json
+  [
+    {
+      "id": 1,
+      "title": "Shopping List",
+      "items": ["Milk", "Bread"],
+    }
+  ]
+  ```  
+####  **Delete ListItem (Deactivate List)**
+
+- **URL:** `/api/listitem/{id}`
+- **Method:** `DELETE`
+- **Description:** Deactivates a list item instead of deleting it.
+- **Response:**
+  ```json
+  {
+    "message": "List item deactivated successfully"
+  }
+  ```
+
+#### **Update ListItem**
+
+- **URL:** `/api/listitem/{id}`
+- **Method:** `PUT`
+- **Description:** Updates an existing list item.
+- **Request Body:**
+  ```json
+  {
+    "title": "Updated Shopping List",
+    "items": ["Apples", "Bananas"]
+  }
+  ```
+- **Response:**
+  ```json
+  {
+    "id": 1,
+    "title": "Updated Shopping List",
+    "items": ["Apples", "Bananas"]
+  }
+  ```
+
+####  **Get Lists by User**
+
+- **URL:** `/api/listitem/by-user/{user_id}`
+- **Method:** `GET`
+- **Response:**
+  ```json
+  [
+    {
+      "id": 1,
+      "title": "Shopping List",
+      "items": ["Milk", "Bread"]
+    }
+  ]
+  ```
+
+
+
+####  **Share List with User by Email**
+
+- **URL:** `/api/listitem/{id}/share`
+- **Method:** `POST`
+- **Description:** Allows a user to share a list with another user by specifying their email 
+   and selecting the level of access (read-only or full edit).
+- **Request Body:**
+  ```json
+  {
+    "email": "user@example.com",
+    "permission": "read-only"  // or "full-edit"
+  }
+  ```
+- **Response:**
+  ```json
+  {
+    "message": "List shared successfully with user",
+    "shared_with_user_id": 2,
+    "permission": "read-only"
+  }
+  ```
+
+#### **Get Shared Lists by User**
+
+- **URL:** `/api/listitem/shared-with/{user_id}`
+- **Method:** `GET`
+- **Description:** Retrieves all lists shared with a user. Includes permission details.
+- **Response:**
+  ```json
+  [
+    {
+      "id": 1,
+      "title": "Shared Shopping List",
+      "items": ["Milk", "Bread"],
+      "shared_by": 1,
+      "permission": "read-only"
+    }
+  ]
+  ```
+
+#### **Update Share Permission**
+
+- **URL:** `/api/listitem/{id}/update-share`
+- **Method:** `PUT`
+- **Description:** Allows a user to update the permissions of a shared list (e.g., change from `read-only` to `full-edit`).
+- **Request Body:**
+  ```json
+  {
+    "email": "user@example.com",
+    "permission": "full-edit"  // or "read-only"
+  }
+  ```
+- **Response:**
+  ```json
+  {
+    "message": "Share permissions updated successfully",
+    "updated_permission": "full-edit"
+  }
+  ```
+
+#### **Remove Share from List**
+
+- **URL:** `/api/listitem/{id}/remove-share`
+- **Method:** `DELETE`
+- **Description:** Removes sharing access from a list that was previously shared with a user by email.
+- **Request Body:**
+  ```json
+  {
+    "email": "user@example.com"
+  }
+  ```
+- **Response:**
+  ```json
+  {
+    "message": "List share removed successfully"
+  }
+  ```
+
+#### Workflow
+
+1. **Share a List by Email:**
+   - When sharing, the user will provide the email of the person they want to share with, along with the permission level (`read-only` or `full-edit`).
+   - The system will look up the user by email, and then save the list's share information, including the permission level.
+   
+2. **Get Shared Lists:**
+   - When the shared user accesses the shared list, they can retrieve it along with the permission details.
+
+3. **Update Share Permissions:**
+   - The user who shared the list can update the permissions of the shared list.
+
+ * This allows flexibility in how lists are shared and managed between users while allowing the user to set different levels of permissions.
 
 ---
 
@@ -360,9 +515,8 @@ Follow these steps to install and run the application locally:
 
 ---
 
-### Backend Setup (Django)  
 
-# Begin:
+## Backend Setup (Django) - Begin: 
 
 1. **Clone the repository:**  
    ```bash
@@ -418,11 +572,11 @@ Follow these steps to install and run the application locally:
 
 3. Run the program:
    - For macOS: `python3 manage.py runserver`
-   - For other systems: `python manage.py runserver`
+   - For other systems: `py manage.py runserver`
 
 4. Run migrations:
    - For macOS: `python3 manage.py makemigrations` & `python3 manage.py migrate`
-   - For other systems: `python manage.py makemigrations` & `python manage.py migrate`
+   - For other systems: `py manage.py makemigrations` & `python manage.py migrate`
 
 
 5. You can delete the data in the database file and write your own data from scratch. It will work.
@@ -433,9 +587,17 @@ Follow these steps to install and run the application locally:
 
 - **Pylint Analysis:**  
   Code is checked with Pylint to ensure clean and readable syntax.  
-  Run the following command to analyze the code:  
+  First, you need to install **Pylint**. You can install it using the following command:  
+  ```bash
+  pip install pylint
+  ```
+  Once installed, you can run the following command to analyze the code:  
   ```bash
   pylint <file_name>.py
+  ```
+  To include project-specific settings, and when you have a `pylintrc` configuration file, run the following command:  
+  ```bash
+  pylint --rcfile=.pylintrc lista/
   ```
 
 - **Logging:**  
@@ -503,4 +665,5 @@ and improve it. 😊.**
 
 ### **Contact Us**
 For technical issues or inquiries, please contact:  
-📧 **listaassistance@gmail.com**  
+📧 **listaassistance@gmail.com**  or  📧 **coralingber@gmail.com**  
+
