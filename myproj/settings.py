@@ -224,3 +224,5 @@ SIMPLE_JWT = {
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:8081"
 ]
+
+ALLOWED_HOSTS = ['lista-backend-n3la.onrender.com', 'localhost', '127.0.0.1']
