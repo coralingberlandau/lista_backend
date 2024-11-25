@@ -39,8 +39,6 @@ router.register(r'listitem', ListItemViewSet, basename='listitem')
 router.register(r'grouplists', GroupListViewSet)
 router.register(r'listitemimages', ListItemImageViewSet)
 router.register(r'customizations', CustomizationViewSet)
-# router.register(r'recommendations', RecommendationViewSet,
-#                 basename='recommendations')
 
 urlpatterns = [
     path('index/', views.index),
@@ -55,14 +53,9 @@ urlpatterns = [
     path('reset_password_request/', views.ResetPasswordRequestView.as_view(),
          name='reset_password_request'),
     path('reset_password/', views.ResetPasswordView.as_view(), name='reset_password'),
-#     path('recommendations/<int:list_item_id>/', RecommendationViewSet.as_view({'get': 'recommendations'}), 
-#          name='recommendations-list-item'),
-#     path('recommendations/<int:listItemId>/', RecommendationViewSet.as_view({'get': 'recommendations'}), name='recommendations'),
-    path('recommendations/<int:list_item_id>/', RecommendationViewSet.as_view({'get': 'recommendations'})),
+    path(
+        'recommendations/<int:list_item_id>/',
+        RecommendationViewSet.as_view({'get': 'recommendations'}),
+    ),
 
-
-
-
-#     path('recommendations/<int:listItemId>/',
-#          RecommendationViewSet.as_view({'get': 'recommendations'}), name='recommendations'),
 ]

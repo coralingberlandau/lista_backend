@@ -22,8 +22,7 @@ from rest_framework.exceptions import NotFound
 from rest_framework.decorators import action, api_view, permission_classes
 from rest_framework_simplejwt.views import TokenObtainPairView
 from rest_framework_simplejwt.serializers import TokenObtainPairSerializer
-from django.core.validators import validate_email  # הוספתי את הייבוא כאן
-
+from django.core.validators import validate_email
 
 # Django imports
 from django.shortcuts import get_object_or_404
@@ -74,7 +73,6 @@ class RecommendationViewSet(viewsets.ModelViewSet):
             items = [item.strip() for item in list_item.items.split('|')]
             prompt = f"Recommend items for a shopping list that includes: {', '.join(items)}"
 
-            # קריאה ל-OpenAI לצורך יצירת המלצות
             response = openai.completions.create(
                 model="gpt-3.5-turbo",
                 prompt=prompt,
@@ -83,30 +81,26 @@ class RecommendationViewSet(viewsets.ModelViewSet):
 
             recommendations = response['choices'][0]['message']['content'].strip().split(',')
 
-            # שמירה בהמלצות ב-database
             recommendation = Recommendation.objects.create(
                 list_item=list_item,
                 recommended_items=",".join(recommendations)
             )
 
-            # מחזיר את ההמלצות בתגובה
             serializer = self.get_serializer(recommendation)
             return Response(serializer.data)
 
         except NotFound as e:
-            # טיפול במקרה שהרשימה או הפריט לא נמצאים
             return Response({"error": str(e)},
                             status=status.HTTP_404_NOT_FOUND)
         except openai.error.OpenAIError as e:
-            # טיפול בשגיאה מקונקטיביות עם OpenAI
             print(f"Error occurred with OpenAI: {str(e)}")
             return Response({"error": f"OpenAI error: {str(e)}"},
                             status=status.HTTP_500_INTERNAL_SERVER_ERROR)
         except Exception as e:
-            # טיפול בשגיאות כלליות אחרות
             print(f"Unexpected error: {str(e)}")
             return Response({"error": "An unexpected error occurred."},
                             status=status.HTTP_500_INTERNAL_SERVER_ERROR)
+
 
 @log(user_id="request.user.id", object_id="list_item.id")
 @api_view(['GET'])
@@ -171,14 +165,14 @@ class MyTokenObtainPairSerializer(TokenObtainPairSerializer):
     def get_token(cls, user):
         """
         Generates a JWT token for the user with additional custom claims.
-        
+
         This method calls the parent class's `get_token` method to generate
         a basic token, and then adds the `username` and `user_id` claims
         to it. The user's `last_login` is also updated here.
 
         Args:
             user (User): The user object for whom the token is generated.
-        
+
         Returns:
             dict: The generated JWT token with added claims.
         """
@@ -188,6 +182,7 @@ class MyTokenObtainPairSerializer(TokenObtainPairSerializer):
         user.last_login = timezone.now()
         user.save()
         return token
+
 
 class MyTokenObtainPairView(TokenObtainPairView):
     """
@@ -247,13 +242,13 @@ def update_user(request, user_id):
     This view handles two types of requests:
     1. GET: Fetches the current profile data (username, first name, last name, email).
     2. PATCH: Updates the user's profile with the provided data.
-    
+
     When updating, the function performs several checks:
     - Ensures that the provided email is valid and unique.
     - Ensures that the provided username is unique.
     - Ensures that the request is being made by the user themselves 
     (no one else can update the profile of another user).
-    
+
     If any of the required fields (email, username) already exist in the system,
     a 400 error will be returned.
     If the request is successful, a 200 status with a success message is returned.
@@ -261,13 +256,7 @@ def update_user(request, user_id):
     """
     user = get_object_or_404(User, pk=user_id)
 
-    # לוודא שהמשתמש המבצע את הבקשה הוא אותו המשתמש
-    # if request.user.id != user.id:
-    #     return Response({"error": "You do not have permission to update this profile."},
-    #                     status=status.HTTP_403_FORBIDDEN)
-
     if request.method == 'GET':
-        # מחזיר את פרטי המשתמש (שם משתמש, שם פרטי, שם משפחה, אימייל)
         user_data = {
             "username": user.username,
             "first_name": user.first_name,
@@ -297,7 +286,6 @@ def update_user(request, user_id):
                 return Response({'error': 'Email already in use.'},
                                 status=status.HTTP_400_BAD_REQUEST)
 
-        # עדכון הנתונים
         user.username = data.get('username', user.username)
         user.first_name = data.get('first_name', user.first_name)
         user.last_name = data.get('last_name', user.last_name)
@@ -417,7 +405,6 @@ class ResetPasswordRequestView(APIView):
                 {"error": f"An error occurred: {str(e)}"},
                 status=status.HTTP_500_INTERNAL_SERVER_ERROR,
             )
-
 
 class ListItemViewSet(viewsets.ModelViewSet):
     """
@@ -615,11 +602,10 @@ class GroupListViewSet(viewsets.ModelViewSet):
 
         if not user_id or not list_item_id:
             return Response({'message': 'user_id and list_item_id are required'},
-                             status=status.HTTP_400_BAD_REQUEST)
+                            status=status.HTTP_400_BAD_REQUEST)
 
         print(f"Fetching permission for user_id: {user_id} "
               f"and list_item_id: {list_item_id}")
-
 
         group_list = GroupList.objects.filter(
             user_id=user_id, list_item_id=list_item_id).first()
@@ -628,7 +614,7 @@ class GroupListViewSet(viewsets.ModelViewSet):
             return Response(
                 {'message': 'No group list found for the given user and item'},
                 status=status.HTTP_404_NOT_FOUND
-                )
+            )
 
         print(f"Permission type found: {group_list.permission_type}")
 
@@ -679,7 +665,7 @@ class ListItemImageViewSet(viewsets.ModelViewSet):
             return Response({"error": "list_item is required."}, status=status.HTTP_400_BAD_REQUEST)
         if not images_data:
             return Response({"error": "images array is required."},
-                             status=status.HTTP_400_BAD_REQUEST)
+                            status=status.HTTP_400_BAD_REQUEST)
 
         try:
             list_item = ListItem.objects.get(id=list_item_id)
@@ -784,21 +770,23 @@ class ListItemImageViewSet(viewsets.ModelViewSet):
             for deleted_index in deleted_images_index:
                 images_to_delete = ListItemImage.objects.filter(
                     index=deleted_index, list_item_id=list_item_id)
-                print(f"Found images to delete with index {deleted_index}: {images_to_delete}")
+                print(f"Found images to delete with index {
+                      deleted_index}: {images_to_delete}")
                 for image in images_to_delete:
-                    print(f"Deleting image {image.id} with index {image.index}")
+                    print(f"Deleting image {
+                          image.id} with index {image.index}")
                     image.delete()
 
             for updated_index in updated_images_index:
                 images_to_update = ListItemImage.objects.filter(
                     index=updated_index, list_item_id=list_item_id)
-                print(f"Found images with index {updated_index}: {images_to_update}")
+                print(f"Found images with index {
+                      updated_index}: {images_to_update}")
                 for image in images_to_update:
                     print(
                         f"Updating image {image.id} - Old index: {image.index}"
-                        )
+                    )
                     image.index -= 1
-
 
                     try:
                         image.save()

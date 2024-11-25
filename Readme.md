@@ -20,7 +20,7 @@ It combines real-time updates, customization options, and a user-friendly experi
 
 ---
 
-## **Database:**  
+## **Database:**  ֹ
 - **data.json**   
 
 ---
@@ -28,7 +28,7 @@ It combines real-time updates, customization options, and a user-friendly experi
 1. [Introduction](#introduction)  
 2. [Project Goals](#project-goals)  
 3. [Target Audience](#target-audience)  
-4. [Technologies Used](#technologies-used)  
+4. [Technologies Stack](#technologies-stack)  
 5. [Key Features](#key-features)  
 6. [Screens](#screens)  
 7. [Database Models](#database-models)  
@@ -71,7 +71,7 @@ with tailored permissions.
 
 ---
 
-## **Technologies Used**  ## **Technological Stack**   🚀
+## **Technological Stack**   🚀
 
 | Domain         | Technology                                                                        |
 |----------------|-----------------------------------------------------------------------------------|
@@ -511,7 +511,7 @@ Follow these steps to install and run the application locally:
 
 ## **High Level Design**  
 
-![alt text](image.png)
+![alt text](HLD.png)
 
 ---
 
