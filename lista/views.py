@@ -219,7 +219,6 @@ def register(request):
     )
     user.is_active = True
     user.is_staff = True
-    user.is_superuser = True
     user.last_login = timezone.now()
     user.save()
     refresh = MyTokenObtainPairSerializer.get_token(user)
