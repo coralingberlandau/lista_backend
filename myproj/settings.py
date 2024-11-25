@@ -27,12 +27,6 @@ SECRET_KEY = 'django-insecure-_q*+ll6f#epubr0n#($_2w0#@j&xf#=o!_#x6t@fgk-wwwc(4b
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = [
-    "lista-backend-wx1v.onrender.com",
-    "localhost",
-    "127.0.0.1",
-]
-
 # Application definition
 
 INSTALLED_APPS = [
@@ -227,11 +221,6 @@ SIMPLE_JWT = {
     'SLIDING_TOKEN_REFRESH_LIFETIME': timedelta(days=1),
 }
 
-CORS_ALLOW_ALL_ORIGINS = True
-
-CORS_ALLOW_CREDENTIALS = True
-
 CORS_ALLOWED_ORIGINS = [
-    "http://localhost:127.0.0.1", 
-    "https://lista-backend-wx1v.onrender.com", 
+    "http://localhost:8081"
 ]
