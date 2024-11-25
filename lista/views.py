@@ -682,8 +682,10 @@ class ListItemImageViewSet(viewsets.ModelViewSet):
 
                 extension = mime_type.split(
                     '/')[1] if '/' in mime_type else 'jpeg'
-                image_file_name = f"{
-                    file_name or f'image_{index}'}.{extension}"
+                image_file_name = (
+                    f"{file_name or f'image_{index}'}."
+                    f"{extension}"
+                )
 
                 image_data = base64.b64decode(base64_image)
                 image_content = ContentFile(image_data, name=image_file_name)
