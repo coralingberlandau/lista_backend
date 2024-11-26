@@ -5327,3 +5327,5 @@ Traceback (most recent call last):
            ^^^^^^^^^^^^
 AttributeError: module 'openai' has no attribute 'error'
 2024-11-25 13:43:19,451 - application_logger - INFO - {'event': 'function_success', 'function': 'list_by_user', 'execution_time': 0.0018429756164550781, 'result': '<Response status_code=200, "text/html; charset=utf-8">', 'dynamic_info': {'extra_info_key': 'additional_value', 'another_field': 'another_value'}}
+2024-11-26 15:27:51,018 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-11-26 16:09:31,023 - django.utils.autoreload - INFO - /Users/coralingber/Desktop/untitled folder 2/lista/backend/myproj/settings.py changed, reloading.
