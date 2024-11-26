@@ -6,11 +6,49 @@ The backend of **Lista**, a personal and collaborative list management app,
 is built to deliver seamless, secure, and efficient functionalities.
 Below is the detailed README for setting up and contributing to this project.
 
----
+--- 
 
 ## **📋 Overview**  
 **Lista** is your ultimate solution for organizing and managing personal and shared lists. 
 It combines real-time updates, customization options, and a user-friendly experience.
+
+---
+
+
+### 🔗 **Backend URL - Render **:  
+✨ [Access the backend here!](https://lista-backend-n3la.onrender.com) ✨
+
+
+### 🌐 **Frontend URL - Netlify **:  
+✨ [Access the frontend here!](https://lista-project.netlify.app/Login) ✨
+
+
+---
+
+## Doker: 
+
+### Doker -backend : 
+- **The terminal command to pull the Docker image is: :**
+This command will download the lista-backend image with the version1 tag from Docker Hub.
+
+```bash
+   docker pull corallandau/lista-backend:version1
+   ```
+
+https://hub.docker.com/repository/docker/corallandau/lista-backend/general
+
+
+### Doker -frontend : 
+- **The terminal command to pull the Docker image is: :**
+This command will download the lista-front image with the version1 tag from Docker Hub.
+
+```bash
+   docker pull corallandau/lista-front:version1
+   ```
+
+https://hub.docker.com/repository/docker/corallandau/lista-front/general
+
+
 
 ---
 
