@@ -771,18 +771,19 @@ class ListItemImageViewSet(viewsets.ModelViewSet):
             for deleted_index in deleted_images_index:
                 images_to_delete = ListItemImage.objects.filter(
                     index=deleted_index, list_item_id=list_item_id)
-                print(f"Found images to delete with index {
-                      deleted_index}: {images_to_delete}")
+                print(f"Found images to delete with index"
+                      f"{deleted_index}:{images_to_delete}")
                 for image in images_to_delete:
-                    print(f"Deleting image {
-                          image.id} with index {image.index}")
-                    image.delete()
+                    print(
+                        f"Deleting image {image.id}"
+                        f"with index {image.index}) image.delete()")
 
             for updated_index in updated_images_index:
                 images_to_update = ListItemImage.objects.filter(
                     index=updated_index, list_item_id=list_item_id)
-                print(f"Found images with index {
-                      updated_index}: {images_to_update}")
+                print(
+                    f"Found images with index"
+                    f"{updated_index}:{images_to_update}")
                 for image in images_to_update:
                     print(
                         f"Updating image {image.id} - Old index: {image.index}"
