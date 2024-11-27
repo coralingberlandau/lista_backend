@@ -13,6 +13,14 @@ https://docs.djangoproject.com/en/4.2/ref/settings/
 import os
 from datetime import timedelta
 from pathlib import Path
+from dotenv import load_dotenv
+
+load_dotenv()
+
+SENDGRID_API_KEY = os.getenv("SENDGRID_API_KEY")
+OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
+SECRET_KEY = os.getenv("SECRET_KEY")
+
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -20,9 +28,8 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/4.2/howto/deployment/checklist/
-
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-_q*+ll6f#epubr0n#($_2w0#@j&xf#=o!_#x6t@fgk-wwwc(4b'
+
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -169,19 +176,14 @@ LOGGING = {
 
 FRONTEND_URL = "https://lista-project.netlify.app"
 EMAIL_BACKEND = 'sendgrid_backend.SendgridBackend'
-SENDGRID_API_KEY = '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'
 SENDGRID_SANDBOX_MODE_IN_DEBUG = False
 DEFAULT_FROM_EMAIL = 'listaassistance@gmail.com'
 APPEND_SLASH = False
-OPENAI_API_KEY = (
-    'sk-proj-HTs_4QIuMpzs2F0o3mQlz5XMTUl8sQEKblP9De-uA8IZnLWDSA51oU7feW3h9MajV_'
-    'fdmyJXurT3BlbkFJGGP1rYScWUEDGXWoUcRQx7DztvtBX5kKV9j-dQpbSKNt3ox3WN23f1zYA02'
-    'R61GX4r0aeY4YIA'
-)
+
+
 
 REST_FRAMEWORK = {
     'DEFAULT_AUTHENTICATION_CLASSES': (
-
         'rest_framework_simplejwt.authentication.JWTAuthentication',
     )
 }

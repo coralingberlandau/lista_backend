@@ -163,6 +163,8 @@ Additionally, **autopep8** is used to automatically format the code according to
 6. **Security and User Management**  
    - Secure registration and login with **JWT**.  
    - Permission-based management by user and list.  
+    - API keys and sensitive information, including **SendGrid** and **OpenAI** API keys, are securely stored in a `.env` file and loaded via environment variables using the `dotenv` package.  
+   - **Secret Key** for Django security is also stored in the `.env` file to keep the application secure in production environments.
 
 7. **Smart Recommendations and List Management**  
    - **AI-Driven Recommendations**: The application integrates with OpenAI to provide personalized, 
