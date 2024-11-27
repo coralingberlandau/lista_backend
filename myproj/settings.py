@@ -167,17 +167,12 @@ LOGGING = {
     },
 }
 
-
-FRONTEND_URL = "http://localhost:8081"
-
+FRONTEND_URL = "https://lista-project.netlify.app"
 EMAIL_BACKEND = 'sendgrid_backend.SendgridBackend'
 SENDGRID_API_KEY = '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'
 SENDGRID_SANDBOX_MODE_IN_DEBUG = False
-
 DEFAULT_FROM_EMAIL = 'listaassistance@gmail.com'
-
 APPEND_SLASH = False
-
 OPENAI_API_KEY = (
     'sk-proj-HTs_4QIuMpzs2F0o3mQlz5XMTUl8sQEKblP9De-uA8IZnLWDSA51oU7feW3h9MajV_'
     'fdmyJXurT3BlbkFJGGP1rYScWUEDGXWoUcRQx7DztvtBX5kKV9j-dQpbSKNt3ox3WN23f1zYA02'
