@@ -43,7 +43,7 @@ https://hub.docker.com/repository/docker/corallandau/lista-backend/general
 This command will download the lista-front image with the version1 tag from Docker Hub.
 
 ```bash
-   docker pull corallandau/lista-front:version3
+   docker pull corallandau/lista-front:version4
    ```
 
 https://hub.docker.com/repository/docker/corallandau/lista-front/general
