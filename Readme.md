@@ -32,7 +32,7 @@ It combines real-time updates, customization options, and a user-friendly experi
 This command will download the lista-backend image with the version1 tag from Docker Hub.
 
 ```bash
-   docker pull corallandau/lista-backend:version2
+   docker pull corallandau/lista-backend:version3
    ```
 
 https://hub.docker.com/repository/docker/corallandau/lista-backend/general
@@ -43,7 +43,7 @@ https://hub.docker.com/repository/docker/corallandau/lista-backend/general
 This command will download the lista-front image with the version1 tag from Docker Hub.
 
 ```bash
-   docker pull corallandau/lista-front:version2
+   docker pull corallandau/lista-front:version3
    ```
 
 https://hub.docker.com/repository/docker/corallandau/lista-front/general
